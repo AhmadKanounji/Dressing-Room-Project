@@ -1046,3 +1046,4 @@ C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net
 C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\app_shared_libraries\armeabi-v7a\libxamarin-app.so
 C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so
 C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\app_shared_libraries\x86\libxamarin-app.so
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\f\OPTIMA.TTF

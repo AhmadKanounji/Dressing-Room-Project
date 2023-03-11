@@ -56,6 +56,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\OPTIMA.TTF" />
 	  <None Remove="Resources\Fonts\OPTIMA_B.TTF" />
 	  <None Remove="Resources\Fonts\Quora.ttf" />
 	  <None Remove="Resources\Images\accessories.png" />

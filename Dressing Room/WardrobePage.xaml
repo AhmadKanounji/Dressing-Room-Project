@@ -26,14 +26,14 @@
                        TextColor="#01260A" VerticalOptions="Center"  VerticalTextAlignment="Center" 
                        HorizontalOptions="Start" HorizontalTextAlignment="Center" BackgroundColor="#E2E2E2"  
                        FontSize="20" HeightRequest="53" WidthRequest="392"
-                   FontFamily="OPTIMA_B">
+                   FontFamily="Quora">
 
                 </Label>
                 <Frame HeightRequest="29" WidthRequest="393" BackgroundColor="#01260A" Margin="0,0,0,0"  CornerRadius="0" HorizontalOptions="Start" BorderColor="#01260A">
                     <Label  Grid.Row="1" Text="Wardrobe" TextColor="#E2E2E2" 
                            VerticalOptions="Center" VerticalTextAlignment="Center"  
                            HorizontalOptions="Center"  HorizontalTextAlignment="Center"    
-                           FontSize="15" FontFamily="OPTIMA_B">
+                           FontSize="15" FontFamily="OPTIMA">
                     </Label>
                 </Frame>
 
