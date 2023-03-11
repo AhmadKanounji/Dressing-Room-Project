@@ -58,9 +58,18 @@
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\OPTIMA_B.TTF" />
 	  <None Remove="Resources\Fonts\Quora.ttf" />
+	  <None Remove="Resources\Images\accessories.png" />
+	  <None Remove="Resources\Images\hanger1.jpg" />
+	  <None Remove="Resources\Images\homepage.png" />
+	  <None Remove="Resources\Images\jacke.png" />
 	  <None Remove="Resources\Images\logo.png" />
 	  <None Remove="Resources\Images\logopic.png" />
+	  <None Remove="Resources\Images\outfits.jpg" />
+	  <None Remove="Resources\Images\pant.png" />
 	  <None Remove="Resources\Images\planttwo.png" />
+	  <None Remove="Resources\Images\settings.png" />
+	  <None Remove="Resources\Images\shoe.png" />
+	  <None Remove="Resources\Images\top.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Fonts\OPTIMA_B.TTF" />
@@ -68,5 +77,10 @@
 	  <BundleResource Include="Resources\Images\logo.png" />
 	  <BundleResource Include="Resources\Images\logopic.png" />
 	  <BundleResource Include="Resources\Images\planttwo.png" />
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiXaml Update="WardrobePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 </Project>
