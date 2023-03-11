@@ -1,41 +1,116 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Dressing_Room.MainPage">
+             x:Class="Dressing_Room.MainPage"
+             BackgroundColor="#E2E2E2"
+             Shell.NavBarIsVisible="True"
+             Shell.BackgroundColor="#01260A"
+             Title="Sign In">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
-
+<VerticalStackLayout>
+        <Grid>
             <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+            Source="planttwo.png"
+            VerticalOptions="Start"
+            WidthRequest="430"
+            HeightRequest="220"
+            Aspect="Fill"
+            Opacity="0.7"/>
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-
+        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="0" >
+                
+                <Label  Text="Dressing"
+                        FontFamily="Quora"
+                        TextColor="#01260A"
+                        HorizontalOptions="Center"
+                        FontSize="60"
+                        Padding="0"
+                   />
+                <Label  Text="Room"
+                        FontFamily="Quora"
+                        TextColor="#01260A"
+                        HorizontalOptions="Center"
+                        FontSize="60"
+                        Padding="0"
+                />
+            
         </VerticalStackLayout>
-    </ScrollView>
+        </Grid>
+        <Label
+            Margin="36,23,0,0"
+            FontFamily="OPTIMAB"
+            FontSize="40"
+            Text="Welcome To your E-Closet"
+            TextColor="#01260A"
+            />
 
+        <Label Text="SIGN IN" FontSize="22" FontFamily="OPTIMA" Margin="36,20,0,0"></Label>
+
+        <Border WidthRequest="350" 
+                HeightRequest="45"
+                StrokeThickness="1"
+                Stroke="#01260A"
+                Margin="0,20,3,0"
+                StrokeShape="RoundRectangle 20"
+                >
+            <Entry Placeholder="E-Mail" FontAttributes="Italic" Keyboard="Email"></Entry>
+          
+        </Border>
+        <Border WidthRequest="350" 
+                HeightRequest="45"
+                StrokeThickness="1"
+                Stroke="#01260A"
+                Margin="0,20,3,0"
+                StrokeShape="RoundRectangle 20"
+                >
+            <Entry Placeholder="Password " FontAttributes="Italic" Keyboard="Email"></Entry>
+
+        </Border>
+
+        <Button Text="Enter My E-Closet"
+                Background="#01260A"
+                WidthRequest="360"
+                HeightRequest="50"
+                CornerRadius="20"
+                Margin="0,20,0,0"></Button>
+
+        <HorizontalStackLayout HorizontalOptions="Center" Margin="0,20,0,0">
+            <Label Text="Don't have an account?"
+                   FontFamily="OPTIMA"
+                   HeightRequest="17"
+
+                   ></Label>
+            <Label>
+            <Label.FormattedText>
+               <FormattedString>
+                  <Span 
+                     Text=" Sign up"
+                     TextColor="#01260A"
+                     FontFamily="OPTIMAB"
+                     TextDecorations="Underline">
+                     <Span.GestureRecognizers>
+                        <TapGestureRecognizer
+                           Command="{Binding OpenUrlCommand}"
+                           CommandParameter="https://learn.microsoft.com/dotnet/maui/" 
+                        />
+                     </Span.GestureRecognizers>
+                  </Span>
+               </FormattedString>
+            </Label.FormattedText>
+         </Label>
+
+        </HorizontalStackLayout>
+
+        <Image Source="logopic.png"
+                VerticalOptions="End"
+                HorizontalOptions="End"
+                WidthRequest="400"
+                HeightRequest="300"
+                BackgroundColor="#E2E2E2"
+                Margin="0,20,0,0"
+                
+                >
+        </Image>
+   
+    </VerticalStackLayout>
 </ContentPage>
