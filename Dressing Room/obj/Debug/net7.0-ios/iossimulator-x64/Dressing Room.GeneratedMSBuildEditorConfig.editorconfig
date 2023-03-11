@@ -8,34 +8,34 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Dressing_Room
-build_property.ProjectDir = C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\
+build_property.ProjectDir = /Users/serena/Desktop/Dressing-Room-Project/Dressing Room/
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/App.xaml]
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/AppShell.xaml]
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/MainPage.xaml]
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/Resources/Styles/Colors.xaml]
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Resources.Styles.Colors.xaml
-build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
-build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/Resources/Styles/Styles.xaml]
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Resources.Styles.Styles.xaml
-build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
-build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
