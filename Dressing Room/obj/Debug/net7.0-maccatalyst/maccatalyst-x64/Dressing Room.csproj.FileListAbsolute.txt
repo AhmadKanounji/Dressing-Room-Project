@@ -257,3 +257,58 @@
 /Users/serena/Desktop/Dressing-Room-Project/Dressing Room/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/Dressing Room.pdb
 /Users/serena/Desktop/Dressing-Room-Project/Dressing Room/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/Dressing Room.genruntimeconfig.cache
 /Users/serena/Desktop/Dressing-Room-Project/Dressing Room/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/ref/Dressing Room.dll
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauiimage.inputs
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauifont.inputs
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauisplash.inputs
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauisplash.stamp
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@2x.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@3x.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@2x.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@3x.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@2x.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@3x.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@2x.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@3x.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon76x76@2x.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon83.5x83.5@2x.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appiconItunesArtwork.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot@2x.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot@3x.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\accessories.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\hanger1.jpg
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\homepage.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\jacke.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\logo.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\logopic.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\outfits.jpg
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\pant.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\planttwo.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\settings.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\shoe.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\top.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauiimage.stamp
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\f\MauiInfo.plist
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauifont.stamp
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Regular.ttf
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Semibold.ttf
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\f\OPTIMA.TTF
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\f\OPTIMA_B.TTF
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\f\Quora.ttf
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\actool\_PartialAppManifest.items
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\actool\_BundleResourceWithLogicalName.items
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\actool\_ProcessedImageAssetsPath.items
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\coremlc\_PartialAppManifest.items
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\coremlc\_ProcessedCoreMLModelsPath.items
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\_ProcessedBundleResourcesPath.items
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\_ProcessedContentPath.items
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\Dressing Room.csproj.AssemblyReference.cache
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\Dressing Room.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\Dressing Room.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\Dressing Room.AssemblyInfo.cs
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\Dressing Room.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\Dressing Room.dll
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\refint\Dressing Room.dll
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\Dressing Room.pdb

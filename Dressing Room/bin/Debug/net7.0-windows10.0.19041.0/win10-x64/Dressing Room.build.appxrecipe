@@ -724,6 +724,9 @@
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OPTIMA.TTF">
+      <PackagePath>OPTIMA.TTF</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OPTIMA_B.TTF">
       <PackagePath>OPTIMA_B.TTF</PackagePath>
     </AppxPackagedFile>

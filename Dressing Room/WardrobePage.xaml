@@ -2,9 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Dressing_Room.WardrobePage"
-             Title="Dressing Room"
              BackgroundColor="#E2E2E2"
-     
+             Title=""
+             NavigationPage.HasNavigationBar="False"
              >
     <ScrollView Margin="0,0,0,0">
         <Grid RowSpacing="34" ColumnSpacing="31"  >
@@ -15,12 +15,13 @@
                 <RowDefinition Height="251" />
                 <RowDefinition Height="251"/>
                 <RowDefinition Height="251"/>
+                <RowDefinition Height="53"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="181"/>
                 <ColumnDefinition Width="181"/>
             </Grid.ColumnDefinitions>
-
+            
             <StackLayout Spacing="0" >
                 <Label Margin="0,0,0,0" Grid.Row="0" Text="Dressing Room"
                        TextColor="#01260A" VerticalOptions="Center"  VerticalTextAlignment="Center" 
@@ -36,27 +37,29 @@
                            FontSize="15" FontFamily="OPTIMA">
                     </Label>
                 </Frame>
-
             </StackLayout>
 
-            <StackLayout  Grid.Row="2" Grid.Column="0" Spacing="0" Margin="45,-50,0,0">
+            <StackLayout  Grid.Row="2" Grid.Column="0" Spacing="-1" Margin="45,-50,0,0"  >
 
                 <Border 
                     HeightRequest="216"
-                    Stroke="Transparent"
+                    Stroke="#01260A"
                     StrokeThickness="0"
                     StrokeShape="RoundRectangle 20,20,0,0"
+                    
                     >
-                    <ImageButton Source="outfits.jpg" Aspect="Fill" />
+                    <ImageButton Source="outfits.jpg" Aspect="Fill"  Clicked="OnImage1Clicked"/>
                 </Border>
                 <Border 
                     StrokeShape="RoundRectangle 0,0,20,20"
-                    StrokeThickness="-2"
-                    Stroke="Transparent"
+                    StrokeThickness="0"
+                    Stroke="#01260A"
                     BackgroundColor="#01260A"
-                    HeightRequest="35">
+                    HeightRequest="35"
+                    
+                    >
 
-                    <Frame BackgroundColor="#01260A" CornerRadius="0" >
+                    <Frame BackgroundColor="#01260A" CornerRadius="0" BorderColor="#01260A" >
 
                         <Label Text="Outfits" HorizontalTextAlignment="Center" TextColor="#E2E2E2" FontSize="14" FontAttributes="Bold" VerticalTextAlignment="Center"
                        VerticalOptions="Center" HorizontalOptions="Center" FontFamily="OPTIMA_B">
@@ -68,23 +71,24 @@
 
             </StackLayout>
 
-            <StackLayout  Grid.Row="2" Grid.Column="1" Spacing="0" Margin="0,-50,45,0">
+            <StackLayout  Grid.Row="2" Grid.Column="1" Spacing="-1" Margin="0,-50,46,0" >
 
                 <Border 
                     HeightRequest="216"
-                    Stroke="Transparent"
+                    Stroke="#01260A"
                     StrokeThickness="0"
                     StrokeShape="RoundRectangle 20,20,0,0">
-                    <ImageButton Source="top.png" Aspect="Fill" />
+                    <ImageButton Source="top.png" Aspect="Fill"  Clicked="OnImage2Clicked" />
                 </Border>
                 <Border 
                     StrokeShape="RoundRectangle 0,0,20,20"
-                    StrokeThickness="-2"
-                    Stroke="Transparent"
+                    StrokeThickness="0"
+                    Stroke="#01260A"
                     BackgroundColor="#01260A"
-                    HeightRequest="35">
+                    HeightRequest="35"
+                    >
 
-                    <Frame BackgroundColor="#01260A" CornerRadius="0" >
+                    <Frame BackgroundColor="#01260A" CornerRadius="0"  BorderColor="#01260A">
 
                         <Label Text="Tops" HorizontalTextAlignment="Center" TextColor="#E2E2E2" FontSize="14" FontAttributes="Bold" VerticalTextAlignment="Center"
                        VerticalOptions="Center" HorizontalOptions="Center" FontFamily="OPTIMA_B">
@@ -97,23 +101,23 @@
             </StackLayout>
 
 
-            <StackLayout  Grid.Row="3" Grid.Column="0" Spacing="0" Margin="45,-50,0,0">
+            <StackLayout  Grid.Row="3" Grid.Column="0" Spacing="-1" Margin="45,-50,0,0">
 
                 <Border 
                     HeightRequest="216"
                     Stroke="Transparent"
-                    StrokeThickness="-2"
+                    StrokeThickness="0"
                     StrokeShape="RoundRectangle 20,20,0,0">
-                    <ImageButton Source="pant.png" Aspect="Fill" />
+                    <ImageButton Source="pant.png" Aspect="Fill" Clicked="OnImage3Clicked" />
                 </Border>
                 <Border 
                     StrokeShape="RoundRectangle 0,0,20,20"
-                    StrokeThickness="-2"
+                    StrokeThickness="0"
                     Stroke="Transparent"
                     BackgroundColor="#01260A"
                     HeightRequest="35">
 
-                    <Frame BackgroundColor="#01260A" CornerRadius="0" >
+                    <Frame BackgroundColor="#01260A" CornerRadius="0" BorderColor="#01260A">
 
                         <Label Text="Pants" HorizontalTextAlignment="Center" TextColor="#E2E2E2" FontSize="14" FontAttributes="Bold" VerticalTextAlignment="Center"
                        VerticalOptions="Center" HorizontalOptions="Center" FontFamily="OPTIMA_B">
@@ -125,24 +129,24 @@
 
             </StackLayout>
 
-            <StackLayout  Grid.Row="3" Grid.Column="1" Spacing="0" Margin="0,-50,45,0">
+            <StackLayout  Grid.Row="3" Grid.Column="1" Spacing="-1" Margin="0,-50,45,0">
 
                 <Border 
                     HeightRequest="216"
                     Stroke="Transparent"
-                    StrokeThickness="-1"
+                    StrokeThickness="0"
                     StrokeShape="RoundRectangle 20,20,0,0">
-                    <ImageButton Source="shoe.png" Aspect="Fill" />
+                    <ImageButton Source="shoe.png" Aspect="Fill" Clicked="OnImage4Clicked"/>
                 </Border>
 
                 <Border 
                     StrokeShape="RoundRectangle 0,0,20,20"
-                    StrokeThickness="-2"
+                    StrokeThickness="0"
                     Stroke="Transparent"
                     BackgroundColor="#01260A"
                     HeightRequest="35">
 
-                    <Frame BackgroundColor="#01260A" CornerRadius="0" >
+                    <Frame BackgroundColor="#01260A" CornerRadius="0" BorderColor="#01260A">
 
                         <Label Text="Shoes" HorizontalTextAlignment="Center" TextColor="#E2E2E2" FontSize="14" FontAttributes="Bold" VerticalTextAlignment="Center"
                        VerticalOptions="Center" HorizontalOptions="Center" FontFamily="OPTIMA_B">
@@ -154,24 +158,24 @@
 
             </StackLayout>
 
-            <StackLayout  Grid.Row="4" Grid.Column="0" Spacing="0" Margin="45,-50,0,0">
+            <StackLayout  Grid.Row="4" Grid.Column="0" Spacing="-1" Margin="45,-50,0,0">
 
                 <Border 
                     HeightRequest="216"
                     Stroke="Transparent"
-                    StrokeThickness="-2"
+                    StrokeThickness="0"
                     StrokeShape="RoundRectangle 20,20,0,0">
-                    <ImageButton Source="jacke.png" Aspect="Fill" />
+                    <ImageButton Source="jacke.png" Aspect="Fill" Clicked="OnImage5Clicked"/>
                 </Border>
 
                 <Border 
                     StrokeShape="RoundRectangle 0,0,20,20"
-                    StrokeThickness="-2"
+                    StrokeThickness="0"
                     Stroke="Transparent"
                     BackgroundColor="#01260A"
                     HeightRequest="35">
 
-                    <Frame BackgroundColor="#01260A" CornerRadius="0" >
+                    <Frame BackgroundColor="#01260A" CornerRadius="0" BorderColor="#01260A">
 
                         <Label Text="Jackets" HorizontalTextAlignment="Center" TextColor="#E2E2E2" FontSize="14" FontAttributes="Bold" VerticalTextAlignment="Center"
                        VerticalOptions="Center" HorizontalOptions="Center" FontFamily="OPTIMA_B">
@@ -183,24 +187,24 @@
 
             </StackLayout>
 
-            <StackLayout  Grid.Row="4" Grid.Column="2" Spacing="0" Margin="0,-50,45,0">
+            <StackLayout  Grid.Row="4" Grid.Column="2" Spacing="-1" Margin="0,-50,45,0">
 
                 <Border 
                     HeightRequest="216"
                     Stroke="Transparent"
-                    StrokeThickness="-2"
+                    StrokeThickness="0"
                     StrokeShape="RoundRectangle 20,20,0,0">
-                    <ImageButton Source="accessories.jpg" Aspect="Fill" />
+                    <ImageButton Source="accessories.jpg" Aspect="Fill" Clicked="OnImage6Clicked" />
                 </Border>
 
                 <Border 
                     StrokeShape="RoundRectangle 0,0,20,20"
-                    StrokeThickness="-2"
+                    StrokeThickness="0"
                     Stroke="Transparent"
                     BackgroundColor="#01260A"
                     HeightRequest="35">
 
-                    <Frame BackgroundColor="#01260A" CornerRadius="0"  >
+                    <Frame BackgroundColor="#01260A" CornerRadius="0" BorderColor="#01260A"  >
 
                         <Label Text="Accessories" HorizontalTextAlignment="Center" TextColor="#E2E2E2" FontSize="14" FontAttributes="Bold" VerticalTextAlignment="Center"
                        VerticalOptions="Center" HorizontalOptions="Center" FontFamily="OPTIMA_B">
@@ -211,10 +215,11 @@
                 </Border>
 
             </StackLayout>
-
-
-
+            
         </Grid>
+        
+           
+        
     </ScrollView>
 
 </ContentPage>

@@ -44,6 +44,42 @@ build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Resources.St
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/AccessoriesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Wardrobe_Extensions.AccessoriesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Wardrobe Extensions\AccessoriesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Wardrobe Extensions\AccessoriesPage.xaml
+
+[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/JacketsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Wardrobe_Extensions.JacketsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Wardrobe Extensions\JacketsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Wardrobe Extensions\JacketsPage.xaml
+
+[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/OutfitsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Wardrobe_Extensions.OutfitsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Wardrobe Extensions\OutfitsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Wardrobe Extensions\OutfitsPage.xaml
+
+[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/PantsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Wardrobe_Extensions.PantsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Wardrobe Extensions\PantsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Wardrobe Extensions\PantsPage.xaml
+
+[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/ShoesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Wardrobe_Extensions.ShoesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Wardrobe Extensions\ShoesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Wardrobe Extensions\ShoesPage.xaml
+
+[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/TopsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Wardrobe_Extensions.TopsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Wardrobe Extensions\TopsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Wardrobe Extensions\TopsPage.xaml
+
 [C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/WardrobePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.WardrobePage.xaml

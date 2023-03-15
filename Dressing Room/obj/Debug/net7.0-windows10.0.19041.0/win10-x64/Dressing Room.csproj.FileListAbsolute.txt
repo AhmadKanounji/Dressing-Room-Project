@@ -336,3 +336,4 @@ C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net
 C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings.scale-100.png
 C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\shoe.scale-100.png
 C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\top.scale-100.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OPTIMA.TTF
