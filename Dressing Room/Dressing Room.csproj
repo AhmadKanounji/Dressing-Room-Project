@@ -81,6 +81,9 @@
 	  <BundleResource Include="Resources\Images\planttwo.png" />
 	</ItemGroup>
 	<ItemGroup>
+	  <MauiXaml Update="Signup.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Wardrobe Extensions\AccessoriesPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

@@ -38,13 +38,13 @@
         </Grid>
         <Label
             Margin="36,23,0,0"
-            FontFamily="OPTIMAB"
+            FontFamily="OPTIMA_B"
             FontSize="40"
             Text="Welcome To your E-Closet"
             TextColor="#01260A"
             />
 
-        <Label Text="SIGN IN" FontSize="22" FontFamily="OPTIMA" Margin="36,20,0,0"></Label>
+        <Label Text="SIGN IN" FontSize="22" FontFamily="OPTIMA_B" Margin="36,20,0,0"></Label>
 
         <Border WidthRequest="350" 
                 HeightRequest="45"
@@ -72,7 +72,10 @@
                 WidthRequest="360"
                 HeightRequest="50"
                 CornerRadius="20"
-                Margin="0,20,0,0"></Button>
+                Margin="0,20,0,0"
+                Clicked="Button_Clicked_1"
+                
+                ></Button>
 
         <HorizontalStackLayout HorizontalOptions="Center" Margin="0,20,0,0">
             <Label Text="Don't have an account?"
@@ -80,25 +83,18 @@
                    HeightRequest="17"
 
                    ></Label>
-            <Label>
-            <Label.FormattedText>
-               <FormattedString>
-                  <Span 
-                     Text=" Sign up"
-                     TextColor="#01260A"
-                     FontFamily="OPTIMAB"
-                     TextDecorations="Underline">
-                     <Span.GestureRecognizers>
-                        <TapGestureRecognizer
-                           Command="{Binding OpenUrlCommand}"
-                           CommandParameter="https://learn.microsoft.com/dotnet/maui/" 
-                        />
-                     </Span.GestureRecognizers>
-                  </Span>
-               </FormattedString>
-            </Label.FormattedText>
-         </Label>
-
+            <Button 
+                Padding="4"
+                BackgroundColor="#E2E2E2"
+                BorderColor="Black"
+                BorderWidth="0"
+                Text="Sign Up!"
+                TextColor="#01260A"
+                FontFamily="OPTIMA_B"
+                Clicked="Button_Clicked"
+                >
+                
+            </Button>
         </HorizontalStackLayout>
 
         <Image Source="logopic.png"

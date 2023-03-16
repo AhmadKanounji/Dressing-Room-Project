@@ -1,1 +1,1 @@
-C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\Dressing Room.csproj;x64
+C:\Users\karim\OneDrive\سطح المكتب\Dressing-Room-Project\Dressing Room\Dressing Room.csproj;x64
