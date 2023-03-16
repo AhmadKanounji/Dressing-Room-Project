@@ -1,129 +1,147 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Dressing_Room.Signup"
-             Title="Signup"
-             BackgroundColor="#E2E2E2">
+<ContentPage
+    x:Class="Dressing_Room.Signup"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Signup"
+    BackgroundColor="#E2E2E2">
     <ScrollView>
-    <VerticalStackLayout>
-        <Grid>
-            <Image
-            Source="planttwo.png"
-            VerticalOptions="Start"
-            WidthRequest="430"
-            HeightRequest="220"
-            Aspect="Fill"
-            Opacity="0.7"/>
+        <VerticalStackLayout>
+            <Grid>
+                <Image
+                    Aspect="Fill"
+                    HeightRequest="220"
+                    Opacity="0.7"
+                    Source="planttwo.png"
+                    VerticalOptions="Start"
+                    WidthRequest="430" />
 
-            <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="0" >
+                <VerticalStackLayout
+                    Padding="0"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
 
-                <Label  Text="Dressing"
-                        FontFamily="Quora"
-                        TextColor="#01260A"
-                        HorizontalOptions="Center"
-                        FontSize="60"
+                    <Label
                         Padding="0"
-                   />
-                <Label  Text="Room"
                         FontFamily="Quora"
-                        TextColor="#01260A"
-                        HorizontalOptions="Center"
                         FontSize="60"
+                        HorizontalOptions="Center"
+                        Text="Dressing"
+                        TextColor="#01260A" />
+                    <Label
                         Padding="0"
-                />
+                        FontFamily="Quora"
+                        FontSize="60"
+                        HorizontalOptions="Center"
+                        Text="Room"
+                        TextColor="#01260A" />
 
-            </VerticalStackLayout>
-        </Grid>
-        <Label
-            Margin="36,23,0,0"
-            FontFamily="OPTIMA_B"
-            FontSize="40"
-            Text="Lets Create your E-Closet"
-            TextColor="#01260A"
-            />
-
-        <Label Text="SIGN UP" FontSize="22" FontFamily="OPTIMA_B" Margin="36,20,0,0"></Label>
-
-        <Border WidthRequest="350" 
-                HeightRequest="45"
-                StrokeThickness="1"
-                Stroke="#01260A"
-                Margin="0,20,3,0"
-                StrokeShape="RoundRectangle 20"
-                >
-            <Entry Placeholder="Username" FontAttributes="Italic" Keyboard="Email"></Entry>
-
-        </Border>
-        <Border WidthRequest="350" 
-                HeightRequest="45"
-                StrokeThickness="1"
-                Stroke="#01260A"
-                Margin="0,20,3,0"
-                StrokeShape="RoundRectangle 20"
-                >
-            <Entry Placeholder="Email" FontAttributes="Italic" Keyboard="Email"></Entry>
-
-        </Border>
-        <Border WidthRequest="350" 
-                HeightRequest="45"
-                StrokeThickness="1"
-                Stroke="#01260A"
-                Margin="0,20,3,0"
-                StrokeShape="RoundRectangle 20"
-                >
-            <Entry Placeholder="Password " FontAttributes="Italic" Keyboard="Email"></Entry>
-
-        </Border>
-        <Border WidthRequest="350" 
-                HeightRequest="45"
-                StrokeThickness="1"
-                Stroke="#01260A"
-                Margin="0,20,3,0"
-                StrokeShape="RoundRectangle 20"
-                >
-            <Entry Placeholder=" Confirm Password " FontAttributes="Italic" Keyboard="Email"></Entry>
-
-        </Border>
-
-        <Button Text="Create My E-Closet"
-                Background="#01260A"
-                WidthRequest="360"
-                HeightRequest="50"
-                CornerRadius="20"
-                Margin="0,20,0,0"
-                Clicked="Button_Clicked_1"></Button>
-
-        <HorizontalStackLayout HorizontalOptions="Center" Margin="0,20,0,0">
-            <Label Text="Already have an account?"
-                   FontFamily="OPTIMA"
-                   HeightRequest="17"
-
-                   ></Label>
-            <Button 
-                Padding="4"
-                BackgroundColor="#E2E2E2"
-                BorderColor="Black"
-                BorderWidth="0"
-                Text="Sign In!"
-                TextColor="#01260A"
+                </VerticalStackLayout>
+            </Grid>
+            <Label
+                Margin="36,23,0,0"
                 FontFamily="OPTIMA_B"
-                Clicked="Button_Clicked"
-                
-                >
+                FontSize="40"
+                Text="Lets Create your E-Closet"
+                TextColor="#01260A" />
 
-            </Button>
-        </HorizontalStackLayout>
+            <Label
+                Margin="36,20,0,0"
+                FontFamily="OPTIMA_B"
+                FontSize="22"
+                Text="SIGN UP" />
 
-        <Image Source="logopic.png"
-                VerticalOptions="End"
-                HorizontalOptions="End"
-                WidthRequest="400"
-                HeightRequest="300"
-                BackgroundColor="#E2E2E2"
+            <Border
+                Margin="0,20,3,0"
+                HeightRequest="45"
+                Stroke="#01260A"
+                StrokeShape="RoundRectangle 20"
+                StrokeThickness="1"
+                WidthRequest="350">
+                <Entry
+                    FontAttributes="Italic"
+                    Keyboard="Email"
+                    Placeholder="Username" />
+
+            </Border>
+            <Border
+                Margin="0,20,3,0"
+                HeightRequest="45"
+                Stroke="#01260A"
+                StrokeShape="RoundRectangle 20"
+                StrokeThickness="1"
+                WidthRequest="350">
+                <Entry
+                    FontAttributes="Italic"
+                    Keyboard="Email"
+                    Placeholder="Email" />
+
+            </Border>
+            <Border
+                Margin="0,20,3,0"
+                HeightRequest="45"
+                Stroke="#01260A"
+                StrokeShape="RoundRectangle 20"
+                StrokeThickness="1"
+                WidthRequest="350">
+                <Entry
+                    FontAttributes="Italic"
+                    Keyboard="Email"
+                    Placeholder="Password " />
+
+            </Border>
+            <Border
+                Margin="0,20,3,0"
+                HeightRequest="45"
+                Stroke="#01260A"
+                StrokeShape="RoundRectangle 20"
+                StrokeThickness="1"
+                WidthRequest="350">
+                <Entry
+                    FontAttributes="Italic"
+                    Keyboard="Email"
+                    Placeholder=" Confirm Password " />
+
+            </Border>
+
+            <Button
                 Margin="0,20,0,0"
-                
-                >
-        </Image>
-    </VerticalStackLayout>
+                Background="#01260A"
+                Clicked="Button_Clicked_1"
+                CornerRadius="20"
+                HeightRequest="50"
+                Text="Create My E-Closet"
+                WidthRequest="360" />
+            <HorizontalStackLayout Margin="0,20,0,0" HorizontalOptions="Center">
+
+                <RadioButton Content="Male" />
+                <RadioButton Content="Female" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Margin="0,20,0,0" HorizontalOptions="Center">
+                <Label
+                    FontFamily="OPTIMA"
+                    HeightRequest="17"
+                    Text="Already have an account?" />
+                <Button
+                    Padding="4"
+                    BackgroundColor="#E2E2E2"
+                    BorderColor="Black"
+                    BorderWidth="0"
+                    Clicked="Button_Clicked"
+                    FontFamily="OPTIMA_B"
+                    Text="Sign In!"
+                    TextColor="#01260A" />
+            </HorizontalStackLayout>
+
+            <Image
+                Margin="0,20,0,0"
+                BackgroundColor="#E2E2E2"
+                HeightRequest="300"
+                HorizontalOptions="End"
+                Source="logopic.png"
+                VerticalOptions="End"
+                WidthRequest="400" />
+        </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
