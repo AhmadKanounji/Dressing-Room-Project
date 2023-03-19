@@ -7,8 +7,8 @@ namespace Dressing_Room.Services
 	public class SignUpService
 	{
 
-        public static SQLiteAsyncConnection db;
-        static async Task Init()
+        public  SQLiteAsyncConnection db;
+         async Task Init()
         {
             if (db != null) return;
 
@@ -18,7 +18,7 @@ namespace Dressing_Room.Services
             await db.CreateTableAsync<User>();
         }
 
-        static public async Task AddUser(User user)
+         public async Task AddUser(User user)
         {
             await Init();
             await db.InsertAsync(user);
@@ -27,7 +27,7 @@ namespace Dressing_Room.Services
 
         }
 
-        public static async Task<List<User>> GetUser()
+        public  async Task<List<User>> GetUser()
         {
             await Init();
             var result = await db.Table<User>().ToListAsync(); // This gets all the user in the database

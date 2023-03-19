@@ -10,6 +10,12 @@ namespace Dressing_Room.ViewModels
 	public partial class SignupViewModel: ObservableObject
 
 	{
+        //Initializing the service
+        private SignUpService service;
+        public SignupViewModel(SignUpService s)
+        {
+            service = s;
+        }
         
 
 		[ObservableProperty]
@@ -35,7 +41,24 @@ namespace Dressing_Room.ViewModels
         [RelayCommand]
         async Task Gotowardrobe()
         {
-             string gender= null;
+            //Checking if any of the fields are empty
+            var fields = new List<string>();
+            fields.Add(Email);
+            fields.Add(Password);
+            fields.Add(Confirmpass);
+            fields.Add(Email);
+
+            foreach(string s in fields)
+            {
+                if (s == null)
+                {
+                    await Shell.Current.DisplayAlert("Uh Oh", "Please enter all fields.", "Exit");
+                    return;
+                }
+            }
+
+
+            string gender= null;
             //check if the gender is checked:
             if (Male == true)
             {
@@ -49,6 +72,7 @@ namespace Dressing_Room.ViewModels
             else
             {
                 await Shell.Current.DisplayAlert("Uh Oh", "Select a gender.", "Exit");
+                return;
             }
             //Checking if the passwords match:
             if (Password != Confirmpass)
@@ -67,7 +91,7 @@ namespace Dressing_Room.ViewModels
                 Gender = gender
 
             };
-            await SignUpService.AddUser(user);
+            await service.AddUser(user);
             await Shell.Current.DisplayAlert("Success!", "Welcome to your wardrobe", "Exit");
 
             await Shell.Current.GoToAsync(nameof(WardrobePage));
