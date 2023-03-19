@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="Dressing_Room.Signup"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="Signup"
+    xmlns:viewmodel="clr-namespace:Dressing_Room.ViewModels"
+    x:DataType="viewmodel:SignupViewModel"
+    Title="Sign Up"
+    Shell.NavBarIsVisible="True"
+    Shell.BackgroundColor="#01260A"
     BackgroundColor="#E2E2E2">
     <ScrollView>
         <VerticalStackLayout>
@@ -61,7 +65,8 @@
                 <Entry
                     FontAttributes="Italic"
                     Keyboard="Email"
-                    Placeholder="Username" />
+                    Placeholder="Username"
+                    Text="{Binding Name}"/>
 
             </Border>
             <Border
@@ -74,7 +79,8 @@
                 <Entry
                     FontAttributes="Italic"
                     Keyboard="Email"
-                    Placeholder="Email" />
+                    Placeholder="Email"
+                    Text="{Binding Email}"/>
 
             </Border>
             <Border
@@ -87,7 +93,8 @@
                 <Entry
                     FontAttributes="Italic"
                     Keyboard="Email"
-                    Placeholder="Password " />
+                    Placeholder="Password "
+                    Text="{Binding Password}"/>
 
             </Border>
             <Border
@@ -100,18 +107,19 @@
                 <Entry
                     FontAttributes="Italic"
                     Keyboard="Email"
-                    Placeholder=" Confirm Password " />
+                    Placeholder=" Confirm Password "
+                    Text="{Binding Confirmpass}"/>
 
             </Border>
 
             <Button
                 Margin="0,20,0,0"
                 Background="#01260A"
-                Clicked="Button_Clicked_1"
                 CornerRadius="20"
                 HeightRequest="50"
                 Text="Create My E-Closet"
-                WidthRequest="360" />
+                WidthRequest="360"
+                Command="{Binding GotowardrobeCommand}"/>
             <HorizontalStackLayout Margin="0,20,0,0" HorizontalOptions="Center">
 
                 <RadioButton Content="Male" />
@@ -128,10 +136,10 @@
                     BackgroundColor="#E2E2E2"
                     BorderColor="Black"
                     BorderWidth="0"
-                    Clicked="Button_Clicked"
                     FontFamily="OPTIMA_B"
                     Text="Sign In!"
-                    TextColor="#01260A" />
+                    TextColor="#01260A"
+                    Command="{Binding GobacktosigninCommand}"/>
             </HorizontalStackLayout>
 
             <Image

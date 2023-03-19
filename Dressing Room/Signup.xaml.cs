@@ -1,19 +1,12 @@
+using Dressing_Room.ViewModels;
+
 namespace Dressing_Room;
 
 public partial class Signup : ContentPage
 {
-	public Signup()
+	public Signup(SignupViewModel signupvm) 
 	{
 		InitializeComponent();
+        this.BindingContext = signupvm;
 	}
-
-    private void Button_Clicked(object sender, EventArgs e)
-    {
-	 Navigation.PopAsync();
-    }
-
-    private void Button_Clicked_1(object sender, EventArgs e)
-    {
-        Navigation.PushAsync(new WardrobePage());
-    }
 }

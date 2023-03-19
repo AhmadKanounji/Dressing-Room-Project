@@ -12,9 +12,41 @@
 		<data>
 		XeNJCWAjipe3f59TxQGWtSCBAQI=
 		</data>
+		<key>Resources/Fonts/OPTIMA_B.TTF</key>
+		<data>
+		QtXXhlFuSwcrL2FOwzIeL8f0sLY=
+		</data>
+		<key>Resources/Fonts/Quora.ttf</key>
+		<data>
+		RRMFxL2OkmEg0PZN7QdHGLAkDn0=
+		</data>
+		<key>Resources/Images/logo.png</key>
+		<data>
+		30YJa25Aw/nBj+DxU6iXLvY6rr8=
+		</data>
+		<key>Resources/Images/logopic.png</key>
+		<data>
+		KMet5j5Jq1bG3iYeRJL6cdvN7Y4=
+		</data>
+		<key>Resources/Images/planttwo.png</key>
+		<data>
+		9td4iTjKr3eCU4Vc2qroJM9DuRg=
+		</data>
+		<key>Resources/MauiInfo.plist</key>
+		<data>
+		8VdCoEXb7olJtLroqn+3UEo6Nj4=
+		</data>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
 		<data>
 		oowkf1sL6T19nanXUObgmuayWqM=
+		</data>
+		<key>Resources/OPTIMA.TTF</key>
+		<data>
+		DQr/vZ6IL2sqWzysK8cRzgjiSCM=
+		</data>
+		<key>Resources/OPTIMA_B.TTF</key>
+		<data>
+		QtXXhlFuSwcrL2FOwzIeL8f0sLY=
 		</data>
 		<key>Resources/OpenSans-Regular.ttf</key>
 		<data>
@@ -23,6 +55,14 @@
 		<key>Resources/OpenSans-Semibold.ttf</key>
 		<data>
 		Go/BMxp0ylCUGfzbuKQ0zteazW4=
+		</data>
+		<key>Resources/Quora.ttf</key>
+		<data>
+		RRMFxL2OkmEg0PZN7QdHGLAkDn0=
+		</data>
+		<key>Resources/accessories.png</key>
+		<data>
+		PXLr4u+15giB8crn3KRMVb7+Go0=
 		</data>
 		<key>Resources/appicon.icns</key>
 		<data>
@@ -40,21 +80,92 @@
 		<data>
 		AgG9OaBqGlLlSsDbnE/6b1bb0xU=
 		</data>
+		<key>Resources/hanger.png</key>
+		<data>
+		URDTIcb6vK6NB3m8YjDw9h5GELI=
+		</data>
+		<key>Resources/hanger1.jpg</key>
+		<data>
+		/85h/nr8qAahIZ7LPUS24oCf4kQ=
+		</data>
+		<key>Resources/homepage.png</key>
+		<data>
+		ejsgcBwTRPJOMAvPGXWy4WsW0us=
+		</data>
+		<key>Resources/homepage2.png</key>
+		<data>
+		UQUTWa3LNobNlumiPFOX0kFjAUM=
+		</data>
+		<key>Resources/jacke.png</key>
+		<data>
+		UgusJR8pMyDRTze0KbyeFtecyRc=
+		</data>
+		<key>Resources/logo.png</key>
+		<data>
+		30YJa25Aw/nBj+DxU6iXLvY6rr8=
+		</data>
+		<key>Resources/logopic.png</key>
+		<data>
+		KMet5j5Jq1bG3iYeRJL6cdvN7Y4=
+		</data>
+		<key>Resources/outfits.jpg</key>
+		<data>
+		bZ6bXE5CkKOWRr7322//PVJJZ5E=
+		</data>
+		<key>Resources/pant.png</key>
+		<data>
+		a6iY6nxjhF6Z0bkN8wd+5zf6uv4=
+		</data>
+		<key>Resources/planttwo.png</key>
+		<data>
+		9td4iTjKr3eCU4Vc2qroJM9DuRg=
+		</data>
+		<key>Resources/plussign.png</key>
+		<data>
+		CAEPkLuGSxZ8U3C5I+i0kxFapI0=
+		</data>
+		<key>Resources/profilepic.png</key>
+		<data>
+		YHBFgGXWwELtUk62PcPJU46ynh0=
+		</data>
+		<key>Resources/setting.png</key>
+		<data>
+		zm8IoF1CoVSRsgAZSw7kdHQWeR8=
+		</data>
+		<key>Resources/settings.png</key>
+		<data>
+		I51yX/tB6NbzXQyvzp5FqX9hN7M=
+		</data>
+		<key>Resources/shoe.png</key>
+		<data>
+		UHIB6Z9ecb9KyWRiWOTMeuN3jYg=
+		</data>
+		<key>Resources/top.png</key>
+		<data>
+		wPn9NotESjGNiVVxfERBbjI6Bmk=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>MonoBundle/CommunityToolkit.Mvvm.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZdC70jHEKi0+I0r1FTTj/23Iyvsb7SVj3Y78fa45r8o=
+			</data>
+		</dict>
 		<key>MonoBundle/Dressing Room.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yU+n8CazLPLFDeqkxvciJHGYwF39cHvLZRghqkvp66g=
+			DOb5Dkw3IeiaMPX9OutFOSq5eZAbmFDX2R0kfwWwWRg=
 			</data>
 		</dict>
 		<key>MonoBundle/Dressing Room.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IBZsrEREn+Imq+krxk38tcNGteAhb5OCQ7BVfLHjn2k=
+			9SgMkXNvau1t34yxrlKRP2Zn6XI1ff/Hg2IOyhmi9yg=
 			</data>
 		</dict>
 		<key>MonoBundle/Microsoft.CSharp.dll</key>
@@ -202,6 +313,41 @@
 			<key>hash2</key>
 			<data>
 			AxXqrjACF5FrHTsChKd4nVBprfYqHtgXthXnZ60blQM=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLite-net.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			G0Du6FIHrGQku+Pmrey48gKNhArHSSzdTDxdZdMFkb4=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLitePCLRaw.batteries_v2.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CfW9YSGfunnLgdH6QG8jwazapaObRUXq87nPs7OG2sU=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLitePCLRaw.core.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yRcyT6bqHwOGzBQK2R/Pq5DiOF0McLYibBg0/tELlzI=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLitePCLRaw.nativelibrary.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k6kuHu1PdUyKSs86EqhbgqnTWUwFcJhnu6p9u0PbP/k=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLitePCLRaw.provider.dynamic_cdecl.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RlKEwOHpxJVVOfepV31LUzLidIEBdD+JNMaY+mJgmRE=
 			</data>
 		</dict>
 		<key>MonoBundle/System.AppContext.dll</key>
@@ -1422,11 +1568,67 @@
 			jxdtgqkMJEyuNwZZSFxELD/Kt3Zu2RhwpGEO2sOawo4=
 			</data>
 		</dict>
+		<key>Resources/Fonts/OPTIMA_B.TTF</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5M5kXD4PnA4IEynENLLF4SKnkQej7omzEZZCpnKSvj4=
+			</data>
+		</dict>
+		<key>Resources/Fonts/Quora.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			H0rps2RFcT0QGudktlEykR7B/TTGzc/X6n/MlZ8DP0U=
+			</data>
+		</dict>
+		<key>Resources/Images/logo.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RPqy5PTIxoAZjsahI9mZA3iVOINXtGjk9TUZdtMtHSA=
+			</data>
+		</dict>
+		<key>Resources/Images/logopic.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TxtBMBnmH4LrE+Fjje1hMgWOjd9ZuIdZwQDKYp8A2pw=
+			</data>
+		</dict>
+		<key>Resources/Images/planttwo.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mD7NXKrkFpLmG5mF/5A4xtr+eldDayjgjrVi8y8bYTE=
+			</data>
+		</dict>
+		<key>Resources/MauiInfo.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OXsX0UJqximmgDgy9oTeX/CekZfFNNp4frN6FoDuawo=
+			</data>
+		</dict>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			RS51BO98d+zhJWK1abJOyD5jB4nYJnWJPtL2DZyA/zw=
+			</data>
+		</dict>
+		<key>Resources/OPTIMA.TTF</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1U60tACpvxNOJTelAAmO0heXeO0mCnmxS1E0ThgDr4E=
+			</data>
+		</dict>
+		<key>Resources/OPTIMA_B.TTF</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5M5kXD4PnA4IEynENLLF4SKnkQej7omzEZZCpnKSvj4=
 			</data>
 		</dict>
 		<key>Resources/OpenSans-Regular.ttf</key>
@@ -1441,6 +1643,20 @@
 			<key>hash2</key>
 			<data>
 			SSg9S4gTjYiN9IvztYIMNE/V0QSrT77fBYhYYwcaWoo=
+			</data>
+		</dict>
+		<key>Resources/Quora.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			H0rps2RFcT0QGudktlEykR7B/TTGzc/X6n/MlZ8DP0U=
+			</data>
+		</dict>
+		<key>Resources/accessories.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fC/VD2KWPbgkNzzHW1xZlTCy0QvfRMOlLEgPtFzSsrE=
 			</data>
 		</dict>
 		<key>Resources/appicon.icns</key>
@@ -1469,6 +1685,118 @@
 			<key>hash2</key>
 			<data>
 			06Dw48r2qORp1zVQzu1FMEqEQpN18taU/bp0JACYc40=
+			</data>
+		</dict>
+		<key>Resources/hanger.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			S4kPYswc1dN6YMyHr9o2iDKFOtb/w65iQRfk82fQWLU=
+			</data>
+		</dict>
+		<key>Resources/hanger1.jpg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZQv5YU3Dn1gmNLFFxxpwTELts7iwkjdGiKtNwodhSq4=
+			</data>
+		</dict>
+		<key>Resources/homepage.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JHpbd6Nhuv+oPAlE7l/x7JSHyYH74Vv+HPRw+/UiXKw=
+			</data>
+		</dict>
+		<key>Resources/homepage2.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZRnvvkLm4b8hE51ALzh82wdP+zAEw7g9fpTiuRWEaTM=
+			</data>
+		</dict>
+		<key>Resources/jacke.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LPHQu72JVS7t+IfohWVbK5Z3K2KgaovoIW/VrfuC3Yw=
+			</data>
+		</dict>
+		<key>Resources/logo.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RPqy5PTIxoAZjsahI9mZA3iVOINXtGjk9TUZdtMtHSA=
+			</data>
+		</dict>
+		<key>Resources/logopic.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TxtBMBnmH4LrE+Fjje1hMgWOjd9ZuIdZwQDKYp8A2pw=
+			</data>
+		</dict>
+		<key>Resources/outfits.jpg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xB41qXhPQgS+2Fo9iPuZaVnyHvyAUyjNami9xMax8I8=
+			</data>
+		</dict>
+		<key>Resources/pant.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			e1FBUYWhBkwR8g5B5ANXNft96RarPRGIKHDU2yYjbJ0=
+			</data>
+		</dict>
+		<key>Resources/planttwo.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mD7NXKrkFpLmG5mF/5A4xtr+eldDayjgjrVi8y8bYTE=
+			</data>
+		</dict>
+		<key>Resources/plussign.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7TAD3Wx6dTcQghB5jIrAEfe1MyQMYg8Ph/flJVMUjJE=
+			</data>
+		</dict>
+		<key>Resources/profilepic.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oQVV9eAiHPWcLLNToxnu7V8MIy3I+u5LWRDw2MhfowE=
+			</data>
+		</dict>
+		<key>Resources/setting.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vUGKbEGEbrTijQHP1K9a08I/VbmwzCvxOGAg8Ek3l7Y=
+			</data>
+		</dict>
+		<key>Resources/settings.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XXTKANUTEX8Lkgn27eV6WWaVjDhaCrgg6hsXkulZ8Z0=
+			</data>
+		</dict>
+		<key>Resources/shoe.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Hd8S6zdzFC1f5/PAQPNJ1GbQQjdRHG5Ftoh6oRfx4Ms=
+			</data>
+		</dict>
+		<key>Resources/top.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AGlp9g5Yi7VGXljvHZy5OKE1Sawdb16LGfHumQeRW34=
 			</data>
 		</dict>
 	</dict>

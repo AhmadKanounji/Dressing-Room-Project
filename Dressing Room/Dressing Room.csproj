@@ -54,6 +54,7 @@
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -72,6 +73,9 @@
 	  <None Remove="Resources\Images\settings.png" />
 	  <None Remove="Resources\Images\shoe.png" />
 	  <None Remove="Resources\Images\top.png" />
+	  <None Remove="Models\" />
+	  <None Remove="ViewModels\" />
+	  <None Remove="Services\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Fonts\OPTIMA_B.TTF" />
@@ -105,5 +109,10 @@
 	  <MauiXaml Update="WardrobePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Models\" />
+	  <Folder Include="ViewModels\" />
+	  <Folder Include="Services\" />
 	</ItemGroup>
 </Project>

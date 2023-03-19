@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Dressing_Room.ViewModels;
+using Microsoft.Extensions.Logging;
 
 namespace Dressing_Room;
 
@@ -21,6 +22,17 @@ public static class MauiProgram
 #if DEBUG
         builder.Logging.AddDebug();
 #endif
+
+		//view
+
+		builder.Services.AddSingleton<MainPage>();
+		builder.Services.AddSingleton<Signup>();
+
+
+		//viewmodel
+		builder.Services.AddSingleton<SignupViewModel>();
+		builder.Services.AddSingleton<MainPageViewModel>();
+		
 
 		return builder.Build();
 	}

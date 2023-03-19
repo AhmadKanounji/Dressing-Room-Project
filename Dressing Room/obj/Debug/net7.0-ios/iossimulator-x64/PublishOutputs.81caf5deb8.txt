@@ -1,4 +1,5 @@
 /Users/serena/Desktop/Dressing-Room-Project/Dressing Room/bin/Debug/net7.0-ios/iossimulator-x64/publish/../Dressing Room.app/icudt.dat
+/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/bin/Debug/net7.0-ios/iossimulator-x64/publish/../Dressing Room.app/CommunityToolkit.Mvvm.dll
 /Users/serena/Desktop/Dressing-Room-Project/Dressing Room/bin/Debug/net7.0-ios/iossimulator-x64/publish/../Dressing Room.app/Microsoft.Extensions.Configuration.dll
 /Users/serena/Desktop/Dressing-Room-Project/Dressing Room/bin/Debug/net7.0-ios/iossimulator-x64/publish/../Dressing Room.app/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/serena/Desktop/Dressing-Room-Project/Dressing Room/bin/Debug/net7.0-ios/iossimulator-x64/publish/../Dressing Room.app/Microsoft.Extensions.DependencyInjection.dll

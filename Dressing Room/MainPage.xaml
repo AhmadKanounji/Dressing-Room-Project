@@ -2,6 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Dressing_Room.MainPage"
+             xmlns:viewmodel="clr-namespace:Dressing_Room.ViewModels"
+             x:DataType="viewmodel:MainPageViewModel"
              BackgroundColor="#E2E2E2"
              Shell.NavBarIsVisible="True"
              Shell.BackgroundColor="#01260A"
@@ -53,7 +55,7 @@
                 Margin="0,20,3,0"
                 StrokeShape="RoundRectangle 20"
                 >
-            <Entry Placeholder="E-Mail" FontAttributes="Italic" Keyboard="Email"></Entry>
+            <Entry Placeholder="E-Mail" FontAttributes="Italic" Keyboard="Email" Text="{Binding Mail}"></Entry>
           
         </Border>
         <Border WidthRequest="350" 
@@ -63,7 +65,7 @@
                 Margin="0,20,3,0"
                 StrokeShape="RoundRectangle 20"
                 >
-            <Entry Placeholder="Password " FontAttributes="Italic" Keyboard="Email"></Entry>
+            <Entry Placeholder="Password " FontAttributes="Italic" Keyboard="Email" Text="{Binding Password}"></Entry>
 
         </Border>
 
@@ -73,7 +75,8 @@
                 HeightRequest="50"
                 CornerRadius="20"
                 Margin="0,20,0,0"
-                Clicked="Button_Clicked_1"
+          
+                
                 
                 ></Button>
 
@@ -91,7 +94,7 @@
                 Text="Sign Up!"
                 TextColor="#01260A"
                 FontFamily="OPTIMA_B"
-                Clicked="Button_Clicked"
+                Command="{Binding GotosignupCommand}"
                 >
                 
             </Button>

@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Dressing_Room.WardrobePage"
              BackgroundColor="#E2E2E2"
-             Title=""
+             Title="My W"
              NavigationPage.HasNavigationBar="False"
+             Shell.NavBarIsVisible="True"
+             Shell.BackgroundColor="#01260A"
              >
     <FlexLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <ScrollView HorizontalOptions="Start" >

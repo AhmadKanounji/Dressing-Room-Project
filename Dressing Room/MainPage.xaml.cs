@@ -1,22 +1,15 @@
-﻿namespace Dressing_Room;
+﻿using Dressing_Room.ViewModels;
+
+namespace Dressing_Room;
 
 public partial class MainPage : ContentPage
 {
 	
 
-	public MainPage()
+	public MainPage(MainPageViewModel mainpagevm)
 	{
 		InitializeComponent();
+		this.BindingContext= mainpagevm;
 	}
-
-    private void Button_Clicked(object sender, EventArgs e)
-    {
-		Navigation.PushAsync(new Signup());
-    }
-
-    private void Button_Clicked_1(object sender, EventArgs e)
-    {
-        Navigation.PushAsync(new WardrobePage());
-    }
 }
 
