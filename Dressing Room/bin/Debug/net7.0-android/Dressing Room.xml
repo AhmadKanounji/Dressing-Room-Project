@@ -28,6 +28,12 @@
         <member name="P:Dressing_Room.ViewModels.SignupViewModel.Confirmpass">
             <inheritdoc cref="F:Dressing_Room.ViewModels.SignupViewModel.confirmpass"/>
         </member>
+        <member name="P:Dressing_Room.ViewModels.SignupViewModel.Male">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.SignupViewModel.male"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.SignupViewModel.Female">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.SignupViewModel.female"/>
+        </member>
         <member name="F:Dressing_Room.ViewModels.SignupViewModel.gotowardrobeCommand">
             <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.SignupViewModel.GotowardrobeCommand"/>.</summary>
         </member>

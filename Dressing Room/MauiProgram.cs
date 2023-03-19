@@ -1,4 +1,5 @@
-﻿using Dressing_Room.ViewModels;
+﻿using Dressing_Room.Services;
+using Dressing_Room.ViewModels;
 using Microsoft.Extensions.Logging;
 
 namespace Dressing_Room;
@@ -32,6 +33,9 @@ public static class MauiProgram
 		//viewmodel
 		builder.Services.AddSingleton<SignupViewModel>();
 		builder.Services.AddSingleton<MainPageViewModel>();
+
+		// services
+		builder.Services.AddSingleton<SignUpService>();
 		
 
 		return builder.Build();

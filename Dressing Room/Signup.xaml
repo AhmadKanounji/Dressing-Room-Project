@@ -111,7 +111,11 @@
                     Text="{Binding Confirmpass}"/>
 
             </Border>
+            <HorizontalStackLayout Margin="0,20,0,0" HorizontalOptions="Center">
 
+                <RadioButton Content="Male" IsChecked="{Binding Male}"/>
+                <RadioButton Content="Female" IsChecked="{Binding Female}"/>
+            </HorizontalStackLayout>
             <Button
                 Margin="0,20,0,0"
                 Background="#01260A"
@@ -120,11 +124,7 @@
                 Text="Create My E-Closet"
                 WidthRequest="360"
                 Command="{Binding GotowardrobeCommand}"/>
-            <HorizontalStackLayout Margin="0,20,0,0" HorizontalOptions="Center">
-
-                <RadioButton Content="Male" />
-                <RadioButton Content="Female" />
-            </HorizontalStackLayout>
+            
 
             <HorizontalStackLayout Margin="0,20,0,0" HorizontalOptions="Center">
                 <Label
