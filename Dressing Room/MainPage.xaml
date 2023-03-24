@@ -75,7 +75,7 @@
                 HeightRequest="50"
                 CornerRadius="20"
                 Margin="0,20,0,0"
-          
+                Command="{Binding GotowardrobeCommand}"
                 
                 
                 ></Button>

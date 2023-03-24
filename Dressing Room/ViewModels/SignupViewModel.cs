@@ -82,6 +82,8 @@ namespace Dressing_Room.ViewModels
 
             }
 
+           
+
             var user = new User
             {
 
@@ -91,6 +93,23 @@ namespace Dressing_Room.ViewModels
                 Gender = gender
 
             };
+            // now we have to check if there exists a user with the same username:
+            var allUsers = await service.GetUser();
+            foreach(User x in allUsers)
+            {
+                if (x.Username == Name )
+                {
+                    await Shell.Current.DisplayAlert("Uh Oh", "Username already Exists! Please re-enter", "Exit");
+                    return;
+                }
+                if (x.Email == Email)
+                {
+                    await Shell.Current.DisplayAlert("Uh Oh", "Email is already in use! Please re-enter", "Exit");
+                    return;
+                }
+
+            }
+            
             await service.AddUser(user);
             await Shell.Current.DisplayAlert("Success!", "Welcome to your wardrobe", "Exit");
 
@@ -102,6 +121,8 @@ namespace Dressing_Room.ViewModels
         {
             await Shell.Current.GoToAsync("..");
         }
+
+        
 
      
 
