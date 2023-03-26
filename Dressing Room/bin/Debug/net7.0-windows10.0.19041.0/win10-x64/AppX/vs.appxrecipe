@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-24T13:08:46.493</Modified>
+      <Modified>2023-03-26T12:40:08.675</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-03-24T13:08:45.992</Modified>
+      <Modified>2023-03-26T12:40:08.037</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Dressing Room.runtimeconfig.json">
       <PackagePath>Dressing Room.runtimeconfig.json</PackagePath>
-      <Modified>2023-03-24T11:42:16.392</Modified>
+      <Modified>2023-03-26T12:38:18.214</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Dressing Room.dll">
       <PackagePath>Dressing Room.dll</PackagePath>
-      <Modified>2023-03-24T13:08:44.777</Modified>
+      <Modified>2023-03-26T12:40:06.651</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Dressing Room.exe</PackagePath>
-      <Modified>2023-03-24T13:08:44.788</Modified>
+      <Modified>2023-03-26T12:40:06.663</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\karim\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -948,7 +948,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Dressing Room.deps.json">
       <PackagePath>Dressing Room.deps.json</PackagePath>
-      <Modified>2023-03-24T13:08:46.263</Modified>
+      <Modified>2023-03-26T12:40:08.526</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.59\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

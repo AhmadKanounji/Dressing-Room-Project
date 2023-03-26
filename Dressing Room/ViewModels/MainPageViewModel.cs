@@ -46,7 +46,7 @@ namespace Dressing_Room.ViewModels
                     
                 }
             }
-            if(!done) await Shell.Current.DisplayAlert("Error", "Email does not exist. Please re-enter", "Exit");
+            if(!done) await Shell.Current.DisplayAlert("Error", "Invalid Credentials. Please re-enter", "Exit");
 
 
         }
