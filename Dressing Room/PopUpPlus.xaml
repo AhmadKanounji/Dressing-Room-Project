@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mopups:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
+             x:Class="Dressing_Room.PopUpPlus"
+             Title="PopUpPlus"
+             CloseWhenBackgroundIsClicked="True"
+                  BackgroundColor="#80000000"
+                  >
+    <VerticalStackLayout Spacing="15"  HorizontalOptions="Center" Margin="0,650,0,0" >
+        <StackLayout WidthRequest="175">
+            <Frame BackgroundColor="#01260A" CornerRadius="50" HorizontalOptions="Center" VerticalOptions="Center"
+               HeightRequest="30"  BorderColor="#01260A">
+                <Button Text="Add Items to Closet" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="#01260A"
+                   Clicked="OnImageClicked" >
+
+                </Button>
+            </Frame>
+        </StackLayout>
+        
+        <HorizontalStackLayout HeightRequest="30" WidthRequest="310" VerticalOptions="End"
+                           HorizontalOptions="Center" Spacing="10">
+            <Frame BackgroundColor="#01260A" CornerRadius="50" HorizontalOptions="Center" VerticalOptions="Center"
+               HeightRequest="30" WidthRequest="150" BorderColor="#01260A">
+                <Button Text="Create Outfits" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="#01260A"
+                       WidthRequest="150"  >
+
+                </Button>
+            </Frame>
+            <Frame BackgroundColor="#01260A" CornerRadius="50" HorizontalOptions="Center" VerticalOptions="Center" 
+               HeightRequest="30" WidthRequest="150" BorderColor="#01260A">
+                <Button Text="Generate Outfits" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="#01260A"
+                        WidthRequest="150" >
+
+                </Button>
+            </Frame>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+    
+</mopups:PopupPage>

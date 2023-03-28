@@ -1029,3 +1029,15 @@ C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-wi
 C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AsyncAwaitBestPractices.dll
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Mopups.dll
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SQLite-net.dll
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.batteries_v2.dll
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.core.dll
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\e_sqlite3.dll
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\hanger.scale-100.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\homepage2.scale-100.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\plussign.scale-100.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\profilepic.scale-100.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\setting.scale-100.png

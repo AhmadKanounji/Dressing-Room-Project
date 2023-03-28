@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\karim\\Downloads\\Dressing-Room-Project\\Dressing Room\\Dressing Room.csproj": {}
+    "C:\\Users\\user\\Documents\\GitHub\\Dressing-Room-Project\\Dressing Room\\Dressing Room.csproj": {}
   },
   "projects": {
-    "C:\\Users\\karim\\Downloads\\Dressing-Room-Project\\Dressing Room\\Dressing Room.csproj": {
+    "C:\\Users\\user\\Documents\\GitHub\\Dressing-Room-Project\\Dressing Room\\Dressing Room.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\karim\\Downloads\\Dressing-Room-Project\\Dressing Room\\Dressing Room.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\Dressing-Room-Project\\Dressing Room\\Dressing Room.csproj",
         "projectName": "Dressing Room",
-        "projectPath": "C:\\Users\\karim\\Downloads\\Dressing-Room-Project\\Dressing Room\\Dressing Room.csproj",
-        "packagesPath": "C:\\Users\\karim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\karim\\Downloads\\Dressing-Room-Project\\Dressing Room\\obj\\",
+        "projectPath": "C:\\Users\\user\\Documents\\GitHub\\Dressing-Room-Project\\Dressing Room\\Dressing Room.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Documents\\GitHub\\Dressing-Room-Project\\Dressing Room\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\karim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -94,6 +94,10 @@
               "version": "[7.0.59, )",
               "autoReferenced": true
             },
+            "Mopups": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
             "Xamarin.Android.Glide": {
               "target": "Package",
               "version": "[4.13.2.2, )",
@@ -151,7 +155,7 @@
             },
             "sqlite-net-pcl": {
               "target": "Package",
-              "version": "[1.8.116, )"
+              "version": "[1.9.141-beta, )"
             }
           },
           "imports": [
@@ -182,7 +186,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         },
         "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
@@ -220,9 +224,13 @@
               "version": "[7.0.59, )",
               "autoReferenced": true
             },
+            "Mopups": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
             "sqlite-net-pcl": {
               "target": "Package",
-              "version": "[1.8.116, )"
+              "version": "[1.9.141-beta, )"
             }
           },
           "imports": [
@@ -253,7 +261,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         },
         "net7.0-maccatalyst16.1": {
           "targetAlias": "net7.0-maccatalyst",
@@ -291,9 +299,13 @@
               "version": "[7.0.59, )",
               "autoReferenced": true
             },
+            "Mopups": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
             "sqlite-net-pcl": {
               "target": "Package",
-              "version": "[1.8.116, )"
+              "version": "[1.9.141-beta, )"
             }
           },
           "imports": [
@@ -325,7 +337,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         },
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041.0",
@@ -379,9 +391,13 @@
               "version": "[1.2.221209.1, )",
               "autoReferenced": true
             },
+            "Mopups": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
             "sqlite-net-pcl": {
               "target": "Package",
-              "version": "[1.8.116, )"
+              "version": "[1.9.141-beta, )"
             }
           },
           "imports": [
@@ -398,11 +414,11 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[7.0.4, 7.0.4]"
+              "version": "[7.0.3, 7.0.3]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[7.0.4, 7.0.4]"
+              "version": "[7.0.3, 7.0.3]"
             },
             {
               "name": "Microsoft.Windows.SDK.NET.Ref",
@@ -410,7 +426,7 @@
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[7.0.4, 7.0.4]"
+              "version": "[7.0.3, 7.0.3]"
             }
           ],
           "frameworkReferences": {
@@ -430,7 +446,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -446,7 +462,7 @@
         "android-x86": {
           "#import": []
         },
-        "iossimulator-x64": {
+        "ios-arm64": {
           "#import": []
         },
         "maccatalyst-x64": {

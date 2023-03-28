@@ -7,6 +7,7 @@
              BackgroundColor="#E2E2E2"
              Shell.NavBarIsVisible="True"
              Shell.BackgroundColor="#01260A"
+             NavigationPage.HasBackButton="False"
              Title="Sign In">
 
 <VerticalStackLayout>
