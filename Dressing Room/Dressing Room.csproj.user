@@ -18,6 +18,9 @@
     <MauiXaml Update="PopUpOne.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="PopUpTwo.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Signup.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

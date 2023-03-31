@@ -102,6 +102,10 @@
               "target": "Package",
               "version": "[1.1.1, )"
             },
+            "SQLiteNetExtensions.Async": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
             "Xamarin.Android.Glide": {
               "target": "Package",
               "version": "[4.13.2.2, )",
@@ -236,6 +240,10 @@
               "target": "Package",
               "version": "[1.1.1, )"
             },
+            "SQLiteNetExtensions.Async": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
             "sqlite-net-pcl": {
               "target": "Package",
               "version": "[1.9.141-beta, )"
@@ -314,6 +322,10 @@
             "Mopups": {
               "target": "Package",
               "version": "[1.1.1, )"
+            },
+            "SQLiteNetExtensions.Async": {
+              "target": "Package",
+              "version": "[2.1.0, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -410,6 +422,10 @@
             "Mopups": {
               "target": "Package",
               "version": "[1.1.1, )"
+            },
+            "SQLiteNetExtensions.Async": {
+              "target": "Package",
+              "version": "[2.1.0, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",

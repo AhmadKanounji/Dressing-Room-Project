@@ -38,6 +38,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.PopUpOne.xam
 build_metadata.AdditionalFiles.TargetPath = PopUpOne.xaml
 build_metadata.AdditionalFiles.RelativePath = PopUpOne.xaml
 
+[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/PopUpTwo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.PopUpTwo.xaml
+build_metadata.AdditionalFiles.TargetPath = PopUpTwo.xaml
+build_metadata.AdditionalFiles.RelativePath = PopUpTwo.xaml
+
 [C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Resources.Styles.Colors.xaml

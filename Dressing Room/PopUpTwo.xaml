@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mopups:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
+             x:Class="Dressing_Room.PopUpTwo"
+             Title="PopUpTwo"
+                 CloseWhenBackgroundIsClicked="True"
+                 BackgroundColor="Transparent">
+    <VerticalStackLayout VerticalOptions="Center" Spacing="10"
+                         Margin="0,240,0,0"
+                         
+                         WidthRequest="180">
+        <Border StrokeShape="RoundRectangle 20,20,20,20"
+                WidthRequest="175" StrokeThickness="1"
+                Stroke="#01260A"
+                
+                >
+            <Button BackgroundColor="#E2E2E2" Text="Add from camera roll" TextColor="#01260A" Padding="0" >
+
+            </Button>
+
+        </Border>
+        <Border StrokeShape="RoundRectangle 20,20,20,20"
+                WidthRequest="175" StrokeThickness="1"
+                Stroke="#01260A"
+                >
+            <Button BackgroundColor="#E2E2E2" Text="Take a photo" TextColor="#01260A" Padding="0" >
+
+            </Button>
+
+        </Border>
+
+    </VerticalStackLayout>
+</mopups:PopupPage>

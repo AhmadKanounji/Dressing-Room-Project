@@ -61,13 +61,13 @@ public partial class WardrobePage : ContentPage
 
 
 
-    private async void OnImage7Clicked(object sender, EventArgs e)
+    private void OnImage7Clicked(object sender, EventArgs e)
     {
         var imageButton = (ImageButton)sender;
         imageButton.Rotation=0;
-        await imageButton.RotateTo(45, 500);
-        await MopupService.Instance.PushAsync(new PopUpOne());
-        await imageButton.RotateTo(90, 500);
+        imageButton.RotateTo(90, 500);
+         MopupService.Instance.PushAsync(new PopUpOne());
+       
     }
 
 
