@@ -52,6 +52,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Maui" Version="5.0.0" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="Mopups" Version="1.1.1" />
@@ -63,6 +64,7 @@
 	  <None Remove="Resources\Fonts\OPTIMA_B.TTF" />
 	  <None Remove="Resources\Fonts\Quora.ttf" />
 	  <None Remove="Resources\Images\accessories.png" />
+	  <None Remove="Resources\Images\backbutton.png" />
 	  <None Remove="Resources\Images\hanger1.jpg" />
 	  <None Remove="Resources\Images\homepage.png" />
 	  <None Remove="Resources\Images\jacke.png" />
@@ -86,10 +88,7 @@
 	  <BundleResource Include="Resources\Images\planttwo.png" />
 	</ItemGroup>
 	<ItemGroup>
-	  <MauiXaml Update="PopUpAdd.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="PopUpPlus.xaml">
+	  <MauiXaml Update="PopUpOne.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Signup.xaml">

@@ -1,3 +1,4 @@
+using CommunityToolkit.Maui.Views;
 using Dressing_Room.Wardrobe_Extensions;
 using Mopups.Pages;
 using Mopups.Services;
@@ -23,38 +24,51 @@ public partial class WardrobePage : ContentPage
     }
     private async void OnImage1Clicked(object sender, EventArgs e)
     {
+        Routing.RegisterRoute(nameof(OutfitsPage),typeof(OutfitsPage));
         await Shell.Current.GoToAsync(nameof(OutfitsPage));
     }
 
-    private void OnImage2Clicked(object sender, EventArgs e)
+    private async void OnImage2Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new TopsPage());
+        Routing.RegisterRoute(nameof(TopsPage), typeof(TopsPage));
+        await Shell.Current.GoToAsync(nameof(TopsPage));
     }
 
-    private void OnImage3Clicked(object sender, EventArgs e)
+    private async void OnImage3Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new PantsPage());
+        Routing.RegisterRoute(nameof(PantsPage), typeof(PantsPage));
+        await Shell.Current.GoToAsync(nameof(PantsPage));
     }
 
-    private void OnImage4Clicked(object sender, EventArgs e)
+    private async void OnImage4Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new ShoesPage());
+        Routing.RegisterRoute(nameof(ShoesPage), typeof(ShoesPage));
+        await Shell.Current.GoToAsync(nameof(ShoesPage));
     }
-    private void OnImage5Clicked(object sender, EventArgs e)
+    private async void OnImage5Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new JacketsPage());
+        Routing.RegisterRoute(nameof(JacketsPage), typeof(JacketsPage));
+        await Shell.Current.GoToAsync(nameof(JacketsPage));
     }
 
-    private void OnImage6Clicked(object sender, EventArgs e)
+    private async void OnImage6Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new AccessoriesPage());
+        Routing.RegisterRoute(nameof(AccessoriesPage), typeof(AccessoriesPage));
+        await Shell.Current.GoToAsync(nameof(AccessoriesPage));
     }
+
+
+
+
+
     private async void OnImage7Clicked(object sender, EventArgs e)
     {
         var imageButton = (ImageButton)sender;
         imageButton.Rotation=0;
         await imageButton.RotateTo(45, 500);
-        await MopupService.Instance.PushAsync(new PopUpPlus());
+        var popup = new PopUpOne();
+        this.ShowPopup(popup);
+        await imageButton.RotateTo(45, 500);
     }
 
 

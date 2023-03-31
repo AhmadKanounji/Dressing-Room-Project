@@ -40,8 +40,11 @@ namespace Dressing_Room.ViewModels
             {
                 if (x.Email == Mail && x.Password==Password)
                 {   
+
                     done = true;
+                    Routing.RegisterRoute(nameof(WardrobePage), typeof(WardrobePage));
                     await Shell.Current.GoToAsync(nameof(WardrobePage));
+                    Routing.UnRegisterRoute(nameof(MainPage));
                     break;
                     
                 }

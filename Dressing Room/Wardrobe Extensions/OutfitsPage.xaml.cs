@@ -12,4 +12,10 @@ public partial class OutfitsPage : ContentPage
 
 		
 	}
+    private async void OnImageClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("//WardPage");
+
+
+    }
 }

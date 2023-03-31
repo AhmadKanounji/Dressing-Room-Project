@@ -15,6 +15,8 @@ namespace Dressing_Room.ViewModels
         public SignupViewModel(SignUpService s)
         {
             service = s;
+            
+            
         }
         
 
@@ -112,8 +114,12 @@ namespace Dressing_Room.ViewModels
             
             await service.AddUser(user);
             await Shell.Current.DisplayAlert("Success!", "Welcome to your wardrobe", "Exit");
+            
+            Routing.RegisterRoute(nameof(WardrobePage),typeof(WardrobePage));
 
             await Shell.Current.GoToAsync(nameof(WardrobePage));
+
+            Routing.UnRegisterRoute(nameof(Signup));
         }
 
         [RelayCommand]
@@ -121,6 +127,8 @@ namespace Dressing_Room.ViewModels
         {
             await Shell.Current.GoToAsync("..");
         }
+
+
 
         
 

@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "E9wD6uba6r6FtgXcicT90+CPIhy5XzF9DsvOD3J7/KBY2DxTJuz427AT27F4ooqUG5Wq1TsZDKiYvxbg0X8l2g==",
+  "dgSpecHash": "4eufzhObNWT/gR497KEr4dLdOfTyIWeL+kf175dfMXqUkkkN7ZkDRn7NACeP1EJPoi6gLZ8drmIVqELbA5Meig==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\Dressing-Room-Project\\Dressing Room\\Dressing Room.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\asyncawaitbestpractices\\6.0.4\\asyncawaitbestpractices.6.0.4.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\communitytoolkit.maui\\5.0.0\\communitytoolkit.maui.5.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\communitytoolkit.maui.core\\5.0.0\\communitytoolkit.maui.core.5.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\communitytoolkit.mvvm\\8.1.0\\communitytoolkit.mvvm.8.1.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",

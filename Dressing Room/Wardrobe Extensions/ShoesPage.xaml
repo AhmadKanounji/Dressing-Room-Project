@@ -2,11 +2,55 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Dressing_Room.Wardrobe_Extensions.ShoesPage"
-             Title="ShoesPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Shell.NavBarIsVisible="False">
+    <StackLayout >
+
+        <ScrollView VerticalOptions="FillAndExpand">
+
+            <VerticalStackLayout>
+                <Label  Text="Dressing Room" TextColor="#01260A" VerticalOptions="Center"  VerticalTextAlignment="Center" 
+                            HorizontalTextAlignment="Center" BackgroundColor="#E2E2E2"  
+                            FontSize="20" FontFamily="Quora" HeightRequest="53" HorizontalOptions="Fill">
+                </Label>
+
+                <Label   Text="Shoes" TextColor="#E2E2E2" 
+                            VerticalOptions="Center" VerticalTextAlignment="Center"  
+                            HorizontalTextAlignment="Center"  HorizontalOptions="Fill"
+                            FontSize="15" FontFamily="OPTIMA" HeightRequest="29"  BackgroundColor="#01260A"   >
+                </Label>
+
+            </VerticalStackLayout>
+
+
+
+        </ScrollView>
+        <Border BackgroundColor="#01260A" HeightRequest="53" StrokeShape="RoundRectangle 30,30,0,0" StrokeThickness="-1">
+            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="50">
+                <ImageButton Source="homepage2.png" HeightRequest="25" WidthRequest="30">
+
+                </ImageButton>
+                <VerticalStackLayout Spacing="2" VerticalOptions="Center">
+                    <ImageButton Source="hanger.png" HeightRequest="25" WidthRequest="30">
+
+                    </ImageButton>
+                    <Ellipse HeightRequest="8" WidthRequest="8" Fill="white" />
+                </VerticalStackLayout>
+
+                <Border   Padding="0" HeightRequest="35" WidthRequest="35" BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20">
+                    <ImageButton Source="plussign.png" HeightRequest="20" WidthRequest="20" >
+
+                    </ImageButton>
+                </Border>
+
+                <ImageButton Source="profilepic.png" HeightRequest="25" WidthRequest="30">
+
+                </ImageButton>
+                <ImageButton Source="setting.png" HeightRequest="25" WidthRequest="30">
+
+                </ImageButton>
+            </HorizontalStackLayout>
+
+        </Border>
+
+    </StackLayout>
 </ContentPage>
