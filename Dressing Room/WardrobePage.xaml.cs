@@ -66,9 +66,8 @@ public partial class WardrobePage : ContentPage
         var imageButton = (ImageButton)sender;
         imageButton.Rotation=0;
         await imageButton.RotateTo(45, 500);
-        var popup = new PopUpOne();
-        this.ShowPopup(popup);
-        await imageButton.RotateTo(45, 500);
+        await MopupService.Instance.PushAsync(new PopUpOne());
+        await imageButton.RotateTo(90, 500);
     }
 
 
