@@ -4,6 +4,15 @@
         <name>Dressing Room</name>
     </assembly>
     <members>
+        <member name="P:Dressing_Room.ViewModels.ClothViewModel.Type">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.ClothViewModel.type"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.ClothViewModel.Color">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.ClothViewModel.color"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.ClothViewModel.Categories">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.ClothViewModel.categories"/>
+        </member>
         <member name="P:Dressing_Room.ViewModels.MainPageViewModel.Mail">
             <inheritdoc cref="F:Dressing_Room.ViewModels.MainPageViewModel.mail"/>
         </member>

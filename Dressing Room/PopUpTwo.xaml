@@ -24,7 +24,7 @@
                 WidthRequest="175" StrokeThickness="1"
                 Stroke="#01260A"
                 >
-            <Button BackgroundColor="#E2E2E2" Text="Take a photo" TextColor="#01260A" Padding="0" >
+            <Button BackgroundColor="#E2E2E2" Text="Take a photo" TextColor="#01260A" Padding="0" Clicked="TakePhoto" >
 
             </Button>
 

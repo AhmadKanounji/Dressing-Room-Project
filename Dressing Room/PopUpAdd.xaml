@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mopup:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:mopup="clr-namespace:Mopups.Pages;assembly=Mopups"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:viewmodel="clr-namespace:Dressing_Room.ViewModels"
+             x:DataType="viewmodel:ClothViewModel"
+             x:Class="Dressing_Room.PopUpAdd"
+             Title="PopUpAdd"
+             BackgroundColor="#80000000"
+    
+              >
+    <Border StrokeShape="RoundRectangle 20,20,20,20" HeightRequest="160" WidthRequest="250">
+        <VerticalStackLayout BackgroundColor="White">
+            <Entry Placeholder="Color"
+                TextColor="#01260A"
+               PlaceholderColor="#01260A"
+               Text="{Binding Color}"
+               >
+
+            </Entry>
+            <Picker x:Name="myPicker" Title="Categories" TextColor="#01260A" SelectedItem="{Binding Categories}">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Tops</x:String>
+                        <x:String>Pants</x:String>
+                        <x:String>Shoes</x:String>
+                        <x:String>Jackets</x:String>
+                        <x:String>Accessories</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Entry Placeholder="Type" 
+                TextColor="#01260A"
+                PlaceholderColor="#01260A"
+                Text="{Binding Type}"
+               >
+
+            </Entry>
+        </VerticalStackLayout>
+    </Border>
+</mopup:PopupPage>

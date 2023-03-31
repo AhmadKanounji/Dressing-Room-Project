@@ -89,6 +89,9 @@
 	  <BundleResource Include="Resources\Images\planttwo.png" />
 	</ItemGroup>
 	<ItemGroup>
+	  <MauiXaml Update="PopUpAdd.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="PopUpOne.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -119,8 +122,5 @@
 	  <MauiXaml Update="WardrobePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	</ItemGroup>
-	<ItemGroup>
-	  <Folder Include="ViewModels\" />
 	</ItemGroup>
 </Project>

@@ -1,4 +1,5 @@
 using CommunityToolkit.Maui.Views;
+using Dressing_Room.ViewModels;
 using Dressing_Room.Wardrobe_Extensions;
 using Mopups.Pages;
 using Mopups.Services;
@@ -16,6 +17,7 @@ public partial class WardrobePage : ContentPage
     public WardrobePage()
     {
         InitializeComponent();
+     
     }
     protected override bool OnBackButtonPressed()
     {
