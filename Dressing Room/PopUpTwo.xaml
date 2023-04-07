@@ -2,7 +2,9 @@
 <mopups:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
+             
              x:Class="Dressing_Room.PopUpTwo"
+                  
              Title="PopUpTwo"
                  CloseWhenBackgroundIsClicked="True"
                  BackgroundColor="Transparent">
@@ -24,11 +26,15 @@
                 WidthRequest="175" StrokeThickness="1"
                 Stroke="#01260A"
                 >
-            <Button BackgroundColor="#E2E2E2" Text="Take a photo" TextColor="#01260A" Padding="0" Clicked="TakePhoto" >
+            <Button BackgroundColor="#E2E2E2" Text="Take a photo" TextColor="#01260A" Padding="0" Clicked="Button_Clicked"
+                    >
+               
 
             </Button>
+            
 
         </Border>
+      
 
     </VerticalStackLayout>
 </mopups:PopupPage>

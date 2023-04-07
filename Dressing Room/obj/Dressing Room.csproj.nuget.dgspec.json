@@ -151,6 +151,10 @@
               "version": "[1.1.0-alpha03, )",
               "autoReferenced": true
             },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.5, )"
+            },
             "Xamarin.Google.Android.Material": {
               "target": "Package",
               "version": "[1.7.0, )",
@@ -244,6 +248,10 @@
               "target": "Package",
               "version": "[2.1.0, )"
             },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.5, )"
+            },
             "sqlite-net-pcl": {
               "target": "Package",
               "version": "[1.9.141-beta, )"
@@ -326,6 +334,10 @@
             "SQLiteNetExtensions.Async": {
               "target": "Package",
               "version": "[2.1.0, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.5, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -426,6 +438,10 @@
             "SQLiteNetExtensions.Async": {
               "target": "Package",
               "version": "[2.1.0, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.5, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",

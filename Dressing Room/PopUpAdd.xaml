@@ -9,7 +9,8 @@
              BackgroundColor="#80000000"
     
               >
-    <Border StrokeShape="RoundRectangle 20,20,20,20" HeightRequest="160" WidthRequest="250">
+    
+    <Border StrokeShape="RoundRectangle 20,20,20,20" HeightRequest="400" WidthRequest="250">
         <VerticalStackLayout BackgroundColor="White">
             <Entry Placeholder="Color"
                 TextColor="#01260A"
@@ -36,6 +37,11 @@
                >
 
             </Entry>
+            <HorizontalStackLayout>
+                <Button Text="Add Photo" Clicked="Button_Clicked"></Button>
+            </HorizontalStackLayout>
+            <Image x:Name="resultImage"/>
         </VerticalStackLayout>
+
     </Border>
 </mopup:PopupPage>

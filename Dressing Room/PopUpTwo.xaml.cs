@@ -1,16 +1,18 @@
+using Dressing_Room.ViewModels;
 using Mopups.Services;
 
 namespace Dressing_Room;
 
 public partial class PopUpTwo
 {
-	public PopUpTwo()
-	{
-		InitializeComponent();
-	}
-    private async void TakePhoto(object sender, EventArgs e)
+    public PopUpTwo()
     {
+        InitializeComponent();
+     
+    }
 
-        await MopupService.Instance.PushAsync(new PopUpAdd());
+    private void Button_Clicked(object sender, EventArgs e)
+    {
+        MopupService.Instance.PushAsync(new PopUpAdd());
     }
 }
