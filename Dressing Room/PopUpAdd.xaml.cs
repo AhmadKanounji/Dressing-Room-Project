@@ -1,3 +1,4 @@
+using Dressing_Room.Services;
 using Dressing_Room.ViewModels;
 using Microsoft.Maui.Controls;
 using Mopups.Services;
@@ -9,15 +10,11 @@ public partial class PopUpAdd
 	public PopUpAdd()
 	{
 		InitializeComponent();
-        BindingContext= new ClothViewModel();
+		ClothingService clothingService = new ClothingService();
+        BindingContext= new ClothViewModel(clothingService);
  
 
     }
 
-    async private void Button_Clicked(object sender, EventArgs e)
-    {
-        var result = await MediaPicker.CapturePhotoAsync();
-        var stream = await result.OpenReadAsync();
-        resultImage.Source = ImageSource.FromStream(() => stream);
-    }
+  
 }

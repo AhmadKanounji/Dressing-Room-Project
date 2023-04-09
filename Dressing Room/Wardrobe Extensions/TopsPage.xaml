@@ -2,6 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Dressing_Room.Wardrobe_Extensions.TopsPage"
+             xmlns:viewmodel="clr-namespace:Dressing_Room.ViewModels"
+             x:DataType="viewmodel:TopsViewModel"
              Shell.NavBarIsVisible="False">
     <StackLayout >
 
@@ -53,4 +55,5 @@
         </Border>
 
     </StackLayout>
+    
 </ContentPage>

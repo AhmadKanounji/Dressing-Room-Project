@@ -10,16 +10,13 @@
     
               >
     
-    <Border StrokeShape="RoundRectangle 20,20,20,20" HeightRequest="400" WidthRequest="250">
-        <VerticalStackLayout BackgroundColor="White">
-            <Entry Placeholder="Color"
-                TextColor="#01260A"
-               PlaceholderColor="#01260A"
-               Text="{Binding Color}"
-               >
-
-            </Entry>
+    <Border StrokeShape="RoundRectangle 20,20,20,20" HeightRequest="600" WidthRequest="400">
+        <VerticalStackLayout BackgroundColor="White" Spacing="50">
+            <Border StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="200" HeightRequest="200">
+                <Image Source="{Binding Photo}" HeightRequest="200" WidthRequest="200" Aspect="Fill"/>
+            </Border>
             <Picker x:Name="myPicker" Title="Categories" TextColor="#01260A" SelectedItem="{Binding Categories}">
+
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>Tops</x:String>
@@ -30,6 +27,14 @@
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>
+            <Entry Placeholder="Color"
+                TextColor="#01260A"
+               PlaceholderColor="#01260A"
+               Text="{Binding Color}"
+               >
+
+            </Entry>
+            
             <Entry Placeholder="Type" 
                 TextColor="#01260A"
                 PlaceholderColor="#01260A"
@@ -37,10 +42,13 @@
                >
 
             </Entry>
-            <HorizontalStackLayout>
-                <Button Text="Add Photo" Clicked="Button_Clicked"></Button>
+            <HorizontalStackLayout Spacing="50">
+                <Button Text="Take Photo" Command="{Binding TakePhotoCommand}" BackgroundColor="#01260A"></Button>
+                <Button Text="Add to Closet" Command="{Binding AddToClosetCommand}" BackgroundColor="#01260A"></Button>
             </HorizontalStackLayout>
-            <Image x:Name="resultImage"/>
+
+            
+            
         </VerticalStackLayout>
 
     </Border>

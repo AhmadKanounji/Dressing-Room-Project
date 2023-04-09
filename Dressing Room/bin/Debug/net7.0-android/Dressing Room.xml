@@ -4,6 +4,9 @@
         <name>Dressing Room</name>
     </assembly>
     <members>
+        <member name="P:Dressing_Room.ViewModels.ClothViewModel.Photo">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.ClothViewModel.photo"/>
+        </member>
         <member name="P:Dressing_Room.ViewModels.ClothViewModel.Type">
             <inheritdoc cref="F:Dressing_Room.ViewModels.ClothViewModel.type"/>
         </member>
@@ -12,6 +15,18 @@
         </member>
         <member name="P:Dressing_Room.ViewModels.ClothViewModel.Categories">
             <inheritdoc cref="F:Dressing_Room.ViewModels.ClothViewModel.categories"/>
+        </member>
+        <member name="F:Dressing_Room.ViewModels.ClothViewModel.takePhotoCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.ClothViewModel.TakePhotoCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.ClothViewModel.TakePhotoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.ClothViewModel.TakePhoto"/>.</summary>
+        </member>
+        <member name="F:Dressing_Room.ViewModels.ClothViewModel.addToClosetCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.ClothViewModel.AddToClosetCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.ClothViewModel.AddToClosetCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.ClothViewModel.AddToCloset"/>.</summary>
         </member>
         <member name="P:Dressing_Room.ViewModels.MainPageViewModel.Mail">
             <inheritdoc cref="F:Dressing_Room.ViewModels.MainPageViewModel.mail"/>
