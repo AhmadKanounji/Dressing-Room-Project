@@ -33,16 +33,18 @@ namespace Dressing_Room.ViewModels
         private string categories;
 
 
+
         [RelayCommand]
-        async  void TakePhoto()
+        async void TakePhoto()
         {
-            if(Categories == null || Type==null || Color==null)
+            if (Categories == null || Type == null || Color == null)
             {
                 await Shell.Current.DisplayAlert("Error", "Please enter all fields", "exit");
                 return;
             }
-                var result = await MediaPicker.CapturePhotoAsync();
-                if (result !=null) {
+            var result = await MediaPicker.CapturePhotoAsync();
+            if (result != null)
+            {
                 var stream = await result.OpenReadAsync();
                 Photo = ImageSource.FromStream(() => stream);
             }
@@ -65,10 +67,10 @@ namespace Dressing_Room.ViewModels
 
             var clothes = new Clothes
             {
-                Type=Type,
-                Color=Color,
-                Categories=Categories,
-                Source=Photo.ToString(),
+                Type = Type,
+                Color = Color,
+                Categories = Categories,
+                Source = Photo.ToString(),
 
             };
 
@@ -77,9 +79,14 @@ namespace Dressing_Room.ViewModels
             await MopupService.Instance.PopAllAsync();
 
 
-            
-        }
 
+        }
 
     }
 }
+
+       
+        
+
+
+    

@@ -76,6 +76,12 @@
         <member name="P:Dressing_Room.ViewModels.SignupViewModel.GobacktosigninCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.SignupViewModel.Gobacktosignin"/>.</summary>
         </member>
+        <member name="F:Dressing_Room.ViewModels.TopsViewModel.getTopsCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.TopsViewModel.GetTopsCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.TopsViewModel.GetTopsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.TopsViewModel.GetTops"/>.</summary>
+        </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
             <summary>
             Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color

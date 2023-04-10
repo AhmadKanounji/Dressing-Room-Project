@@ -45,10 +45,10 @@ namespace Dressing_Room.ViewModels
         {
             //Checking if any of the fields are empty
             var fields = new List<string>();
-            fields.Add(Email);
-            fields.Add(Password);
-            fields.Add(Confirmpass);
-            fields.Add(Email);
+            fields.Add(email);
+            fields.Add(password);
+            fields.Add(confirmpass);
+            fields.Add(email);
 
             foreach(string s in fields)
             {
@@ -62,12 +62,12 @@ namespace Dressing_Room.ViewModels
 
             string gender= null;
             //check if the gender is checked:
-            if (Male == true)
+            if (male == true)
             {
                 gender = "Male";
             }
 
-            else if(Female == true)
+            else if(female == true)
             {
                 gender = "Female";
             }
@@ -77,7 +77,7 @@ namespace Dressing_Room.ViewModels
                 return;
             }
             //Checking if the passwords match:
-            if (Password != Confirmpass)
+            if (password != confirmpass)
             {
              await   Shell.Current.DisplayAlert("Uh Oh","Your Passwords do not match! Please rewrite.", "Exit");
                 return;
@@ -89,9 +89,9 @@ namespace Dressing_Room.ViewModels
             var user = new User
             {
 
-                Username = Name,
-                Email = Email,
-                Password = Password,
+                Username = name,
+                Email = email,
+                Password = password,
                 Gender = gender
 
             };
@@ -99,12 +99,12 @@ namespace Dressing_Room.ViewModels
             var allUsers = await service.GetUser();
             foreach(User x in allUsers)
             {
-                if (x.Username == Name )
+                if (x.Username == name )
                 {
                     await Shell.Current.DisplayAlert("Uh Oh", "Username already Exists! Please re-enter", "Exit");
                     return;
                 }
-                if (x.Email == Email)
+                if (x.Email == email)
                 {
                     await Shell.Current.DisplayAlert("Uh Oh", "Email is already in use! Please re-enter", "Exit");
                     return;

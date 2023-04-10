@@ -48,6 +48,7 @@ public static class MauiProgram
 
         // services
         builder.Services.AddSingleton<SignUpService>();
+		builder.Services.AddSingleton<ClothingService>();
 		
 
 		return builder.Build();

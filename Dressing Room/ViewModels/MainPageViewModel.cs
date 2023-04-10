@@ -31,14 +31,14 @@ namespace Dressing_Room.ViewModels
         
         async Task Gotowardrobe() 
         {
-            if(Password==null || Mail==null) return;
+            if(password ==null || mail==null) return;
                 
             
             var done = false;
             var allUsers = await service.GetUser();
             foreach(User x in allUsers)
             {
-                if (x.Email == Mail && x.Password==Password)
+                if (x.Email == mail && x.Password==password)
                 {   
 
                     done = true;
