@@ -2,6 +2,7 @@
 using CommunityToolkit.Mvvm.Input;
 using Dressing_Room.Models;
 using Dressing_Room.Services;
+using Microsoft.Maui.Controls;
 using Mopups.Services;
 using System;
 using System.Collections.Generic;
@@ -33,6 +34,10 @@ namespace Dressing_Room.ViewModels
         private string categories;
 
 
+        private FileResult tempphoto;
+
+
+       
 
         [RelayCommand]
         async void TakePhoto()
@@ -42,12 +47,22 @@ namespace Dressing_Room.ViewModels
                 await Shell.Current.DisplayAlert("Error", "Please enter all fields", "exit");
                 return;
             }
+            
             var result = await MediaPicker.CapturePhotoAsync();
+            tempphoto = result;
+      
             if (result != null)
             {
                 var stream = await result.OpenReadAsync();
                 Photo = ImageSource.FromStream(() => stream);
+
+
+                
             }
+
+
+
+           
         }
 
         [RelayCommand]
@@ -65,12 +80,25 @@ namespace Dressing_Room.ViewModels
                 return;
             }
 
+            // HERE WE CONVERT THE IMAGE INTO BYTES TO STORE INTO DATABASE
+            var stream = await tempphoto.OpenReadAsync();
+            byte[] photoBytes;
+            using (var memoryStream = new MemoryStream())
+            {
+                await stream.CopyToAsync(memoryStream);
+                photoBytes = memoryStream.ToArray();
+            }
+
+
+
+
+
             var clothes = new Clothes
             {
                 Type = Type,
                 Color = Color,
                 Categories = Categories,
-                Source = Photo.ToString(),
+                Source = photoBytes,
 
             };
 

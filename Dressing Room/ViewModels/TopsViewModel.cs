@@ -18,12 +18,40 @@ namespace Dressing_Room.ViewModels
         public TopsViewModel() 
         { 
             _clothingService = new ClothingService();
+
+            Tops = new ObservableCollection<Clothes>();
+            refresh();
         }
 
-        public ObservableCollection<Clothes> Tops { get; } = new ObservableCollection<Clothes>();
+        public ObservableCollection<Clothes> Tops { get; } 
 
         
+       
 
+
+        async void refresh()
+        {
+            var allClothes = await _clothingService.GetClothes();
+            Tops.Clear();
+            foreach (var clothes in allClothes)
+            {
+                if (clothes.Categories == "Tops")
+
+                {
+                   
+
+                    Tops.Add(new Clothes
+                    {
+                        Categories = clothes.Categories,
+                        Color = clothes.Color,
+                        Source = clothes.Source,
+                        Type = clothes.Type,
+                        CID = clothes.CID
+
+                    }); ;
+                }
+            }
+        }
 
         [RelayCommand]
         async Task GetTops()
@@ -37,7 +65,15 @@ namespace Dressing_Room.ViewModels
                 if (clothes.Categories == "Tops")
 
                 {
-                    
+                    //CONVERTING BYTE BACK TO IMAGE SOURCE 
+                    //byte[] imageData = clothes.Source;
+                    //ImageSource imageSource;
+
+                    //using (MemoryStream ms = new MemoryStream(imageData))
+                    //{
+                    //    imageSource = ImageSource.FromStream(() => ms);
+                    //}
+
                     Tops.Add(new Clothes
                     {
                         Categories = clothes.Categories,

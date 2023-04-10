@@ -1,31 +1,42 @@
 ﻿<Properties StartupConfiguration="{C4066B4C-109C-462C-B3EC-6A2056B65A36}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Dressing_220Room PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C07A4379-3C15-43D3-9AEF-5354639FED35" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MainPage.xaml">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_31" />
+  <MonoDevelop.Ide.ItemProperties.Dressing_220Room PreferredExecutionTarget="Android.pixel_5_-_api_31" automaticSigning="False" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ViewModels/TopsViewModel.cs">
     <Files>
-      <File FileName="WardrobePage.xaml" Line="28" Column="61" />
-      <File FileName="Signup.xaml" />
-      <File FileName="MainPage.xaml" Line="30" Column="30" />
-      <File FileName="MauiProgram.cs" Line="1" Column="1" />
-      <File FileName="MainPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Models/Clothes.cs" />
+      <File FileName="Services/ClothingService.cs" />
+      <File FileName="ViewModels/ClothViewModel.cs" />
+      <File FileName="ViewModels/TopsViewModel.cs" Line="26" Column="60" />
+      <File FileName="Wardrobe Extensions/TopsPage.xaml" />
+      <File FileName="Models/finalClothes.cs" />
+      <File FileName="App.xaml.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Dressing Room" expanded="True">
             <Node name="Dressing Room" expanded="True">
-              <Node name="AppShell.xaml" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True" selected="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Platforms" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Wardrobe Extensions" expanded="True">
+                <Node name="TopsPage.xaml" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+              <Node name="PopUpAdd.xaml" expanded="True" />
+              <Node name="WardrobePage.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C07A4379-3C15-43D3-9AEF-5354639FED35" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.26" />
 </Properties>

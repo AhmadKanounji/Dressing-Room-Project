@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Dressing_Room.Wardrobe_Extensions.TopsPage"
@@ -6,11 +6,19 @@
              xmlns:viewmodel="clr-namespace:Dressing_Room.ViewModels"
              x:DataType="viewmodel:TopsViewModel"          
              Shell.NavBarIsVisible="False"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              >
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <toolkit:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <ContentPage.BindingContext>
         <viewmodel:TopsViewModel />
     </ContentPage.BindingContext>
 
+    <ScrollView>
     <StackLayout>
         <Button Text="Get Tops"
                 Command="{Binding GetTopsCommand}" />
@@ -21,14 +29,16 @@
                            BorderColor="Gray"
                            CornerRadius="5">
                         <StackLayout>
-                            <Image Source="{Binding Source}"  WidthRequest="100" HeightRequest="100"/>
+                            <Image Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}"  WidthRequest="100" HeightRequest="100"/>
                             <Label Text="{Binding Categories}" />
                             <Label Text="{Binding Color}" />
+                            <Label Text="{Binding Type}"/>
                         </StackLayout>
                     </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
     </StackLayout>
+        </ScrollView>
 
 </ContentPage>
