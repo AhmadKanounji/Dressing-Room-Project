@@ -1,20 +1,18 @@
 ﻿<Properties StartupConfiguration="{C4066B4C-109C-462C-B3EC-6A2056B65A36}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_31" />
   <MonoDevelop.Ide.ItemProperties.Dressing_220Room PreferredExecutionTarget="Android.pixel_5_-_api_31" automaticSigning="False" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ViewModels/TopsViewModel.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.26" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_31" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="App.xaml.cs">
     <Files>
-      <File FileName="Models/Clothes.cs" />
-      <File FileName="Services/ClothingService.cs" />
-      <File FileName="ViewModels/ClothViewModel.cs" />
-      <File FileName="ViewModels/TopsViewModel.cs" Line="26" Column="60" />
-      <File FileName="Wardrobe Extensions/TopsPage.xaml" />
-      <File FileName="Models/finalClothes.cs" />
-      <File FileName="App.xaml.cs" />
+      <File FileName="Wardrobe Extensions/TopsPage.xaml" Line="28" Column="7" />
+      <File FileName="WardrobePage.xaml" />
+      <File FileName="App.xaml.cs" Line="7" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,12 +21,15 @@
             <Node name="Dressing Room" expanded="True">
               <Node name="Models" expanded="True" />
               <Node name="Platforms" expanded="True" />
+              <Node name="Resources" expanded="True" />
               <Node name="Services" expanded="True" />
               <Node name="ViewModels" expanded="True" />
               <Node name="Wardrobe Extensions" expanded="True">
                 <Node name="TopsPage.xaml" expanded="True" />
               </Node>
-              <Node name="App.xaml" expanded="True" />
+              <Node name="App.xaml" expanded="True">
+                <Node name="App.xaml.cs" selected="True" />
+              </Node>
               <Node name="PopUpAdd.xaml" expanded="True" />
               <Node name="WardrobePage.xaml" expanded="True" />
             </Node>
@@ -37,6 +38,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.26" />
 </Properties>

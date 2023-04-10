@@ -29,7 +29,7 @@ namespace Dressing_Room.ViewModels
        
 
 
-        async void refresh()
+       public async void refresh()
         {
             var allClothes = await _clothingService.GetClothes();
             Tops.Clear();
