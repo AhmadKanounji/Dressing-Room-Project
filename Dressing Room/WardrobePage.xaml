@@ -32,7 +32,7 @@
                     <HorizontalStackLayout Spacing="31" HorizontalOptions="Center">
                         <VerticalStackLayout Spacing="-1">
                             <Border HeightRequest="216" WidthRequest="136" Stroke="#01260A" StrokeThickness="-1" StrokeShape="RoundRectangle 20,20,0,0">
-                                <ImageButton Source="outfits.jpg" Aspect="Fill" Clicked="OnImage1Clicked"/>
+                                <ImageButton Source="outfitspic.jpg" Aspect="Fill" Clicked="OnImage1Clicked"/>
                             </Border>
 
                             <Border StrokeShape="RoundRectangle 0,0,20,20" StrokeThickness="0" Stroke="#01260A" BackgroundColor="#01260A" HeightRequest="35">
@@ -46,7 +46,7 @@
 
                         <VerticalStackLayout Spacing="-1">
                             <Border HeightRequest="216" WidthRequest="136" Stroke="#01260A" StrokeThickness="-1" StrokeShape="RoundRectangle 20,20,0,0">
-                                <ImageButton Source="top.png" Aspect="Fill" Clicked="OnImage2Clicked"/>
+                                <ImageButton Source="topspic.png" Aspect="Fill" Clicked="OnImage2Clicked"/>
                             </Border>
 
                             <Border StrokeShape="RoundRectangle 0,0,20,20" StrokeThickness="0" Stroke="#01260A" BackgroundColor="#01260A" HeightRequest="35">
@@ -63,7 +63,7 @@
                         <VerticalStackLayout Spacing="-1">
                             <Border HeightRequest="216" WidthRequest="136" Stroke="Transparent" StrokeThickness="0" StrokeShape="RoundRectangle 20,20,0,0">
 
-                                <ImageButton Source="pant.png" Aspect="Fill" Clicked="OnImage3Clicked" />
+                                <ImageButton Source="pantspic.png" Aspect="Fill" Clicked="OnImage3Clicked" />
 
                             </Border>
 
@@ -78,7 +78,7 @@
 
                         <VerticalStackLayout Spacing="-1">
                             <Border HeightRequest="216" WidthRequest="136" Stroke="Transparent" StrokeThickness="0" StrokeShape="RoundRectangle 20,20,0,0">
-                                <ImageButton Source="shoe.png" Aspect="Fill" Clicked="OnImage4Clicked"/>
+                                <ImageButton Source="shoespic.png" Aspect="Fill" Clicked="OnImage4Clicked"/>
                             </Border>
 
                             <Border StrokeShape="RoundRectangle 0,0,20,20" StrokeThickness="0" Stroke="Transparent" BackgroundColor="#01260A" HeightRequest="35">
@@ -95,7 +95,7 @@
 
                         <VerticalStackLayout Spacing="-1">
                             <Border HeightRequest="216" WidthRequest="136" Stroke="Transparent" StrokeThickness="0" StrokeShape="RoundRectangle 20,20,0,0">
-                                <ImageButton Source="jacke.png" Aspect="Fill" Clicked="OnImage5Clicked" />
+                                <ImageButton Source="jacketspic.png" Aspect="Fill" Clicked="OnImage5Clicked" />
                             </Border>
 
                             <Border StrokeShape="RoundRectangle 0,0,20,20" StrokeThickness="0" Stroke="Transparent" BackgroundColor="#01260A" HeightRequest="35">
@@ -109,7 +109,7 @@
 
                         <VerticalStackLayout Spacing="-1">
                             <Border HeightRequest="216" WidthRequest="136" Stroke="Transparent" StrokeThickness="0" StrokeShape="RoundRectangle 20,20,0,0">
-                                <ImageButton Source="accessories.jpg" Aspect="Fill" Clicked="OnImage6Clicked"/>
+                                <ImageButton Source="accesoriespic.jpg" Aspect="Fill" Clicked="OnImage6Clicked"/>
                             </Border>
 
                             <Border StrokeShape="RoundRectangle 0,0,20,20" StrokeThickness="0" Stroke="#01260A" BackgroundColor="#01260A" HeightRequest="35">

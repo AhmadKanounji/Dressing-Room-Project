@@ -84,6 +84,12 @@
 	  <None Remove="Models\" />
 	  <None Remove="ViewModels\" />
 	  <None Remove="Services\" />
+	  <None Remove="Resources\Images\accesoriespic.png" />
+	  <None Remove="Resources\Images\jacketspic.png" />
+	  <None Remove="Resources\Images\outfitspic.png" />
+	  <None Remove="Resources\Images\pantspic.png" />
+	  <None Remove="Resources\Images\shoespic.png" />
+	  <None Remove="Resources\Images\topspic.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Fonts\OPTIMA_B.TTF" />
@@ -91,6 +97,12 @@
 	  <BundleResource Include="Resources\Images\logo.png" />
 	  <BundleResource Include="Resources\Images\logopic.png" />
 	  <BundleResource Include="Resources\Images\planttwo.png" />
+	  <BundleResource Include="Resources\Images\accesoriespic.png" />
+	  <BundleResource Include="Resources\Images\jacketspic.png" />
+	  <BundleResource Include="Resources\Images\outfitspic.png" />
+	  <BundleResource Include="Resources\Images\pantspic.png" />
+	  <BundleResource Include="Resources\Images\shoespic.png" />
+	  <BundleResource Include="Resources\Images\topspic.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiXaml Update="PopUpAdd.xaml">
