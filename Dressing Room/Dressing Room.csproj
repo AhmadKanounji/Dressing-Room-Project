@@ -105,6 +105,9 @@
 	  <BundleResource Include="Resources\Images\topspic.png" />
 	</ItemGroup>
 	<ItemGroup>
+	  <MauiXaml Update="CreateOutfit.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="PopUpAdd.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

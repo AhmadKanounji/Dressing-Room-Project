@@ -18,9 +18,9 @@
                 WidthRequest="175" StrokeThickness="0"
                 >
             <Button BackgroundColor="#01260A" Text="Add items to closet" Clicked="AddItemsToClosetButton">
-                
+
             </Button>
-        
+
         </Border>
         <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
             <Border StrokeShape="RoundRectangle 20,20,20,20"
@@ -34,14 +34,14 @@
             <Border StrokeShape="RoundRectangle 20,20,20,20"
                 WidthRequest="175" StrokeThickness="0"
                 >
-                <Button BackgroundColor="#01260A" Text="Create Outfit">
+                <Button BackgroundColor="#01260A" Text="Create Outfit" Clicked="Button_Clicked">
 
                 </Button>
 
             </Border>
 
         </HorizontalStackLayout>
-        
+
 
 
 

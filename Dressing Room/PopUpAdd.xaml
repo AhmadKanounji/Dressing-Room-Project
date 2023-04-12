@@ -1,147 +1,180 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<mopup:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:mopup="clr-namespace:Mopups.Pages;assembly=Mopups"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-              xmlns:viewmodel="clr-namespace:Dressing_Room.ViewModels"
-             x:DataType="viewmodel:ClothViewModel"
-             x:Class="Dressing_Room.PopUpAdd"
-             Title="PopUpAdd"
-             BackgroundColor="#80000000"
-              >
+<mopup:PopupPage
+    x:Class="Dressing_Room.PopUpAdd"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:mopup="clr-namespace:Mopups.Pages;assembly=Mopups"
+    xmlns:viewmodel="clr-namespace:Dressing_Room.ViewModels"
+    Title="PopUpAdd"
+    x:DataType="viewmodel:ClothViewModel"
+    BackgroundColor="#80000000">
 
+    <Border
+        HeightRequest="600"
+        StrokeShape="RoundRectangle 20,20,20,20"
+        WidthRequest="400">
 
+        <ScrollView>
 
+            <VerticalStackLayout BackgroundColor="White" Spacing="30">
 
+                <Border
+                    Margin="0,20,0,0"
+                    HeightRequest="300"
+                    StrokeShape="RoundRectangle 20,20,20,20"
+                    WidthRequest="300">
 
+                    <Image
+                        Aspect="Fill"
+                        Background="transparent"
+                        Source="{Binding Photo}" />
 
+                </Border>
 
-<Border StrokeShape="RoundRectangle 20,20,20,20" HeightRequest="600" WidthRequest="400">
+                <Border
+                    HeightRequest="60"
+                    StrokeShape="RoundRectangle 20,20,20,20"
+                    WidthRequest="380">
 
+                    <Picker
+                        x:Name="myCategory"
+                        Title="Categories"
+                        SelectedIndexChanged="myCategory_SelectedIndexChanged"
+                        SelectedItem="{Binding Categories}"
+                        TextColor="#01260A">
 
 
-    <ScrollView>
 
-        <VerticalStackLayout BackgroundColor="White" Spacing="30">
 
-            <Border StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="300" HeightRequest="300" Margin="0,20,0,0" >
 
-                <Image Source="{Binding Photo}" Aspect="Fill" Background="transparent"/>
+                        <Picker.ItemsSource>
 
-            </Border>
+                            <x:Array Type="{x:Type x:String}">
 
-            <Border StrokeShape="RoundRectangle 20,20,20,20" HeightRequest="60" WidthRequest="380">
+                                <x:String>Tops</x:String>
 
-                <Picker x:Name="myCategory" Title="Categories" TextColor="#01260A" SelectedItem="{Binding Categories}" SelectedIndexChanged="myCategory_SelectedIndexChanged">
+                                <x:String>Pants</x:String>
 
+                                <x:String>Shoes</x:String>
 
+                                <x:String>Jackets</x:String>
 
+                                <x:String>Accessories</x:String>
 
+                            </x:Array>
 
-                    <Picker.ItemsSource>
+                        </Picker.ItemsSource>
 
-                        <x:Array Type="{x:Type x:String}">
+                    </Picker>
 
-                            <x:String>Tops</x:String>
+                </Border>
 
-                            <x:String>Pants</x:String>
+                <Border
+                    HeightRequest="60"
+                    StrokeShape="RoundRectangle 20,20,20,20"
+                    WidthRequest="380">
 
-                            <x:String>Shoes</x:String>
+                    <Picker
+                        x:Name="myColor"
+                        Title="Color"
+                        SelectedItem="{Binding Color}"
+                        TextColor="#01260A">
 
-                            <x:String>Jackets</x:String>
+                        <Picker.ItemsSource>
 
-                            <x:String>Accessories</x:String>
+                            <x:Array Type="{x:Type x:String}">
 
-                        </x:Array>
+                                <x:String>Red</x:String>
 
-                    </Picker.ItemsSource>
+                                <x:String>White</x:String>
 
-                </Picker>
+                                <x:String>Blue</x:String>
 
-            </Border>
+                                <x:String>Black</x:String>
 
-            <Border StrokeShape="RoundRectangle 20,20,20,20" HeightRequest="60" WidthRequest="380">
+                                <x:String>Green</x:String>
 
-                <Picker x:Name="myColor" Title="Color" TextColor="#01260A" SelectedItem="{Binding Color}">
+                                <x:String>Gray</x:String>
 
-                    <Picker.ItemsSource>
+                                <x:String>Brown</x:String>
 
-                        <x:Array Type="{x:Type x:String}">
+                                <x:String>Beige</x:String>
 
-                            <x:String>Red</x:String>
+                                <x:String>Pink</x:String>
 
-                            <x:String>White</x:String>
+                                <x:String>Yellow</x:String>
 
-                            <x:String>Blue</x:String>
+                                <x:String>Purple</x:String>
 
-                            <x:String>Black</x:String>
+                                <x:String>Cream</x:String>
 
-                            <x:String>Green</x:String>
+                                <x:String>Turquoise</x:String>
 
-                            <x:String>Gray</x:String>
+                                <x:String>Teal</x:String>
 
-                            <x:String>Brown</x:String>
+                                <x:String>Lavender</x:String>
 
-                            <x:String>Beige</x:String>
+                                <x:String>Maroon</x:String>
 
-                            <x:String>Pink</x:String>
+                                <x:String>Olive</x:String>
 
-                            <x:String>Yellow</x:String>
+                                <x:String>Navy</x:String>
 
-                            <x:String>Purple</x:String>
+                                <x:String>Magenta</x:String>
 
-                            <x:String>Cream</x:String>
+                                <x:String>Peach</x:String>
 
-                            <x:String>Turquoise</x:String>
+                            </x:Array>
 
-                            <x:String>Teal</x:String>
+                        </Picker.ItemsSource>
 
-                            <x:String>Lavender</x:String>
+                    </Picker>
 
-                            <x:String>Maroon</x:String>
+                </Border>
 
-                            <x:String>Olive</x:String>
 
-                            <x:String>Navy</x:String>
 
-                            <x:String>Magenta</x:String>
+                <Border
+                    x:Name="myBorder"
+                    HeightRequest="60"
+                    IsVisible="false"
+                    StrokeShape="RoundRectangle 20,20,20,20"
+                    WidthRequest="380">
 
-                            <x:String>Peach</x:String>
+                    <Picker
+                        x:Name="myType"
+                        Title="Type"
+                        IsVisible="False"
+                        SelectedItem="{Binding Type}"
+                        TextColor="#01260A" />
 
-                        </x:Array>
+                </Border>
 
-                    </Picker.ItemsSource>
+                <HorizontalStackLayout HorizontalOptions="Center" Spacing="50">
 
-                </Picker>
+                    <Button
+                        BackgroundColor="#01260A"
+                        Command="{Binding TakePhotoCommand}"
+                        Text="Take Photo" />
 
-            </Border>
+                    <Button
+                        BackgroundColor="#01260A"
+                        Command="{Binding AddToClosetCommand}"
+                        Text="Add to Closet" />
 
+                </HorizontalStackLayout>
 
 
-            <Border x:Name="myBorder" StrokeShape="RoundRectangle 20,20,20,20" HeightRequest="60" WidthRequest="380" IsVisible="false">
 
-                <Picker x:Name="myType" Title="Type" SelectedItem="{Binding Type}" IsVisible="False" TextColor="#01260A"></Picker>
 
-            </Border>
 
-            <HorizontalStackLayout Spacing="50" HorizontalOptions="Center">
 
-                <Button Text="Take Photo" Command="{Binding TakePhotoCommand}" BackgroundColor="#01260A"></Button>
 
-                <Button Text="Add to Closet" Command="{Binding AddToClosetCommand}" BackgroundColor="#01260A"></Button>
+            </VerticalStackLayout>
 
-            </HorizontalStackLayout>
+        </ScrollView>
 
-
-
-
-
-
-
-        </VerticalStackLayout>
-
-    </ScrollView>
-
-</Border>
+    </Border>
 
 </mopup:PopupPage>
