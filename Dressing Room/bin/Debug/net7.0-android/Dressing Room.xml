@@ -4,6 +4,12 @@
         <name>Dressing Room</name>
     </assembly>
     <members>
+        <member name="F:Dressing_Room.ViewModels.AccessoriesViewModel.getAccessoriesCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.AccessoriesViewModel.GetAccessoriesCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.AccessoriesViewModel.GetAccessoriesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.AccessoriesViewModel.GetAccessories"/>.</summary>
+        </member>
         <member name="P:Dressing_Room.ViewModels.ClothViewModel.Photo">
             <inheritdoc cref="F:Dressing_Room.ViewModels.ClothViewModel.photo"/>
         </member>
@@ -28,6 +34,12 @@
         <member name="P:Dressing_Room.ViewModels.ClothViewModel.AddToClosetCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.ClothViewModel.AddToCloset"/>.</summary>
         </member>
+        <member name="F:Dressing_Room.ViewModels.JacketsViewModel.getJacketsCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.JacketsViewModel.GetJacketsCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.JacketsViewModel.GetJacketsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.JacketsViewModel.GetJackets"/>.</summary>
+        </member>
         <member name="P:Dressing_Room.ViewModels.MainPageViewModel.Mail">
             <inheritdoc cref="F:Dressing_Room.ViewModels.MainPageViewModel.mail"/>
         </member>
@@ -45,6 +57,18 @@
         </member>
         <member name="P:Dressing_Room.ViewModels.MainPageViewModel.GotowardrobeCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.MainPageViewModel.Gotowardrobe"/>.</summary>
+        </member>
+        <member name="F:Dressing_Room.ViewModels.PantsViewModel.getPantsCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.PantsViewModel.GetPantsCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.PantsViewModel.GetPantsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.PantsViewModel.GetPants"/>.</summary>
+        </member>
+        <member name="F:Dressing_Room.ViewModels.ShoesViewModel.getShoesCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.ShoesViewModel.GetShoesCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.ShoesViewModel.GetShoesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.ShoesViewModel.GetShoes"/>.</summary>
         </member>
         <member name="P:Dressing_Room.ViewModels.SignupViewModel.Name">
             <inheritdoc cref="F:Dressing_Room.ViewModels.SignupViewModel.name"/>

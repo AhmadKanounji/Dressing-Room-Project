@@ -2,55 +2,227 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Dressing_Room.Wardrobe_Extensions.ShoesPage"
-             Shell.NavBarIsVisible="False">
+             xmlns:viewmodel="clr-namespace:Dressing_Room.ViewModels"
+             x:DataType="viewmodel:ShoesViewModel"
+             xmlns:model="clr-namespace:Dressing_Room.Models"
+             Shell.NavBarIsVisible="False"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             BackgroundColor="#E2E2E2"
+
+             >
+
+
+
+    <ContentPage.Resources>
+
+        <ResourceDictionary>
+
+            <toolkit:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter" />
+
+        </ResourceDictionary>
+
+    </ContentPage.Resources>
+
+
+
+    <ContentPage.BindingContext>
+
+        <viewmodel:TopsViewModel />
+
+    </ContentPage.BindingContext>
+
+
+
     <StackLayout >
+
+
 
         <ScrollView VerticalOptions="FillAndExpand">
 
+
+
             <VerticalStackLayout>
-                <Label  Text="Dressing Room" TextColor="#01260A" VerticalOptions="Center"  VerticalTextAlignment="Center" 
-                            HorizontalTextAlignment="Center" BackgroundColor="#E2E2E2"  
+
+                <Label  Text="Dressing Room" TextColor="#01260A" VerticalOptions="Center"  VerticalTextAlignment="Center"
+
+                            HorizontalTextAlignment="Center" BackgroundColor="#E2E2E2" 
+
                             FontSize="20" FontFamily="Quora" HeightRequest="53" HorizontalOptions="Fill">
+
                 </Label>
 
-                <Label   Text="Shoes" TextColor="#E2E2E2" 
-                            VerticalOptions="Center" VerticalTextAlignment="Center"  
+
+
+                <Label   Text="Shoes" TextColor="#E2E2E2"
+
+                            VerticalOptions="Center" VerticalTextAlignment="Center" 
+
                             HorizontalTextAlignment="Center"  HorizontalOptions="Fill"
+
                             FontSize="15" FontFamily="OPTIMA" HeightRequest="29"  BackgroundColor="#01260A"   >
+
                 </Label>
+
+
 
             </VerticalStackLayout>
 
 
 
+
+
+
+
         </ScrollView>
+
+        <ScrollView Orientation="Horizontal" VerticalOptions="Center" BackgroundColor="#E2E2E2">
+
+
+
+            <StackLayout>
+
+
+
+                <CollectionView ItemsSource="{Binding Shoes}" Margin="20,0,0,39" >
+
+                    <CollectionView.ItemsLayout>
+
+                        <LinearItemsLayout Orientation="Horizontal" />
+
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+
+                        <DataTemplate x:DataType="model:Clothes">
+
+                            <Frame 
+
+                           HeightRequest="540"
+
+                           WidthRequest="320"
+
+                           Margin="12"
+
+                           BorderColor="#E2E2E2"
+
+                           CornerRadius="5"
+
+                           Padding="0"
+
+                           BackgroundColor="#E2E2E2"
+
+                           >
+
+                                <StackLayout>
+
+                                    <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
+
+                                        <Image Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="500" />
+
+
+
+                                    </Border>
+
+                                    <HorizontalStackLayout Spacing="5" Margin="0,12,0,0">
+
+                                        <Border BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="86" HeightRequest="27" Stroke="#01260A">
+
+                                            <Label Text="{Binding Categories}" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                                        </Border>
+
+                                        <Border BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="86" HeightRequest="27" Stroke="#01260A">
+
+                                            <Label Text="{Binding Color}" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                                        </Border>
+
+                                        <Border BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="86" HeightRequest="27" Stroke="#01260A">
+
+                                            <Label Text="{Binding Type}" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                                        </Border>
+
+                                        <Image Source="binpic.png" WidthRequest="22" HeightRequest="22" Margin="25,0,0,3"/>
+
+                                    </HorizontalStackLayout>
+
+
+
+                                </StackLayout>
+
+                            </Frame>
+
+                        </DataTemplate>
+
+                    </CollectionView.ItemTemplate>
+
+                </CollectionView>
+
+            </StackLayout>
+
+        </ScrollView>
+
+
+
+
+
         <Border BackgroundColor="#01260A" HeightRequest="53" StrokeShape="RoundRectangle 30,30,0,0" StrokeThickness="-1">
+
             <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="50">
+
                 <ImageButton Source="homepage2.png" HeightRequest="25" WidthRequest="30">
 
+
+
                 </ImageButton>
+
                 <VerticalStackLayout Spacing="2" VerticalOptions="Center">
+
                     <ImageButton Source="hanger.png" HeightRequest="25" WidthRequest="30">
 
+
+
                     </ImageButton>
+
                     <Ellipse HeightRequest="8" WidthRequest="8" Fill="white" />
+
                 </VerticalStackLayout>
 
+
+
                 <Border   Padding="0" HeightRequest="35" WidthRequest="35" BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20">
+
                     <ImageButton Source="plussign.png" HeightRequest="20" WidthRequest="20" >
 
+
+
                     </ImageButton>
+
                 </Border>
+
+
 
                 <ImageButton Source="profilepic.png" HeightRequest="25" WidthRequest="30">
 
-                </ImageButton>
-                <ImageButton Source="setting.png" HeightRequest="25" WidthRequest="30">
+
 
                 </ImageButton>
+
+                <ImageButton Source="setting.png" HeightRequest="25" WidthRequest="30">
+
+
+
+                </ImageButton>
+
             </HorizontalStackLayout>
+
+
 
         </Border>
 
+
+
     </StackLayout>
+
 </ContentPage>
