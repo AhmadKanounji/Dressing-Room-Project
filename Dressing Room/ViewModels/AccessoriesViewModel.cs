@@ -64,7 +64,8 @@ namespace Dressing_Room.ViewModels
 
         {
 
-            var allClothes = await _clothingService.GetClothes();
+            var Current_User = Preferences.Get("user_name", "default_value");
+            var allClothes = await _clothingService.GetSpecificClothes(Current_User);
 
             Accessories.Clear();
 
@@ -94,7 +95,8 @@ namespace Dressing_Room.ViewModels
 
                         Type = clothes.Type,
 
-                        CID = clothes.CID
+                        CID = clothes.CID,
+                        UserID=Current_User
 
 
 

@@ -68,6 +68,9 @@ namespace Dressing_Room.ViewModels
         [RelayCommand]
         async Task AddToCloset()
         {
+
+            //Get the User_name:
+            var Username = Preferences.Get("user_name", "default_value");
             if (Photo == null)
             {
                 await Shell.Current.DisplayAlert("Oh No", "Please Take a Photo!", "Exit");
@@ -99,6 +102,7 @@ namespace Dressing_Room.ViewModels
                 Color = Color,
                 Categories = Categories,
                 Source = photoBytes,
+                UserID = Username
 
             };
 

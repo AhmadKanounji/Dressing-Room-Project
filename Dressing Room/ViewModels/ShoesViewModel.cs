@@ -30,7 +30,8 @@ namespace Dressing_Room.ViewModels
         public ObservableCollection<Clothes> Shoes { get; }
         public async void refresh()
         {
-            var allClothes = await _clothingService.GetClothes();
+            var Current_User = Preferences.Get("user_name", "default_value");
+            var allClothes = await _clothingService.GetSpecificClothes(Current_User);
 
             Shoes.Clear();
 
@@ -60,7 +61,9 @@ namespace Dressing_Room.ViewModels
 
                         Type = clothes.Type,
 
-                        CID = clothes.CID
+                        CID = clothes.CID,
+                        UserID=Current_User
+                        
 
 
 
@@ -82,7 +85,8 @@ namespace Dressing_Room.ViewModels
 
 
 
-            var allClothes = await _clothingService.GetClothes();
+            var Current_User = Preferences.Get("user_name", "default_value");
+            var allClothes = await _clothingService.GetSpecificClothes(Current_User);
 
 
 

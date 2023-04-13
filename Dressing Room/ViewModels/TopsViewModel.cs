@@ -31,7 +31,8 @@ namespace Dressing_Room.ViewModels
 
        public async void refresh()
         {
-            var allClothes = await _clothingService.GetClothes();
+            var Current_User = Preferences.Get("user_name", "default_value");
+            var allClothes = await _clothingService.GetSpecificClothes(Current_User);
             Tops.Clear();
             foreach (var clothes in allClothes)
             {
@@ -46,7 +47,9 @@ namespace Dressing_Room.ViewModels
                         Color = clothes.Color,
                         Source = clothes.Source,
                         Type = clothes.Type,
-                        CID = clothes.CID
+                        CID = clothes.CID,
+                        UserID=Current_User
+                        
 
                     }); ;
                 }

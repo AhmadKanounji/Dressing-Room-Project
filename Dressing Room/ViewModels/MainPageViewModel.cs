@@ -3,6 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 using Dressing_Room.Models;
 using Dressing_Room.Services;
 using System;
+
 namespace Dressing_Room.ViewModels
 {
 	public partial class MainPageViewModel: ObservableObject
@@ -13,10 +14,11 @@ namespace Dressing_Room.ViewModels
         public MainPageViewModel(SignUpService s)
         {
             service = s;
+            
         }
 
         [ObservableProperty]
-		private string mail;
+		private string username;
 
 		[ObservableProperty]
 		private string password;
@@ -31,14 +33,17 @@ namespace Dressing_Room.ViewModels
         
         async Task Gotowardrobe() 
         {
-            if(password ==null || mail==null) return;
+
+
+
+            if (password ==null || username==null) return;
                 
             
             var done = false;
             var allUsers = await service.GetUser();
             foreach(User x in allUsers)
             {
-                if (x.Email == mail && x.Password==password)
+                if (x.Username == username && x.Password==password)
                 {   
 
                     done = true;
@@ -49,10 +54,17 @@ namespace Dressing_Room.ViewModels
                     
                 }
             }
-            if(!done) await Shell.Current.DisplayAlert("Error", "Invalid Credentials. Please re-enter", "Exit");
+            if (!done)
+            {
+                await Shell.Current.DisplayAlert("Error", "Invalid Credentials. Please re-enter", "Exit");
+                return;
+            }
 
+            //Else we Keep track of who signed in
+            Preferences.Set("user_name", Username);
 
         }
+
 
     }
 }

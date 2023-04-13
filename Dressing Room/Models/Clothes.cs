@@ -22,10 +22,9 @@ namespace Dressing_Room.Models
 
 
         [ForeignKey(typeof(User))]
-        public int UserID { get; set; }
+        public string UserID { get; set; }
 
-        [ManyToOne(nameof(UserID))]
-        public User User { get; set; }
+        
 
 
 

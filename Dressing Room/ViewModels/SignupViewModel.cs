@@ -111,6 +111,8 @@ namespace Dressing_Room.ViewModels
                 }
 
             }
+
+            Preferences.Set("user_name", Name);
             
             await service.AddUser(user);
             await Shell.Current.DisplayAlert("Success!", "Welcome to your wardrobe", "Exit");

@@ -40,8 +40,8 @@
         <member name="P:Dressing_Room.ViewModels.JacketsViewModel.GetJacketsCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.JacketsViewModel.GetJackets"/>.</summary>
         </member>
-        <member name="P:Dressing_Room.ViewModels.MainPageViewModel.Mail">
-            <inheritdoc cref="F:Dressing_Room.ViewModels.MainPageViewModel.mail"/>
+        <member name="P:Dressing_Room.ViewModels.MainPageViewModel.Username">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.MainPageViewModel.username"/>
         </member>
         <member name="P:Dressing_Room.ViewModels.MainPageViewModel.Password">
             <inheritdoc cref="F:Dressing_Room.ViewModels.MainPageViewModel.password"/>
