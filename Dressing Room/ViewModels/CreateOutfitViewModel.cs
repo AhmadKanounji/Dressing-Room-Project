@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using Dressing_Room.Models;
 using Dressing_Room.Services;
+using Microsoft.Maui.Controls;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -36,10 +37,10 @@ namespace Dressing_Room.ViewModels
         public ObservableCollection<Clothes> Accessories { get; }
 
 
-
         public async void refreshTops()
         {
-            var allClothes = await _clothingService.GetClothes();
+            var Current_User = Preferences.Get("user_name", "default_value");
+            var allClothes = await _clothingService.GetSpecificClothes(Current_User);
             Tops.Clear();
             foreach (var clothes in allClothes)
             {
@@ -54,7 +55,9 @@ namespace Dressing_Room.ViewModels
                         Color = clothes.Color,
                         Source = clothes.Source,
                         Type = clothes.Type,
-                        CID = clothes.CID
+                        CID = clothes.CID,
+                        UserID = Current_User
+
 
                     }); ;
                 }
@@ -63,98 +66,184 @@ namespace Dressing_Room.ViewModels
 
         public async void refreshPants()
         {
-            var allClothes = await _clothingService.GetClothes();
+
+            var Current_User = Preferences.Get("user_name", "default_value");
+            var allClothes = await _clothingService.GetSpecificClothes(Current_User);
+
             Pants.Clear();
+
             foreach (var clothes in allClothes)
+
             {
+
                 if (clothes.Categories == "Pants")
+
+
 
                 {
 
 
+
+
+
                     Pants.Add(new Clothes
+
                     {
+
                         Categories = clothes.Categories,
+
                         Color = clothes.Color,
+
                         Source = clothes.Source,
+
                         Type = clothes.Type,
-                        CID = clothes.CID
+
+                        CID = clothes.CID,
+                        UserID = Current_User
+
+
 
                     }); ;
+
                 }
+
             }
         }
 
         public async void refreshShoes()
         {
-            var allClothes = await _clothingService.GetClothes();
+            var Current_User = Preferences.Get("user_name", "default_value");
+            var allClothes = await _clothingService.GetSpecificClothes(Current_User);
+
             Shoes.Clear();
+
             foreach (var clothes in allClothes)
+
             {
+
                 if (clothes.Categories == "Shoes")
+
+
 
                 {
 
 
+
+
+
                     Shoes.Add(new Clothes
+
                     {
+
                         Categories = clothes.Categories,
+
                         Color = clothes.Color,
+
                         Source = clothes.Source,
+
                         Type = clothes.Type,
-                        CID = clothes.CID
+
+                        CID = clothes.CID,
+                        UserID = Current_User
+
+
+
 
                     }); ;
+
                 }
+
             }
         }
 
         public async void refreshJackets()
         {
-            var allClothes = await _clothingService.GetClothes();
+            var Current_User = Preferences.Get("user_name", "default_value");
+            var allClothes = await _clothingService.GetSpecificClothes(Current_User);
             Jackets.Clear();
+
             foreach (var clothes in allClothes)
+
             {
+
                 if (clothes.Categories == "Jackets")
+
+
 
                 {
 
 
+
+
+
                     Jackets.Add(new Clothes
+
                     {
+
                         Categories = clothes.Categories,
+
                         Color = clothes.Color,
+
                         Source = clothes.Source,
+
                         Type = clothes.Type,
-                        CID = clothes.CID
+
+                        CID = clothes.CID,
+                        UserID = Current_User
+
+
 
                     }); ;
+
                 }
+
             }
         }
 
         public async void refreshAccessories()
         {
-            var allClothes = await _clothingService.GetClothes();
+            var Current_User = Preferences.Get("user_name", "default_value");
+            var allClothes = await _clothingService.GetSpecificClothes(Current_User);
+
             Accessories.Clear();
+
             foreach (var clothes in allClothes)
+
             {
+
                 if (clothes.Categories == "Accessories")
+
+
 
                 {
 
 
+
+
+
                     Accessories.Add(new Clothes
+
                     {
+
                         Categories = clothes.Categories,
+
                         Color = clothes.Color,
+
                         Source = clothes.Source,
+
                         Type = clothes.Type,
-                        CID = clothes.CID
+
+                        CID = clothes.CID,
+                        UserID = Current_User
+
+
 
                     }); ;
+
                 }
+
             }
         }
+
     }
 }

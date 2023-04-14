@@ -1,5 +1,6 @@
+using Dressing_Room.Models;
 using Dressing_Room.ViewModels;
-
+using Microsoft.Maui.Controls;
 namespace Dressing_Room;
 
 public partial class CreateOutfit : ContentPage
