@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="Dressing_Room.Wardrobe_Extensions.PantsPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -63,7 +63,7 @@
                     HeightRequest="29"
                     HorizontalOptions="Fill"
                     HorizontalTextAlignment="Center"
-                    Text="Shoes"
+                    Text="Pants"
                     TextColor="#E2E2E2"
                     VerticalOptions="Center"
                     VerticalTextAlignment="Center" />

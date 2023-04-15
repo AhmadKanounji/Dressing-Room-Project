@@ -1,37 +1,54 @@
 ﻿<Properties StartupConfiguration="{C4066B4C-109C-462C-B3EC-6A2056B65A36}|Default">
-  <MonoDevelop.Ide.ItemProperties.Dressing_220Room PreferredExecutionTarget="Android.pixel_5_-_api_31" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_31" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Dressing_220Room PreferredExecutionTarget="Android.pixel_5_-_api_31" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.26" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Models/Clothes.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_31" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Wardrobe Extensions/TopsPage.xaml">
     <Files>
-      <File FileName="Wardrobe Extensions/TopsPage.xaml" />
-      <File FileName="WardrobePage.xaml" />
-      <File FileName="App.xaml.cs" Line="7" Column="1" />
-      <File FileName="ViewModels/ShoesViewModel.cs" Line="1" Column="1" />
-      <File FileName="Wardrobe Extensions/ShoesPage.xaml" Line="141" Column="1" />
-      <File FileName="Models/Clothes.cs" Line="24" Column="1" />
-      <File FileName="Models/User.cs" Line="13" Column="3" />
+      <File FileName="Wardrobe Extensions/TopsPage.xaml" Line="9" Column="39" />
+      <File FileName="WardrobePage.xaml" Line="158" Column="1" />
+      <File FileName="App.xaml.cs" />
+      <File FileName="ViewModels/ShoesViewModel.cs" />
+      <File FileName="Wardrobe Extensions/ShoesPage.xaml" />
+      <File FileName="Models/Clothes.cs" />
+      <File FileName="Models/User.cs" />
+      <File FileName="CreateOutfit.xaml" />
+      <File FileName="EditProfile.xaml" />
+      <File FileName="ProfilePage.xaml" Line="23" Column="30" />
+      <File FileName="ViewModels/AccessoriesViewModel.cs" />
+      <File FileName="ProfilePage.xaml.cs" />
+      <File FileName="MainPage.xaml" />
+      <File FileName="MauiProgram.cs" />
+      <File FileName="PopUpTwo.xaml" />
+      <File FileName="ViewModels/ProfileViewModel.cs" />
+      <File FileName="WardrobePage.xaml.cs" Line="78" Column="60" />
+      <File FileName="Wardrobe Extensions/PantsPage.xaml" Line="66" Column="32" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Dressing Room" expanded="True">
-            <Node name="Dressing Room" expanded="True" selected="True">
+            <Node name="Dressing Room" expanded="True">
               <Node name="Models" expanded="True" />
               <Node name="Platforms" expanded="True" />
-              <Node name="Resources" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="Fonts" expanded="True" />
+                <Node name="Images" expanded="True" />
+              </Node>
               <Node name="Services" expanded="True" />
               <Node name="ViewModels" expanded="True" />
               <Node name="Wardrobe Extensions" expanded="True">
-                <Node name="TopsPage.xaml" expanded="True" />
+                <Node name="TopsPage.xaml" expanded="True" selected="True" />
               </Node>
               <Node name="App.xaml" expanded="True" />
+              <Node name="EditProfile.xaml" expanded="True" />
               <Node name="PopUpAdd.xaml" expanded="True" />
+              <Node name="ProfilePage.xaml" expanded="True" />
               <Node name="WardrobePage.xaml" expanded="True" />
             </Node>
           </Node>
@@ -39,5 +56,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.26" />
 </Properties>

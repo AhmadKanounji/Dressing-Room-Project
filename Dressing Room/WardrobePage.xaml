@@ -146,7 +146,7 @@
                     </ImageButton>
                 </Border>
 
-                <ImageButton Source="profilepic.png" HeightRequest="25" WidthRequest="30">
+                <ImageButton Source="profilepic.png" HeightRequest="25" WidthRequest="30" Clicked="GoToProfile" >
 
                 </ImageButton>
                 <ImageButton Source="setting.png" HeightRequest="25" WidthRequest="30">

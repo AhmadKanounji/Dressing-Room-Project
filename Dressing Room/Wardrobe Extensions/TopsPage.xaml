@@ -6,6 +6,7 @@
              xmlns:viewmodel="clr-namespace:Dressing_Room.ViewModels"
              x:DataType="viewmodel:TopsViewModel"          
              Shell.NavBarIsVisible="False"
+             BackgroundColor="#E2E2E2"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              >
     <ContentPage.Resources>

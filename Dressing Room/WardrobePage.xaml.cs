@@ -72,5 +72,11 @@ public partial class WardrobePage : ContentPage
        
     }
 
+     async void GoToProfile(System.Object sender, System.EventArgs e)
+    {
+        Routing.RegisterRoute(nameof(ProfilePage), typeof(ProfilePage));
+        await Shell.Current.GoToAsync(nameof(ProfilePage));
+    }
+
 
 }

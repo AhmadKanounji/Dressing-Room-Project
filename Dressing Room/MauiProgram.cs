@@ -23,6 +23,8 @@ public static class MauiProgram
 				fonts.AddFont("OPTIMA_B.TTF", "OPTIMA_B");
                 fonts.AddFont("OPTIMA.TTF", "OPTIMA");
                 fonts.AddFont("Quora.ttf", "Quora");
+				fonts.AddFont("NotoSansMyanmar-Medium.ttf", "NotoSansMyanmar");
+				fonts.AddFont("Roboto-Medium.ttf", "Roboto");
 			});
 
 #if DEBUG
@@ -46,6 +48,7 @@ public static class MauiProgram
 		builder.Services.AddSingleton<ClothViewModel>();
 		builder.Services.AddSingleton<TopsViewModel>();
         builder.Services.AddSingleton<ShoesViewModel>();
+        builder.Services.AddSingleton<ProfileViewModel>();
 
         // services
         builder.Services.AddSingleton<SignUpService>();

@@ -90,6 +90,8 @@
 	  <None Remove="Resources\Images\pantspic.png" />
 	  <None Remove="Resources\Images\shoespic.png" />
 	  <None Remove="Resources\Images\topspic.png" />
+	  <None Remove="Resources\Fonts\NotoSansMyanmar-Medium.ttf" />
+	  <None Remove="Resources\Fonts\Roboto-Medium.ttf" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Fonts\OPTIMA_B.TTF" />
@@ -103,6 +105,8 @@
 	  <BundleResource Include="Resources\Images\pantspic.png" />
 	  <BundleResource Include="Resources\Images\shoespic.png" />
 	  <BundleResource Include="Resources\Images\topspic.png" />
+	  <BundleResource Include="Resources\Fonts\NotoSansMyanmar-Medium.ttf" />
+	  <BundleResource Include="Resources\Fonts\Roboto-Medium.ttf" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiXaml Update="CreateOutfit.xaml">
