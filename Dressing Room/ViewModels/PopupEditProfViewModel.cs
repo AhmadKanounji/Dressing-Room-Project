@@ -5,13 +5,14 @@ using Dressing_Room.Services;
 
 namespace Dressing_Room.ViewModels
 {
-	public partial class PopupEditProfViewModel: ObservableObject 
-	{
+    public partial class PopupEditProfViewModel : ObservableObject
+    {
         private SignUpService _signUpService;
 
-        public PopupEditProfViewModel(SignUpService signUpService)
+        public PopupEditProfViewModel()
         {
-            _signUpService = signUpService;
+            _signUpService = new SignUpService();
+
         }
 
         private ImageSource Photo;
@@ -19,8 +20,8 @@ namespace Dressing_Room.ViewModels
         private FileResult tempphoto;
 
         [RelayCommand]
-		async void TakePhoto()
-		{
+        async void TakePhoto()
+        {
             var result = await MediaPicker.CapturePhotoAsync();
             tempphoto = result;
 
