@@ -68,7 +68,7 @@ public partial class WardrobePage : ContentPage
         var imageButton = (ImageButton)sender;
         imageButton.Rotation=0;
         imageButton.RotateTo(90, 500);
-         MopupService.Instance.PushAsync(new PopUpOne());
+        MopupService.Instance.PushAsync(new PopUpOne());
        
     }
 

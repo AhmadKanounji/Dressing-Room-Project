@@ -1,33 +1,13 @@
 ﻿<Properties StartupConfiguration="{C4066B4C-109C-462C-B3EC-6A2056B65A36}|Default">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Dressing_220Room PreferredExecutionTarget="Android.pixel_5_-_api_31" />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.26" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_31" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Wardrobe Extensions/TopsPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PopupEditProfile.xaml">
     <Files>
-      <File FileName="Wardrobe Extensions/TopsPage.xaml" Line="9" Column="39" />
-      <File FileName="WardrobePage.xaml" Line="158" Column="1" />
-      <File FileName="App.xaml.cs" />
-      <File FileName="ViewModels/ShoesViewModel.cs" />
-      <File FileName="Wardrobe Extensions/ShoesPage.xaml" />
-      <File FileName="Models/Clothes.cs" />
-      <File FileName="Models/User.cs" />
-      <File FileName="CreateOutfit.xaml" />
-      <File FileName="EditProfile.xaml" />
-      <File FileName="ProfilePage.xaml" Line="23" Column="30" />
-      <File FileName="ViewModels/AccessoriesViewModel.cs" />
-      <File FileName="ProfilePage.xaml.cs" />
-      <File FileName="MainPage.xaml" />
-      <File FileName="MauiProgram.cs" />
-      <File FileName="PopUpTwo.xaml" />
-      <File FileName="ViewModels/ProfileViewModel.cs" />
-      <File FileName="WardrobePage.xaml.cs" Line="78" Column="60" />
-      <File FileName="Wardrobe Extensions/PantsPage.xaml" Line="66" Column="32" />
+      <File FileName="ViewModels/EditProfileViewModel.cs" Line="21" Column="1" />
+      <File FileName="PopUpOne.xaml" Line="7" Column="49" />
+      <File FileName="PopUpAdd.xaml.cs" Line="1" Column="1" />
+      <File FileName="PopUpOne.xaml.cs" Line="1" Column="1" />
+      <File FileName="EditProfile.xaml.cs" Line="1" Column="1" />
+      <File FileName="EditProfile.xaml" Line="32" Column="24" />
+      <File FileName="PopupEditProfile.xaml" Line="13" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -35,19 +15,15 @@
           <Node name="Dressing Room" expanded="True">
             <Node name="Dressing Room" expanded="True">
               <Node name="Models" expanded="True" />
-              <Node name="Platforms" expanded="True" />
-              <Node name="Resources" expanded="True">
-                <Node name="Fonts" expanded="True" />
-                <Node name="Images" expanded="True" />
-              </Node>
               <Node name="Services" expanded="True" />
               <Node name="ViewModels" expanded="True" />
               <Node name="Wardrobe Extensions" expanded="True">
-                <Node name="TopsPage.xaml" expanded="True" selected="True" />
+                <Node name="TopsPage.xaml" expanded="True" />
               </Node>
               <Node name="App.xaml" expanded="True" />
               <Node name="EditProfile.xaml" expanded="True" />
               <Node name="PopUpAdd.xaml" expanded="True" />
+              <Node name="PopUpOne.xaml" expanded="True" />
               <Node name="ProfilePage.xaml" expanded="True" />
               <Node name="WardrobePage.xaml" expanded="True" />
             </Node>
@@ -56,4 +32,13 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Dressing_220Room PreferredExecutionTarget="Android.pixel_5_-_api_31" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.26" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_31" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

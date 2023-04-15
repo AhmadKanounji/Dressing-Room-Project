@@ -21,15 +21,15 @@ namespace Dressing_Room.ViewModels
         }
 
         [ObservableProperty]
-
         private ImageSource photo;
 
 
         [ObservableProperty]
         private string type;
-        [ObservableProperty]
 
+        [ObservableProperty]
         private string color;
+
         [ObservableProperty]
         private string categories;
 
@@ -56,11 +56,7 @@ namespace Dressing_Room.ViewModels
                 var stream = await result.OpenReadAsync();
                 Photo = ImageSource.FromStream(() => stream);
 
-
-                
             }
-
-
 
            
         }

@@ -2069,6 +2069,7 @@ C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/obj/Debug/net
 C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/obj/Debug/net7.0-android/android/assets/System.Xml.dll
 /Users/serena/Desktop/Dressing-Room-Project/Dressing Room/obj/Debug/net7.0-android/resizetizer/f/NotoSansMyanmar-Medium.ttf
 /Users/serena/Desktop/Dressing-Room-Project/Dressing Room/obj/Debug/net7.0-android/resizetizer/f/Roboto-Medium.ttf
+/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/obj/Debug/net7.0-android/resizetizer/r/drawable/profilepicicon.png
 /Users/serena/Desktop/Dressing-Room-Project/Dressing Room/obj/Debug/net7.0-android/android/assets/mscorlib.dll
 /Users/serena/Desktop/Dressing-Room-Project/Dressing Room/obj/Debug/net7.0-android/android/assets/System.Collections.Concurrent.dll
 /Users/serena/Desktop/Dressing-Room-Project/Dressing Room/obj/Debug/net7.0-android/android/assets/System.Data.Common.dll

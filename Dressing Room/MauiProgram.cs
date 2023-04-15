@@ -49,10 +49,12 @@ public static class MauiProgram
 		builder.Services.AddSingleton<TopsViewModel>();
         builder.Services.AddSingleton<ShoesViewModel>();
         builder.Services.AddSingleton<ProfileViewModel>();
+        builder.Services.AddSingleton<PopupEditProfViewModel>();
 
         // services
         builder.Services.AddSingleton<SignUpService>();
 		builder.Services.AddSingleton<ClothingService>();
+		builder.Services.AddSingleton<EditProfileViewModel>();
 		
 
 		return builder.Build();

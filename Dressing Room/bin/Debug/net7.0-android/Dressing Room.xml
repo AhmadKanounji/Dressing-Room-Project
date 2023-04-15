@@ -34,6 +34,15 @@
         <member name="P:Dressing_Room.ViewModels.ClothViewModel.AddToClosetCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.ClothViewModel.AddToCloset"/>.</summary>
         </member>
+        <member name="P:Dressing_Room.ViewModels.EditProfileViewModel.ProfileImage">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.EditProfileViewModel.profileImage"/>
+        </member>
+        <member name="F:Dressing_Room.ViewModels.EditProfileViewModel.openPopupCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.EditProfileViewModel.OpenPopupCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.EditProfileViewModel.OpenPopupCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.EditProfileViewModel.OpenPopup"/>.</summary>
+        </member>
         <member name="F:Dressing_Room.ViewModels.JacketsViewModel.getJacketsCommand">
             <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.JacketsViewModel.GetJacketsCommand"/>.</summary>
         </member>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mopups:PopupPage    xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
+                     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                     xmlns:viewmodel="clr-namespace:Dressing_Room.ViewModels"
+                     x:DataType="viewmodel:PopupEditProfViewModel"
+                     x:Class="Dressing_Room.PopupEditProfile"
+                     Title="PopupEditProfile"
+                     BackgroundColor="#80000000"
+                     CloseWhenBackgroundIsClicked="True" >
+
+    <Border HorizontalOptions="Fill" VerticalOptions="End" HeightRequest="200" BackgroundColor="White">
+    <VerticalStackLayout>
+        <Border StrokeShape="RoundRectangle 50,50,50,50">
+            <Image>
+
+
+            </Image>
+        </Border>
+        <StackLayout Orientation="Horizontal">
+            <!--add icon--> 
+            <Image>
+
+
+            </Image>
+            <Button Text="Choose from library">
+
+
+            </Button>
+
+        </StackLayout>
+        <StackLayout>
+
+            <Button Text="Take a photo">
+
+
+            </Button>
+
+        </StackLayout>
+    </VerticalStackLayout>
+    </Border>
+</mopups:PopupPage>
