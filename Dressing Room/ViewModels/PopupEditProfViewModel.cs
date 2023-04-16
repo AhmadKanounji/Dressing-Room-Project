@@ -72,8 +72,8 @@ namespace Dressing_Room.ViewModels
             }
 
 
-            await _signUpService.UpdateUserPhoto(user);
-            WeakReferenceMessenger.Default.Send(new RefreshMessage("Hi"));
+            //await _signUpService.UpdateUserPhoto(user);
+            WeakReferenceMessenger.Default.Send(new RefreshMessage(photoBytes));
             await MopupService.Instance.PopAllAsync();
 
         }

@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Dressing_Room.Messages
 {
-    public class RefreshMessage : ValueChangedMessage<string>
+    public class RefreshMessage : ValueChangedMessage<byte[]>
     {
-        public RefreshMessage(string value) : base(value)
+        public RefreshMessage(byte[] value) : base(value)
         {
         }
     }

@@ -49,7 +49,7 @@ namespace Dressing_Room.ViewModels
         {
             MainThread.BeginInvokeOnMainThread(() =>
             {
-                _ = refresh();
+                ProfileImage = message.Value;
             });
         }
 
