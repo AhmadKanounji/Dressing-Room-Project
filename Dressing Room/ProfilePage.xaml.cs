@@ -11,11 +11,12 @@ namespace Dressing_Room;
 
 public partial class ProfilePage : ContentPage
 {
+    private ProfileViewModel viewModel;
     public ProfilePage()
     {
         InitializeComponent();
-        ProfileViewModel profileViewModel = new ProfileViewModel();
-        this.BindingContext = profileViewModel;
+        viewModel = new ProfileViewModel();
+        this.BindingContext = viewModel;
 
     }
 
@@ -31,5 +32,10 @@ public partial class ProfilePage : ContentPage
     async void OnHangerClicked(System.Object sender, System.EventArgs e)
     {
         await Shell.Current.GoToAsync(nameof(WardrobePage));
+    }
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        viewModel.refresh(); // call ViewModel method to load data
     }
 }

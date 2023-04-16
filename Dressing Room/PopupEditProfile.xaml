@@ -6,37 +6,45 @@
                      x:DataType="viewmodel:PopupEditProfViewModel"
                      x:Class="Dressing_Room.PopupEditProfile"
                      Title="PopupEditProfile"
+                     xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
                      BackgroundColor="#80000000"
                      CloseWhenBackgroundIsClicked="True" >
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <toolkit:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
     <Border HorizontalOptions="Fill" VerticalOptions="End" HeightRequest="200" BackgroundColor="White">
-    <VerticalStackLayout>
-        <Border StrokeShape="RoundRectangle 50,50,50,50">
-            <Image>
+        <VerticalStackLayout>
+            <Border StrokeShape="RoundRectangle 50,50,50,50">
+                <Image>
 
 
-            </Image>
-        </Border>
-        <StackLayout Orientation="Horizontal">
-            <!--add icon--> 
-            <Image>
+                </Image>
+            </Border>
+            <StackLayout Orientation="Horizontal">
+                <!--add icon-->
+                <Image Source="{Binding Photo}" HeightRequest="50" WidthRequest="50">
 
 
-            </Image>
-            <Button Text="Choose from library">
+                </Image>
+                <Button Text="Choose from library">
 
 
-            </Button>
+                </Button>
 
-        </StackLayout>
-        <StackLayout>
+            </StackLayout>
+            <StackLayout>
 
-            <Button Text="Take a photo">
+                <Button Text="Take a photo" Command="{Binding TakePhotoCommand}">
 
 
-            </Button>
+                </Button>
 
-        </StackLayout>
-    </VerticalStackLayout>
+                <Button Text="Confirm" Command="{Binding ConfirmCommand}"></Button>
+
+            </StackLayout>
+        </VerticalStackLayout>
     </Border>
 </mopups:PopupPage>

@@ -4,11 +4,11 @@ using SQLite;
 
 namespace Dressing_Room.Services
 {
-	public class SignUpService
-	{
+    public class SignUpService
+    {
 
-        public  SQLiteAsyncConnection db;
-         async Task Init()
+        public SQLiteAsyncConnection db;
+        async Task Init()
         {
             if (db != null) return;
 
@@ -18,7 +18,7 @@ namespace Dressing_Room.Services
             await db.CreateTableAsync<User>();
         }
 
-         public async Task AddUser(User user)
+        public async Task AddUser(User user)
         {
             await Init();
             await db.InsertAsync(user);
@@ -27,12 +27,26 @@ namespace Dressing_Room.Services
 
         }
 
-        public  async Task<List<User>> GetUser()
+        public async Task<List<User>> GetUser()
         {
             await Init();
             var result = await db.Table<User>().ToListAsync(); // This gets all the user in the database
             return result;
         }
+
+        public async Task UpdateUserPhoto(User user)
+        {
+            await db.UpdateAsync(user);
+
+        }
+        public async Task<List<User>> GetSpecificUser(string user_name)
+        {
+            await Init();
+            var result = await db.Table<User>().Where(u => u.Username == user_name).ToListAsync();
+            return result;
+        }
+
+
 
 
     }

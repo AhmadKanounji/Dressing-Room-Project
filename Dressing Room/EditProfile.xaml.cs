@@ -7,11 +7,18 @@ namespace Dressing_Room;
 
 public partial class EditProfile : ContentPage
 {
-	public EditProfile()
-	{
-		InitializeComponent();
+    private EditProfileViewModel viewModel;
+    public EditProfile()
+    {
+        InitializeComponent();
 
-		EditProfileViewModel viewModel = new EditProfileViewModel();
-		this.BindingContext = viewModel;
-	}
+        viewModel = new EditProfileViewModel();
+        this.BindingContext = viewModel;
+    }
+
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        _ = viewModel.refresh(); // call ViewModel method to load data
+    }
 }

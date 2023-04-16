@@ -7,21 +7,21 @@ using Dressing_Room.Services;
 namespace Dressing_Room.ViewModels
 
 {
-	public partial class SignupViewModel: ObservableObject
+    public partial class SignupViewModel : ObservableObject
 
-	{
+    {
         //Initializing the service
         private SignUpService service;
         public SignupViewModel(SignUpService s)
         {
             service = s;
-            
-            
-        }
-        
 
-		[ObservableProperty]
-		private string name;
+
+        }
+
+
+        [ObservableProperty]
+        private string name;
 
         [ObservableProperty]
         private string email;
@@ -50,7 +50,7 @@ namespace Dressing_Room.ViewModels
             fields.Add(confirmpass);
             fields.Add(email);
 
-            foreach(string s in fields)
+            foreach (string s in fields)
             {
                 if (s == null)
                 {
@@ -60,14 +60,14 @@ namespace Dressing_Room.ViewModels
             }
 
 
-            string gender= null;
+            string gender = null;
             //check if the gender is checked:
             if (male == true)
             {
                 gender = "Male";
             }
 
-            else if(female == true)
+            else if (female == true)
             {
                 gender = "Female";
             }
@@ -79,12 +79,12 @@ namespace Dressing_Room.ViewModels
             //Checking if the passwords match:
             if (password != confirmpass)
             {
-             await   Shell.Current.DisplayAlert("Uh Oh","Your Passwords do not match! Please rewrite.", "Exit");
+                await Shell.Current.DisplayAlert("Uh Oh", "Your Passwords do not match! Please rewrite.", "Exit");
                 return;
 
             }
 
-           
+
 
             var user = new User
             {
@@ -92,14 +92,15 @@ namespace Dressing_Room.ViewModels
                 Username = name,
                 Email = email,
                 Password = password,
-                Gender = gender
+                Gender = gender,
+                Source = null
 
             };
             // now we have to check if there exists a user with the same username:
             var allUsers = await service.GetUser();
-            foreach(User x in allUsers)
+            foreach (User x in allUsers)
             {
-                if (x.Username == name )
+                if (x.Username == name)
                 {
                     await Shell.Current.DisplayAlert("Uh Oh", "Username already Exists! Please re-enter", "Exit");
                     return;
@@ -113,11 +114,11 @@ namespace Dressing_Room.ViewModels
             }
 
             Preferences.Set("user_name", Name);
-            
+
             await service.AddUser(user);
             await Shell.Current.DisplayAlert("Success!", "Welcome to your wardrobe", "Exit");
-            
-            Routing.RegisterRoute(nameof(WardrobePage),typeof(WardrobePage));
+
+            Routing.RegisterRoute(nameof(WardrobePage), typeof(WardrobePage));
 
             await Shell.Current.GoToAsync(nameof(WardrobePage));
 
@@ -132,9 +133,9 @@ namespace Dressing_Room.ViewModels
 
 
 
-        
 
-     
+
+
 
 
     }
