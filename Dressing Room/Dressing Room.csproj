@@ -40,10 +40,7 @@
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 
-		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
-
-		<!-- Images -->
+		<!--Images -->
 		<MauiImage Include="Resources\Images\*" />
 		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
 
@@ -99,6 +96,8 @@
 	  <None Remove="Resources\Images\trash.png" />
 	  <None Remove="Resources\Fonts\Optima Regular.ttf" />
 	  <None Remove="Resources\Images\splashpic.png" />
+	  <None Remove="Resources\Splash\" />
+	  <None Remove="Resources\Splash\splashscreenpic.svg" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Fonts\OPTIMA_B.TTF" />
@@ -158,5 +157,11 @@
 	  <MauiXaml Update="WardrobePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Resources\Splash\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiSplashScreen Include="Resources\Splash\splashscreenpic.svg" Color="#E2E2E2"/>
 	</ItemGroup>
 </Project>

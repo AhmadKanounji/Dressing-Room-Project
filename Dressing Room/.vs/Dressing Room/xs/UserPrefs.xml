@@ -1,30 +1,23 @@
-﻿<Properties StartupConfiguration="{C4066B4C-109C-462C-B3EC-6A2056B65A36}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.ItemProperties.Dressing_220Room PreferredExecutionTarget="Android.pixel_5_-_api_31" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.26" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_31" />
+﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True" StartupConfiguration="{C4066B4C-109C-462C-B3EC-6A2056B65A36}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Dressing Room.csproj">
     <Files>
       <File FileName="ViewModels/EditProfileViewModel.cs" />
       <File FileName="EditProfile.xaml.cs" />
       <File FileName="EditProfile.xaml" />
       <File FileName="App.xaml" />
-      <File FileName="Dressing Room.csproj" Line="49" Column="1" />
+      <File FileName="Dressing Room.csproj" Line="165" Column="84" />
       <File FileName="ViewModels/MainPageViewModel.cs" />
       <File FileName="ViewModels/SignupViewModel.cs" />
+      <File FileName="Signup.xaml" />
+      <File FileName="MainPage.xaml" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Dressing Room" expanded="True">
-            <Node name="Dressing Room" expanded="True">
+            <Node name="Dressing Room" expanded="True" selected="True">
               <Node name="Resources" expanded="True">
-                <Node name="Images" expanded="True" selected="True" />
+                <Node name="Splash" expanded="True" />
               </Node>
               <Node name="ViewModels" expanded="True" />
               <Node name="App.xaml" expanded="True" />
@@ -34,4 +27,13 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.26" />
+  <MonoDevelop.Ide.ItemProperties.Dressing_220Room PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
