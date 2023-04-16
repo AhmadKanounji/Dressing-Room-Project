@@ -19,23 +19,36 @@
         </Border>
         <StackLayout Orientation="Horizontal">
             <!--add icon--> 
-            <Image>
+            <Image Source="library.png" HeightRequest="25" WidthRequest="25" Margin="20,10,0,0">
 
 
             </Image>
-            <Button Text="Choose from library">
+            <Button Text="Choose from library" Margin="5,10,0,0" BackgroundColor="White" TextColor="#01260A" FontSize="15">
 
 
             </Button>
 
         </StackLayout>
-        <StackLayout>
 
-            <Button Text="Take a photo">
+        <StackLayout Orientation="Horizontal">
+            <Image Source="camera.png" HeightRequest="25" WidthRequest="25" Margin="20,10,0,0">
+
+
+            </Image>
+            <Button Text="Take photo" Margin="5,10,0,0" BackgroundColor="White" TextColor="#01260A"  FontSize="15">
 
 
             </Button>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Image Source="trash.png" HeightRequest="25" WidthRequest="25" Margin="20,10,0,0">
 
+
+            </Image>
+            <Button Text="Remove current picture" Margin="5,10,0,0" BackgroundColor="White" TextColor="Red" FontSize="15">
+
+
+            </Button>
         </StackLayout>
     </VerticalStackLayout>
     </Border>

@@ -5,6 +5,7 @@ obj/Debug/net7.0-android/resizetizer/r/mipmap-hdpi/appicon_foreground.png
 obj/Debug/net7.0-android/resizetizer/r/mipmap-hdpi/appicon.png
 obj/Debug/net7.0-android/resizetizer/r/mipmap-hdpi/appicon_background.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/outfits.jpg
+obj/Debug/net7.0-android/resizetizer/r/drawable/splashpic.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/backbutton.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/pantspic.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/settings.png
@@ -13,10 +14,12 @@ obj/Debug/net7.0-android/resizetizer/r/drawable/planttwo.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/accesoriespic.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/profilepic.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/pant.png
+obj/Debug/net7.0-android/resizetizer/r/drawable/library.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/outfitspic.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/plussign.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/shoe.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/top.png
+obj/Debug/net7.0-android/resizetizer/r/drawable/libraryanim.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/logo.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/jacke.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/jacketspic.png
@@ -27,7 +30,10 @@ obj/Debug/net7.0-android/resizetizer/r/drawable/homepage2.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/accessories.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/topspic.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/homepage.png
+obj/Debug/net7.0-android/resizetizer/r/drawable/trash.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/hanger1.jpg
+obj/Debug/net7.0-android/resizetizer/r/drawable/camera.png
+obj/Debug/net7.0-android/resizetizer/r/drawable/librarypic.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/setting.png
 obj/Debug/net7.0-android/resizetizer/r/mipmap-xxxhdpi/appicon_foreground.png
 obj/Debug/net7.0-android/resizetizer/r/mipmap-xxxhdpi/appicon.png

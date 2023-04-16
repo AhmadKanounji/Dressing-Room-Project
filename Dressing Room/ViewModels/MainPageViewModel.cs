@@ -62,6 +62,22 @@ namespace Dressing_Room.ViewModels
 
             //Else we Keep track of who signed in
             Preferences.Set("user_name", Username);
+            
+        
+            Preferences.Set("user_password", Password);
+            // get from database remaining info
+            
+           foreach(User user in allUsers)
+            {
+                if (user.Username == Username)
+                {
+                    Preferences.Set("user_email", user.Email);
+                    break;
+                }
+            }
+            
+
+
 
         }
 

@@ -7,7 +7,7 @@
              Title="Edit Profile"
              Shell.BackgroundColor="#01260A"
              BackgroundColor="#E2E2E2"
-             
+             xmlns:local="clr-namespace:Dressing_Room"
              >
     <Shell.TitleView>
         <Grid HorizontalOptions="Center" HeightRequest="30" WidthRequest="150" Margin="-70,0,0,0">
@@ -29,6 +29,48 @@
 
              </Button>
 
+            <Border StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="303" BackgroundColor="Transparent" Stroke="#01260A" StrokeThickness="1" Margin="0,29,0,0">
+                <Entry
+                    FontSize="15"
+                    Keyboard="Email"
+                    Text="{Binding User_name}"
+                    TextColor="#01260A"
+                    BackgroundColor="Transparent"
+                    Margin="24,0,0,0"
+                    
+                    />
+                    
+
+            </Border>
+
+             <Border StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="303" BackgroundColor="Transparent" Stroke="#01260A" StrokeThickness="1" Margin="0,29,0,0">
+                <Entry
+                    FontSize="15"
+                    Keyboard="Email"
+                    Text="{Binding User_email}"
+                    TextColor="#01260A"
+                    BackgroundColor="Transparent"
+                    Margin="24,0,0,0"
+                    
+                    />
+                    
+
+            </Border>
+
+             <Border StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="303" BackgroundColor="Transparent" Stroke="#01260A" StrokeThickness="1" Margin="0,29,0,0">
+                <Entry
+                    FontSize="15"
+                    Keyboard="Email"
+                    Text="{Binding User_password}"
+                    TextColor="#01260A"
+                    BackgroundColor="Transparent"
+                    Margin="24,0,0,0"
+                    
+                    />
+                    
+
+            </Border>
+             
          </StackLayout>
          
     </StackLayout>

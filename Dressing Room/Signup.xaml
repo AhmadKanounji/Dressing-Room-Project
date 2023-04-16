@@ -66,7 +66,8 @@
                     FontAttributes="Italic"
                     Keyboard="Email"
                     Placeholder="Username"
-                    Text="{Binding Name}"/>
+                    Text="{Binding Name}"
+                    Margin="10,0,0,0"/>
 
             </Border>
             <Border
@@ -80,7 +81,8 @@
                     FontAttributes="Italic"
                     Keyboard="Email"
                     Placeholder="Email"
-                    Text="{Binding Email}"/>
+                    Text="{Binding Email}"
+                    Margin="10,0,0,0"/>
 
             </Border>
             <Border
@@ -94,7 +96,8 @@
                     FontAttributes="Italic"
                     Keyboard="Email"
                     Placeholder="Password "
-                    Text="{Binding Password}"/>
+                    Text="{Binding Password}"
+                    Margin="10,0,0,0"/>
 
             </Border>
             <Border
@@ -108,7 +111,8 @@
                     FontAttributes="Italic"
                     Keyboard="Email"
                     Placeholder=" Confirm Password "
-                    Text="{Binding Confirmpass}"/>
+                    Text="{Binding Confirmpass}"
+                    Margin="10,0,0,0"/>
 
             </Border>
             <HorizontalStackLayout Margin="0,20,0,0" HorizontalOptions="Center">

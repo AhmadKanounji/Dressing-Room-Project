@@ -37,6 +37,15 @@
         <member name="P:Dressing_Room.ViewModels.EditProfileViewModel.ProfileImage">
             <inheritdoc cref="F:Dressing_Room.ViewModels.EditProfileViewModel.profileImage"/>
         </member>
+        <member name="P:Dressing_Room.ViewModels.EditProfileViewModel.User_name">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.EditProfileViewModel.user_name"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.EditProfileViewModel.User_email">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.EditProfileViewModel.user_email"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.EditProfileViewModel.User_password">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.EditProfileViewModel.user_password"/>
+        </member>
         <member name="F:Dressing_Room.ViewModels.EditProfileViewModel.openPopupCommand">
             <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.EditProfileViewModel.OpenPopupCommand"/>.</summary>
         </member>

@@ -62,6 +62,7 @@
 		<PackageReference Include="sqlite-net-pcl" Version="1.9.141-beta" />
 		<PackageReference Include="SQLiteNetExtensions.Async" Version="2.1.0" />
 		<PackageReference Include="Xamarin.Essentials" Version="1.7.5" />
+		<PackageReference Include="SkiaSharp.Extended.UI.Maui" Version="2.0.0-preview.61" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -93,6 +94,11 @@
 	  <None Remove="Resources\Fonts\NotoSansMyanmar-Medium.ttf" />
 	  <None Remove="Resources\Fonts\Roboto-Medium.ttf" />
 	  <None Remove="Resources\Images\ProfilePicIcon.png" />
+	  <None Remove="Resources\Images\camera.png" />
+	  <None Remove="Resources\Images\library.png" />
+	  <None Remove="Resources\Images\trash.png" />
+	  <None Remove="Resources\Fonts\Optima Regular.ttf" />
+	  <None Remove="Resources\Images\splashpic.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Fonts\OPTIMA_B.TTF" />
@@ -109,6 +115,11 @@
 	  <BundleResource Include="Resources\Fonts\NotoSansMyanmar-Medium.ttf" />
 	  <BundleResource Include="Resources\Fonts\Roboto-Medium.ttf" />
 	  <BundleResource Include="Resources\Images\profilepicicon.png" />
+	  <BundleResource Include="Resources\Images\camera.png" />
+	  <BundleResource Include="Resources\Images\library.png" />
+	  <BundleResource Include="Resources\Images\trash.png" />
+	  <BundleResource Include="Resources\Fonts\OPTIMA.TTF" />
+	  <BundleResource Include="Resources\Images\splashpic.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiXaml Update="CreateOutfit.xaml">

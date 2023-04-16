@@ -4,6 +4,7 @@ using CommunityToolkit.Mvvm.Input;
 using Dressing_Room.Models;
 using Dressing_Room.Services;
 
+
 namespace Dressing_Room.ViewModels
 
 {
@@ -113,7 +114,9 @@ namespace Dressing_Room.ViewModels
             }
 
             Preferences.Set("user_name", Name);
-            
+            Preferences.Set("user_email", Email);
+            Preferences.Set("user_password", Password);
+
             await service.AddUser(user);
             await Shell.Current.DisplayAlert("Success!", "Welcome to your wardrobe", "Exit");
             

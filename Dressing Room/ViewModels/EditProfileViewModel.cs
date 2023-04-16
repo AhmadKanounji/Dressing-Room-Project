@@ -10,7 +10,17 @@ namespace Dressing_Room.ViewModels
 		[ObservableProperty]
 		private ImageSource profileImage = "profilepicicon.png";
 
-		[RelayCommand]
+        [ObservableProperty]
+        private string user_name = Preferences.Get("user_name", "default_value");
+
+		[ObservableProperty]
+		private string user_email = Preferences.Get("user_email", "default_value");
+
+        [ObservableProperty]
+        private string user_password = Preferences.Get("user_password", "default_value");
+
+
+        [RelayCommand]
 		async void OpenPopup()
 		{
 			await MopupService.Instance.PushAsync(new PopupEditProfile());
