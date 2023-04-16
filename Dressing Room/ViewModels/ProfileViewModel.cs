@@ -2,8 +2,11 @@
 using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using CommunityToolkit.Mvvm.Messaging;
+using Dressing_Room.Messages;
 using Dressing_Room.Models;
 using Dressing_Room.Services;
+
 
 namespace Dressing_Room.ViewModels
 {
@@ -18,7 +21,6 @@ namespace Dressing_Room.ViewModels
         {
             _signUpService = new SignUpService();
             refresh();
-
 
         }
         [ObservableProperty]
@@ -55,5 +57,7 @@ namespace Dressing_Room.ViewModels
             Routing.RegisterRoute(nameof(EditProfile), typeof(EditProfile));
             await Shell.Current.GoToAsync(nameof(EditProfile));
         }
+
+
     }
 }

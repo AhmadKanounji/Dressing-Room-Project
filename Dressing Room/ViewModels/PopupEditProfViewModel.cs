@@ -1,6 +1,8 @@
 ﻿using System;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using CommunityToolkit.Mvvm.Messaging;
+using Dressing_Room.Messages;
 using Dressing_Room.Models;
 using Dressing_Room.Services;
 using Mopups.Services;
@@ -71,7 +73,9 @@ namespace Dressing_Room.ViewModels
 
 
             await _signUpService.UpdateUserPhoto(user);
+            WeakReferenceMessenger.Default.Send(new RefreshMessage("Hi"));
             await MopupService.Instance.PopAllAsync();
+
         }
     }
 }
