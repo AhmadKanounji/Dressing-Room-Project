@@ -36,6 +36,17 @@ namespace Dressing_Room.ViewModels
                 var stream = await result.OpenReadAsync();
                 Photo = ImageSource.FromStream(() => stream);
             }
+            var stream2 = await tempphoto.OpenReadAsync();
+            byte[] photoBytes;
+            using (var memoryStream = new MemoryStream())
+            {
+                await stream2.CopyToAsync(memoryStream);
+                photoBytes = memoryStream.ToArray();
+
+
+            }
+            WeakReferenceMessenger.Default.Send(new RefreshMessage(photoBytes));
+            await MopupService.Instance.PopAllAsync();
 
 
 
@@ -55,6 +66,7 @@ namespace Dressing_Room.ViewModels
 
 
             }
+
             //create a user model to be updated but get info first:
             var allUsers = await _signUpService.GetUser();
             var user = new User();
