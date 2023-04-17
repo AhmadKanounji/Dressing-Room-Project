@@ -11,12 +11,7 @@
 
     <Border HorizontalOptions="Fill" VerticalOptions="End" HeightRequest="200" BackgroundColor="White">
     <VerticalStackLayout>
-        <Border StrokeShape="RoundRectangle 50,50,50,50">
-            <Image>
-
-
-            </Image>
-        </Border>
+      
         <StackLayout Orientation="Horizontal">
             <!--add icon--> 
             <Image Source="library.png" HeightRequest="25" WidthRequest="25" Margin="20,10,0,0">
@@ -35,7 +30,7 @@
 
 
             </Image>
-            <Button Text="Take photo" Margin="5,10,0,0" BackgroundColor="White" TextColor="#01260A"  FontSize="15">
+            <Button Text="Take photo" Margin="5,10,0,0" BackgroundColor="White" TextColor="#01260A"  FontSize="15" Command="{Binding TakePhotoCommand}">
 
 
             </Button>

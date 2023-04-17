@@ -98,6 +98,7 @@
 	  <None Remove="Resources\Images\splashpic.png" />
 	  <None Remove="Resources\Splash\" />
 	  <None Remove="Resources\Splash\splashscreenpic.svg" />
+	  <None Remove="Messages\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Fonts\OPTIMA_B.TTF" />
@@ -160,8 +161,9 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Resources\Splash\" />
+	  <Folder Include="Messages\" />
 	</ItemGroup>
 	<ItemGroup>
-	  <MauiSplashScreen Include="Resources\Splash\splashscreenpic.svg" Color="#E2E2E2"/>
+	  <MauiSplashScreen Include="Resources\Splash\splashscreenpic.svg" Color="#E2E2E2" />
 	</ItemGroup>
 </Project>

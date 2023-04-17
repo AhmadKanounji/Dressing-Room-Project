@@ -1,0 +1,131 @@
+is_global = true
+build_property.TargetFramework = net7.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Dressing_Room
+build_property.ProjectDir = /Users/serena/Desktop/Dressing-Room-Project/Dressing Room/
+
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/CreateOutfit.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.CreateOutfit.xaml
+build_metadata.AdditionalFiles.TargetPath = CreateOutfit.xaml
+build_metadata.AdditionalFiles.RelativePath = CreateOutfit.xaml
+
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/EditProfile.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.EditProfile.xaml
+build_metadata.AdditionalFiles.TargetPath = EditProfile.xaml
+build_metadata.AdditionalFiles.RelativePath = EditProfile.xaml
+
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/PopUpAdd.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.PopUpAdd.xaml
+build_metadata.AdditionalFiles.TargetPath = PopUpAdd.xaml
+build_metadata.AdditionalFiles.RelativePath = PopUpAdd.xaml
+
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/PopupEditProfile.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.PopupEditProfile.xaml
+build_metadata.AdditionalFiles.TargetPath = PopupEditProfile.xaml
+build_metadata.AdditionalFiles.RelativePath = PopupEditProfile.xaml
+
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/PopUpOne.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.PopUpOne.xaml
+build_metadata.AdditionalFiles.TargetPath = PopUpOne.xaml
+build_metadata.AdditionalFiles.RelativePath = PopUpOne.xaml
+
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/PopUpTwo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.PopUpTwo.xaml
+build_metadata.AdditionalFiles.TargetPath = PopUpTwo.xaml
+build_metadata.AdditionalFiles.RelativePath = PopUpTwo.xaml
+
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/ProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.ProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = ProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = ProfilePage.xaml
+
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/Signup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Signup.xaml
+build_metadata.AdditionalFiles.TargetPath = Signup.xaml
+build_metadata.AdditionalFiles.RelativePath = Signup.xaml
+
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/AccessoriesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Wardrobe_Extensions.AccessoriesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Wardrobe Extensions/AccessoriesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Wardrobe Extensions/AccessoriesPage.xaml
+
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/JacketsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Wardrobe_Extensions.JacketsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Wardrobe Extensions/JacketsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Wardrobe Extensions/JacketsPage.xaml
+
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/OutfitsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Wardrobe_Extensions.OutfitsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Wardrobe Extensions/OutfitsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Wardrobe Extensions/OutfitsPage.xaml
+
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/PantsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Wardrobe_Extensions.PantsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Wardrobe Extensions/PantsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Wardrobe Extensions/PantsPage.xaml
+
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/ShoesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Wardrobe_Extensions.ShoesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Wardrobe Extensions/ShoesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Wardrobe Extensions/ShoesPage.xaml
+
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/TopsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Wardrobe_Extensions.TopsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Wardrobe Extensions/TopsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Wardrobe Extensions/TopsPage.xaml
+
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/WardrobePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.WardrobePage.xaml
+build_metadata.AdditionalFiles.TargetPath = WardrobePage.xaml
+build_metadata.AdditionalFiles.RelativePath = WardrobePage.xaml

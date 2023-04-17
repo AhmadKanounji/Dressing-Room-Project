@@ -1,39 +1,51 @@
-﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True" StartupConfiguration="{C4066B4C-109C-462C-B3EC-6A2056B65A36}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Dressing Room.csproj">
+﻿<Properties StartupConfiguration="{C4066B4C-109C-462C-B3EC-6A2056B65A36}|Default">
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.26" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EditProfile.xaml">
     <Files>
-      <File FileName="ViewModels/EditProfileViewModel.cs" />
-      <File FileName="EditProfile.xaml.cs" />
-      <File FileName="EditProfile.xaml" />
-      <File FileName="App.xaml" />
-      <File FileName="Dressing Room.csproj" Line="165" Column="84" />
-      <File FileName="ViewModels/MainPageViewModel.cs" />
-      <File FileName="ViewModels/SignupViewModel.cs" />
-      <File FileName="Signup.xaml" />
-      <File FileName="MainPage.xaml" />
+      <File FileName="ViewModels/ProfileViewModel.cs" Line="60" Column="1" />
+      <File FileName="ProfilePage.xaml.cs" Line="41" Column="29" />
+      <File FileName="ProfilePage.xaml" Line="27" Column="133" />
+      <File FileName="Wardrobe Extensions/TopsPage.xaml" Line="62" Column="39" />
+      <File FileName="EditProfile.xaml" Line="84" Column="114" />
+      <File FileName="EditProfile.xaml.cs" Line="1" Column="1" />
+      <File FileName="MauiProgram.cs" Line="27" Column="65" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Dressing Room" expanded="True">
-            <Node name="Dressing Room" expanded="True" selected="True">
+            <Node name="Dressing Room" expanded="True">
+              <Node name="Messages" expanded="True" />
+              <Node name="Models" expanded="True" />
               <Node name="Resources" expanded="True">
-                <Node name="Splash" expanded="True" />
+                <Node name="Fonts" expanded="True" />
               </Node>
+              <Node name="Services" expanded="True" />
               <Node name="ViewModels" expanded="True" />
+              <Node name="Wardrobe Extensions" expanded="True">
+                <Node name="TopsPage.xaml" expanded="True" />
+              </Node>
               <Node name="App.xaml" expanded="True" />
+              <Node name="EditProfile.xaml" expanded="True" selected="True" />
+              <Node name="PopUpAdd.xaml" expanded="True" />
+              <Node name="PopUpOne.xaml" expanded="True" />
+              <Node name="ProfilePage.xaml" expanded="True" />
+              <Node name="WardrobePage.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_31" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.26" />
-  <MonoDevelop.Ide.ItemProperties.Dressing_220Room PreferredExecutionTarget="MyAppleMacCatalystID" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Dressing_220Room PreferredExecutionTarget="Android.pixel_5_-_api_31" />
 </Properties>
