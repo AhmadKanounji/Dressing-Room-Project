@@ -58,6 +58,13 @@ public partial class WardrobePage : ContentPage
         Routing.RegisterRoute(nameof(AccessoriesPage), typeof(AccessoriesPage));
         await Shell.Current.GoToAsync(nameof(AccessoriesPage));
     }
+    private async void GoToSettings(object sender, EventArgs e)
+    {
+        Routing.RegisterRoute(nameof(SettingsPage), typeof(SettingsPage));
+        await Shell.Current.GoToAsync(nameof(SettingsPage));
+    }
+
+
 
 
 

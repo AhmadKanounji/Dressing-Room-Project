@@ -1,14 +1,16 @@
 ﻿using System;
+using System.Net.Http;
+using System.Text;
 using Dressing_Room.Models;
 using SQLite;
 
 namespace Dressing_Room.Services
 {
-	public class SignUpService
-	{
+    public class SignUpService
+    {
 
-        public  SQLiteAsyncConnection db;
-         async Task Init()
+        public SQLiteAsyncConnection db;
+        async Task Init()
         {
             if (db != null) return;
 
@@ -18,7 +20,7 @@ namespace Dressing_Room.Services
             await db.CreateTableAsync<User>();
         }
 
-         public async Task AddUser(User user)
+        public async Task AddUser(User user)
         {
             await Init();
             await db.InsertAsync(user);
@@ -27,7 +29,36 @@ namespace Dressing_Room.Services
 
         }
 
-        public  async Task<List<User>> GetUser()
+        public async Task UpdateUserPassword(string username, string newPassword)
+        {
+            await Init();
+            var user = await db.Table<User>().FirstOrDefaultAsync(u => u.Username == username);
+            if (user != null)
+            {
+                user.Password = newPassword;
+                await db.UpdateAsync(user);
+            }
+        }
+
+        public async Task<string> getPassword(string username)
+        {
+            await Init();
+            var user = await db.Table<User>().FirstOrDefaultAsync(u => u.Username == username);
+            return user.Password;
+        }
+
+        public async Task deleteAccount(string username)
+        {
+            await Init();
+            var user = await db.Table<User>().FirstOrDefaultAsync(u => u.Username == username);
+            if (user != null)
+            {
+                await db.DeleteAsync(user);
+            }
+
+        }
+
+        public async Task<List<User>> GetUser()
         {
             await Init();
             var result = await db.Table<User>().ToListAsync(); // This gets all the user in the database

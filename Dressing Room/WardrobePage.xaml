@@ -1,122 +1,282 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Dressing_Room.WardrobePage"
-             BackgroundColor="#E2E2E2"
-             Title="My Wardrobe"
-             Shell.NavBarIsVisible="False"
-             Shell.BackgroundColor="#01260A"
-             NavigationPage.HasBackButton="False"
-             >
-    <StackLayout >
+<ContentPage
+    x:Class="Dressing_Room.WardrobePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="My Wardrobe"
+    BackgroundColor="#E2E2E2"
+    NavigationPage.HasBackButton="False"
+    Shell.BackgroundColor="#01260A"
+    Shell.NavBarIsVisible="False">
+    <StackLayout>
 
         <ScrollView VerticalOptions="FillAndExpand">
 
             <VerticalStackLayout Spacing="25">
 
                 <VerticalStackLayout>
-                    <Label  Text="Dressing Room" TextColor="#01260A" VerticalOptions="Center"  VerticalTextAlignment="Center" 
-                            HorizontalTextAlignment="Center" BackgroundColor="#E2E2E2"  
-                            FontSize="20" FontFamily="Quora" HeightRequest="53" HorizontalOptions="Fill">
-                    </Label>
+                    <Label
+                        BackgroundColor="#E2E2E2"
+                        FontFamily="Quora"
+                        FontSize="20"
+                        HeightRequest="53"
+                        HorizontalOptions="Fill"
+                        HorizontalTextAlignment="Center"
+                        Text="Dressing Room"
+                        TextColor="#01260A"
+                        VerticalOptions="Center"
+                        VerticalTextAlignment="Center" />
 
-                    <Label   Text="Wardrobe" TextColor="#E2E2E2" 
-                            VerticalOptions="Center" VerticalTextAlignment="Center"  
-                            HorizontalTextAlignment="Center"  HorizontalOptions="Fill"
-                            FontSize="15" FontFamily="OPTIMA" HeightRequest="29"  BackgroundColor="#01260A"   >
-                    </Label>
+                    <Label
+                        BackgroundColor="#01260A"
+                        FontFamily="OPTIMA"
+                        FontSize="15"
+                        HeightRequest="29"
+                        HorizontalOptions="Fill"
+                        HorizontalTextAlignment="Center"
+                        Text="Wardrobe"
+                        TextColor="#E2E2E2"
+                        VerticalOptions="Center"
+                        VerticalTextAlignment="Center" />
                 </VerticalStackLayout>
 
-                <VerticalStackLayout Spacing="34" >
+                <VerticalStackLayout Spacing="34">
 
-                    <HorizontalStackLayout Spacing="31" HorizontalOptions="Center">
+                    <HorizontalStackLayout HorizontalOptions="Center" Spacing="31">
                         <VerticalStackLayout Spacing="-1">
-                            <Border HeightRequest="216" WidthRequest="136" Stroke="#01260A" StrokeThickness="-1" StrokeShape="RoundRectangle 20,20,0,0">
-                                <ImageButton Source="outfitspic.jpg" Aspect="Fill" Clicked="OnImage1Clicked"/>
+                            <Border
+                                HeightRequest="216"
+                                Stroke="#01260A"
+                                StrokeShape="RoundRectangle 20,20,0,0"
+                                StrokeThickness="-1"
+                                WidthRequest="136">
+                                <ImageButton
+                                    Aspect="Fill"
+                                    Clicked="OnImage1Clicked"
+                                    Source="outfitspic.jpg" />
                             </Border>
 
-                            <Border StrokeShape="RoundRectangle 0,0,20,20" StrokeThickness="0" Stroke="#01260A" BackgroundColor="#01260A" HeightRequest="35">
-                                <Frame BackgroundColor="#01260A" CornerRadius="0" BorderColor="#01260A" >
-                                    <Label Text="Outfits" HorizontalTextAlignment="Center" TextColor="#E2E2E2" FontSize="14" FontAttributes="Bold" VerticalTextAlignment="Center"
-                                                   VerticalOptions="Center" HorizontalOptions="Center" FontFamily="OPTIMA_B" HeightRequest="17">
-                                    </Label>
+                            <Border
+                                BackgroundColor="#01260A"
+                                HeightRequest="35"
+                                Stroke="#01260A"
+                                StrokeShape="RoundRectangle 0,0,20,20"
+                                StrokeThickness="0">
+                                <Frame
+                                    BackgroundColor="#01260A"
+                                    BorderColor="#01260A"
+                                    CornerRadius="0">
+                                    <Label
+                                        FontAttributes="Bold"
+                                        FontFamily="OPTIMA_B"
+                                        FontSize="14"
+                                        HeightRequest="17"
+                                        HorizontalOptions="Center"
+                                        HorizontalTextAlignment="Center"
+                                        Text="Outfits"
+                                        TextColor="#E2E2E2"
+                                        VerticalOptions="Center"
+                                        VerticalTextAlignment="Center" />
                                 </Frame>
                             </Border>
                         </VerticalStackLayout>
 
                         <VerticalStackLayout Spacing="-1">
-                            <Border HeightRequest="216" WidthRequest="136" Stroke="#01260A" StrokeThickness="-1" StrokeShape="RoundRectangle 20,20,0,0">
-                                <ImageButton Source="topspic.png" Aspect="Fill" Clicked="OnImage2Clicked"/>
+                            <Border
+                                HeightRequest="216"
+                                Stroke="#01260A"
+                                StrokeShape="RoundRectangle 20,20,0,0"
+                                StrokeThickness="-1"
+                                WidthRequest="136">
+                                <ImageButton
+                                    Aspect="Fill"
+                                    Clicked="OnImage2Clicked"
+                                    Source="topspic.png" />
                             </Border>
 
-                            <Border StrokeShape="RoundRectangle 0,0,20,20" StrokeThickness="0" Stroke="#01260A" BackgroundColor="#01260A" HeightRequest="35">
-                                <Frame BackgroundColor="#01260A" CornerRadius="0"  BorderColor="#01260A">
-                                    <Label Text="Tops" HorizontalTextAlignment="Center" TextColor="#E2E2E2" FontSize="14" FontAttributes="Bold" VerticalTextAlignment="Center"
-                                               VerticalOptions="Center" HorizontalOptions="Center" FontFamily="OPTIMA_B" HeightRequest="17">
-                                    </Label>
+                            <Border
+                                BackgroundColor="#01260A"
+                                HeightRequest="35"
+                                Stroke="#01260A"
+                                StrokeShape="RoundRectangle 0,0,20,20"
+                                StrokeThickness="0">
+                                <Frame
+                                    BackgroundColor="#01260A"
+                                    BorderColor="#01260A"
+                                    CornerRadius="0">
+                                    <Label
+                                        FontAttributes="Bold"
+                                        FontFamily="OPTIMA_B"
+                                        FontSize="14"
+                                        HeightRequest="17"
+                                        HorizontalOptions="Center"
+                                        HorizontalTextAlignment="Center"
+                                        Text="Tops"
+                                        TextColor="#E2E2E2"
+                                        VerticalOptions="Center"
+                                        VerticalTextAlignment="Center" />
                                 </Frame>
                             </Border>
                         </VerticalStackLayout>
                     </HorizontalStackLayout>
 
-                    <HorizontalStackLayout Spacing="31" HorizontalOptions="Center">
+                    <HorizontalStackLayout HorizontalOptions="Center" Spacing="31">
                         <VerticalStackLayout Spacing="-1">
-                            <Border HeightRequest="216" WidthRequest="136" Stroke="Transparent" StrokeThickness="0" StrokeShape="RoundRectangle 20,20,0,0">
+                            <Border
+                                HeightRequest="216"
+                                Stroke="Transparent"
+                                StrokeShape="RoundRectangle 20,20,0,0"
+                                StrokeThickness="0"
+                                WidthRequest="136">
 
-                                <ImageButton Source="pantspic.png" Aspect="Fill" Clicked="OnImage3Clicked" />
+                                <ImageButton
+                                    Aspect="Fill"
+                                    Clicked="OnImage3Clicked"
+                                    Source="pantspic.png" />
 
                             </Border>
 
-                            <Border StrokeShape="RoundRectangle 0,0,20,20" StrokeThickness="0" Stroke="Transparent" BackgroundColor="#01260A" HeightRequest="35">
-                                <Frame BackgroundColor="#01260A" CornerRadius="0" BorderColor="#01260A">
-                                    <Label Text="Pants" HorizontalTextAlignment="Center" TextColor="#E2E2E2" FontSize="14" FontAttributes="Bold" VerticalTextAlignment="Center"
-                                               VerticalOptions="Center" HorizontalOptions="Center" FontFamily="OPTIMA_B" HeightRequest="18">
-                                    </Label>
+                            <Border
+                                BackgroundColor="#01260A"
+                                HeightRequest="35"
+                                Stroke="Transparent"
+                                StrokeShape="RoundRectangle 0,0,20,20"
+                                StrokeThickness="0">
+                                <Frame
+                                    BackgroundColor="#01260A"
+                                    BorderColor="#01260A"
+                                    CornerRadius="0">
+                                    <Label
+                                        FontAttributes="Bold"
+                                        FontFamily="OPTIMA_B"
+                                        FontSize="14"
+                                        HeightRequest="18"
+                                        HorizontalOptions="Center"
+                                        HorizontalTextAlignment="Center"
+                                        Text="Pants"
+                                        TextColor="#E2E2E2"
+                                        VerticalOptions="Center"
+                                        VerticalTextAlignment="Center" />
                                 </Frame>
                             </Border>
                         </VerticalStackLayout>
 
                         <VerticalStackLayout Spacing="-1">
-                            <Border HeightRequest="216" WidthRequest="136" Stroke="Transparent" StrokeThickness="0" StrokeShape="RoundRectangle 20,20,0,0">
-                                <ImageButton Source="shoespic.png" Aspect="Fill" Clicked="OnImage4Clicked"/>
+                            <Border
+                                HeightRequest="216"
+                                Stroke="Transparent"
+                                StrokeShape="RoundRectangle 20,20,0,0"
+                                StrokeThickness="0"
+                                WidthRequest="136">
+                                <ImageButton
+                                    Aspect="Fill"
+                                    Clicked="OnImage4Clicked"
+                                    Source="shoespic.png" />
                             </Border>
 
-                            <Border StrokeShape="RoundRectangle 0,0,20,20" StrokeThickness="0" Stroke="Transparent" BackgroundColor="#01260A" HeightRequest="35">
-                                <Frame BackgroundColor="#01260A" CornerRadius="0" BorderColor="#01260A">
-                                    <Label Text="Shoes" HorizontalTextAlignment="Center" TextColor="#E2E2E2" FontSize="14" FontAttributes="Bold" VerticalTextAlignment="Center"
-                                               VerticalOptions="Center" HorizontalOptions="Center" FontFamily="OPTIMA_B" HeightRequest="18">
-                                    </Label>
+                            <Border
+                                BackgroundColor="#01260A"
+                                HeightRequest="35"
+                                Stroke="Transparent"
+                                StrokeShape="RoundRectangle 0,0,20,20"
+                                StrokeThickness="0">
+                                <Frame
+                                    BackgroundColor="#01260A"
+                                    BorderColor="#01260A"
+                                    CornerRadius="0">
+                                    <Label
+                                        FontAttributes="Bold"
+                                        FontFamily="OPTIMA_B"
+                                        FontSize="14"
+                                        HeightRequest="18"
+                                        HorizontalOptions="Center"
+                                        HorizontalTextAlignment="Center"
+                                        Text="Shoes"
+                                        TextColor="#E2E2E2"
+                                        VerticalOptions="Center"
+                                        VerticalTextAlignment="Center" />
                                 </Frame>
                             </Border>
                         </VerticalStackLayout>
                     </HorizontalStackLayout>
 
-                    <HorizontalStackLayout Spacing="31" HorizontalOptions="Center" Margin="0,0,0,20">
+                    <HorizontalStackLayout
+                        Margin="0,0,0,20"
+                        HorizontalOptions="Center"
+                        Spacing="31">
 
                         <VerticalStackLayout Spacing="-1">
-                            <Border HeightRequest="216" WidthRequest="136" Stroke="Transparent" StrokeThickness="0" StrokeShape="RoundRectangle 20,20,0,0">
-                                <ImageButton Source="jacketspic.png" Aspect="Fill" Clicked="OnImage5Clicked" />
+                            <Border
+                                HeightRequest="216"
+                                Stroke="Transparent"
+                                StrokeShape="RoundRectangle 20,20,0,0"
+                                StrokeThickness="0"
+                                WidthRequest="136">
+                                <ImageButton
+                                    Aspect="Fill"
+                                    Clicked="OnImage5Clicked"
+                                    Source="jacketspic.png" />
                             </Border>
 
-                            <Border StrokeShape="RoundRectangle 0,0,20,20" StrokeThickness="0" Stroke="Transparent" BackgroundColor="#01260A" HeightRequest="35">
-                                <Frame BackgroundColor="#01260A" CornerRadius="0" BorderColor="#01260A">
-                                    <Label Text="Jackets" HorizontalTextAlignment="Center" TextColor="#E2E2E2" FontSize="14" FontAttributes="Bold" VerticalTextAlignment="Center"
-                                               VerticalOptions="Center" HorizontalOptions="Center" FontFamily="OPTIMA_B" HeightRequest="18">
-                                    </Label>
+                            <Border
+                                BackgroundColor="#01260A"
+                                HeightRequest="35"
+                                Stroke="Transparent"
+                                StrokeShape="RoundRectangle 0,0,20,20"
+                                StrokeThickness="0">
+                                <Frame
+                                    BackgroundColor="#01260A"
+                                    BorderColor="#01260A"
+                                    CornerRadius="0">
+                                    <Label
+                                        FontAttributes="Bold"
+                                        FontFamily="OPTIMA_B"
+                                        FontSize="14"
+                                        HeightRequest="18"
+                                        HorizontalOptions="Center"
+                                        HorizontalTextAlignment="Center"
+                                        Text="Jackets"
+                                        TextColor="#E2E2E2"
+                                        VerticalOptions="Center"
+                                        VerticalTextAlignment="Center" />
                                 </Frame>
                             </Border>
                         </VerticalStackLayout>
 
                         <VerticalStackLayout Spacing="-1">
-                            <Border HeightRequest="216" WidthRequest="136" Stroke="Transparent" StrokeThickness="0" StrokeShape="RoundRectangle 20,20,0,0">
-                                <ImageButton Source="accesoriespic.jpg" Aspect="Fill" Clicked="OnImage6Clicked"/>
+                            <Border
+                                HeightRequest="216"
+                                Stroke="Transparent"
+                                StrokeShape="RoundRectangle 20,20,0,0"
+                                StrokeThickness="0"
+                                WidthRequest="136">
+                                <ImageButton
+                                    Aspect="Fill"
+                                    Clicked="OnImage6Clicked"
+                                    Source="accesoriespic.jpg" />
                             </Border>
 
-                            <Border StrokeShape="RoundRectangle 0,0,20,20" StrokeThickness="0" Stroke="#01260A" BackgroundColor="#01260A" HeightRequest="35">
-                                <Frame BackgroundColor="#01260A" CornerRadius="0" BorderColor="#01260A">
-                                    <Label Text="Accessories" HorizontalTextAlignment="Center" TextColor="#E2E2E2" FontSize="14" FontAttributes="Bold" VerticalTextAlignment="Center"
-                                               VerticalOptions="Center" HorizontalOptions="Center" FontFamily="OPTIMA_B" HeightRequest="18">
-                                    </Label>
+                            <Border
+                                BackgroundColor="#01260A"
+                                HeightRequest="35"
+                                Stroke="#01260A"
+                                StrokeShape="RoundRectangle 0,0,20,20"
+                                StrokeThickness="0">
+                                <Frame
+                                    BackgroundColor="#01260A"
+                                    BorderColor="#01260A"
+                                    CornerRadius="0">
+                                    <Label
+                                        FontAttributes="Bold"
+                                        FontFamily="OPTIMA_B"
+                                        FontSize="14"
+                                        HeightRequest="18"
+                                        HorizontalOptions="Center"
+                                        HorizontalTextAlignment="Center"
+                                        Text="Accessories"
+                                        TextColor="#E2E2E2"
+                                        VerticalOptions="Center"
+                                        VerticalTextAlignment="Center" />
                                 </Frame>
                             </Border>
                         </VerticalStackLayout>
@@ -128,30 +288,52 @@
             </VerticalStackLayout>
 
         </ScrollView>
-        <Border BackgroundColor="#01260A" HeightRequest="53" StrokeShape="RoundRectangle 30,30,0,0" StrokeThickness="-1">
-            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="50">
-                <ImageButton Source="homepage2.png" HeightRequest="25" WidthRequest="30">
-
-                </ImageButton>
+        <Border
+            BackgroundColor="#01260A"
+            HeightRequest="53"
+            StrokeShape="RoundRectangle 30,30,0,0"
+            StrokeThickness="-1">
+            <HorizontalStackLayout
+                HorizontalOptions="Center"
+                Spacing="50"
+                VerticalOptions="Center">
+                <ImageButton
+                    HeightRequest="25"
+                    Source="homepage2.png"
+                    WidthRequest="30" />
                 <VerticalStackLayout Spacing="2" VerticalOptions="Center">
-                    <ImageButton Source="hanger.png" HeightRequest="25" WidthRequest="30">
-
-                    </ImageButton>
-                    <Ellipse HeightRequest="8" WidthRequest="8" Fill="white" />
+                    <ImageButton
+                        HeightRequest="25"
+                        Source="hanger.png"
+                        WidthRequest="30" />
+                    <Ellipse
+                        Fill="white"
+                        HeightRequest="8"
+                        WidthRequest="8" />
                 </VerticalStackLayout>
 
-                <Border   Padding="0" HeightRequest="35" WidthRequest="35" BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20">
-                    <ImageButton Source="plussign.png" HeightRequest="20" WidthRequest="20" Clicked="OnImage7Clicked">
-
-                    </ImageButton>
+                <Border
+                    Padding="0"
+                    BackgroundColor="#E2E2E2"
+                    HeightRequest="35"
+                    StrokeShape="RoundRectangle 20,20,20,20"
+                    WidthRequest="35">
+                    <ImageButton
+                        Clicked="OnImage7Clicked"
+                        HeightRequest="20"
+                        Source="plussign.png"
+                        WidthRequest="20" />
                 </Border>
 
-                <ImageButton Source="profilepic.png" HeightRequest="25" WidthRequest="30">
-
-                </ImageButton>
-                <ImageButton Source="setting.png" HeightRequest="25" WidthRequest="30">
-
-                </ImageButton>
+                <ImageButton
+                    HeightRequest="25"
+                    Source="profilepic.png"
+                    WidthRequest="30" />
+                <ImageButton
+                    Clicked="GoToSettings"
+                    HeightRequest="25"
+                    Source="setting.png"
+                    WidthRequest="30" />
             </HorizontalStackLayout>
 
         </Border>

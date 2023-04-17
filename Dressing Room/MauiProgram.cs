@@ -9,49 +9,55 @@ namespace Dressing_Room;
 
 public static class MauiProgram
 {
-	public static MauiApp CreateMauiApp()
-	{
-		var builder = MauiApp.CreateBuilder();
-		builder
-			.UseMauiApp<App>()
-			.UseMauiCommunityToolkit()
-			.ConfigureMopups()
-			.ConfigureFonts(fonts =>
-			{
-				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-				fonts.AddFont("OPTIMA_B.TTF", "OPTIMA_B");
+    public static MauiApp CreateMauiApp()
+    {
+        var builder = MauiApp.CreateBuilder();
+        builder
+            .UseMauiApp<App>()
+            .UseMauiCommunityToolkit()
+            .ConfigureMopups()
+            .ConfigureFonts(fonts =>
+            {
+                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                fonts.AddFont("OPTIMA_B.TTF", "OPTIMA_B");
                 fonts.AddFont("OPTIMA.TTF", "OPTIMA");
                 fonts.AddFont("Quora.ttf", "Quora");
-			});
+            });
 
 #if DEBUG
         builder.Logging.AddDebug();
 #endif
 
-		//view
+        //view
 
-		builder.Services.AddSingleton<MainPage>();
-		builder.Services.AddSingleton<Signup>();
+        builder.Services.AddSingleton<MainPage>();
+        builder.Services.AddSingleton<Signup>();
         builder.Services.AddSingleton<AccessoriesPage>();
         builder.Services.AddSingleton<JacketsPage>();
         builder.Services.AddSingleton<OutfitsPage>();
         builder.Services.AddSingleton<PantsPage>();
         builder.Services.AddSingleton<TopsPage>();
         builder.Services.AddSingleton<ShoesPage>();
+        builder.Services.AddSingleton<SettingsPage>();
+        builder.Services.AddSingleton<CreateOutfit>();
+        builder.Services.AddSingleton<ChangePasswordPopup>();
 
         //viewmodel
         builder.Services.AddSingleton<SignupViewModel>();
-		builder.Services.AddSingleton<MainPageViewModel>();
-		builder.Services.AddSingleton<ClothViewModel>();
-		builder.Services.AddSingleton<TopsViewModel>();
+        builder.Services.AddSingleton<MainPageViewModel>();
+        builder.Services.AddSingleton<ClothViewModel>();
+        builder.Services.AddSingleton<TopsViewModel>();
         builder.Services.AddSingleton<ShoesViewModel>();
+        builder.Services.AddSingleton<AccessoriesViewModel>();
+        builder.Services.AddSingleton<CreateOutfitViewModel>();
+        builder.Services.AddSingleton<SettingsViewModel>();
 
         // services
         builder.Services.AddSingleton<SignUpService>();
-		builder.Services.AddSingleton<ClothingService>();
-		
+        builder.Services.AddSingleton<ClothingService>();
 
-		return builder.Build();
-	}
+
+        return builder.Build();
+    }
 }

@@ -41,7 +41,7 @@
                             </Image>
                         </Border>
 
-                        <CollectionView ItemsSource="{Binding Tops}"  SelectionMode="Single"  SelectionChanged="CollectionView_SelectionChanged" >
+                        <CollectionView ItemsSource="{Binding Tops}"  SelectionMode="Single"   >
                             <CollectionView.ItemsLayout>
                                 <LinearItemsLayout Orientation="Horizontal" ItemSpacing="50"/>
                             </CollectionView.ItemsLayout>

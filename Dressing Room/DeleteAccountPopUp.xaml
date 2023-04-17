@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mopup:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mopup="clr-namespace:Mopups.Pages;assembly=Mopups"
+             x:Class="Dressing_Room.DeleteAccountPopUp"
+             xmlns:viewmodel="clr-namespace:Dressing_Room.ViewModels"
+             x:DataType="viewmodel:SettingsViewModel"
+             Background="#80000000"
+             Title="DeleteAccountPopUp">
+
+
+    <Border HeightRequest="200" WidthRequest="300" BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 10,10,10,10">
+        <VerticalStackLayout Spacing="30">
+            <Image Source="hangerquestion" HeightRequest="150" WidthRequest="150" Margin="0,-40,0,0">
+
+            </Image>
+            <Label Text="Are you sure you want to delete account?" HorizontalOptions="Center" TextColor="#01260A" Margin="0,-50,0,0">
+
+            </Label>
+            <HorizontalStackLayout Spacing="40" HorizontalOptions="Center">
+                <Border StrokeShape="RoundRectangle 20,20,20,20" Stroke="#01260A" >
+                    <Button Text="No" BackgroundColor="#FFFFFF" WidthRequest="70" TextColor="#01260A" Clicked="OnButtonClicked">
+
+                    </Button >
+                </Border>
+                <Border StrokeShape="RoundRectangle 20,20,20,20">
+                    <Button Text="Yes" BackgroundColor="#01260A" WidthRequest="70" TextColor="#FFFFFF" Command="{Binding DeleteAccountCommand}">
+
+                    </Button>
+                </Border>
+
+
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+    </Border>
+</mopup:PopupPage>

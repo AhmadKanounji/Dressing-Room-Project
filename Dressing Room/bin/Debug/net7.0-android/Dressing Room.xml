@@ -64,6 +64,18 @@
         <member name="P:Dressing_Room.ViewModels.PantsViewModel.GetPantsCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.PantsViewModel.GetPants"/>.</summary>
         </member>
+        <member name="F:Dressing_Room.ViewModels.SettingsViewModel.changePasswordCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.SettingsViewModel.ChangePasswordCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.SettingsViewModel.ChangePasswordCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.SettingsViewModel.ChangePassword"/>.</summary>
+        </member>
+        <member name="F:Dressing_Room.ViewModels.SettingsViewModel.deleteAccountCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.SettingsViewModel.DeleteAccountCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.SettingsViewModel.DeleteAccountCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.SettingsViewModel.DeleteAccount"/>.</summary>
+        </member>
         <member name="F:Dressing_Room.ViewModels.ShoesViewModel.getShoesCommand">
             <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.ShoesViewModel.GetShoesCommand"/>.</summary>
         </member>
