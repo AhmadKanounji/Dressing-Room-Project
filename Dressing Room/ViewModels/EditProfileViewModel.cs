@@ -56,7 +56,6 @@ namespace Dressing_Room.ViewModels
         [RelayCommand]
         public async Task SaveChanges()
         {
-            if (User_email == Preferences.Get("user_email", "deafult_value") && User_name == Preferences.Get("user_name", "default_value")) return;
 
             if (User_email == "" || User_password == "")
             {
