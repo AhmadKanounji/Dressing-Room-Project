@@ -55,8 +55,8 @@ namespace Dressing_Room.ViewModels
 
         [RelayCommand]
         public async Task SaveChanges()
-        { /*
-            if (User_email == Preferences.Get("user_email", "deafult_value") && User_name == Preferences.Get("user_name", "default_value")) ;
+        {
+            if (User_email == Preferences.Get("user_email", "deafult_value") && User_name == Preferences.Get("user_name", "default_value")) return;
 
             if (User_email == "" || User_password == "")
             {
@@ -74,11 +74,11 @@ namespace Dressing_Room.ViewModels
             }
 
             //updating email and username and photo
-            await _signUpService.UpdateUser(Preferences.Get("user_name", "deafult_value"), User_email, ProfileImage);
+            await _signUpService.UpdateUser(Preferences.Get("user_name", "deafult_value"), User_name, User_email, ProfileImage);
             await Shell.Current.DisplayAlert("Success!", "Changes have been saved", "Exit");
             Preferences.Set("user_name", User_name);
             Preferences.Set("user_email", User_email);
-            */
+
         }
 
         [RelayCommand]

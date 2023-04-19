@@ -38,12 +38,12 @@ public partial class ProfilePage : ContentPage
     protected override void OnAppearing()
     {
         base.OnAppearing();
+        viewModel.User_info = Preferences.Get("user_name", "default_value");
         for (int i = 0; i < 10; i++)
         {
             viewModel.refresh();
         }
 
-        //Task.Delay(1000);
-        //viewModel.refresh();
+
     }
 }
