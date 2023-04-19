@@ -44,6 +44,17 @@ namespace Dressing_Room.Services
             return result;
         }
 
+        public async Task UpdateClothes(string username, string new_username)
+        {
+            await Init();
+            var cloth = await db.Table<Clothes>().Where(u => u.UserID == username).ToListAsync();
+            foreach (Clothes c in cloth)
+            {
+                c.UserID = new_username;
+                await db.UpdateAsync(c);
+            }
+        }
+
 
     }
 }

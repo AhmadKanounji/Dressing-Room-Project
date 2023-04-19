@@ -2,6 +2,7 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Dressing_Room.Services;
+using Mopups.Services;
 
 namespace Dressing_Room.ViewModels
 {
@@ -13,48 +14,49 @@ namespace Dressing_Room.ViewModels
         [RelayCommand]
         async void GoToEditProfile()
         {
+            await MopupService.Instance.PushAsync(new RemoveBugPopup());
             Routing.RegisterRoute(nameof(EditProfile), typeof(EditProfile));
             await Shell.Current.GoToAsync(nameof(EditProfile));
         }
-      
 
 
 
 
-       
-            public SignUpService _signUpService;
+
+
+        public SignUpService _signUpService;
 
 
 
 
-            public ProfileViewModel()
+        public ProfileViewModel()
+        {
+            _signUpService = new SignUpService();
+            refresh();
+
+        }
+        [ObservableProperty]
+        public byte[] photoSource;
+
+
+        public async void refresh()
+        {
+
+            var allUsers = await _signUpService.GetUser();
+            foreach (var user in allUsers)
             {
-                _signUpService = new SignUpService();
-                refresh();
-
-            }
-            [ObservableProperty]
-            public byte[] photoSource;
-
-
-            public async void refresh()
-            {
-
-                var allUsers =  await _signUpService.GetUser();
-                foreach (var user in allUsers)
+                if (user.Username == Preferences.Get("user_name", "deafault_value"))
                 {
-                    if (user.Username == Preferences.Get("user_name", "deafault_value"))
-                    {
-                        PhotoSource = user.Source;
-                        break;
-                    }
-
+                    PhotoSource = user.Source;
+                    break;
                 }
-
 
             }
 
 
         }
+
+
     }
+}
 

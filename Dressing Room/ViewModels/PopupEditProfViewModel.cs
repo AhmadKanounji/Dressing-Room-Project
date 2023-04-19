@@ -20,7 +20,7 @@ namespace Dressing_Room.ViewModels
 
         }
 
-       
+
         public ImageSource photo;
 
         public FileResult tempphoto;
@@ -54,40 +54,11 @@ namespace Dressing_Room.ViewModels
         }
 
         [RelayCommand]
-        public async void Confirm()
+        public void RemovePhoto()
         {
-
-            if (tempphoto == null) return;
-            var stream = await tempphoto.OpenReadAsync();
-            byte[] photoBytes;
-            using (var memoryStream = new MemoryStream())
-            {
-                await stream.CopyToAsync(memoryStream);
-                photoBytes = memoryStream.ToArray();
-
-
-            }
-            //create a user model to be updated but get info first:
-            var allUsers = await _signUpService.GetUser();
-            var user = new User();
-            foreach (User x in allUsers)
-            {
-                if (x.Username == Preferences.Get("user_name", "default_value"))
-                {
-                    user.Username = x.Username;
-                    user.Password = x.Password;
-                    user.Email = x.Email;
-                    user.Source = photoBytes;
-                    user.Gender = x.Gender;
-                    break;
-                }
-            }
-
-
-            //await _signUpService.UpdateUserPhoto(user);
-            WeakReferenceMessenger.Default.Send(new RefreshMessage(photoBytes));
-            await MopupService.Instance.PopAllAsync();
-
+            WeakReferenceMessenger.Default.Send(new RefreshMessage(null));
+            MopupService.Instance.PopAllAsync();
         }
+
     }
 }

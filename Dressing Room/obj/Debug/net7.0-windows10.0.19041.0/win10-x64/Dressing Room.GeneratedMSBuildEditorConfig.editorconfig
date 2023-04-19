@@ -70,6 +70,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.ProfilePage.
 build_metadata.AdditionalFiles.TargetPath = ProfilePage.xaml
 build_metadata.AdditionalFiles.RelativePath = ProfilePage.xaml
 
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/RemoveBugPopup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.RemoveBugPopup.xaml
+build_metadata.AdditionalFiles.TargetPath = RemoveBugPopup.xaml
+build_metadata.AdditionalFiles.RelativePath = RemoveBugPopup.xaml
+
 [C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Resources.Styles.Colors.xaml

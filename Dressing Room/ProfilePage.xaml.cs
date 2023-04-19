@@ -14,7 +14,7 @@ public partial class ProfilePage : ContentPage
     private ProfileViewModel viewModel;
     public ProfilePage()
     {
-        
+
         InitializeComponent();
         viewModel = new ProfileViewModel();
         this.BindingContext = viewModel;
@@ -38,6 +38,12 @@ public partial class ProfilePage : ContentPage
     protected override void OnAppearing()
     {
         base.OnAppearing();
-        viewModel.refresh();
+        for (int i = 0; i < 10; i++)
+        {
+            viewModel.refresh();
+        }
+
+        //Task.Delay(1000);
+        //viewModel.refresh();
     }
 }

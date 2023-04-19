@@ -2,14 +2,15 @@
 using SQLite;
 namespace Dressing_Room.Models
 {
-	public class User
-	{
+    public class User
+    {
 
-		[PrimaryKey]
-		public string Username { get; set; }
-		public string Email { get; set; }
-		public string Password { get; set; }
-		public string Gender { get; set; }
+        [PrimaryKey, AutoIncrement]
+        public int UserID { get; set; }
+        public string Username { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public string Gender { get; set; }
         public byte[] Source { get; set; }
     }
 }

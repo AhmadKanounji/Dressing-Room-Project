@@ -10,41 +10,41 @@
                      CloseWhenBackgroundIsClicked="True" >
 
     <Border HorizontalOptions="Fill" VerticalOptions="End" HeightRequest="200" BackgroundColor="White">
-    <VerticalStackLayout>
-      
-        <StackLayout Orientation="Horizontal">
-            <!--add icon--> 
-            <Image Source="library.png" HeightRequest="25" WidthRequest="25" Margin="20,10,0,0">
+        <VerticalStackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <!--add icon-->
+                <Image Source="library.png" HeightRequest="25" WidthRequest="25" Margin="20,10,0,0">
 
 
-            </Image>
-            <Button Text="Choose from library" Margin="5,10,0,0" BackgroundColor="White" TextColor="#01260A" FontSize="15">
+                </Image>
+                <Button Text="Choose from library" Margin="5,10,0,0" BackgroundColor="White" TextColor="#01260A" FontSize="15">
 
 
-            </Button>
+                </Button>
 
-        </StackLayout>
+            </StackLayout>
 
-        <StackLayout Orientation="Horizontal">
-            <Image Source="camera.png" HeightRequest="25" WidthRequest="25" Margin="20,10,0,0">
-
-
-            </Image>
-            <Button Text="Take photo" Margin="5,10,0,0" BackgroundColor="White" TextColor="#01260A"  FontSize="15" Command="{Binding TakePhotoCommand}">
+            <StackLayout Orientation="Horizontal">
+                <Image Source="camera.png" HeightRequest="25" WidthRequest="25" Margin="20,10,0,0">
 
 
-            </Button>
-        </StackLayout>
-        <StackLayout Orientation="Horizontal">
-            <Image Source="trash.png" HeightRequest="25" WidthRequest="25" Margin="20,10,0,0">
+                </Image>
+                <Button Text="Take photo" Margin="5,10,0,0" BackgroundColor="White" TextColor="#01260A"  FontSize="15" Command="{Binding TakePhotoCommand}">
 
 
-            </Image>
-            <Button Text="Remove current picture" Margin="5,10,0,0" BackgroundColor="White" TextColor="Red" FontSize="15">
+                </Button>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="trash.png" HeightRequest="25" WidthRequest="25" Margin="20,10,0,0">
 
 
-            </Button>
-        </StackLayout>
-    </VerticalStackLayout>
+                </Image>
+                <Button Text="Remove current picture" Margin="5,10,0,0" BackgroundColor="White" TextColor="Red" FontSize="15" Command="{Binding RemovePhotoCommand}">
+
+
+                </Button>
+            </StackLayout>
+        </VerticalStackLayout>
     </Border>
 </mopups:PopupPage>
