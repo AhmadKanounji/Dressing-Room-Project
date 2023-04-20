@@ -11,12 +11,13 @@ namespace Dressing_Room;
 
 public partial class WardrobePage : ContentPage
 {
-    private bool buttonDisabled = false;
+    
 
+    
     public WardrobePage()
     {
         InitializeComponent();
-
+     
     }
     protected override bool OnBackButtonPressed()
     {
@@ -25,24 +26,14 @@ public partial class WardrobePage : ContentPage
     }
     private async void OnImage1Clicked(object sender, EventArgs e)
     {
-        Routing.RegisterRoute(nameof(OutfitsPage), typeof(OutfitsPage));
+        Routing.RegisterRoute(nameof(OutfitsPage),typeof(OutfitsPage));
         await Shell.Current.GoToAsync(nameof(OutfitsPage));
     }
 
     private async void OnImage2Clicked(object sender, EventArgs e)
     {
-        if (!buttonDisabled)
-        {
-            buttonDisabled = true;
-
-
-            Routing.RegisterRoute(nameof(TopsPage), typeof(TopsPage));
-            await Shell.Current.GoToAsync(nameof(TopsPage));
-            await Task.Delay(1000); // Wait for one second
-
-            buttonDisabled = false;
-        }
-
+        Routing.RegisterRoute(nameof(TopsPage), typeof(TopsPage));
+        await Shell.Current.GoToAsync(nameof(TopsPage));
     }
 
     private async void OnImage3Clicked(object sender, EventArgs e)
@@ -82,10 +73,10 @@ public partial class WardrobePage : ContentPage
     private void OnImage7Clicked(object sender, EventArgs e)
     {
         var imageButton = (ImageButton)sender;
-        imageButton.Rotation = 0;
+        imageButton.Rotation=0;
         imageButton.RotateTo(90, 500);
-        MopupService.Instance.PushAsync(new PopUpOne());
-
+         MopupService.Instance.PushAsync(new PopUpOne());
+       
     }
 
 
