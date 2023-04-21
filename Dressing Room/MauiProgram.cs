@@ -14,6 +14,7 @@ public static class MauiProgram
         var builder = MauiApp.CreateBuilder();
         builder
             .UseMauiApp<App>()
+            //.useSkiaSharp()
             .UseMauiCommunityToolkit()
             .ConfigureMopups()
             .ConfigureFonts(fonts =>
@@ -23,6 +24,8 @@ public static class MauiProgram
                 fonts.AddFont("OPTIMA_B.TTF", "OPTIMA_B");
                 fonts.AddFont("OPTIMA.TTF", "OPTIMA");
                 fonts.AddFont("Quora.ttf", "Quora");
+                fonts.AddFont("NotoSansMyanmar-Medium.ttf", "NotoSansMyanmar");
+                fonts.AddFont("Roboto-Medium.ttf", "Roboto");
             });
 
 #if DEBUG
@@ -39,9 +42,6 @@ public static class MauiProgram
         builder.Services.AddSingleton<PantsPage>();
         builder.Services.AddSingleton<TopsPage>();
         builder.Services.AddSingleton<ShoesPage>();
-        builder.Services.AddSingleton<SettingsPage>();
-        builder.Services.AddSingleton<CreateOutfit>();
-        builder.Services.AddSingleton<ChangePasswordPopup>();
 
         //viewmodel
         builder.Services.AddSingleton<SignupViewModel>();
@@ -49,13 +49,15 @@ public static class MauiProgram
         builder.Services.AddSingleton<ClothViewModel>();
         builder.Services.AddSingleton<TopsViewModel>();
         builder.Services.AddSingleton<ShoesViewModel>();
-        builder.Services.AddSingleton<AccessoriesViewModel>();
         builder.Services.AddSingleton<CreateOutfitViewModel>();
         builder.Services.AddSingleton<SettingsViewModel>();
+        builder.Services.AddSingleton<ProfileViewModel>();
+        builder.Services.AddSingleton<PopupEditProfViewModel>();
 
         // services
         builder.Services.AddSingleton<SignUpService>();
         builder.Services.AddSingleton<ClothingService>();
+        builder.Services.AddSingleton<EditProfileViewModel>();
 
 
         return builder.Build();

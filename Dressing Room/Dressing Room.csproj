@@ -100,6 +100,14 @@
 	  <None Remove="Resources\Images\pantspic.png" />
 	  <None Remove="Resources\Images\shoespic.png" />
 	  <None Remove="Resources\Images\topspic.png" />
+	  <None Remove="Resources\Images\camera.png" />
+	  <None Remove="Resources\Images\library.png" />
+	  <None Remove="Resources\Images\profilepicicon.png" />
+	  <None Remove="Resources\Images\splashscreenpic.svg" />
+	  <None Remove="Resources\Images\trash.png" />
+	  <None Remove="Resources\Fonts\Roboto-Medium.ttf" />
+	  <None Remove="Resources\Fonts\NotoSansMyanmar-Medium.ttf" />
+	  <None Remove="Messages\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Fonts\OPTIMA_B.TTF" />
@@ -113,6 +121,13 @@
 	  <BundleResource Include="Resources\Images\pantspic.png" />
 	  <BundleResource Include="Resources\Images\shoespic.png" />
 	  <BundleResource Include="Resources\Images\topspic.png" />
+	  <BundleResource Include="Resources\Images\camera.png" />
+	  <BundleResource Include="Resources\Images\library.png" />
+	  <BundleResource Include="Resources\Images\profilepicicon.png" />
+	  <BundleResource Include="Resources\Images\splashscreenpic.svg" />
+	  <BundleResource Include="Resources\Images\trash.png" />
+	  <BundleResource Include="Resources\Fonts\Roboto-Medium.ttf" />
+	  <BundleResource Include="Resources\Fonts\NotoSansMyanmar-Medium.ttf" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiXaml Update="ChangePasswordPopup.xaml">
@@ -163,5 +178,8 @@
 	  <MauiXaml Update="WardrobePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Messages\" />
 	</ItemGroup>
 </Project>

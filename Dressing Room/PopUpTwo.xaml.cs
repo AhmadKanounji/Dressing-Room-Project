@@ -8,7 +8,7 @@ public partial class PopUpTwo
     public PopUpTwo()
     {
         InitializeComponent();
-     
+
     }
 
     private void Button_Clicked(object sender, EventArgs e)

@@ -34,6 +34,36 @@
         <member name="P:Dressing_Room.ViewModels.ClothViewModel.AddToClosetCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.ClothViewModel.AddToCloset"/>.</summary>
         </member>
+        <member name="P:Dressing_Room.ViewModels.EditProfileViewModel.ProfileImage">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.EditProfileViewModel.profileImage"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.EditProfileViewModel.User_name">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.EditProfileViewModel.user_name"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.EditProfileViewModel.User_email">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.EditProfileViewModel.user_email"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.EditProfileViewModel.User_password">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.EditProfileViewModel.user_password"/>
+        </member>
+        <member name="F:Dressing_Room.ViewModels.EditProfileViewModel.saveChangesCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.EditProfileViewModel.SaveChangesCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.EditProfileViewModel.SaveChangesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.EditProfileViewModel.SaveChanges"/>.</summary>
+        </member>
+        <member name="F:Dressing_Room.ViewModels.EditProfileViewModel.openPopupCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.EditProfileViewModel.OpenPopupCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.EditProfileViewModel.OpenPopupCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.EditProfileViewModel.OpenPopup"/>.</summary>
+        </member>
+        <member name="F:Dressing_Room.ViewModels.EditProfileViewModel.receiveCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.EditProfileViewModel.ReceiveCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.EditProfileViewModel.ReceiveCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.EditProfileViewModel.Receive(Dressing_Room.Messages.RefreshMessage)"/>.</summary>
+        </member>
         <member name="F:Dressing_Room.ViewModels.JacketsViewModel.getJacketsCommand">
             <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.JacketsViewModel.GetJacketsCommand"/>.</summary>
         </member>
@@ -63,6 +93,30 @@
         </member>
         <member name="P:Dressing_Room.ViewModels.PantsViewModel.GetPantsCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.PantsViewModel.GetPants"/>.</summary>
+        </member>
+        <member name="F:Dressing_Room.ViewModels.PopupEditProfViewModel.takePhotoCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.PopupEditProfViewModel.TakePhotoCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.PopupEditProfViewModel.TakePhotoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.PopupEditProfViewModel.TakePhoto"/>.</summary>
+        </member>
+        <member name="F:Dressing_Room.ViewModels.PopupEditProfViewModel.removePhotoCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.PopupEditProfViewModel.RemovePhotoCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.PopupEditProfViewModel.RemovePhotoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.PopupEditProfViewModel.RemovePhoto"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.ProfileViewModel.User_info">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.ProfileViewModel.user_info"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.ProfileViewModel.PhotoSource">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.ProfileViewModel.photoSource"/>
+        </member>
+        <member name="F:Dressing_Room.ViewModels.ProfileViewModel.goToEditProfileCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.ProfileViewModel.GoToEditProfileCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.ProfileViewModel.GoToEditProfileCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.ProfileViewModel.GoToEditProfile"/>.</summary>
         </member>
         <member name="F:Dressing_Room.ViewModels.SettingsViewModel.changePasswordCommand">
             <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.SettingsViewModel.ChangePasswordCommand"/>.</summary>

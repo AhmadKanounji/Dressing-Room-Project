@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mopups:PopupPage    xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
+                     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                     xmlns:viewmodel="clr-namespace:Dressing_Room.ViewModels"
+                     x:DataType="viewmodel:PopupEditProfViewModel"
+                     x:Class="Dressing_Room.PopupEditProfile"
+                     Title="PopupEditProfile"
+                     BackgroundColor="#80000000"
+                     CloseWhenBackgroundIsClicked="True" >
+
+    <Border HorizontalOptions="Fill" VerticalOptions="End" HeightRequest="200" BackgroundColor="White">
+        <VerticalStackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <!--add icon-->
+                <Image Source="library.png" HeightRequest="25" WidthRequest="25" Margin="20,10,0,0">
+
+
+                </Image>
+                <Button Text="Choose from library" Margin="5,10,0,0" BackgroundColor="White" TextColor="#01260A" FontSize="15">
+
+
+                </Button>
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Image Source="camera.png" HeightRequest="25" WidthRequest="25" Margin="20,10,0,0">
+
+
+                </Image>
+                <Button Text="Take photo" Margin="5,10,0,0" BackgroundColor="White" TextColor="#01260A"  FontSize="15" Command="{Binding TakePhotoCommand}">
+
+
+                </Button>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="trash.png" HeightRequest="25" WidthRequest="25" Margin="20,10,0,0">
+
+
+                </Image>
+                <Button Text="Remove current picture" Margin="5,10,0,0" BackgroundColor="White" TextColor="Red" FontSize="15" Command="{Binding RemovePhotoCommand}">
+
+
+                </Button>
+            </StackLayout>
+        </VerticalStackLayout>
+    </Border>
+</mopups:PopupPage>

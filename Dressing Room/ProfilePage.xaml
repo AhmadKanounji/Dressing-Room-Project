@@ -1,0 +1,97 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dressing_Room.ProfilePage"
+             Shell.NavBarIsVisible="false"
+             Shell.BackgroundColor="#01260A"
+             xmlns:viewmodel="clr-namespace:Dressing_Room.ViewModels"
+             x:DataType="viewmodel:ProfileViewModel"
+             Title="{Binding User_info}"
+             NavigationPage.HasBackButton="False"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+
+             BackgroundColor="#E2E2E2"
+             >
+     <ContentPage.Resources>
+        <ResourceDictionary>
+            <toolkit:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Label Text="{Binding User_info,StringFormat='@{0}'}" TextColor="White" BackgroundColor="#01260A" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HeightRequest="55" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" FontFamily="Roboto"></Label>
+        <ScrollView VerticalOptions="FillAndExpand">
+            <StackLayout>
+                <StackLayout>
+                      <Border StrokeShape="RoundRectangle 100,100,100,100" HeightRequest="134" WidthRequest="134" Margin="0,20,0,0" BackgroundColor="#C4C4C4" Stroke="#707070" StrokeThickness="1.8">
+                        <!--add bindable image-->
+                        <Image Source="{Binding PhotoSource, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}">
+
+                        </Image>
+                    </Border>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="27" Margin="-3,-6,0,0" >
+
+                        <StackLayout Orientation="Vertical" Spacing="0" Margin="50,50,0,0">
+                            <!--change this text later/ just to see how it looks-->
+                            <Label Text="232" FontSize="20" Margin="11,0,0,0" FontFamily="NotoSansMyanmar" FontAttributes="Bold" CharacterSpacing="1"></Label>
+                            <Label Text="Outfits" FontSize="18" ></Label>
+                        </StackLayout>
+<BoxView BackgroundColor="Black" WidthRequest="0.5" HeightRequest="60" Margin="0,42,0,0" />
+
+                        <StackLayout Orientation="Vertical" Spacing="0" Margin="-2,50,0,0">
+                             <!--change this text later/ just to see how it looks-->
+                             <Label Text="1.7M" FontSize="20" Margin="14,0,0,0" FontFamily="NotoSansMyanmar" FontAttributes="Bold" CharacterSpacing="1"></Label>
+                             <Label Text="Followers" FontSize="18"></Label>
+                        </StackLayout>
+
+                        <BoxView BackgroundColor="Black" WidthRequest="0.5" HeightRequest="60" Margin="0,42,0,0" />
+
+                        <StackLayout Orientation="Vertical" Spacing="0" Margin="-8,50,0,0">
+                              <!--change this text later/ just to see how it looks-->
+                              <Label Text="666" FontSize="20" Margin="19,0,0,0" FontFamily="NotoSansMyanmar" FontAttributes="Bold" CharacterSpacing="1"></Label>
+                              <Label Text="Following" FontSize="18"></Label>
+                        </StackLayout>
+
+                </StackLayout>
+
+                 <Border StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="330" HeightRequest="48" StrokeThickness="2" Margin="0,20,0,0" Stroke="#01260A" >
+                      <Button BackgroundColor="#E2E2E2" Text="Edit Profile" TextColor="Black" FontFamily="NotoSansMyanmar" FontSize="17" FontAttributes="Bold" Command="{Binding GoToEditProfileCommand}" Margin="0,-3,0,0"></Button>
+                 </Border>
+                 <BoxView HeightRequest="1" BackgroundColor="Black" Margin="0,18,0,10" />
+           </StackLayout>
+        </ScrollView>
+
+    
+         <Border BackgroundColor="#01260A" HeightRequest="53" StrokeShape="RoundRectangle 30,30,0,0" StrokeThickness="-1" VerticalOptions="End">
+                <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="50">
+
+                    <ImageButton Source="homepage2.png" HeightRequest="25" WidthRequest="30">
+
+                    </ImageButton>
+
+                     <ImageButton Source="hanger.png" HeightRequest="25" WidthRequest="30" Clicked="OnHangerClicked">
+
+                     </ImageButton>
+                    
+
+                    <Border  Padding="0" HeightRequest="35" WidthRequest="35" BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20">
+                        <ImageButton Source="plussign.png" HeightRequest="20" WidthRequest="20" Clicked="OnPlusSignClicked">
+
+                        </ImageButton>
+                    </Border>
+              
+                  <VerticalStackLayout Spacing="2" VerticalOptions="Center">
+                    <ImageButton Source="profilepic.png" HeightRequest="25" WidthRequest="30">
+                        </ImageButton>
+                        <Ellipse HeightRequest="8" WidthRequest="8" Fill="white" />
+                    </VerticalStackLayout>
+
+                    <ImageButton Source="setting.png" HeightRequest="25" WidthRequest="30">
+
+                    </ImageButton>
+                </HorizontalStackLayout>
+
+            </Border>
+       
+    </StackLayout>
+</ContentPage>

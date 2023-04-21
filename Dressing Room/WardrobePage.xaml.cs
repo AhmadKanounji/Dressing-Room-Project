@@ -11,7 +11,6 @@ namespace Dressing_Room;
 
 public partial class WardrobePage : ContentPage
 {
-    private bool buttonDisabled = false;
 
     public WardrobePage()
     {
@@ -26,54 +25,43 @@ public partial class WardrobePage : ContentPage
     private async void OnImage1Clicked(object sender, EventArgs e)
     {
         Routing.RegisterRoute(nameof(OutfitsPage), typeof(OutfitsPage));
+        await MopupService.Instance.PushAsync(new RemoveBugPopup());
         await Shell.Current.GoToAsync(nameof(OutfitsPage));
     }
 
     private async void OnImage2Clicked(object sender, EventArgs e)
     {
-        if (!buttonDisabled)
-        {
-            buttonDisabled = true;
-
-
-            Routing.RegisterRoute(nameof(TopsPage), typeof(TopsPage));
-            await Shell.Current.GoToAsync(nameof(TopsPage));
-            await Task.Delay(1000); // Wait for one second
-
-            buttonDisabled = false;
-        }
-
+        Routing.RegisterRoute(nameof(TopsPage), typeof(TopsPage));
+        await MopupService.Instance.PushAsync(new RemoveBugPopup());
+        await Shell.Current.GoToAsync(nameof(TopsPage));
     }
 
     private async void OnImage3Clicked(object sender, EventArgs e)
     {
         Routing.RegisterRoute(nameof(PantsPage), typeof(PantsPage));
+        await MopupService.Instance.PushAsync(new RemoveBugPopup());
         await Shell.Current.GoToAsync(nameof(PantsPage));
     }
 
     private async void OnImage4Clicked(object sender, EventArgs e)
     {
         Routing.RegisterRoute(nameof(ShoesPage), typeof(ShoesPage));
+        await MopupService.Instance.PushAsync(new RemoveBugPopup());
         await Shell.Current.GoToAsync(nameof(ShoesPage));
     }
     private async void OnImage5Clicked(object sender, EventArgs e)
     {
         Routing.RegisterRoute(nameof(JacketsPage), typeof(JacketsPage));
+        await MopupService.Instance.PushAsync(new RemoveBugPopup());
         await Shell.Current.GoToAsync(nameof(JacketsPage));
     }
 
     private async void OnImage6Clicked(object sender, EventArgs e)
     {
         Routing.RegisterRoute(nameof(AccessoriesPage), typeof(AccessoriesPage));
+        await MopupService.Instance.PushAsync(new RemoveBugPopup());
         await Shell.Current.GoToAsync(nameof(AccessoriesPage));
     }
-    private async void GoToSettings(object sender, EventArgs e)
-    {
-        Routing.RegisterRoute(nameof(SettingsPage), typeof(SettingsPage));
-        await Shell.Current.GoToAsync(nameof(SettingsPage));
-    }
-
-
 
 
 
@@ -88,5 +76,18 @@ public partial class WardrobePage : ContentPage
 
     }
 
+    async void GoToProfile(System.Object sender, System.EventArgs e)
+    {
+        Routing.RegisterRoute(nameof(ProfilePage), typeof(ProfilePage));
+        await MopupService.Instance.PushAsync(new RemoveBugPopup());
+        await Shell.Current.GoToAsync(nameof(ProfilePage));
+    }
+
+    async void GoToSettings(System.Object sender, System.EventArgs e)
+    {
+        Routing.RegisterRoute(nameof(SettingsPage), typeof(SettingsPage));
+        await MopupService.Instance.PushAsync(new RemoveBugPopup());
+        await Shell.Current.GoToAsync(nameof(SettingsPage));
+    }
 
 }

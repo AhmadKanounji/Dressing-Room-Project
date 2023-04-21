@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dressing_Room.EditProfile"
+             xmlns:viewmodel="clr-namespace:Dressing_Room.ViewModels"
+             x:DataType="viewmodel:EditProfileViewModel"
+             Title="Edit Profile"
+             Shell.BackgroundColor="#01260A"
+             BackgroundColor="#E2E2E2"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:local="clr-namespace:Dressing_Room"
+             >
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <toolkit:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Shell.TitleView>
+        <Grid HorizontalOptions="Center" HeightRequest="30" WidthRequest="150" Margin="-70,0,0,0">
+            <Label Text="Edit Profile" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="20" FontFamily="Roboto" />
+        </Grid>
+    </Shell.TitleView>
+
+    <StackLayout>
+        <StackLayout>
+            <Border StrokeShape="RoundRectangle 100,100,100,100" HeightRequest="134" WidthRequest="134" Margin="0,20,0,0" BackgroundColor="#C4C4C4" Stroke="#707070" StrokeThickness="1.8">
+                <!--add bindable image-->
+                <Image Source="{Binding ProfileImage, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" WidthRequest="100">
+
+                </Image>
+            </Border>
+            <!--change this to a popup?-->
+            <Button Text="Change Profile Photo" FontFamily="NotoSansMyanmar" HorizontalOptions="Center" FontAttributes="Bold" FontSize="16" BackgroundColor="#E2E2E2" TextColor="#01260A" Margin="0,10,0,0" Command="{Binding OpenPopupCommand}"  >
+
+
+            </Button>
+
+
+            <Grid>
+                <Border StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="303" BackgroundColor="Transparent" Stroke="#01260A" StrokeThickness="1" Margin="0,29,0,0" Grid.Row="0" Grid.Column="0">
+                    <Entry FontSize="15"
+                           Keyboard="Email"
+                           Text="{Binding User_name}"
+                           TextColor="#01260A"
+                           BackgroundColor="Transparent"
+                           Margin="24,0,0,0"/>
+                </Border>
+                <Border BackgroundColor="#E2E2E2" WidthRequest="72" HeightRequest="21" Grid.Row="0" Grid.Column="0" Margin="5,-10,190,0" StrokeThickness="0">
+                    <Label Text="Username" FontSize="15" TextColor="#8B8B8B" Margin="2,-2,0,0" FontFamily="Optima"/>
+                </Border>
+            </Grid>
+
+
+            <Grid>
+                <Border StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="303" BackgroundColor="Transparent" Stroke="#01260A" StrokeThickness="1" Margin="0,29,0,0" Grid.Row="0" Grid.Column="0">
+                    <Entry FontSize="15"
+                           Keyboard="Email"
+                           Text="{Binding User_email}"
+                           TextColor="#01260A"
+                           BackgroundColor="Transparent"
+                           Margin="24,0,0,0"/>
+                </Border>
+                <Border BackgroundColor="#E2E2E2" WidthRequest="41" HeightRequest="21" Grid.Row="0" Grid.Column="0" Margin="-22,-10,190,0" StrokeThickness="0">
+                    <Label Text="Email" FontSize="15" TextColor="#8B8B8B" Margin="2,-2,0,0" FontFamily="Optima"/>
+                </Border>
+            </Grid>
+
+            <Grid>
+                <Border StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="303" BackgroundColor="Transparent" Stroke="#01260A" StrokeThickness="1" Margin="0,29,0,0" Grid.Row="0" Grid.Column="0">
+                    <Entry FontSize="15"
+                           Keyboard="Email"
+                           Text="{Binding User_password}"
+                           TextColor="#01260A"
+                           BackgroundColor="Transparent"
+                           Margin="24,0,0,0"/>
+                </Border>
+                <Border BackgroundColor="#E2E2E2" WidthRequest="70" HeightRequest="21" Grid.Row="0" Grid.Column="0" Margin="2,-10,190,0" StrokeThickness="0">
+                    <Label Text="Password" FontSize="15" TextColor="#8B8B8B" Margin="2,-2,0,0" FontFamily="Optima"/>
+                </Border>
+            </Grid>
+
+            <Border StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="321" HeightRequest="50" BackgroundColor="#01260A" Margin="0,30,0,0" >
+                <Button BackgroundColor="#01260A" Text="Save Changes" FontFamily="NotoSansMyanmar" FontSize="17" Command="{Binding SaveChangesCommand}">
+
+
+                </Button>
+            </Border>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

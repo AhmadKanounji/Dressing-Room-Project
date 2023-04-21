@@ -29,6 +29,17 @@ namespace Dressing_Room.Services
 
         }
 
+        public async Task UpdateUser(string username, string new_username, string email, byte[] photo)
+        {
+            await Init();
+            var user = await db.Table<User>().FirstOrDefaultAsync(u => u.Username == username);
+            user.Username = new_username;
+            user.Email = email;
+            user.Source = photo;
+            await db.UpdateAsync(user);
+
+
+        }
         public async Task UpdateUserPassword(string username, string newPassword)
         {
             await Init();
