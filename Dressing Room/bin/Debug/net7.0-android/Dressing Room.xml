@@ -22,6 +22,9 @@
         <member name="P:Dressing_Room.ViewModels.ClothViewModel.Categories">
             <inheritdoc cref="F:Dressing_Room.ViewModels.ClothViewModel.categories"/>
         </member>
+        <member name="P:Dressing_Room.ViewModels.ClothViewModel.IsHidden">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.ClothViewModel.isHidden"/>
+        </member>
         <member name="F:Dressing_Room.ViewModels.ClothViewModel.takePhotoCommand">
             <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.ClothViewModel.TakePhotoCommand"/>.</summary>
         </member>

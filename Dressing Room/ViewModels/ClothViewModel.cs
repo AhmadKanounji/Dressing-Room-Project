@@ -33,6 +33,8 @@ namespace Dressing_Room.ViewModels
         [ObservableProperty]
         private string categories;
 
+        [ObservableProperty]
+        private Boolean isHidden = true;
 
         private FileResult tempphoto;
 
@@ -59,6 +61,8 @@ namespace Dressing_Room.ViewModels
 
                 
             }
+
+            IsHidden = false;
 
 
 

@@ -4,6 +4,7 @@ using Dressing_Room.Wardrobe_Extensions;
 using Microsoft.Extensions.Logging;
 using Mopups.Hosting;
 using CommunityToolkit.Maui;
+using Microsoft.Maui.Handlers;
 
 namespace Dressing_Room;
 
@@ -26,10 +27,10 @@ public static class MauiProgram
                 fonts.AddFont("Quora.ttf", "Quora");
                 fonts.AddFont("NotoSansMyanmar-Medium.ttf", "NotoSansMyanmar");
                 fonts.AddFont("Roboto-Medium.ttf", "Roboto");
-            });
+            });  
 
 #if DEBUG
-        builder.Logging.AddDebug();
+                builder.Logging.AddDebug();
 #endif
 
         //view
@@ -63,3 +64,4 @@ public static class MauiProgram
         return builder.Build();
     }
 }
+

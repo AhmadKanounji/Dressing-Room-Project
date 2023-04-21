@@ -27,7 +27,7 @@ public partial class PopUpAdd
     void myCategory_SelectedIndexChanged(System.Object sender, System.EventArgs e)
     {
 
-        var picker = (Picker)sender;
+        var picker = (BorderlessPicker)sender;
 
         var selectedCategory = (string)picker.SelectedItem;
 

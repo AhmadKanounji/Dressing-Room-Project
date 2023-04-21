@@ -17,5 +17,17 @@ public partial class App : Application
 			handler.PlatformView.BorderStyle=UIKit.UITextBorderStyle.None;
 #endif
         });
+
+        Microsoft.Maui.Handlers.PickerHandler.Mapper.AppendToMapping(nameof(BorderlessPicker), (handler, view) =>
+        {
+#if __ANDROID__
+            handler.PlatformView.SetBackgroundColor(Android.Graphics.Color.Transparent);
+#elif __IOS__
+    handler.VirtualView.BackgroundColor = UIKit.UIColor.Clear;
+    
+#endif
+        });
+
     }
+
 }

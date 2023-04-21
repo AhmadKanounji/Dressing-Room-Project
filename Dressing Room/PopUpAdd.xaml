@@ -8,168 +8,143 @@
     xmlns:viewmodel="clr-namespace:Dressing_Room.ViewModels"
     Title="PopUpAdd"
     x:DataType="viewmodel:ClothViewModel"
-    BackgroundColor="#80000000">
+    BackgroundColor="#80000000"
+    xmlns:local="clr-namespace:Dressing_Room">
 
     <Border
-        HeightRequest="600"
+        BackgroundColor="#E2E2E2"
+        HeightRequest="700"
         StrokeShape="RoundRectangle 20,20,20,20"
-        WidthRequest="400">
+        WidthRequest="400"
+        Margin="0,0,0,20"
+        >
 
         <ScrollView>
 
-            <VerticalStackLayout BackgroundColor="White" Spacing="30">
+            <VerticalStackLayout BackgroundColor="#E2E2E2" Spacing="30">
 
                 <Border
                     Margin="0,20,0,0"
-                    HeightRequest="300"
+                    HeightRequest="370"
                     StrokeShape="RoundRectangle 20,20,20,20"
-                    WidthRequest="300">
+                    WidthRequest="340" Stroke="#01260A" BackgroundColor="#E2E2E2"
+                    >
+                    <VerticalStackLayout>
+
+                        <Button Text="Take Photo" Command="{Binding TakePhotoCommand}" IsVisible="{Binding IsHidden}"></Button>
+                        <Label Text="Or" IsVisible="{Binding IsHidden}" ></Label>
+                        <Button Text="Take Photo" IsVisible="{Binding IsHidden}"></Button>
 
                     <Image
                         Aspect="Fill"
                         Background="transparent"
                         Source="{Binding Photo}" />
+                        </VerticalStackLayout>
 
                 </Border>
 
                 <Border
-                    HeightRequest="60"
+                    HeightRequest="45"
                     StrokeShape="RoundRectangle 20,20,20,20"
-                    WidthRequest="380">
+                    WidthRequest="340" Stroke="#01260A"
+                    BackgroundColor="#E2E2E2">
 
-                    <Picker
+                    <local:BorderlessPicker Style="{StaticResource MyCustomPickerStyle}"
                         x:Name="myCategory"
                         Title="Categories"
                         SelectedIndexChanged="myCategory_SelectedIndexChanged"
                         SelectedItem="{Binding Categories}"
-                        TextColor="#01260A">
-
-
-
-
-
+                        TextColor="#01260A"
+                        Margin="5,0,0,0">
                         <Picker.ItemsSource>
-
                             <x:Array Type="{x:Type x:String}">
-
                                 <x:String>Tops</x:String>
-
                                 <x:String>Pants</x:String>
-
                                 <x:String>Shoes</x:String>
-
                                 <x:String>Jackets</x:String>
-
                                 <x:String>Accessories</x:String>
-
                             </x:Array>
 
                         </Picker.ItemsSource>
 
-                    </Picker>
+                    </local:BorderlessPicker>
 
                 </Border>
 
                 <Border
-                    HeightRequest="60"
+                    HeightRequest="45"
                     StrokeShape="RoundRectangle 20,20,20,20"
-                    WidthRequest="380">
+                    WidthRequest="340" Stroke="#01260A"
+                    BackgroundColor="#E2E2E2">
 
-                    <Picker
+                    <local:BorderlessPicker Style="{StaticResource MyCustomPickerStyle}"
                         x:Name="myColor"
                         Title="Color"
                         SelectedItem="{Binding Color}"
-                        TextColor="#01260A">
+                        TextColor="#01260A"
+                        Margin="5,0,0,0">
 
                         <Picker.ItemsSource>
 
                             <x:Array Type="{x:Type x:String}">
-
                                 <x:String>Red</x:String>
-
                                 <x:String>White</x:String>
-
                                 <x:String>Blue</x:String>
-
                                 <x:String>Black</x:String>
-
                                 <x:String>Green</x:String>
-
                                 <x:String>Gray</x:String>
-
                                 <x:String>Brown</x:String>
-
                                 <x:String>Beige</x:String>
-
                                 <x:String>Pink</x:String>
-
                                 <x:String>Yellow</x:String>
-
                                 <x:String>Purple</x:String>
-
                                 <x:String>Cream</x:String>
-
                                 <x:String>Turquoise</x:String>
-
                                 <x:String>Teal</x:String>
-
                                 <x:String>Lavender</x:String>
-
                                 <x:String>Maroon</x:String>
-
                                 <x:String>Olive</x:String>
-
                                 <x:String>Navy</x:String>
-
                                 <x:String>Magenta</x:String>
-
                                 <x:String>Peach</x:String>
-
                             </x:Array>
 
                         </Picker.ItemsSource>
 
-                    </Picker>
+                    </local:BorderlessPicker>
 
                 </Border>
 
-
-
                 <Border
                     x:Name="myBorder"
-                    HeightRequest="60"
+                    HeightRequest="45"
                     IsVisible="false"
                     StrokeShape="RoundRectangle 20,20,20,20"
-                    WidthRequest="380">
+                    WidthRequest="340" Stroke="#01260A"
+                    BackgroundColor="#E2E2E2"
+                    >
 
-                    <Picker
+                    
+                    <local:BorderlessPicker BackgroundColor="Transparent"
+                        
                         x:Name="myType"
                         Title="Type"
                         IsVisible="False"
                         SelectedItem="{Binding Type}"
-                        TextColor="#01260A" />
+                        TextColor="#01260A"
+                        Margin="5,0,0,0"/>
 
                 </Border>
 
-                <HorizontalStackLayout HorizontalOptions="Center" Spacing="50">
-
+                <Border StrokeShape="RoundRectangle 20,20,20,20" HeightRequest="50"
+                        WidthRequest="340" Stroke="#01260A" Margin="0,0,0,5">
                     <Button
-                        BackgroundColor="#01260A"
-                        Command="{Binding TakePhotoCommand}"
-                        Text="Take Photo" />
-
-                    <Button
+                        HorizontalOptions="Fill"
                         BackgroundColor="#01260A"
                         Command="{Binding AddToClosetCommand}"
                         Text="Add to Closet" />
 
-                </HorizontalStackLayout>
-
-
-
-
-
-
+                </Border>
 
             </VerticalStackLayout>
 
