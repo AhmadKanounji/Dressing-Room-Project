@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{C4066B4C-109C-462C-B3EC-6A2056B65A36}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="App.xaml.cs">
+  <MonoDevelop.Ide.ItemProperties.Dressing_220Room PreferredExecutionTarget="Android.pixel_5_-_api_31" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.26" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MainPage.xaml">
     <Files>
-      <File FileName="WardrobePage.xaml.cs" />
-      <File FileName="Signup.xaml" />
+      <File FileName="WardrobePage.xaml.cs" Line="93" Column="2" />
+      <File FileName="Signup.xaml" Line="1" Column="1" />
       <File FileName="Signup.xaml.cs" />
       <File FileName="RemoveBugPopup.xaml" />
       <File FileName="RemoveBugPopup.xaml.cs" />
@@ -28,7 +30,9 @@
       <File FileName="ViewModels/ProfileViewModel.cs" />
       <File FileName="Resources/Splash/splash.svg" />
       <File FileName="Messages/RefreshMessages.cs" />
-      <File FileName="WardrobePage.xaml" Line="20" Column="11" />
+      <File FileName="WardrobePage.xaml" Line="340" Column="18" />
+      <File FileName="CreateOutfit.xaml.cs" Line="1" Column="1" />
+      <File FileName="MainPage.xaml" Line="11" Column="44" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -40,6 +44,7 @@
               <Node name="Platforms" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Resources" expanded="True">
+                <Node name="Images" expanded="True" />
                 <Node name="Raw" expanded="True" />
               </Node>
               <Node name="Services" expanded="True" />
@@ -47,9 +52,7 @@
               <Node name="Wardrobe Extensions" expanded="True">
                 <Node name="TopsPage.xaml" expanded="True" />
               </Node>
-              <Node name="App.xaml" expanded="True">
-                <Node name="App.xaml.cs" selected="True" />
-              </Node>
+              <Node name="App.xaml" expanded="True" />
               <Node name="AppShell.xaml" expanded="True" />
               <Node name="ChangePasswordPopup.xaml" expanded="True" />
               <Node name="CreateOutfit.xaml" expanded="True" />
@@ -69,13 +72,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.26" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Dressing_220Room PreferredExecutionTarget="Android.pixel_5_-_api_31" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
   <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_31" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

@@ -1,11 +1,14 @@
-﻿obj/Debug/net7.0-android/resizetizer/r/mipmap-mdpi/appicon_foreground.png
+﻿obj/Debug/net7.0-android/resizetizer/r/.DS_Store
+obj/Debug/net7.0-android/resizetizer/r/mipmap-mdpi/appicon_foreground.png
 obj/Debug/net7.0-android/resizetizer/r/mipmap-mdpi/appicon.png
 obj/Debug/net7.0-android/resizetizer/r/mipmap-mdpi/appicon_background.png
 obj/Debug/net7.0-android/resizetizer/r/mipmap-hdpi/appicon_foreground.png
 obj/Debug/net7.0-android/resizetizer/r/mipmap-hdpi/appicon.png
 obj/Debug/net7.0-android/resizetizer/r/mipmap-hdpi/appicon_background.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/outfits.jpg
+obj/Debug/net7.0-android/resizetizer/r/drawable/.DS_Store
 obj/Debug/net7.0-android/resizetizer/r/drawable/backbutton.png
+obj/Debug/net7.0-android/resizetizer/r/drawable/backgroundlogo.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/pantspic.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/settings.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/profilepicicon.png
@@ -42,6 +45,8 @@ obj/Debug/net7.0-android/resizetizer/r/mipmap-xxhdpi/appicon.png
 obj/Debug/net7.0-android/resizetizer/r/mipmap-xxhdpi/appicon_background.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-xhdpi/tshirt3.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-xhdpi/sunglasses3.png
+obj/Debug/net7.0-android/resizetizer/r/drawable-xhdpi/.DS_Store
+obj/Debug/net7.0-android/resizetizer/r/drawable-xhdpi/backgroundlogo.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-xhdpi/dotnet_bot.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-xhdpi/shoes3.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-xhdpi/jackets3.png
@@ -53,6 +58,8 @@ obj/Debug/net7.0-android/resizetizer/r/drawable-xhdpi/sunglasses.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-xhdpi/tshirt.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-xxhdpi/tshirt3.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-xxhdpi/sunglasses3.png
+obj/Debug/net7.0-android/resizetizer/r/drawable-xxhdpi/.DS_Store
+obj/Debug/net7.0-android/resizetizer/r/drawable-xxhdpi/backgroundlogo.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-xxhdpi/dotnet_bot.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-xxhdpi/shoes3.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-xxhdpi/jackets3.png
@@ -64,6 +71,8 @@ obj/Debug/net7.0-android/resizetizer/r/drawable-xxhdpi/sunglasses.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-xxhdpi/tshirt.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-hdpi/tshirt3.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-hdpi/sunglasses3.png
+obj/Debug/net7.0-android/resizetizer/r/drawable-hdpi/.DS_Store
+obj/Debug/net7.0-android/resizetizer/r/drawable-hdpi/backgroundlogo.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-hdpi/dotnet_bot.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-hdpi/shoes3.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-hdpi/jackets3.png
@@ -75,6 +84,8 @@ obj/Debug/net7.0-android/resizetizer/r/drawable-hdpi/sunglasses.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-hdpi/tshirt.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-mdpi/tshirt3.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-mdpi/sunglasses3.png
+obj/Debug/net7.0-android/resizetizer/r/drawable-mdpi/.DS_Store
+obj/Debug/net7.0-android/resizetizer/r/drawable-mdpi/backgroundlogo.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-mdpi/dotnet_bot.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-mdpi/shoes3.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-mdpi/jackets3.png
@@ -89,6 +100,8 @@ obj/Debug/net7.0-android/resizetizer/r/mipmap-xhdpi/appicon.png
 obj/Debug/net7.0-android/resizetizer/r/mipmap-xhdpi/appicon_background.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-xxxhdpi/tshirt3.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-xxxhdpi/sunglasses3.png
+obj/Debug/net7.0-android/resizetizer/r/drawable-xxxhdpi/.DS_Store
+obj/Debug/net7.0-android/resizetizer/r/drawable-xxxhdpi/backgroundlogo.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-xxxhdpi/dotnet_bot.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-xxxhdpi/shoes3.png
 obj/Debug/net7.0-android/resizetizer/r/drawable-xxxhdpi/jackets3.png

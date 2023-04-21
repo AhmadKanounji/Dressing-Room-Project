@@ -5,9 +5,10 @@
              xmlns:viewmodel="clr-namespace:Dressing_Room.ViewModels"
              x:DataType="viewmodel:MainPageViewModel"
              BackgroundColor="#E2E2E2"
-             Shell.NavBarIsVisible="True"
+             Shell.NavBarIsVisible="False"
              Shell.BackgroundColor="#01260A"
              NavigationPage.HasBackButton="False"
+             BackgroundImageSource="backgroundlogo.png"
              Title="Sign In">
 
 <VerticalStackLayout>
@@ -55,6 +56,7 @@
                 Stroke="#01260A"
                 Margin="0,20,3,0"
                 StrokeShape="RoundRectangle 20"
+                
                 >
             <Entry Placeholder="Username" FontAttributes="Italic" Keyboard="Email" Text="{Binding Username}" Margin="10,0,0,0"></Entry>
           
@@ -65,6 +67,7 @@
                 Stroke="#01260A"
                 Margin="0,20,3,0"
                 StrokeShape="RoundRectangle 20"
+                
                 >
             <Entry Placeholder="Password " FontAttributes="Italic" Keyboard="Email" Text="{Binding Password}" Margin="10,0,0,0"></Entry>
 
@@ -100,17 +103,6 @@
                 
             </Button>
         </HorizontalStackLayout>
-
-        <Image Source="logopic.png"
-                VerticalOptions="End"
-                HorizontalOptions="End"
-                WidthRequest="400"
-                HeightRequest="300"
-                BackgroundColor="#E2E2E2"
-                Margin="0,20,0,0"
-                
-                >
-        </Image>
    
     </VerticalStackLayout>
 </ContentPage>

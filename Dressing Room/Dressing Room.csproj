@@ -108,6 +108,7 @@
 	  <None Remove="Resources\Fonts\Roboto-Medium.ttf" />
 	  <None Remove="Resources\Fonts\NotoSansMyanmar-Medium.ttf" />
 	  <None Remove="Messages\" />
+	  <None Remove="Resources\Images\Group 24.svg" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Fonts\OPTIMA_B.TTF" />
