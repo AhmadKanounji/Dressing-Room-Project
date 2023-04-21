@@ -1,75 +1,126 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Dressing_Room.CreateOutfit"
-             xmlns:model="clr-namespace:Dressing_Room.Models"
-             xmlns:viewmodel="clr-namespace:Dressing_Room.ViewModels"
-             x:DataType="viewmodel:CreateOutfitViewModel"
-             Title="Create Outfit"
-             BackgroundColor="#E2E2E2"
-             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             Shell.NavBarIsVisible="false">
+<ContentPage
+    x:Class="Dressing_Room.CreateOutfit"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:converter="clr-namespace:Dressing_Room"
+    xmlns:model="clr-namespace:Dressing_Room.Models"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:viewmodel="clr-namespace:Dressing_Room.ViewModels"
+    Title="Create Outfit"
+    x:DataType="viewmodel:CreateOutfitViewModel"
+    BackgroundColor="#E2E2E2"
+    Shell.NavBarIsVisible="false">
     <ContentPage.Resources>
         <ResourceDictionary>
             <toolkit:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter" />
         </ResourceDictionary>
 
     </ContentPage.Resources>
-    <ScrollView  Orientation="Vertical" >
+    <ScrollView Orientation="Vertical">
         <VerticalStackLayout>
             <VerticalStackLayout>
-                <Label  Text="Dressing Room" TextColor="#01260A" VerticalOptions="Center"  VerticalTextAlignment="Center" 
-                            HorizontalTextAlignment="Center" BackgroundColor="#E2E2E2"  
-                            FontSize="20" FontFamily="Quora" HeightRequest="53" HorizontalOptions="Fill">
-                </Label>
+                <Label
+                    BackgroundColor="#E2E2E2"
+                    FontFamily="Quora"
+                    FontSize="20"
+                    HeightRequest="53"
+                    HorizontalOptions="Fill"
+                    HorizontalTextAlignment="Center"
+                    Text="Dressing Room"
+                    TextColor="#01260A"
+                    VerticalOptions="Center"
+                    VerticalTextAlignment="Center" />
 
-                <Label   Text="Create your outfit!" TextColor="#E2E2E2" 
-                            VerticalOptions="Center" VerticalTextAlignment="Center"  
-                            HorizontalTextAlignment="Center"  HorizontalOptions="Fill"
-                            FontSize="16" FontFamily="OPTIMA" HeightRequest="29"  BackgroundColor="#01260A"   >
-                </Label>
+                <Label
+                    BackgroundColor="#01260A"
+                    FontFamily="OPTIMA"
+                    FontSize="16"
+                    HeightRequest="29"
+                    HorizontalOptions="Fill"
+                    HorizontalTextAlignment="Center"
+                    Text="Create your outfit!"
+                    TextColor="#E2E2E2"
+                    VerticalOptions="Center"
+                    VerticalTextAlignment="Center" />
             </VerticalStackLayout>
 
 
-            <VerticalStackLayout Spacing="50" Margin="0,20,20,20">
-                <ScrollView Orientation="Horizontal" VerticalOptions="Center" BackgroundColor="#E2E2E2">
+            <VerticalStackLayout Margin="0,20,20,20" Spacing="50">
+                <ScrollView
+                    BackgroundColor="#E2E2E2"
+                    Orientation="Horizontal"
+                    VerticalOptions="Center">
 
-                    <StackLayout >
-                        <Border HeightRequest="70" WidthRequest="70" HorizontalOptions="Start" BackgroundColor="#53917C" StrokeShape="RoundRectangle 25,25,25,25"
-                                >
-                            <Image Source="tshirt3.svg"  HeightRequest="40" WidthRequest="40" HorizontalOptions="Center"  >
-                            </Image>
+                    <StackLayout>
+                        <Border
+                            BackgroundColor="#53917C"
+                            HeightRequest="70"
+                            HorizontalOptions="Start"
+                            StrokeShape="RoundRectangle 25,25,25,25"
+                            WidthRequest="70">
+                            <Image
+                                HeightRequest="40"
+                                HorizontalOptions="Center"
+                                Source="tshirt3.svg"
+                                WidthRequest="40" />
                         </Border>
 
-                        <CollectionView ItemsSource="{Binding Tops}"  SelectionMode="Single"   >
+                        <CollectionView ItemsSource="{Binding Tops}" SelectionMode="Single">
                             <CollectionView.ItemsLayout>
-                                <LinearItemsLayout Orientation="Horizontal" ItemSpacing="50"/>
+                                <LinearItemsLayout ItemSpacing="50" Orientation="Horizontal" />
                             </CollectionView.ItemsLayout>
 
-                            <CollectionView.ItemTemplate >
+                            <CollectionView.ItemTemplate>
 
                                 <DataTemplate x:DataType="model:Clothes">
 
 
-                                    <HorizontalStackLayout Margin="10,30,0,0"
-                                >
+                                    <HorizontalStackLayout Margin="10,30,0,0">
 
-                                        <Border StrokeShape="RoundRectangle 15,15,15,15" Stroke="transparent" StrokeThickness="6"   x:Name="border" >
+                                        <Border StrokeShape="RoundRectangle 15,15,15,15">
 
+                                            <Image
+                                                Aspect="AspectFill"
+                                                HeightRequest="150"
+                                                Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}"
+                                                WidthRequest="150" />
 
-                                            <Image Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="150" WidthRequest="150">
-
-                                            </Image>
                                         </Border>
-                                        <VerticalStackLayout Spacing="35" Margin="0,0,0,0">
-                                            <Border BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="86" HeightRequest="27" Stroke="#01260A">
-                                                <Label Text="{Binding Categories}" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                                        <VerticalStackLayout Margin="0,0,0,0" Spacing="35">
+                                            <Border
+                                                BackgroundColor="#E2E2E2"
+                                                HeightRequest="27"
+                                                Stroke="#01260A"
+                                                StrokeShape="RoundRectangle 20,20,20,20"
+                                                WidthRequest="86">
+                                                <Label
+                                                    HorizontalOptions="Center"
+                                                    Text="{Binding Categories}"
+                                                    VerticalOptions="Center" />
                                             </Border>
-                                            <Border BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="86" HeightRequest="27" Stroke="#01260A">
-                                                <Label Text="{Binding Color}" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            <Border
+                                                BackgroundColor="#E2E2E2"
+                                                HeightRequest="27"
+                                                Stroke="#01260A"
+                                                StrokeShape="RoundRectangle 20,20,20,20"
+                                                WidthRequest="86">
+                                                <Label
+                                                    HorizontalOptions="Center"
+                                                    Text="{Binding Color}"
+                                                    VerticalOptions="Center" />
                                             </Border>
-                                            <Border BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="86" HeightRequest="27" Stroke="#01260A">
-                                                <Label Text="{Binding Type}" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            <Border
+                                                BackgroundColor="#E2E2E2"
+                                                HeightRequest="27"
+                                                Stroke="#01260A"
+                                                StrokeShape="RoundRectangle 20,20,20,20"
+                                                WidthRequest="86">
+                                                <Label
+                                                    HorizontalOptions="Center"
+                                                    Text="{Binding Type}"
+                                                    VerticalOptions="Center" />
                                             </Border>
 
                                         </VerticalStackLayout>
@@ -84,38 +135,79 @@
                     </StackLayout>
                 </ScrollView>
 
-                <ScrollView Orientation="Horizontal" VerticalOptions="Center" BackgroundColor="#E2E2E2">
+                <ScrollView
+                    BackgroundColor="#E2E2E2"
+                    Orientation="Horizontal"
+                    VerticalOptions="Center">
 
-                    <StackLayout >
-                        <Border HeightRequest="70" WidthRequest="70" HorizontalOptions="Start" BackgroundColor="#53917C" StrokeShape="RoundRectangle 25,25,25,25">
-                            <Image Source="pants3.svg"  HeightRequest="50" WidthRequest="50" HorizontalOptions="Center"  >
-                            </Image>
+                    <StackLayout>
+                        <Border
+                            BackgroundColor="#53917C"
+                            HeightRequest="70"
+                            HorizontalOptions="Start"
+                            StrokeShape="RoundRectangle 25,25,25,25"
+                            WidthRequest="70">
+                            <Image
+                                HeightRequest="50"
+                                HorizontalOptions="Center"
+                                Source="pants3.svg"
+                                WidthRequest="50" />
                         </Border>
 
-                        <CollectionView ItemsSource="{Binding Pants}" SelectionMode="Single"  >
+                        <CollectionView ItemsSource="{Binding Pants}" SelectionMode="Single">
                             <CollectionView.ItemsLayout>
-                                <LinearItemsLayout Orientation="Horizontal" ItemSpacing="50"/>
+                                <LinearItemsLayout ItemSpacing="50" Orientation="Horizontal" />
                             </CollectionView.ItemsLayout>
-                            <CollectionView.ItemTemplate >
+                            <CollectionView.ItemTemplate>
                                 <DataTemplate x:DataType="model:Clothes">
 
 
-                                    <HorizontalStackLayout Margin="10,30,0,0"
-                                >
+                                    <HorizontalStackLayout Margin="10,30,0,0">
 
-                                        <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                            <Image Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="150" WidthRequest="150" />
+                                        <Border
+                                            Stroke="green"
+                                            StrokeShape="RoundRectangle 15,15,15,15"
+                                            StrokeThickness="2">
+                                            <Image
+                                                Aspect="AspectFill"
+                                                HeightRequest="150"
+                                                Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}"
+                                                WidthRequest="150" />
 
                                         </Border>
-                                        <VerticalStackLayout Spacing="35" Margin="0,0,0,0">
-                                            <Border BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="86" HeightRequest="27" Stroke="#01260A">
-                                                <Label Text="{Binding Categories}" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                        <VerticalStackLayout Margin="0,0,0,0" Spacing="35">
+                                            <Border
+                                                BackgroundColor="#E2E2E2"
+                                                HeightRequest="27"
+                                                Stroke="#01260A"
+                                                StrokeShape="RoundRectangle 20,20,20,20"
+                                                WidthRequest="86">
+                                                <Label
+                                                    HorizontalOptions="Center"
+                                                    Text="{Binding Categories}"
+                                                    VerticalOptions="Center" />
                                             </Border>
-                                            <Border BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="86" HeightRequest="27" Stroke="#01260A">
-                                                <Label Text="{Binding Color}" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            <Border
+                                                BackgroundColor="#E2E2E2"
+                                                HeightRequest="27"
+                                                Stroke="#01260A"
+                                                StrokeShape="RoundRectangle 20,20,20,20"
+                                                WidthRequest="86">
+                                                <Label
+                                                    HorizontalOptions="Center"
+                                                    Text="{Binding Color}"
+                                                    VerticalOptions="Center" />
                                             </Border>
-                                            <Border BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="86" HeightRequest="27" Stroke="#01260A">
-                                                <Label Text="{Binding Type}" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            <Border
+                                                BackgroundColor="#E2E2E2"
+                                                HeightRequest="27"
+                                                Stroke="#01260A"
+                                                StrokeShape="RoundRectangle 20,20,20,20"
+                                                WidthRequest="86">
+                                                <Label
+                                                    HorizontalOptions="Center"
+                                                    Text="{Binding Type}"
+                                                    VerticalOptions="Center" />
                                             </Border>
 
                                         </VerticalStackLayout>
@@ -128,38 +220,76 @@
                     </StackLayout>
                 </ScrollView>
 
-                <ScrollView Orientation="Horizontal" VerticalOptions="Center" BackgroundColor="#E2E2E2">
+                <ScrollView
+                    BackgroundColor="#E2E2E2"
+                    Orientation="Horizontal"
+                    VerticalOptions="Center">
 
-                    <StackLayout >
-                        <Border HeightRequest="70" WidthRequest="70" HorizontalOptions="Start" BackgroundColor="#53917C" StrokeShape="RoundRectangle 25,25,25,25">
-                            <Image Source="shoes3.svg"  HeightRequest="50" WidthRequest="50" HorizontalOptions="Center"  >
-                            </Image>
+                    <StackLayout>
+                        <Border
+                            BackgroundColor="#53917C"
+                            HeightRequest="70"
+                            HorizontalOptions="Start"
+                            StrokeShape="RoundRectangle 25,25,25,25"
+                            WidthRequest="70">
+                            <Image
+                                HeightRequest="50"
+                                HorizontalOptions="Center"
+                                Source="shoes3.svg"
+                                WidthRequest="50" />
                         </Border>
 
-                        <CollectionView ItemsSource="{Binding Shoes}"  SelectionMode="Single">
+                        <CollectionView ItemsSource="{Binding Shoes}" SelectionMode="Single">
                             <CollectionView.ItemsLayout>
-                                <LinearItemsLayout Orientation="Horizontal" ItemSpacing="50"/>
+                                <LinearItemsLayout ItemSpacing="50" Orientation="Horizontal" />
                             </CollectionView.ItemsLayout>
-                            <CollectionView.ItemTemplate >
+                            <CollectionView.ItemTemplate>
                                 <DataTemplate x:DataType="model:Clothes">
 
 
-                                    <HorizontalStackLayout Margin="10,30,0,0"
-                                >
+                                    <HorizontalStackLayout Margin="10,30,0,0">
 
                                         <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                            <Image Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="150" WidthRequest="150" />
+                                            <Image
+                                                Aspect="AspectFill"
+                                                HeightRequest="150"
+                                                Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}"
+                                                WidthRequest="150" />
 
                                         </Border>
-                                        <VerticalStackLayout Spacing="35" Margin="0,0,0,0">
-                                            <Border BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="86" HeightRequest="27" Stroke="#01260A">
-                                                <Label Text="{Binding Categories}" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                        <VerticalStackLayout Margin="0,0,0,0" Spacing="35">
+                                            <Border
+                                                BackgroundColor="#E2E2E2"
+                                                HeightRequest="27"
+                                                Stroke="#01260A"
+                                                StrokeShape="RoundRectangle 20,20,20,20"
+                                                WidthRequest="86">
+                                                <Label
+                                                    HorizontalOptions="Center"
+                                                    Text="{Binding Categories}"
+                                                    VerticalOptions="Center" />
                                             </Border>
-                                            <Border BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="86" HeightRequest="27" Stroke="#01260A">
-                                                <Label Text="{Binding Color}" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            <Border
+                                                BackgroundColor="#E2E2E2"
+                                                HeightRequest="27"
+                                                Stroke="#01260A"
+                                                StrokeShape="RoundRectangle 20,20,20,20"
+                                                WidthRequest="86">
+                                                <Label
+                                                    HorizontalOptions="Center"
+                                                    Text="{Binding Color}"
+                                                    VerticalOptions="Center" />
                                             </Border>
-                                            <Border BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="86" HeightRequest="27" Stroke="#01260A">
-                                                <Label Text="{Binding Type}" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            <Border
+                                                BackgroundColor="#E2E2E2"
+                                                HeightRequest="27"
+                                                Stroke="#01260A"
+                                                StrokeShape="RoundRectangle 20,20,20,20"
+                                                WidthRequest="86">
+                                                <Label
+                                                    HorizontalOptions="Center"
+                                                    Text="{Binding Type}"
+                                                    VerticalOptions="Center" />
                                             </Border>
 
                                         </VerticalStackLayout>
@@ -171,38 +301,76 @@
                         </CollectionView>
                     </StackLayout>
                 </ScrollView>
-                <ScrollView Orientation="Horizontal" VerticalOptions="Center" BackgroundColor="#E2E2E2">
+                <ScrollView
+                    BackgroundColor="#E2E2E2"
+                    Orientation="Horizontal"
+                    VerticalOptions="Center">
 
-                    <StackLayout >
-                        <Border HeightRequest="70" WidthRequest="70" HorizontalOptions="Start" BackgroundColor="#53917C" StrokeShape="RoundRectangle 25,25,25,25">
-                            <Image Source="jackets3.svg"  HeightRequest="50" WidthRequest="50" HorizontalOptions="Center"  >
-                            </Image>
+                    <StackLayout>
+                        <Border
+                            BackgroundColor="#53917C"
+                            HeightRequest="70"
+                            HorizontalOptions="Start"
+                            StrokeShape="RoundRectangle 25,25,25,25"
+                            WidthRequest="70">
+                            <Image
+                                HeightRequest="50"
+                                HorizontalOptions="Center"
+                                Source="jackets3.svg"
+                                WidthRequest="50" />
                         </Border>
 
-                        <CollectionView ItemsSource="{Binding Jackets}" SelectionMode="Single" >
+                        <CollectionView ItemsSource="{Binding Jackets}" SelectionMode="Single">
                             <CollectionView.ItemsLayout>
-                                <LinearItemsLayout Orientation="Horizontal" ItemSpacing="50"/>
+                                <LinearItemsLayout ItemSpacing="50" Orientation="Horizontal" />
                             </CollectionView.ItemsLayout>
-                            <CollectionView.ItemTemplate >
+                            <CollectionView.ItemTemplate>
                                 <DataTemplate x:DataType="model:Clothes">
 
 
-                                    <HorizontalStackLayout Margin="10,30,0,0"
-                                >
+                                    <HorizontalStackLayout Margin="10,30,0,0">
 
                                         <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                            <Image Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="150" WidthRequest="150" />
+                                            <Image
+                                                Aspect="AspectFill"
+                                                HeightRequest="150"
+                                                Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}"
+                                                WidthRequest="150" />
 
                                         </Border>
-                                        <VerticalStackLayout Spacing="35" Margin="0,0,0,0">
-                                            <Border BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="86" HeightRequest="27" Stroke="#01260A">
-                                                <Label Text="{Binding Categories}" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                        <VerticalStackLayout Margin="0,0,0,0" Spacing="35">
+                                            <Border
+                                                BackgroundColor="#E2E2E2"
+                                                HeightRequest="27"
+                                                Stroke="#01260A"
+                                                StrokeShape="RoundRectangle 20,20,20,20"
+                                                WidthRequest="86">
+                                                <Label
+                                                    HorizontalOptions="Center"
+                                                    Text="{Binding Categories}"
+                                                    VerticalOptions="Center" />
                                             </Border>
-                                            <Border BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="86" HeightRequest="27" Stroke="#01260A">
-                                                <Label Text="{Binding Color}" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            <Border
+                                                BackgroundColor="#E2E2E2"
+                                                HeightRequest="27"
+                                                Stroke="#01260A"
+                                                StrokeShape="RoundRectangle 20,20,20,20"
+                                                WidthRequest="86">
+                                                <Label
+                                                    HorizontalOptions="Center"
+                                                    Text="{Binding Color}"
+                                                    VerticalOptions="Center" />
                                             </Border>
-                                            <Border BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="86" HeightRequest="27" Stroke="#01260A">
-                                                <Label Text="{Binding Type}" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            <Border
+                                                BackgroundColor="#E2E2E2"
+                                                HeightRequest="27"
+                                                Stroke="#01260A"
+                                                StrokeShape="RoundRectangle 20,20,20,20"
+                                                WidthRequest="86">
+                                                <Label
+                                                    HorizontalOptions="Center"
+                                                    Text="{Binding Type}"
+                                                    VerticalOptions="Center" />
                                             </Border>
 
                                         </VerticalStackLayout>
@@ -214,38 +382,76 @@
                         </CollectionView>
                     </StackLayout>
                 </ScrollView>
-                <ScrollView Orientation="Horizontal" VerticalOptions="Center" BackgroundColor="#E2E2E2">
+                <ScrollView
+                    BackgroundColor="#E2E2E2"
+                    Orientation="Horizontal"
+                    VerticalOptions="Center">
 
-                    <StackLayout >
-                        <Border HeightRequest="70" WidthRequest="70" HorizontalOptions="Start" BackgroundColor="#53917C" StrokeShape="RoundRectangle 25,25,25,25">
-                            <Image Source="sunglasses3.svg"  HeightRequest="50" WidthRequest="50" HorizontalOptions="Center"  >
-                            </Image>
+                    <StackLayout>
+                        <Border
+                            BackgroundColor="#53917C"
+                            HeightRequest="70"
+                            HorizontalOptions="Start"
+                            StrokeShape="RoundRectangle 25,25,25,25"
+                            WidthRequest="70">
+                            <Image
+                                HeightRequest="50"
+                                HorizontalOptions="Center"
+                                Source="sunglasses3.svg"
+                                WidthRequest="50" />
                         </Border>
 
-                        <CollectionView ItemsSource="{Binding Accessories}"  SelectionMode="Single">
+                        <CollectionView ItemsSource="{Binding Accessories}" SelectionMode="Single">
                             <CollectionView.ItemsLayout>
-                                <LinearItemsLayout Orientation="Horizontal" ItemSpacing="50"/>
+                                <LinearItemsLayout ItemSpacing="50" Orientation="Horizontal" />
                             </CollectionView.ItemsLayout>
-                            <CollectionView.ItemTemplate >
+                            <CollectionView.ItemTemplate>
                                 <DataTemplate x:DataType="model:Clothes">
 
 
-                                    <HorizontalStackLayout Margin="10,30,0,0"
-                                >
+                                    <HorizontalStackLayout Margin="10,30,0,0">
 
                                         <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                            <Image Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="150" WidthRequest="150" />
+                                            <Image
+                                                Aspect="AspectFill"
+                                                HeightRequest="150"
+                                                Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}"
+                                                WidthRequest="150" />
 
                                         </Border>
-                                        <VerticalStackLayout Spacing="35" Margin="0,0,0,0">
-                                            <Border BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="86" HeightRequest="27" Stroke="#01260A">
-                                                <Label Text="{Binding Categories}" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                        <VerticalStackLayout Margin="0,0,0,0" Spacing="35">
+                                            <Border
+                                                BackgroundColor="#E2E2E2"
+                                                HeightRequest="27"
+                                                Stroke="#01260A"
+                                                StrokeShape="RoundRectangle 20,20,20,20"
+                                                WidthRequest="86">
+                                                <Label
+                                                    HorizontalOptions="Center"
+                                                    Text="{Binding Categories}"
+                                                    VerticalOptions="Center" />
                                             </Border>
-                                            <Border BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="86" HeightRequest="27" Stroke="#01260A">
-                                                <Label Text="{Binding Color}" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            <Border
+                                                BackgroundColor="#E2E2E2"
+                                                HeightRequest="27"
+                                                Stroke="#01260A"
+                                                StrokeShape="RoundRectangle 20,20,20,20"
+                                                WidthRequest="86">
+                                                <Label
+                                                    HorizontalOptions="Center"
+                                                    Text="{Binding Color}"
+                                                    VerticalOptions="Center" />
                                             </Border>
-                                            <Border BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="86" HeightRequest="27" Stroke="#01260A">
-                                                <Label Text="{Binding Type}" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            <Border
+                                                BackgroundColor="#E2E2E2"
+                                                HeightRequest="27"
+                                                Stroke="#01260A"
+                                                StrokeShape="RoundRectangle 20,20,20,20"
+                                                WidthRequest="86">
+                                                <Label
+                                                    HorizontalOptions="Center"
+                                                    Text="{Binding Type}"
+                                                    VerticalOptions="Center" />
                                             </Border>
 
                                         </VerticalStackLayout>

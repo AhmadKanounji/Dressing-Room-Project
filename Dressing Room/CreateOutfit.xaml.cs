@@ -1,6 +1,8 @@
 using Dressing_Room.Models;
 using Dressing_Room.ViewModels;
 using Microsoft.Maui.Controls;
+using System.Globalization;
+
 namespace Dressing_Room;
 
 public partial class CreateOutfit : ContentPage
@@ -21,7 +23,8 @@ public partial class CreateOutfit : ContentPage
         viewModel.refreshShoes();
         viewModel.refreshJackets();
         viewModel.refreshAccessories();
-    }
 
+
+    }
 
 }
