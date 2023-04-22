@@ -66,7 +66,7 @@
                                 WidthRequest="40" />
                         </Border>
 
-                        <CollectionView ItemsSource="{Binding Tops}" SelectionMode="Single">
+                        <CollectionView ItemsSource="{Binding Tops}" SelectionMode="Single" SelectedItem="{Binding SelectedTop}">
                             <CollectionView.ItemsLayout>
                                 <LinearItemsLayout ItemSpacing="50" Orientation="Horizontal" />
                             </CollectionView.ItemsLayout>
@@ -154,7 +154,7 @@
                                 WidthRequest="50" />
                         </Border>
 
-                        <CollectionView ItemsSource="{Binding Pants}" SelectionMode="Single">
+                        <CollectionView ItemsSource="{Binding Pants}" SelectionMode="Single" SelectedItem="{Binding SelectedPants}">
                             <CollectionView.ItemsLayout>
                                 <LinearItemsLayout ItemSpacing="50" Orientation="Horizontal" />
                             </CollectionView.ItemsLayout>
@@ -239,7 +239,7 @@
                                 WidthRequest="50" />
                         </Border>
 
-                        <CollectionView ItemsSource="{Binding Shoes}" SelectionMode="Single">
+                        <CollectionView ItemsSource="{Binding Shoes}" SelectionMode="Single" SelectedItem="{Binding SelectedShoes}">
                             <CollectionView.ItemsLayout>
                                 <LinearItemsLayout ItemSpacing="50" Orientation="Horizontal" />
                             </CollectionView.ItemsLayout>
@@ -320,7 +320,7 @@
                                 WidthRequest="50" />
                         </Border>
 
-                        <CollectionView ItemsSource="{Binding Jackets}" SelectionMode="Single">
+                        <CollectionView ItemsSource="{Binding Jackets}" SelectionMode="Single" SelectedItem="{Binding SelectedJacket}">
                             <CollectionView.ItemsLayout>
                                 <LinearItemsLayout ItemSpacing="50" Orientation="Horizontal" />
                             </CollectionView.ItemsLayout>
@@ -401,7 +401,7 @@
                                 WidthRequest="50" />
                         </Border>
 
-                        <CollectionView ItemsSource="{Binding Accessories}" SelectionMode="Single">
+                        <CollectionView ItemsSource="{Binding Accessories}" SelectionMode="Single" SelectedItem="{Binding SelectedAccessories}">
                             <CollectionView.ItemsLayout>
                                 <LinearItemsLayout ItemSpacing="50" Orientation="Horizontal" />
                             </CollectionView.ItemsLayout>
@@ -464,6 +464,9 @@
                     </StackLayout>
                 </ScrollView>
             </VerticalStackLayout>
+            <Button Text="Generate Outfit"  Command="{Binding CreateOutfitCommand}">
+
+            </Button>
         </VerticalStackLayout>
     </ScrollView>
 
