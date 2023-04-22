@@ -40,6 +40,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.DeleteAccoun
 build_metadata.AdditionalFiles.TargetPath = DeleteAccountPopUp.xaml
 build_metadata.AdditionalFiles.RelativePath = DeleteAccountPopUp.xaml
 
+[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/EditProfile.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.EditProfile.xaml
+build_metadata.AdditionalFiles.TargetPath = EditProfile.xaml
+build_metadata.AdditionalFiles.RelativePath = EditProfile.xaml
+
 [C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/LogoutPopup.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.LogoutPopup.xaml
@@ -58,6 +64,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.PopUpAdd.xam
 build_metadata.AdditionalFiles.TargetPath = PopUpAdd.xaml
 build_metadata.AdditionalFiles.RelativePath = PopUpAdd.xaml
 
+[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/PopupEditProfile.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.PopupEditProfile.xaml
+build_metadata.AdditionalFiles.TargetPath = PopupEditProfile.xaml
+build_metadata.AdditionalFiles.RelativePath = PopupEditProfile.xaml
+
 [C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/PopUpOne.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.PopUpOne.xaml
@@ -69,6 +81,18 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.PopUpTwo.xaml
 build_metadata.AdditionalFiles.TargetPath = PopUpTwo.xaml
 build_metadata.AdditionalFiles.RelativePath = PopUpTwo.xaml
+
+[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/ProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.ProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = ProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = ProfilePage.xaml
+
+[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/RemoveBugPopup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.RemoveBugPopup.xaml
+build_metadata.AdditionalFiles.TargetPath = RemoveBugPopup.xaml
+build_metadata.AdditionalFiles.RelativePath = RemoveBugPopup.xaml
 
 [C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
