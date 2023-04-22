@@ -17,6 +17,7 @@
         StrokeShape="RoundRectangle 20,20,20,20"
         WidthRequest="400"
         Margin="0,0,0,20"
+
         >
 
         <ScrollView>
@@ -27,19 +28,73 @@
                     Margin="0,20,0,0"
                     HeightRequest="370"
                     StrokeShape="RoundRectangle 20,20,20,20"
-                    WidthRequest="340" Stroke="#01260A" BackgroundColor="#E2E2E2"
+                    WidthRequest="340" Stroke="#01260A" BackgroundColor="#E2E2E2" Padding="0"
                     >
-                    <VerticalStackLayout>
+                    <VerticalStackLayout Spacing="8">
 
-                        <Button Text="Take Photo" Command="{Binding TakePhotoCommand}" IsVisible="{Binding IsHidden}"></Button>
-                        <Label Text="Or" IsVisible="{Binding IsHidden}" ></Label>
-                        <Button Text="Take Photo" IsVisible="{Binding IsHidden}"></Button>
+                         <Image
+                            Aspect="Fill"
+                            Background="transparent"
+                            Source="{Binding Photo}"
+                        />
 
-                    <Image
-                        Aspect="Fill"
-                        Background="transparent"
-                        Source="{Binding Photo}" />
-                        </VerticalStackLayout>
+                        <StackLayout Orientation="Horizontal" Spacing="-8" HorizontalOptions="Center" Margin="0,20,0,0">
+                            <Image Source="cameraupload.png"
+                                   HeightRequest="18"
+                                   WidthRequest="18"
+                                   Margin="0,58,0,0"
+                                   IsVisible="{Binding IsHidden}"
+                                   
+                                   >
+                            </Image>
+
+                    
+                            <Button Text="Take Photo"
+                                    Command="{Binding TakePhotoCommand}"
+                                    IsVisible="{Binding IsHidden}"
+                                    BackgroundColor="Transparent"
+                                    FontFamily="NotoSansMyanmar"
+                                    TextColor="#01260A"
+                                    FontSize="16"
+                                    Margin="0,60,0,0"
+                            
+                            ></Button>
+                        </StackLayout>
+                       
+                        <Label Text="Or"
+                               IsVisible="{Binding IsHidden}"
+                               TextColor="#01260A"
+                               Margin="0,30,0,0"
+                               FontSize="16"
+                               FontFamily="NotoSansMyanmar"
+                               HorizontalOptions="Center"
+                        ></Label>
+
+                        <StackLayout Orientation="Horizontal" Spacing="-8" Margin="60,0,0,0" VerticalOptions="Center">
+                            <Image Source="upload.png"
+                                   HeightRequest="18"
+                                   WidthRequest="18"
+                                   Margin="30,28,0,0"
+                                   IsVisible="{Binding IsHidden}"
+                                   
+                                   >
+                            </Image>
+
+                            <Button Text="Add From Gallery"
+                                    BackgroundColor="Transparent"
+                                    TextColor="#01260A"
+                                    FontFamily="NotoSansMyanmar"
+                                    FontSize="16"
+                                    IsVisible="{Binding IsHidden}"
+                                    Margin="0,30,0,0"
+                                    ></Button>
+
+
+                        </StackLayout>
+
+                        
+
+                    </VerticalStackLayout>
 
                 </Border>
 
@@ -51,11 +106,12 @@
 
                     <local:BorderlessPicker Style="{StaticResource MyCustomPickerStyle}"
                         x:Name="myCategory"
-                        Title="Categories"
+                        Title="Category"
+                        FontAttributes="Italic"
                         SelectedIndexChanged="myCategory_SelectedIndexChanged"
                         SelectedItem="{Binding Categories}"
                         TextColor="#01260A"
-                        Margin="5,0,0,0">
+                        Margin="10,0,0,0">
                         <Picker.ItemsSource>
                             <x:Array Type="{x:Type x:String}">
                                 <x:String>Tops</x:String>
@@ -80,9 +136,10 @@
                     <local:BorderlessPicker Style="{StaticResource MyCustomPickerStyle}"
                         x:Name="myColor"
                         Title="Color"
+                        FontAttributes="Italic"
                         SelectedItem="{Binding Color}"
                         TextColor="#01260A"
-                        Margin="5,0,0,0">
+                        Margin="10,0,0,0">
 
                         <Picker.ItemsSource>
 
@@ -129,10 +186,11 @@
                         
                         x:Name="myType"
                         Title="Type"
+                        FontAttributes="Italic"
                         IsVisible="False"
                         SelectedItem="{Binding Type}"
                         TextColor="#01260A"
-                        Margin="5,0,0,0"/>
+                        Margin="10,0,0,0"/>
 
                 </Border>
 

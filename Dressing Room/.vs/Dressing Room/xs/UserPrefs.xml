@@ -1,14 +1,16 @@
 ﻿<Properties StartupConfiguration="{C4066B4C-109C-462C-B3EC-6A2056B65A36}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Dressing_220Room PreferredExecutionTarget="Android.pixel_5_-_api_31" />
   <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.26" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="App.xaml.cs">
+  <MultiItemStartupConfigurations />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_31" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Signup.xaml">
     <Files>
-      <File FileName="PopUpAdd.xaml" />
-      <File FileName="App.xaml.cs" Line="7" Column="1" />
-      <File FileName="BorderlessPicker.cs" />
-      <File FileName="EditProfile.xaml" />
-      <File FileName="PopUpAdd.xaml.cs" />
-      <File FileName="ViewModels/ClothViewModel.cs" />
+      <File FileName="MainPage.xaml" Line="20" Column="26" />
+      <File FileName="Signup.xaml" Line="11" Column="46" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,6 +19,9 @@
             <Node name="Dressing Room" expanded="True">
               <Node name="Platforms" expanded="True">
                 <Node name="Android" expanded="True" />
+              </Node>
+              <Node name="Resources" expanded="True">
+                <Node name="Images" expanded="True" />
               </Node>
               <Node name="ViewModels" expanded="True" />
               <Node name="App.xaml" expanded="True" />
@@ -31,7 +36,7 @@
               <Node name="PopUpTwo.xaml" expanded="True" />
               <Node name="ProfilePage.xaml" expanded="True" />
               <Node name="RemoveBugPopup.xaml" expanded="True" />
-              <Node name="Signup.xaml" expanded="True" />
+              <Node name="Signup.xaml" expanded="True" selected="True" />
               <Node name="WardrobePage.xaml" expanded="True" />
             </Node>
           </Node>
@@ -42,11 +47,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_31" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

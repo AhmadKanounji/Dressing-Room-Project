@@ -6,11 +6,11 @@
              x:Class="Dressing_Room.PopUpTwo"
                   
              Title="PopUpTwo"
-                 CloseWhenBackgroundIsClicked="True"
-                 BackgroundColor="Transparent"
+             CloseWhenBackgroundIsClicked="True"
+             BackgroundColor="Transparent"
                   >
-    <VerticalStackLayout VerticalOptions="Center" Spacing="10"
-                         Margin="0,240,0,0"
+    <VerticalStackLayout VerticalOptions="End" Spacing="10"
+                         Margin="0,0,0,200"
                          WidthRequest="180"
                             >
        

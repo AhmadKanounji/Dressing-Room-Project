@@ -32,6 +32,7 @@ public partial class ProfilePage : ContentPage
 
     async void OnHangerClicked(System.Object sender, System.EventArgs e)
     {
+        await MopupService.Instance.PushAsync(new RemoveBugPopup());
         await Shell.Current.GoToAsync(nameof(WardrobePage));
     }
 

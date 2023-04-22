@@ -109,6 +109,10 @@
 	  <None Remove="Resources\Fonts\NotoSansMyanmar-Medium.ttf" />
 	  <None Remove="Messages\" />
 	  <None Remove="Resources\Images\Group 24.svg" />
+	  <None Remove="Resources\Images\cameraupload.png" />
+	  <None Remove="Resources\Images\upload.png" />
+	  <None Remove="Resources\Images\pencil.png" />
+	  <None Remove="Resources\Images\backgroundlogo.svg" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Fonts\OPTIMA_B.TTF" />
@@ -129,6 +133,10 @@
 	  <BundleResource Include="Resources\Images\trash.png" />
 	  <BundleResource Include="Resources\Fonts\Roboto-Medium.ttf" />
 	  <BundleResource Include="Resources\Fonts\NotoSansMyanmar-Medium.ttf" />
+	  <BundleResource Include="Resources\Images\cameraupload.png" />
+	  <BundleResource Include="Resources\Images\upload.png" />
+	  <BundleResource Include="Resources\Images\pencil.png" />
+	  <BundleResource Include="Resources\Images\backgroundlogo.svg" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiXaml Update="ChangePasswordPopup.xaml">

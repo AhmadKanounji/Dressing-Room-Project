@@ -1,4 +1,5 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using AndroidX.Lifecycle;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Dressing_Room.Models;
 using Dressing_Room.Services;
@@ -7,7 +8,7 @@ using System;
 namespace Dressing_Room.ViewModels
 {
 	public partial class MainPageViewModel: ObservableObject
-	{
+    {
 
         //Initializing the service
         private SignUpService service;

@@ -4,12 +4,13 @@
 <dict>
   <key>UIAppFonts</key>
   <array>
-	<string>MauiInfo.plist</string>
+	<string>NotoSansMyanmar-Medium.ttf</string>
 	<string>OpenSans-Regular.ttf</string>
 	<string>OpenSans-Semibold.ttf</string>
 	<string>OPTIMA.TTF</string>
 	<string>OPTIMA_B.TTF</string>
 	<string>Quora.ttf</string>
+	<string>Roboto-Medium.ttf</string>
   </array>
   <key>UILaunchStoryboardName</key>
   <string>MauiSplash</string>

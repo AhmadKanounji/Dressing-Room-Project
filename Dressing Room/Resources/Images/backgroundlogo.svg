@@ -1,0 +1,22 @@
+<svg id="Group_24" data-name="Group 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360" height="780" viewBox="0 0 360 780">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_24" data-name="Rectangle 24" width="263" height="186" transform="translate(97 594)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_11" data-name="Rectangle 11" width="297.498" height="310.001" fill="#8c7974"/>
+    </clipPath>
+  </defs>
+  <g id="Rectangle_27" data-name="Rectangle 27" fill="#e2e2e2" stroke="#707070" stroke-width="1">
+    <rect width="360" height="780" stroke="none"/>
+    <rect x="0.5" y="0.5" width="359" height="779" fill="none"/>
+  </g>
+  <g id="Mask_Group_1" data-name="Mask Group 1" clip-path="url(#clip-path)">
+    <g id="Group_6" data-name="Group 6" transform="translate(103.5 602.766)" opacity="0.05">
+      <g id="Group_5" data-name="Group 5" clip-path="url(#clip-path-2)">
+        <text id="R" transform="translate(131.786 210.142)" fill="#8c7974" font-size="247" font-family="QuoraRegular, Quora"><tspan x="0" y="0">R</tspan></text>
+        <text id="D" transform="translate(144.159 75.378) rotate(180)" fill="#8c7974" font-size="246" font-family="QuoraRegular, Quora"><tspan x="0" y="0">D</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

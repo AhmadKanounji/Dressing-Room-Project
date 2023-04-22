@@ -1,9 +1,8 @@
 ﻿using System;
 namespace Dressing_Room
 {
-	public class BorderlessEntry
+	public class BorderlessEntry: Entry
 	{
-		
 	}
 }
 

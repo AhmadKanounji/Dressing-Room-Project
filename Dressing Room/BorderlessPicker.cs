@@ -5,8 +5,8 @@ namespace Dressing_Room
 {
 	public class BorderlessPicker: Picker
 	{
-		
-		
-	}
+        
+
+    }
 }
 
