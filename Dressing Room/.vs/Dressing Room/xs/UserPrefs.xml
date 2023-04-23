@@ -1,30 +1,46 @@
 ﻿<Properties StartupConfiguration="{C4066B4C-109C-462C-B3EC-6A2056B65A36}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Dressing_220Room PreferredExecutionTarget="Android.pixel_5_-_api_31" />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.26" />
-  <MultiItemStartupConfigurations />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_31" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Signup.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="App.xaml.cs">
     <Files>
-      <File FileName="MainPage.xaml" Line="20" Column="26" />
-      <File FileName="Signup.xaml" Line="11" Column="46" />
+      <File FileName="MainPage.xaml" Line="1" Column="1" />
+      <File FileName="Signup.xaml" Line="12" Column="31" />
+      <File FileName="Models/OutfitToDisplay.cs" Line="1" Column="1" />
+      <File FileName="ViewModels/CreateOutfitViewModel.cs" Line="1" Column="1" />
+      <File FileName="Models/Outfits.cs" Line="1" Column="1" />
+      <File FileName="CreateOutfit.xaml" Line="1" Column="1" />
+      <File FileName="ViewModels/ClothViewModel.cs" Line="1" Column="1" />
+      <File FileName="Wardrobe Extensions/OutfitsPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Messages/RefreshOutfitMessage.cs" Line="1" Column="1" />
+      <File FileName="WardrobePage.xaml" />
+      <File FileName="Wardrobe Extensions/AccessoriesPage.xaml" Line="11" Column="5" />
+      <File FileName="Wardrobe Extensions/JacketsPage.xaml" />
+      <File FileName="Wardrobe Extensions/OutfitsPage.xaml" Line="16" Column="45" />
+      <File FileName="Wardrobe Extensions/PantsPage.xaml" />
+      <File FileName="Wardrobe Extensions/ShoesPage.xaml" />
+      <File FileName="Wardrobe Extensions/TopsPage.xaml" />
+      <File FileName="App.xaml.cs" Line="7" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Dressing Room" expanded="True">
             <Node name="Dressing Room" expanded="True">
+              <Node name="Messages" expanded="True" />
+              <Node name="Models" expanded="True" />
               <Node name="Platforms" expanded="True">
                 <Node name="Android" expanded="True" />
               </Node>
               <Node name="Resources" expanded="True">
+                <Node name="Fonts" expanded="True" />
                 <Node name="Images" expanded="True" />
               </Node>
+              <Node name="Services" expanded="True" />
               <Node name="ViewModels" expanded="True" />
-              <Node name="App.xaml" expanded="True" />
+              <Node name="Wardrobe Extensions" expanded="True">
+                <Node name="OutfitsPage.xaml" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True">
+                <Node name="App.xaml.cs" selected="True" />
+              </Node>
               <Node name="AppShell.xaml" expanded="True" />
               <Node name="ChangePasswordPopup.xaml" expanded="True" />
               <Node name="CreateOutfit.xaml" expanded="True" />
@@ -36,16 +52,21 @@
               <Node name="PopUpTwo.xaml" expanded="True" />
               <Node name="ProfilePage.xaml" expanded="True" />
               <Node name="RemoveBugPopup.xaml" expanded="True" />
-              <Node name="Signup.xaml" expanded="True" selected="True" />
+              <Node name="Signup.xaml" expanded="True" />
               <Node name="WardrobePage.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.26" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_31" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Dressing_220Room PreferredExecutionTarget="Android.pixel_5_-_api_31" />
 </Properties>

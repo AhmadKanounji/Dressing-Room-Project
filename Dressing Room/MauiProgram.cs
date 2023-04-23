@@ -59,6 +59,7 @@ public static class MauiProgram
         builder.Services.AddSingleton<SignUpService>();
         builder.Services.AddSingleton<ClothingService>();
         builder.Services.AddSingleton<EditProfileViewModel>();
+        builder.Services.AddSingleton<OufitViewModel>();
 
 
         return builder.Build();

@@ -1,4 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using CommunityToolkit.Mvvm.Messaging;
+using Dressing_Room.Messages;
 using Dressing_Room.Models;
 using Dressing_Room.Services;
 using Microsoft.Maui.Controls;
@@ -14,9 +17,11 @@ namespace Dressing_Room.ViewModels
     public partial class CreateOutfitViewModel : ObservableObject
     {
         private ClothingService _clothingService;
+        private OutfitsService _outfitsService;
         public CreateOutfitViewModel()
         {
             _clothingService = new ClothingService();
+            _outfitsService = new OutfitsService();
             Tops = new ObservableCollection<Clothes>();
             Pants = new ObservableCollection<Clothes>();
             Shoes = new ObservableCollection<Clothes>();
@@ -35,6 +40,46 @@ namespace Dressing_Room.ViewModels
         public ObservableCollection<Clothes> Shoes { get; }
         public ObservableCollection<Clothes> Jackets { get; }
         public ObservableCollection<Clothes> Accessories { get; }
+
+
+
+        [ObservableProperty]
+        private Clothes selectedTop;
+
+        [ObservableProperty]
+        public Clothes selectedPants;
+
+        [ObservableProperty]
+        public Clothes selectedJacket;
+
+        [ObservableProperty]
+        public Clothes selectedShoes;
+
+
+        [ObservableProperty]
+        public Clothes selectedAccessories;
+
+
+        [RelayCommand]
+        public async Task CreateOutfitAsync()
+        {
+            // Call the GenerateOutfitAsync method passing in the selected clothes
+            var outfit = new Outfits
+            {
+                TopID = SelectedTop.CID,
+                PantsID = SelectedPants.CID,
+                ShoesID = SelectedShoes.CID,
+                JacketID = SelectedJacket.CID,
+                AccessoriesID = SelectedAccessories.CID,
+                UserID = Preferences.Get("user_name", "default_value")
+            };
+            await _outfitsService.AddOutfits(outfit);
+            WeakReferenceMessenger.Default.Send(new RefreshOutfitMessage(null));
+
+
+            // Do something with the created outfit, such as saving it to a database or displaying it on the UI
+            await Shell.Current.DisplayAlert("Uh Oh", "Outfit created succesfully.", "Exit");
+        }
 
 
         public async void refreshTops()

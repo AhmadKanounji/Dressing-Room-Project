@@ -56,6 +56,9 @@ namespace Dressing_Room.ViewModels
             if (result != null)
             {
                 var stream = await result.OpenReadAsync();
+
+                // Convert the photo here and remove the background:
+               
                 Photo = ImageSource.FromStream(() => stream);
 
 
@@ -121,8 +124,3 @@ namespace Dressing_Room.ViewModels
     }
 }
 
-       
-        
-
-
-    

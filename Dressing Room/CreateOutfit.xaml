@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="Dressing_Room.CreateOutfit"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -15,7 +15,23 @@
         <ResourceDictionary>
             <toolkit:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter" />
         </ResourceDictionary>
-
+    <Style TargetType="HorizontalStackLayout">
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" />
+                        <VisualState x:Name="Selected">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor" Value="#01260A" />
+                                <Setter Property="HeightRequest" Value="150"></Setter>
+                                <Setter Property="Opacity" Value="0.9"></Setter>
+                                
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
     </ContentPage.Resources>
     <ScrollView Orientation="Vertical">
         <VerticalStackLayout>
@@ -52,32 +68,19 @@
                     Orientation="Horizontal"
                     VerticalOptions="Center">
 
-                    <StackLayout>
-                        <Border
-                            BackgroundColor="#53917C"
-                            HeightRequest="70"
-                            HorizontalOptions="Start"
-                            StrokeShape="RoundRectangle 25,25,25,25"
-                            WidthRequest="70">
-                            <Image
-                                HeightRequest="40"
-                                HorizontalOptions="Center"
-                                Source="tshirt3.svg"
-                                WidthRequest="40" />
-                        </Border>
+                    <StackLayout Spacing="-20" >
+                        <Label Text="Tops" FontSize="16" Margin="15,20,0,0" FontFamily="Roboto"></Label>
+                        <CollectionView ItemsSource="{Binding Tops}" SelectionMode="Single" SelectedItem="{Binding SelectedTop}">
 
-                        <CollectionView ItemsSource="{Binding Tops}" SelectionMode="Single">
                             <CollectionView.ItemsLayout>
                                 <LinearItemsLayout ItemSpacing="50" Orientation="Horizontal" />
                             </CollectionView.ItemsLayout>
-
                             <CollectionView.ItemTemplate>
 
                                 <DataTemplate x:DataType="model:Clothes">
 
-
-                                    <HorizontalStackLayout Margin="10,30,0,0">
-
+                                  
+                                    <HorizontalStackLayout Margin="10,30,0,0" HorizontalOptions="Fill" >
                                         <Border StrokeShape="RoundRectangle 15,15,15,15">
 
                                             <Image
@@ -126,7 +129,7 @@
                                         </VerticalStackLayout>
 
                                     </HorizontalStackLayout>
-
+                                    
                                 </DataTemplate>
                             </CollectionView.ItemTemplate>
 
@@ -141,20 +144,9 @@
                     VerticalOptions="Center">
 
                     <StackLayout>
-                        <Border
-                            BackgroundColor="#53917C"
-                            HeightRequest="70"
-                            HorizontalOptions="Start"
-                            StrokeShape="RoundRectangle 25,25,25,25"
-                            WidthRequest="70">
-                            <Image
-                                HeightRequest="50"
-                                HorizontalOptions="Center"
-                                Source="pants3.svg"
-                                WidthRequest="50" />
-                        </Border>
+                         <Label Text="Pants" FontSize="16" Margin="15,0,0,0" FontFamily="Roboto"></Label>
 
-                        <CollectionView ItemsSource="{Binding Pants}" SelectionMode="Single">
+                        <CollectionView ItemsSource="{Binding Pants}" SelectionMode="Single" SelectedItem="{Binding SelectedPants}">
                             <CollectionView.ItemsLayout>
                                 <LinearItemsLayout ItemSpacing="50" Orientation="Horizontal" />
                             </CollectionView.ItemsLayout>
@@ -226,20 +218,9 @@
                     VerticalOptions="Center">
 
                     <StackLayout>
-                        <Border
-                            BackgroundColor="#53917C"
-                            HeightRequest="70"
-                            HorizontalOptions="Start"
-                            StrokeShape="RoundRectangle 25,25,25,25"
-                            WidthRequest="70">
-                            <Image
-                                HeightRequest="50"
-                                HorizontalOptions="Center"
-                                Source="shoes3.svg"
-                                WidthRequest="50" />
-                        </Border>
+                         <Label Text="Shoes" FontSize="16" Margin="15,0,0,0" FontFamily="Roboto"></Label>
 
-                        <CollectionView ItemsSource="{Binding Shoes}" SelectionMode="Single">
+                        <CollectionView ItemsSource="{Binding Shoes}" SelectionMode="Single" SelectedItem="{Binding SelectedShoes}">
                             <CollectionView.ItemsLayout>
                                 <LinearItemsLayout ItemSpacing="50" Orientation="Horizontal" />
                             </CollectionView.ItemsLayout>
@@ -307,20 +288,9 @@
                     VerticalOptions="Center">
 
                     <StackLayout>
-                        <Border
-                            BackgroundColor="#53917C"
-                            HeightRequest="70"
-                            HorizontalOptions="Start"
-                            StrokeShape="RoundRectangle 25,25,25,25"
-                            WidthRequest="70">
-                            <Image
-                                HeightRequest="50"
-                                HorizontalOptions="Center"
-                                Source="jackets3.svg"
-                                WidthRequest="50" />
-                        </Border>
+                        <Label Text="Jackets" FontSize="16" Margin="15,0,0,0" FontFamily="Roboto"></Label>
 
-                        <CollectionView ItemsSource="{Binding Jackets}" SelectionMode="Single">
+                        <CollectionView ItemsSource="{Binding Jackets}" SelectionMode="Single" SelectedItem="{Binding SelectedJacket}">
                             <CollectionView.ItemsLayout>
                                 <LinearItemsLayout ItemSpacing="50" Orientation="Horizontal" />
                             </CollectionView.ItemsLayout>
@@ -388,20 +358,9 @@
                     VerticalOptions="Center">
 
                     <StackLayout>
-                        <Border
-                            BackgroundColor="#53917C"
-                            HeightRequest="70"
-                            HorizontalOptions="Start"
-                            StrokeShape="RoundRectangle 25,25,25,25"
-                            WidthRequest="70">
-                            <Image
-                                HeightRequest="50"
-                                HorizontalOptions="Center"
-                                Source="sunglasses3.svg"
-                                WidthRequest="50" />
-                        </Border>
+                         <Label Text="Accessories" FontSize="16" Margin="15,0,0,0" FontFamily="Roboto"></Label>
 
-                        <CollectionView ItemsSource="{Binding Accessories}" SelectionMode="Single">
+                        <CollectionView ItemsSource="{Binding Accessories}" SelectionMode="Single" SelectedItem="{Binding SelectedAccessories}">
                             <CollectionView.ItemsLayout>
                                 <LinearItemsLayout ItemSpacing="50" Orientation="Horizontal" />
                             </CollectionView.ItemsLayout>
@@ -464,6 +423,9 @@
                     </StackLayout>
                 </ScrollView>
             </VerticalStackLayout>
+            <Button Text="Generate Outfit"  Command="{Binding CreateOutfitCommand}">
+
+            </Button>
         </VerticalStackLayout>
     </ScrollView>
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="Dressing_Room.Wardrobe_Extensions.PantsPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -8,6 +8,7 @@
     xmlns:viewmodel="clr-namespace:Dressing_Room.ViewModels"
     x:DataType="viewmodel:PantsViewModel"
     BackgroundColor="#E2E2E2"
+    BackgroundImageSource="backgroundlogo.svg"
     Shell.NavBarIsVisible="False">
 
 
