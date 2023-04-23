@@ -1,62 +1,252 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Dressing_Room.OutfitsPage"
-             
-             BackgroundColor="#E2E2E2"
-             Shell.NavBarIsVisible="False"
-             Shell.BackgroundColor="#E2E2E2"
-            >
+<ContentPage
+    x:Class="Dressing_Room.OutfitsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:model="clr-namespace:Dressing_Room.Models"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:viewmodels="clr-namespace:Dressing_Room.ViewModels"
+    x:DataType="viewmodels:OufitViewModel"
+    BackgroundColor="#E2E2E2"
+    Shell.BackgroundColor="#E2E2E2"
+    Shell.NavBarIsVisible="False">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <toolkit:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
-    <StackLayout >
+    <StackLayout>
 
         <ScrollView VerticalOptions="FillAndExpand">
 
-                <VerticalStackLayout>
-                    <Label  Text="Dressing Room" TextColor="#01260A" VerticalOptions="Center"  VerticalTextAlignment="Center" 
-                            HorizontalTextAlignment="Center" BackgroundColor="#E2E2E2"  
-                            FontSize="20" FontFamily="Quora" HeightRequest="53" HorizontalOptions="Fill">
-                    </Label>
-            
-                    <Label   Text="Outfits" TextColor="#E2E2E2" 
-                            VerticalOptions="Center" VerticalTextAlignment="Center"  
-                            HorizontalTextAlignment="Center"  HorizontalOptions="Fill"
-                            FontSize="15" FontFamily="OPTIMA" HeightRequest="29"  BackgroundColor="#01260A"   >
-                    </Label>
-                
-                </VerticalStackLayout>
-                
-            
+            <VerticalStackLayout>
+                <Label
+                    BackgroundColor="#E2E2E2"
+                    FontFamily="Quora"
+                    FontSize="20"
+                    HeightRequest="53"
+                    HorizontalOptions="Fill"
+                    HorizontalTextAlignment="Center"
+                    Text="Dressing Room"
+                    TextColor="#01260A"
+                    VerticalOptions="Center"
+                    VerticalTextAlignment="Center" />
+
+                <Label
+                    BackgroundColor="#01260A"
+                    FontFamily="OPTIMA"
+                    FontSize="15"
+                    HeightRequest="29"
+                    HorizontalOptions="Fill"
+                    HorizontalTextAlignment="Center"
+                    Text="Outfits"
+                    TextColor="#E2E2E2"
+                    VerticalOptions="Center"
+                    VerticalTextAlignment="Center" />
+
+            </VerticalStackLayout>
+
+
 
         </ScrollView>
-        <Border BackgroundColor="#01260A" HeightRequest="53" StrokeShape="RoundRectangle 30,30,0,0" StrokeThickness="-1">
-            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="50">
-                <ImageButton Source="homepage2.png" HeightRequest="25" WidthRequest="30">
 
-                </ImageButton>
+
+
+        <!--  This is where the collection view starts  -->
+
+
+        <CollectionView Margin="20,0,0,39" ItemsSource="{Binding Outfits}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:OutfitToDisplay">
+
+                    <StackLayout>
+                        <CollectionView Margin="20,0,0,39" ItemsSource="{Binding Tops}">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate x:DataType="model:Clothes">
+
+                                    <StackLayout>
+
+                                        <Image Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" HeightRequest="100" WidthRequest="100" />
+
+
+
+
+
+
+
+                                    </StackLayout>
+
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                        <CollectionView Margin="20,0,0,39" ItemsSource="{Binding Pants}">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate x:DataType="model:Clothes">
+
+                                    <StackLayout>
+
+                                        <Image Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" HeightRequest="100" WidthRequest="100" />
+
+
+
+
+
+
+
+                                    </StackLayout>
+
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+
+
+                        <CollectionView Margin="20,0,0,39" ItemsSource="{Binding Shoes}">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate x:DataType="model:Clothes">
+
+                                    <StackLayout>
+
+                                        <Image Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" HeightRequest="100" WidthRequest="100" />
+
+
+
+
+
+
+
+                                    </StackLayout>
+
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+
+                        <CollectionView Margin="20,0,0,39" ItemsSource="{Binding Jackets}">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate x:DataType="model:Clothes">
+
+                                    <StackLayout>
+
+                                        <Image Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" HeightRequest="100" WidthRequest="100" />
+
+
+
+
+
+
+
+                                    </StackLayout>
+
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+
+                        <CollectionView Margin="20,0,0,39" ItemsSource="{Binding Accessories}">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate x:DataType="model:Clothes">
+
+                                    <StackLayout>
+
+                                        <Image Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" HeightRequest="100" WidthRequest="100" />
+
+
+
+
+
+
+
+                                    </StackLayout>
+
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </StackLayout>
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <Border
+            BackgroundColor="#01260A"
+            HeightRequest="53"
+            StrokeShape="RoundRectangle 30,30,0,0"
+            StrokeThickness="-1">
+            <HorizontalStackLayout
+                HorizontalOptions="Center"
+                Spacing="50"
+                VerticalOptions="Center">
+                <ImageButton
+                    HeightRequest="25"
+                    Source="homepage2.png"
+                    WidthRequest="30" />
                 <VerticalStackLayout Spacing="2" VerticalOptions="Center">
-                    <ImageButton Source="hanger.png" HeightRequest="25" WidthRequest="30">
-
-                    </ImageButton>
-                    <Ellipse HeightRequest="8" WidthRequest="8" Fill="white" />
+                    <ImageButton
+                        HeightRequest="25"
+                        Source="hanger.png"
+                        WidthRequest="30" />
+                    <Ellipse
+                        Fill="white"
+                        HeightRequest="8"
+                        WidthRequest="8" />
                 </VerticalStackLayout>
 
-                <Border   Padding="0" HeightRequest="35" WidthRequest="35" BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20">
-                    <ImageButton Source="plussign.png" HeightRequest="20" WidthRequest="20" >
-
-                    </ImageButton>
+                <Border
+                    Padding="0"
+                    BackgroundColor="#E2E2E2"
+                    HeightRequest="35"
+                    StrokeShape="RoundRectangle 20,20,20,20"
+                    WidthRequest="35">
+                    <ImageButton
+                        HeightRequest="20"
+                        Source="plussign.png"
+                        WidthRequest="20" />
                 </Border>
 
-                <ImageButton Source="profilepic.png" HeightRequest="25" WidthRequest="30">
-
-                </ImageButton>
-                <ImageButton Source="setting.png" HeightRequest="25" WidthRequest="30">
-
-                </ImageButton>
+                <ImageButton
+                    HeightRequest="25"
+                    Source="profilepic.png"
+                    WidthRequest="30" />
+                <ImageButton
+                    HeightRequest="25"
+                    Source="setting.png"
+                    WidthRequest="30" />
             </HorizontalStackLayout>
 
         </Border>
 
     </StackLayout>
 </ContentPage>
-    

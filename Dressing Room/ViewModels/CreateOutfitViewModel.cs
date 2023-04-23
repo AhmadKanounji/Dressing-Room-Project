@@ -39,7 +39,7 @@ namespace Dressing_Room.ViewModels
         public ObservableCollection<Clothes> Jackets { get; }
         public ObservableCollection<Clothes> Accessories { get; }
 
-        public async Task<Outfits> GenerateOutfitAsync(Clothes selectedTop, Clothes selectedPants, Clothes selectedJacket, Clothes selectedShoes, Clothes selectedAccessories)
+        public Outfits GenerateOutfitAsync(Clothes selectedTop, Clothes selectedPants, Clothes selectedJacket, Clothes selectedShoes, Clothes selectedAccessories)
         {
             // Create a new Outfit object
             var outfit = new Outfits();
@@ -50,6 +50,7 @@ namespace Dressing_Room.ViewModels
             outfit.JacketID = selectedJacket.CID;
             outfit.ShoesID = selectedShoes.CID;
             outfit.AccessoriesID = selectedAccessories.CID;
+            outfit.UserID = Preferences.Get("user_name", "default_value");
 
             return outfit;
         }
@@ -92,7 +93,7 @@ namespace Dressing_Room.ViewModels
         public async Task CreateOutfitAsync()
         {
             // Call the GenerateOutfitAsync method passing in the selected clothes
-            var outfit = await GenerateOutfitAsync(SelectedTop, SelectedPants, SelectedJacket, SelectedShoes, SelectedAccessories);
+            var outfit = GenerateOutfitAsync(SelectedTop, SelectedPants, SelectedJacket, SelectedShoes, SelectedAccessories);
             await _outfitsService.AddOutfits(outfit);
 
 

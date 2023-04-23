@@ -26,7 +26,7 @@
         <StackLayout>
             <Border StrokeShape="RoundRectangle 100,100,100,100" HeightRequest="134" WidthRequest="134" Margin="0,20,0,0" BackgroundColor="#C4C4C4" Stroke="#707070" StrokeThickness="1.8">
                 <!--add bindable image-->
-                <Image Source="{Binding ProfileImage, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" WidthRequest="100">
+                <Image Source="{Binding ProfileImage, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="Fill">
 
                 </Image>
             </Border>
