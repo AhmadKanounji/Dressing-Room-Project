@@ -12,6 +12,7 @@ public partial class OutfitsPage : ContentPage
     {
         InitializeComponent();
         viewModel = new OufitViewModel();
+        this.BindingContext = viewModel;
 
 
     }

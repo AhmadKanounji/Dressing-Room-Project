@@ -1,5 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using CommunityToolkit.Mvvm.Messaging;
+using Dressing_Room.Messages;
 using Dressing_Room.Models;
 using Dressing_Room.Services;
 using Microsoft.Maui.Controls;
@@ -72,6 +74,7 @@ namespace Dressing_Room.ViewModels
                 UserID = Preferences.Get("user_name", "default_value")
             };
             await _outfitsService.AddOutfits(outfit);
+            WeakReferenceMessenger.Default.Send(new RefreshOutfitMessage(null));
 
 
             // Do something with the created outfit, such as saving it to a database or displaying it on the UI

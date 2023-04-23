@@ -1,4 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Messaging;
+using Dressing_Room.Messages;
 using Dressing_Room.Models;
 using Dressing_Room.Services;
 using System;
@@ -10,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Dressing_Room.ViewModels
 {
-    public partial class OufitViewModel : ObservableObject
+    public partial class OufitViewModel : ObservableObject, IRecipient<RefreshOutfitMessage>
     {
         private OutfitsService _outfitService;
         private ClothingService _clothingService;
@@ -18,6 +20,7 @@ namespace Dressing_Room.ViewModels
         {
             _outfitService = new OutfitsService();
             _clothingService = new ClothingService();
+            WeakReferenceMessenger.Default.Register<RefreshOutfitMessage>(this);
             Outfits = new ObservableCollection<OutfitToDisplay>();
             Refresh();
         }
@@ -26,8 +29,13 @@ namespace Dressing_Room.ViewModels
 
         public ObservableCollection<OutfitToDisplay> Outfits { get; }
 
-
-
+        public void Receive(RefreshOutfitMessage message)
+        {
+            MainThread.BeginInvokeOnMainThread(() =>
+            {
+                Refresh();
+            });
+        }
 
         public async void Refresh()
         {
