@@ -8,10 +8,10 @@ namespace Dressing_Room.Models
 {
     public class OutfitToDisplay
     {
-        public Clothes Tops { get; set; }
-        public Clothes Pants { get; set; }
-        public Clothes Shoes { get; set; }
-        public Clothes Jackets { get; set; }
-        public Clothes Accessories { get; set; }
+        public byte[] Tops { get; set; }
+        public byte[] Pants { get; set; }
+        public byte[] Shoes { get; set; }
+        public byte[] Jackets { get; set; }
+        public byte[] Accessories { get; set; }
     }
 }

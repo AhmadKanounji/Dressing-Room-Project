@@ -22,6 +22,8 @@ namespace Dressing_Room.ViewModels
             Refresh();
         }
 
+
+
         public ObservableCollection<OutfitToDisplay> Outfits { get; }
 
 
@@ -45,29 +47,29 @@ namespace Dressing_Room.ViewModels
 
                         if (clothes.CID == outfit.TopID)
                         {
-                            toadd.Tops = clothes;
+                            toadd.Tops = clothes.Source;
                         }
                         if (clothes.CID == outfit.PantsID)
                         {
-                            toadd.Pants = clothes;
+                            toadd.Pants = clothes.Source;
 
                         }
 
                         if (clothes.CID == outfit.ShoesID)
                         {
-                            toadd.Shoes = clothes;
+                            toadd.Shoes = clothes.Source;
 
                         }
                         if (clothes.CID == outfit.JacketID)
                         {
-                            toadd.Jackets = clothes;
+                            toadd.Jackets = clothes.Source;
 
 
                         }
                         if (clothes.CID == outfit.AccessoriesID)
                         {
-                            toadd.Accessories = clothes;
-                            Outfits.Add(toadd);
+                            toadd.Accessories = clothes.Source;
+
                         }
 
 

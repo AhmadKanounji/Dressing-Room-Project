@@ -39,61 +39,38 @@ namespace Dressing_Room.ViewModels
         public ObservableCollection<Clothes> Jackets { get; }
         public ObservableCollection<Clothes> Accessories { get; }
 
-        public Outfits GenerateOutfitAsync(Clothes selectedTop, Clothes selectedPants, Clothes selectedJacket, Clothes selectedShoes, Clothes selectedAccessories)
-        {
-            // Create a new Outfit object
-            var outfit = new Outfits();
 
-            // Set the Top and Pants properties of the outfit
-            outfit.TopID = selectedTop.CID;
-            outfit.PantsID = selectedPants.CID;
-            outfit.JacketID = selectedJacket.CID;
-            outfit.ShoesID = selectedShoes.CID;
-            outfit.AccessoriesID = selectedAccessories.CID;
-            outfit.UserID = Preferences.Get("user_name", "default_value");
 
-            return outfit;
-        }
+        [ObservableProperty]
+        private Clothes selectedTop;
 
-        private Clothes _selectedTop;
-        public Clothes SelectedTop
-        {
-            get => _selectedTop;
-            set => SetProperty(ref _selectedTop, value);
-        }
+        [ObservableProperty]
+        public Clothes selectedPants;
 
-        private Clothes _selectedPants;
-        public Clothes SelectedPants
-        {
-            get => _selectedPants;
-            set => SetProperty(ref _selectedPants, value);
-        }
+        [ObservableProperty]
+        public Clothes selectedJacket;
 
-        private Clothes _selectedJacket;
-        public Clothes SelectedJacket
-        {
-            get => _selectedJacket;
-            set => SetProperty(ref _selectedJacket, value);
-        }
+        [ObservableProperty]
+        public Clothes selectedShoes;
 
-        private Clothes _selectedShoes;
-        public Clothes SelectedShoes
-        {
-            get => _selectedShoes;
-            set => SetProperty(ref _selectedShoes, value);
-        }
-        private Clothes _selectedAccessories;
-        public Clothes SelectedAccessories
-        {
-            get => _selectedAccessories;
-            set => SetProperty(ref _selectedAccessories, value);
-        }
+
+        [ObservableProperty]
+        public Clothes selectedAccessories;
+
 
         [RelayCommand]
         public async Task CreateOutfitAsync()
         {
             // Call the GenerateOutfitAsync method passing in the selected clothes
-            var outfit = GenerateOutfitAsync(SelectedTop, SelectedPants, SelectedJacket, SelectedShoes, SelectedAccessories);
+            var outfit = new Outfits
+            {
+                TopID = SelectedTop.CID,
+                PantsID = SelectedPants.CID,
+                ShoesID = SelectedShoes.CID,
+                JacketID = SelectedJacket.CID,
+                AccessoriesID = SelectedAccessories.CID,
+                UserID = Preferences.Get("user_name", "default_value")
+            };
             await _outfitsService.AddOutfits(outfit);
 
 

@@ -16,6 +16,10 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
+    <ContentPage.BindingContext>
+        <viewmodels:OufitViewModel />
+    </ContentPage.BindingContext>
+
     <StackLayout>
 
         <ScrollView VerticalOptions="FillAndExpand">
@@ -45,48 +49,73 @@
                     VerticalOptions="Center"
                     VerticalTextAlignment="Center" />
 
+
+
+
+
             </VerticalStackLayout>
+
+
 
 
 
         </ScrollView>
 
-
-
         <!--  This is where the collection view starts  -->
+        <ScrollView>
+            <StackLayout>
 
+                <CollectionView ItemsSource="{Binding Outfits}" Margin="20,0,0,39" >
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal" />
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:OutfitToDisplay">
+                            <Frame  
+                           HeightRequest="540"
+                           WidthRequest="320"
+                           Margin="12"
+                           BorderColor="Black"
+                           CornerRadius="5"
+                           Padding="0"
+                           BackgroundColor="#E2E2E2"
+                           >
+                                <StackLayout>
+                                    <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
+                                        <Image Source="{Binding Tops, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="100" />
 
-        <CollectionView Margin="20,0,0,39" ItemsSource="{Binding Outfits}">
-            <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="model:OutfitToDisplay">
+                                    </Border>
+                                    <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
+                                        <Image Source="{Binding Pants, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="100" />
 
-                    <StackLayout>
-                        <CollectionView Margin="20,0,0,39" ItemsSource="{Binding Tops}">
-                            <CollectionView.ItemTemplate>
-                                <DataTemplate x:DataType="model:Clothes">
+                                    </Border>
+                                    <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
+                                        <Image Source="{Binding Shoes, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="100" />
 
-                                    <StackLayout>
+                                    </Border>
+                                    <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
+                                        <Image Source="{Binding Jackets, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="100" />
 
-                                        <Image Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" HeightRequest="100" WidthRequest="100" />
+                                    </Border>
+                                    <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
+                                        <Image Source="{Binding Accessories, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="100" />
 
+                                    </Border>
 
 
 
+                                </StackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
 
 
 
-                                    </StackLayout>
 
-                                </DataTemplate>
-                            </CollectionView.ItemTemplate>
-                        </CollectionView>
-                        <CollectionView Margin="20,0,0,39" ItemsSource="{Binding Pants}">
-                            <CollectionView.ItemTemplate>
-                                <DataTemplate x:DataType="model:Clothes">
 
-                                    <StackLayout>
 
-                                        <Image Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" HeightRequest="100" WidthRequest="100" />
 
 
 
@@ -94,108 +123,8 @@
 
 
 
-                                    </StackLayout>
 
-                                </DataTemplate>
-                            </CollectionView.ItemTemplate>
-                        </CollectionView>
-
-
-                        <CollectionView Margin="20,0,0,39" ItemsSource="{Binding Shoes}">
-                            <CollectionView.ItemTemplate>
-                                <DataTemplate x:DataType="model:Clothes">
-
-                                    <StackLayout>
-
-                                        <Image Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" HeightRequest="100" WidthRequest="100" />
-
-
-
-
-
-
-
-                                    </StackLayout>
-
-                                </DataTemplate>
-                            </CollectionView.ItemTemplate>
-                        </CollectionView>
-
-                        <CollectionView Margin="20,0,0,39" ItemsSource="{Binding Jackets}">
-                            <CollectionView.ItemTemplate>
-                                <DataTemplate x:DataType="model:Clothes">
-
-                                    <StackLayout>
-
-                                        <Image Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" HeightRequest="100" WidthRequest="100" />
-
-
-
-
-
-
-
-                                    </StackLayout>
-
-                                </DataTemplate>
-                            </CollectionView.ItemTemplate>
-                        </CollectionView>
-
-                        <CollectionView Margin="20,0,0,39" ItemsSource="{Binding Accessories}">
-                            <CollectionView.ItemTemplate>
-                                <DataTemplate x:DataType="model:Clothes">
-
-                                    <StackLayout>
-
-                                        <Image Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" HeightRequest="100" WidthRequest="100" />
-
-
-
-
-
-
-
-                                    </StackLayout>
-
-                                </DataTemplate>
-                            </CollectionView.ItemTemplate>
-                        </CollectionView>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    </StackLayout>
-
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </ScrollView>
 
 
 
@@ -245,7 +174,6 @@
                     Source="setting.png"
                     WidthRequest="30" />
             </HorizontalStackLayout>
-
         </Border>
 
     </StackLayout>
