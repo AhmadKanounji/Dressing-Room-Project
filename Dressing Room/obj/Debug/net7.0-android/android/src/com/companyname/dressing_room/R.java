@@ -10853,9 +10853,10 @@ public final class R {
     public static final int top=0x7f0700f6;
     public static final int topspic=0x7f0700f7;
     public static final int trash=0x7f0700f8;
-    public static final int tshirt=0x7f0700f9;
-    public static final int tshirt3=0x7f0700fa;
-    public static final int wardrobephoto=0x7f0700fb;
+    public static final int trash4=0x7f0700f9;
+    public static final int tshirt=0x7f0700fa;
+    public static final int tshirt3=0x7f0700fb;
+    public static final int wardrobephoto=0x7f0700fc;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

@@ -28685,13 +28685,16 @@ namespace Dressing_Room
 			public const int trash = 2131165432;
 			
 			// aapt resource value: 0x7F0700F9
-			public const int tshirt = 2131165433;
+			public const int trash4 = 2131165433;
 			
 			// aapt resource value: 0x7F0700FA
-			public const int tshirt3 = 2131165434;
+			public const int tshirt = 2131165434;
 			
 			// aapt resource value: 0x7F0700FB
-			public const int wardrobephoto = 2131165435;
+			public const int tshirt3 = 2131165435;
+			
+			// aapt resource value: 0x7F0700FC
+			public const int wardrobephoto = 2131165436;
 			
 			static Drawable()
 			{

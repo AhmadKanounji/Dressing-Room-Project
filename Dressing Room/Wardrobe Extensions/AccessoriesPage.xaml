@@ -167,12 +167,16 @@
                                                 VerticalOptions="Center" />
 
                                         </Border>
+                                        <Border Padding="0"
+                    BackgroundColor="#E2E2E2"
+                    HeightRequest="50"
+                    StrokeShape="RoundRectangle 20,20,20,20"
+                    WidthRequest="50">
+                                            <ImageButton Source="trash4.svg" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:AccessoriesViewModel}}, Path=DeleteAccessoriesCommand}" CommandParameter="{Binding .}" HeightRequest="50">
 
-                                        <Image
-                                            Margin="25,0,0,3"
-                                            HeightRequest="22"
-                                            Source="binpic.png"
-                                            WidthRequest="22" />
+                                            </ImageButton>
+                                        </Border>
+
 
                                     </HorizontalStackLayout>
 

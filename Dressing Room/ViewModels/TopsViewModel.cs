@@ -11,25 +11,34 @@ using System.Threading.Tasks;
 
 namespace Dressing_Room.ViewModels
 {
-    public partial class TopsViewModel:ObservableObject
+    public partial class TopsViewModel : ObservableObject
     {
         private ClothingService _clothingService;
-        
-        public TopsViewModel() 
-        { 
+
+        public TopsViewModel()
+        {
             _clothingService = new ClothingService();
 
             Tops = new ObservableCollection<Clothes>();
+
             refresh();
         }
 
-        public ObservableCollection<Clothes> Tops { get; } 
-
-        
-       
+        public ObservableCollection<Clothes> Tops { get; }
 
 
-       public async void refresh()
+
+        private Command<Clothes> _deleteTopCommand;
+        public Command<Clothes> DeleteTopCommand => _deleteTopCommand ??= new Command<Clothes>(async (top) =>
+        {
+
+            await _clothingService.DdeleteClothes(top.CID);
+            refresh();
+        });
+
+
+
+        public async void refresh()
         {
             var Current_User = Preferences.Get("user_name", "default_value");
             var allClothes = await _clothingService.GetSpecificClothes(Current_User);
@@ -39,7 +48,7 @@ namespace Dressing_Room.ViewModels
                 if (clothes.Categories == "Tops")
 
                 {
-                   
+
 
                     Tops.Add(new Clothes
                     {
@@ -48,8 +57,8 @@ namespace Dressing_Room.ViewModels
                         Source = clothes.Source,
                         Type = clothes.Type,
                         CID = clothes.CID,
-                        UserID=Current_User
-                        
+                        UserID = Current_User
+
 
                     }); ;
                 }
@@ -60,7 +69,7 @@ namespace Dressing_Room.ViewModels
         async Task GetTops()
         {
 
-            var allClothes =await _clothingService.GetClothes();
+            var allClothes = await _clothingService.GetClothes();
 
             Tops.Clear();
             foreach (var clothes in allClothes)
@@ -84,11 +93,14 @@ namespace Dressing_Room.ViewModels
                         Source = clothes.Source,
                         Type = clothes.Type,
                         CID = clothes.CID
-                        
-                    });;
+
+                    }); ;
                 }
             }
         }
+
+
+
 
     }
 }

@@ -28,6 +28,15 @@ namespace Dressing_Room.ViewModels
         }
 
         public ObservableCollection<Clothes> Shoes { get; }
+
+        private Command<Clothes> _deleteShoesCommand;
+        public Command<Clothes> DeleteShoesCommand => _deleteShoesCommand ??= new Command<Clothes>(async (shoes) =>
+        {
+
+            await _clothingService.DdeleteClothes(shoes.CID);
+            refresh();
+        });
+
         public async void refresh()
         {
             var Current_User = Preferences.Get("user_name", "default_value");
@@ -62,8 +71,8 @@ namespace Dressing_Room.ViewModels
                         Type = clothes.Type,
 
                         CID = clothes.CID,
-                        UserID=Current_User
-                        
+                        UserID = Current_User
+
 
 
 

@@ -89,6 +89,7 @@
 	  <None Remove="Resources\Images\sunglasses3.svg" />
 	  <None Remove="Resources\Images\top.png" />
 	  <None Remove="Models\" />
+	  <None Remove="Resources\Images\trash4.svg" />
 	  <None Remove="Resources\Images\tshirt.svg" />
 	  <None Remove="Resources\Images\tshirt3.svg" />
 	  <None Remove="Resources\Images\wardrobephoto.png" />

@@ -1,5 +1,6 @@
 ﻿using SQLite;
 using SQLiteNetExtensions.Attributes;
+using SQLiteNetExtensions;
 
 
 namespace Dressing_Room.Models

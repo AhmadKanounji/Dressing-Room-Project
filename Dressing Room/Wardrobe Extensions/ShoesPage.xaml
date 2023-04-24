@@ -169,11 +169,9 @@
 
                                         </Border>
 
-                                        <Image
-                                            Margin="25,0,0,3"
-                                            HeightRequest="22"
-                                            Source="binpic.png"
-                                            WidthRequest="22" />
+                                        <Button Text="remove" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:ShoesViewModel}}, Path=DeleteShoesCommand}" CommandParameter="{Binding .}">
+
+                                        </Button>
 
                                     </HorizontalStackLayout>
 

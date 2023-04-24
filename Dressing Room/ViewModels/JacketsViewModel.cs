@@ -55,7 +55,13 @@ namespace Dressing_Room.ViewModels
 
 
 
+        private Command<Clothes> _deleteJacketsCommand;
+        public Command<Clothes> DeleteJacketsCommand => _deleteJacketsCommand ??= new Command<Clothes>(async (jacket) =>
+        {
 
+            await _clothingService.DdeleteClothes(jacket.CID);
+            refresh();
+        });
 
 
 
@@ -95,7 +101,7 @@ namespace Dressing_Room.ViewModels
                         Type = clothes.Type,
 
                         CID = clothes.CID,
-                        UserID=Current_User
+                        UserID = Current_User
 
 
 
