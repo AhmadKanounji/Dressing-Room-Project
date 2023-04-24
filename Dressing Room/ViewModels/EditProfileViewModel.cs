@@ -27,11 +27,12 @@ namespace Dressing_Room.ViewModels
 
         private SignUpService _signUpService;
         private ClothingService _clothingService;
-
+        private OutfitsService _outfitService;
         public EditProfileViewModel()
         {
             _signUpService = new SignUpService();
             _clothingService = new ClothingService();
+            _outfitService = new OutfitsService();
             Refresh();
             WeakReferenceMessenger.Default.Register<RefreshMessage>(this);
         }
@@ -69,6 +70,16 @@ namespace Dressing_Room.ViewModels
                 if (cloth.UserID == Preferences.Get("user_name", "deafult_value"))
                 {
                     await _clothingService.UpdateClothes(Preferences.Get("user_name", "default_value"), User_name);
+                }
+            }
+
+            //updating outfis:
+            var allOutfits = await _outfitService.GetOutfits();
+            foreach (Outfits outfits in allOutfits)
+            {
+                if (outfits.UserID == Preferences.Get("user_name", "default_value"))
+                {
+                    await _outfitService.UpdateOutfits(Preferences.Get("user_name", "default_value"), User_name);
                 }
             }
 

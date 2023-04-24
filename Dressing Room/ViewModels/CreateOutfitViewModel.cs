@@ -63,6 +63,12 @@ namespace Dressing_Room.ViewModels
         [RelayCommand]
         public async Task CreateOutfitAsync()
         {
+            if (SelectedTop == null || SelectedPants == null | SelectedShoes == null || SelectedJacket == null || SelectedAccessories == null)
+            {
+                await Shell.Current.DisplayAlert("Oops", "Please select all clothing types", "Exit");
+                return;
+            }
+
             // Call the GenerateOutfitAsync method passing in the selected clothes
             var outfit = new Outfits
             {
