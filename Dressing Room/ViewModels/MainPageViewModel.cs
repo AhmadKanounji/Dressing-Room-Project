@@ -6,22 +6,22 @@ using System;
 
 namespace Dressing_Room.ViewModels
 {
-	public partial class MainPageViewModel: ObservableObject
-	{
+    public partial class MainPageViewModel : ObservableObject
+    {
 
         //Initializing the service
         private SignUpService service;
         public MainPageViewModel(SignUpService s)
         {
             service = s;
-            
+
         }
 
         [ObservableProperty]
-		private string username;
+        private string username;
 
-		[ObservableProperty]
-		private string password;
+        [ObservableProperty]
+        private string password;
 
         [RelayCommand]
         async Task Gotosignup()
@@ -30,28 +30,29 @@ namespace Dressing_Room.ViewModels
         }
 
         [RelayCommand]
-        
-        async Task Gotowardrobe() 
+
+        async Task Gotowardrobe()
         {
 
 
 
-            if (password ==null || username==null) return;
-                
-            
+
+            if (password == null || username == null) return;
+
+
             var done = false;
             var allUsers = await service.GetUser();
-            foreach(User x in allUsers)
+            foreach (User x in allUsers)
             {
-                if (x.Username == username && x.Password==password)
-                {   
+                if (x.Username == username && x.Password == password)
+                {
 
                     done = true;
                     Routing.RegisterRoute(nameof(WardrobePage), typeof(WardrobePage));
                     await Shell.Current.GoToAsync(nameof(WardrobePage));
                     Routing.UnRegisterRoute(nameof(MainPage));
                     break;
-                    
+
                 }
             }
             if (!done)
@@ -62,6 +63,17 @@ namespace Dressing_Room.ViewModels
 
             //Else we Keep track of who signed in
             Preferences.Set("user_name", Username);
+            Preferences.Set("user_password", Password);
+            // get from database remaining info
+
+            foreach (User user in allUsers)
+            {
+                if (user.Username == Username)
+                {
+                    Preferences.Set("user_email", user.Email);
+                    break;
+                }
+            }
 
         }
 

@@ -43,6 +43,12 @@ namespace Dressing_Room.Services
             var result = await db.Table<Clothes>().Where(c => c.UserID == user_name).ToListAsync();
             return result;
         }
+        public async Task<List<Clothes>> GetSpecificClothesByID(int ID)
+        {
+            await Init();
+            var result = await db.Table<Clothes>().Where(c => c.CID == ID).ToListAsync();
+            return result;
+        }
 
         public async Task DdeleteClothes(int id)
         {
