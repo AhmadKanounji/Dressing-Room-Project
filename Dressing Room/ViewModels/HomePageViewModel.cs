@@ -16,14 +16,19 @@ namespace Dressing_Room.ViewModels
     {
         private OutfitsService _outfitService;
         private ClothingService _clothingService;
+        private SignUpService _signupService;
         public HomePageViewModel()
         {
             _outfitService = new OutfitsService();
             _clothingService = new ClothingService();
+            _signupService = new SignUpService();
             WeakReferenceMessenger.Default.Register<RefreshOutfitMessage>(this);
             Outfits = new ObservableCollection<OutfitToDisplay>();
             Refresh();
         }
+
+        [ObservableProperty]
+        private string username;
 
 
 
@@ -83,6 +88,8 @@ namespace Dressing_Room.ViewModels
 
 
                     }
+                    toadd.UserName = Preferences.Get("user_name", "default_value");
+                    toadd.ProfilePhoto = outfit.ProfilePhoto;
                     Outfits.Add(toadd);
 
                 }

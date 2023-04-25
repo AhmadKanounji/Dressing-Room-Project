@@ -1,4 +1,5 @@
 ﻿using System;
+using Dressing_Room.ViewModels;
 using SQLite;
 namespace Dressing_Room.Models
 {

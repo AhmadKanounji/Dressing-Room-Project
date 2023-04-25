@@ -18,6 +18,7 @@ namespace Dressing_Room.ViewModels
     {
         private ClothingService _clothingService;
         private OutfitsService _outfitsService;
+        private SignUpService _signUpService;
         public CreateOutfitViewModel()
         {
             _clothingService = new ClothingService();
@@ -59,6 +60,8 @@ namespace Dressing_Room.ViewModels
         [ObservableProperty]
         public Clothes selectedAccessories;
 
+        byte[] profile;
+
 
         [RelayCommand]
         public async Task CreateOutfitAsync()
@@ -69,6 +72,25 @@ namespace Dressing_Room.ViewModels
                 return;
             }
 
+            var allUsers = await _signUpService.GetUser();
+            foreach (var user in allUsers)
+            {
+                if (user.Username == Preferences.Get("user_name", "default_value"))
+                {
+                    if (user.Source == null)
+                    {
+                        await Shell.Current.DisplayAlert("hello", "hi", "hello");
+                    }
+                    else
+                    {
+                        profile = user.Source;
+                        break;
+                    }
+
+
+                }
+            }
+            await Shell.Current.DisplayAlert("hi", "hi", "hi");
             // Call the GenerateOutfitAsync method passing in the selected clothes
             var outfit = new Outfits
             {
@@ -77,7 +99,10 @@ namespace Dressing_Room.ViewModels
                 ShoesID = SelectedShoes.CID,
                 JacketID = SelectedJacket.CID,
                 AccessoriesID = SelectedAccessories.CID,
-                UserID = Preferences.Get("user_name", "default_value")
+                UserID = Preferences.Get("user_name", "default_value"),
+                Likes = 0,
+                ProfilePhoto = profile
+
             };
             await _outfitsService.AddOutfits(outfit);
             WeakReferenceMessenger.Default.Send(new RefreshOutfitMessage(null));

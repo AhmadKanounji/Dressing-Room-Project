@@ -58,11 +58,11 @@
                         <CollectionView.ItemTemplate>
                             <DataTemplate x:DataType="model:OutfitToDisplay">
                                 <Frame  
-                           HeightRequest="540"
+                           HeightRequest="560"
                            WidthRequest="320"
                            Margin="12"
                            BorderColor="Black"
-                           CornerRadius="5"
+                           CornerRadius="10"
                            Padding="0"
                            BackgroundColor="#E2E2E2"
                            >
@@ -85,6 +85,25 @@
                                         </Border>
                                         <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
                                             <Image Source="{Binding Accessories, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="100" />
+
+                                        </Border>
+                                        <Border StrokeShape="RoundRectangle 15,15,15,15" HeightRequest="60">
+                                            <HorizontalStackLayout Spacing="70">
+                                                <Image Source="{Binding ProfilePhoto, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" >
+
+                                                </Image>
+                                                <Label Text="{Binding UserName}">
+
+                                                </Label>
+                                                <Button Text="Like" >
+
+                                                </Button>
+                                                <Label Text="yo">
+
+                                                </Label>
+                                            </HorizontalStackLayout>
+
+
 
                                         </Border>
 

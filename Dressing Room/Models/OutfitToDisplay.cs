@@ -16,5 +16,9 @@ namespace Dressing_Room.Models
         public byte[] Shoes { get; set; }
         public byte[] Jackets { get; set; }
         public byte[] Accessories { get; set; }
+        public string UserName { get; set; }
+        public int Likes { get; set; }
+
+        public byte[] ProfilePhoto { get; set; }
     }
 }

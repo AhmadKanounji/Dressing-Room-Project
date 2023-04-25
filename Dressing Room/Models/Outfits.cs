@@ -27,5 +27,8 @@ namespace Dressing_Room.Models
 
         [ForeignKey(typeof(User))]
         public string UserID { get; set; }
+
+        public int Likes { get; set; }
+        public byte[] ProfilePhoto { get; set; }
     }
 }

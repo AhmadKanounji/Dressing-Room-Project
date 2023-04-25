@@ -17,15 +17,17 @@ namespace Dressing_Room.ViewModels
     {
         private OutfitsService _outfitService;
         private ClothingService _clothingService;
-        private ProfileViewModel _profileViewModel;
+        private SignUpService _signUpService;
         public OufitViewModel()
         {
             _outfitService = new OutfitsService();
             _clothingService = new ClothingService();
+            _signUpService = new SignUpService();
             WeakReferenceMessenger.Default.Register<RefreshOutfitMessage>(this);
             Outfits = new ObservableCollection<OutfitToDisplay>();
             Refresh();
         }
+
 
 
 
@@ -36,8 +38,9 @@ namespace Dressing_Room.ViewModels
         public Command<OutfitToDisplay> DeleteOutfitCommand => _deleteOutfitCommand ??= new Command<OutfitToDisplay>(async (outfit) =>
         {
             await _outfitService.DdeleteOutfits(outfit.Id);
-            Refresh();
             await Task.Delay(500);
+            Refresh();
+
         });
         public void Receive(RefreshOutfitMessage message)
         {
@@ -95,6 +98,8 @@ namespace Dressing_Room.ViewModels
                     }
 
                     toadd.Id = outfit.Id;
+                    toadd.Likes = outfit.Likes;
+                    toadd.UserName = outfit.UserID;
                     Outfits.Add(toadd);
 
                 }
