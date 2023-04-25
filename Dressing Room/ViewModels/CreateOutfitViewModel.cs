@@ -23,6 +23,7 @@ namespace Dressing_Room.ViewModels
         {
             _clothingService = new ClothingService();
             _outfitsService = new OutfitsService();
+            _signUpService = new SignUpService();
             Tops = new ObservableCollection<Clothes>();
             Pants = new ObservableCollection<Clothes>();
             Shoes = new ObservableCollection<Clothes>();
@@ -71,8 +72,10 @@ namespace Dressing_Room.ViewModels
                 await Shell.Current.DisplayAlert("Oops", "Please select all clothing types", "Exit");
                 return;
             }
-
+            await Shell.Current.DisplayAlert("hello", "hi", "hello");
             var allUsers = await _signUpService.GetUser();
+
+            await Shell.Current.DisplayAlert("hello", "hi", "hello");
             foreach (var user in allUsers)
             {
                 if (user.Username == Preferences.Get("user_name", "default_value"))
