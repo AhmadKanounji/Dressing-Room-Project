@@ -122,6 +122,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Signup.xaml
 build_metadata.AdditionalFiles.TargetPath = Signup.xaml
 build_metadata.AdditionalFiles.RelativePath = Signup.xaml
 
+[/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/TermsAndCondition.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.TermsAndCondition.xaml
+build_metadata.AdditionalFiles.TargetPath = TermsAndCondition.xaml
+build_metadata.AdditionalFiles.RelativePath = TermsAndCondition.xaml
+
 [/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/AccessoriesPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Wardrobe_Extensions.AccessoriesPage.xaml

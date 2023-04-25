@@ -30,4 +30,9 @@ public partial class SettingsPage : ContentPage
     {
         await Shell.Current.GoToAsync(nameof(WardrobePage));
     }
+
+    async void TermsAndConditionsClicked(System.Object sender, System.EventArgs e)
+    {
+        await MopupService.Instance.PushAsync(new TermsAndCondition());
+    }
 }
