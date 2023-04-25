@@ -19,6 +19,6 @@ public partial class OutfitsPage : ContentPage
     protected override void OnAppearing()
     {
         base.OnAppearing();
-        viewModel.Refresh(); // call ViewModel method to load data
+        // call ViewModel method to load data
     }
 }

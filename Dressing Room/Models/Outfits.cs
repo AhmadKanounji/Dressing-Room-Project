@@ -7,6 +7,9 @@ namespace Dressing_Room.Models
     [Table("Outfits")]
     public class Outfits
     {
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
+
         [ForeignKey(typeof(Clothes))]
         public int TopID { get; set; }
 

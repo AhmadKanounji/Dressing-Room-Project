@@ -49,15 +49,7 @@
                     VerticalOptions="Center"
                     VerticalTextAlignment="Center" />
 
-
-
-
-
             </VerticalStackLayout>
-
-
-
-
 
         </ScrollView>
 
@@ -65,43 +57,60 @@
         <ScrollView>
             <StackLayout>
 
-                <CollectionView ItemsSource="{Binding Outfits}" Margin="20,0,0,39" >
+                <CollectionView Margin="20,0,0,39" ItemsSource="{Binding Outfits}">
                     <CollectionView.ItemsLayout>
                         <LinearItemsLayout Orientation="Horizontal" />
                     </CollectionView.ItemsLayout>
                     <CollectionView.ItemTemplate>
                         <DataTemplate x:DataType="model:OutfitToDisplay">
-                            <Frame  
-                           HeightRequest="540"
-                           WidthRequest="320"
-                           Margin="12"
-                           BorderColor="Black"
-                           CornerRadius="5"
-                           Padding="0"
-                           BackgroundColor="#E2E2E2"
-                           >
+                            <Frame
+                                Margin="12"
+                                Padding="0"
+                                BackgroundColor="#E2E2E2"
+                                BorderColor="Black"
+                                CornerRadius="5"
+                                HeightRequest="540"
+                                WidthRequest="320">
                                 <StackLayout>
                                     <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                        <Image Source="{Binding Tops, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="100" />
+                                        <Image
+                                            Aspect="AspectFill"
+                                            HeightRequest="100"
+                                            Source="{Binding Tops, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
 
                                     </Border>
                                     <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                        <Image Source="{Binding Pants, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="100" />
+                                        <Image
+                                            Aspect="AspectFill"
+                                            HeightRequest="100"
+                                            Source="{Binding Pants, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
 
                                     </Border>
                                     <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                        <Image Source="{Binding Shoes, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="100" />
+                                        <Image
+                                            Aspect="AspectFill"
+                                            HeightRequest="100"
+                                            Source="{Binding Shoes, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
 
                                     </Border>
                                     <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                        <Image Source="{Binding Jackets, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="100" />
+                                        <Image
+                                            Aspect="AspectFill"
+                                            HeightRequest="100"
+                                            Source="{Binding Jackets, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
 
                                     </Border>
                                     <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                        <Image Source="{Binding Accessories, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="100" />
+                                        <Image
+                                            Aspect="AspectFill"
+                                            HeightRequest="100"
+                                            Source="{Binding Accessories, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
 
                                     </Border>
-
+                                    <Button
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:OufitViewModel}}, Path=DeleteOutfitCommand}"
+                                        CommandParameter="{Binding .}"
+                                        Text="Remove Outfit" />
 
 
                                 </StackLayout>
@@ -109,6 +118,7 @@
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
+
             </StackLayout>
 
 

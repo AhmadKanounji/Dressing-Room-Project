@@ -46,6 +46,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.EditProfile.
 build_metadata.AdditionalFiles.TargetPath = EditProfile.xaml
 build_metadata.AdditionalFiles.RelativePath = EditProfile.xaml
 
+[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/HomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = HomePage.xaml
+
 [C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/LogoutPopup.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.LogoutPopup.xaml

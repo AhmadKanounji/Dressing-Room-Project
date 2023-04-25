@@ -130,6 +130,9 @@
         <member name="P:Dressing_Room.ViewModels.ProfileViewModel.User_info">
             <inheritdoc cref="F:Dressing_Room.ViewModels.ProfileViewModel.user_info"/>
         </member>
+        <member name="P:Dressing_Room.ViewModels.ProfileViewModel.Num_outfits">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.ProfileViewModel.num_outfits"/>
+        </member>
         <member name="P:Dressing_Room.ViewModels.ProfileViewModel.PhotoSource">
             <inheritdoc cref="F:Dressing_Room.ViewModels.ProfileViewModel.photoSource"/>
         </member>

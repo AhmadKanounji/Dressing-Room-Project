@@ -3269,6 +3269,11 @@ C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net
 C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\trash4.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\trash4.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\trash4.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\trash4.png
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\trash4.png
 C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\mscorlib.dll
 C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Collections.Concurrent.dll
 C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Data.Common.dll
@@ -3282,8 +3287,3 @@ C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net
 C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Runtime.Extensions.dll
 C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Runtime.Serialization.Formatters.dll
 C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Xml.dll
-C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\trash4.png
-C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\trash4.png
-C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\trash4.png
-C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\trash4.png
-C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\trash4.png

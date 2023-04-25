@@ -44,6 +44,14 @@ namespace Dressing_Room.Services
             return result;
         }
 
+        public async Task DdeleteOutfits(int id)
+        {
+            await Init();
+            var outfit = await db.GetAsync<Outfits>(id);
+            if (outfit != null) { await db.DeleteAsync(outfit); }
+
+
+        }
 
         public async Task UpdateOutfits(string username, string new_username)
         {

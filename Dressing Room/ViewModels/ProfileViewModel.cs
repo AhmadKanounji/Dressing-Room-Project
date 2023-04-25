@@ -1,6 +1,7 @@
 ﻿using System;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Dressing_Room.Models;
 using Dressing_Room.Services;
 using Mopups.Services;
 
@@ -10,6 +11,8 @@ namespace Dressing_Room.ViewModels
     {
         [ObservableProperty]
         private string user_info = Preferences.Get("user_name", "default_value");
+        [ObservableProperty]
+        private int num_outfits = 0;
 
         [RelayCommand]
         async void GoToEditProfile()
@@ -25,6 +28,7 @@ namespace Dressing_Room.ViewModels
 
 
         public SignUpService _signUpService;
+        public OutfitsService _outfitsService;
 
 
 
@@ -32,6 +36,7 @@ namespace Dressing_Room.ViewModels
         public ProfileViewModel()
         {
             _signUpService = new SignUpService();
+            _outfitsService = new OutfitsService();
             refresh();
 
         }
@@ -54,6 +59,15 @@ namespace Dressing_Room.ViewModels
             }
 
 
+        }
+
+        public async void RefreshOutfitsNumber()
+        {
+            var allOutfits = await _outfitsService.GetOutfits();
+            foreach (Outfits outfit in allOutfits)
+            {
+                if (outfit.UserID == User_info) Num_outfits++;
+            }
         }
 
 

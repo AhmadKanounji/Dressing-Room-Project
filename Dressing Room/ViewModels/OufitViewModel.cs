@@ -1,4 +1,5 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Maui.Alerts;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Messaging;
 using Dressing_Room.Messages;
 using Dressing_Room.Models;
@@ -16,6 +17,7 @@ namespace Dressing_Room.ViewModels
     {
         private OutfitsService _outfitService;
         private ClothingService _clothingService;
+        private ProfileViewModel _profileViewModel;
         public OufitViewModel()
         {
             _outfitService = new OutfitsService();
@@ -27,8 +29,16 @@ namespace Dressing_Room.ViewModels
 
 
 
+
         public ObservableCollection<OutfitToDisplay> Outfits { get; }
 
+        private Command<OutfitToDisplay> _deleteOutfitCommand;
+        public Command<OutfitToDisplay> DeleteOutfitCommand => _deleteOutfitCommand ??= new Command<OutfitToDisplay>(async (outfit) =>
+        {
+            await _outfitService.DdeleteOutfits(outfit.Id);
+            Refresh();
+            await Task.Delay(500);
+        });
         public void Receive(RefreshOutfitMessage message)
         {
             MainThread.BeginInvokeOnMainThread(() =>
@@ -83,6 +93,8 @@ namespace Dressing_Room.ViewModels
 
 
                     }
+
+                    toadd.Id = outfit.Id;
                     Outfits.Add(toadd);
 
                 }

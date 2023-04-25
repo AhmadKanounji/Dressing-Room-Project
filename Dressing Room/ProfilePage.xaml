@@ -33,7 +33,7 @@
 
                     <StackLayout Orientation="Vertical" Spacing="0" Margin="50,50,0,0">
                         <!--change this text later/ just to see how it looks-->
-                        <Label Text="232" FontSize="20" Margin="11,0,0,0" FontFamily="NotoSansMyanmar" FontAttributes="Bold" CharacterSpacing="1"></Label>
+                        <Label Text="{Binding Num_outfits}" FontSize="20" Margin="11,0,0,0" FontFamily="NotoSansMyanmar" FontAttributes="Bold" CharacterSpacing="1"></Label>
                         <Label Text="Outfits" FontSize="18" ></Label>
                     </StackLayout>
                     <BoxView BackgroundColor="Black" WidthRequest="0.5" HeightRequest="60" Margin="0,42,0,0" />
