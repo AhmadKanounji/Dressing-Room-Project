@@ -53,13 +53,14 @@ namespace Dressing_Room.Services
 
         }
 
-        public async Task UpdateOutfits(string username, string new_username)
+        public async Task UpdateOutfits(string username, string new_username, byte[] photo)
         {
             await Init();
             var outfit = await db.Table<Outfits>().Where(u => u.UserID == username).ToListAsync();
             foreach (Outfits c in outfit)
             {
                 c.UserID = new_username;
+                c.ProfilePhoto = photo;
                 await db.UpdateAsync(c);
             }
         }

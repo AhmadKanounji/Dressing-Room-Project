@@ -79,7 +79,7 @@ namespace Dressing_Room.ViewModels
             {
                 if (outfits.UserID == Preferences.Get("user_name", "default_value"))
                 {
-                    await _outfitService.UpdateOutfits(Preferences.Get("user_name", "default_value"), User_name);
+                    await _outfitService.UpdateOutfits(Preferences.Get("user_name", "default_value"), User_name, ProfileImage);
                 }
             }
 
