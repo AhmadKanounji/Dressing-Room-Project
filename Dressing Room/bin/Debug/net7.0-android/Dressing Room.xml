@@ -88,6 +88,15 @@
         <member name="P:Dressing_Room.ViewModels.HomePageViewModel.Username">
             <inheritdoc cref="F:Dressing_Room.ViewModels.HomePageViewModel.username"/>
         </member>
+        <member name="P:Dressing_Room.ViewModels.HomeProfileViewModel.User_info">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.HomeProfileViewModel.user_info"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.HomeProfileViewModel.Num_outfits">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.HomeProfileViewModel.num_outfits"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.HomeProfileViewModel.PhotoSource">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.HomeProfileViewModel.photoSource"/>
+        </member>
         <member name="F:Dressing_Room.ViewModels.JacketsViewModel.getJacketsCommand">
             <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.JacketsViewModel.GetJacketsCommand"/>.</summary>
         </member>

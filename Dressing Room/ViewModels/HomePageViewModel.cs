@@ -1,8 +1,10 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Maui.Views;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Messaging;
 using Dressing_Room.Messages;
 using Dressing_Room.Models;
 using Dressing_Room.Services;
+using Mopups.Services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -24,11 +26,22 @@ namespace Dressing_Room.ViewModels
             _signupService = new SignUpService();
             WeakReferenceMessenger.Default.Register<RefreshOutfitMessage>(this);
             Outfits = new ObservableCollection<OutfitToDisplay>();
+
             Refresh();
         }
 
         [ObservableProperty]
         private string username;
+
+        private Command<OutfitToDisplay> _gotohomeprofile;
+        public Command<OutfitToDisplay> GoToHomeProfileCommand => _gotohomeprofile ??= new Command<OutfitToDisplay>(async (outfit) =>
+        {
+
+            Preferences.Set("user_to_display", outfit.UserName);
+
+            await MopupService.Instance.PushAsync(new HomeProfile());
+
+        });
 
 
 
@@ -48,7 +61,7 @@ namespace Dressing_Room.ViewModels
             Outfits.Clear();
             foreach (Outfits outfit in alloutfits)
             {
-                if (outfit.UserID == Preferences.Get("user_name", "default_value"))
+                if (outfit.UserID != Preferences.Get("user_name", "default_value"))
                 {
                     //Create an OutfitToAdd and loop through all the clothes. If we find clothes ID matching to one of the outfits ID then we add to Outfit to display.
                     // Once we are done with all the clothes then we should have a complete outfit. So we exit the forloop and add the outfit to the Observable Collection,
@@ -88,7 +101,7 @@ namespace Dressing_Room.ViewModels
 
 
                     }
-                    toadd.UserName = Preferences.Get("user_name", "default_value");
+                    toadd.UserName = outfit.UserID;
                     toadd.ProfilePhoto = outfit.ProfilePhoto;
                     Outfits.Add(toadd);
 

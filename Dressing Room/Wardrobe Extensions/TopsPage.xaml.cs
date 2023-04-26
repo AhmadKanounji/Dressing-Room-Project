@@ -16,5 +16,6 @@ public partial class TopsPage : ContentPage
     {
         base.OnAppearing();
         viewModel.refresh(); // call ViewModel method to load data
+
     }
 }

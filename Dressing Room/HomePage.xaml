@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Dressing_Room.HomePage"
-             xmlns:viewmodels="clr-namespace:Dressing_Room.ViewModels"
-             x:DataType="viewmodels:HomePageViewModel"
-              xmlns:model="clr-namespace:Dressing_Room.Models"
-              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             Title="HomePage"
-             Shell.NavBarIsVisible="False">
+<ContentPage
+    x:Class="Dressing_Room.HomePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:model="clr-namespace:Dressing_Room.Models"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:viewmodels="clr-namespace:Dressing_Room.ViewModels"
+    Title="HomePage"
+    x:DataType="viewmodels:HomePageViewModel"
+    Shell.NavBarIsVisible="False">
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -51,56 +52,75 @@
                 </VerticalStackLayout>
                 <StackLayout>
 
-                    <CollectionView ItemsSource="{Binding Outfits}" Margin="20,0,0,39" >
+                    <CollectionView Margin="20,0,0,39" ItemsSource="{Binding Outfits}">
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout Orientation="Vertical" />
                         </CollectionView.ItemsLayout>
                         <CollectionView.ItemTemplate>
                             <DataTemplate x:DataType="model:OutfitToDisplay">
-                                <Frame  
-                           HeightRequest="560"
-                           WidthRequest="320"
-                           Margin="12"
-                           BorderColor="Black"
-                           CornerRadius="10"
-                           Padding="0"
-                           BackgroundColor="#E2E2E2"
-                           >
+                                <Frame
+                                    Margin="12"
+                                    Padding="0"
+                                    BackgroundColor="#E2E2E2"
+                                    BorderColor="Black"
+                                    CornerRadius="10"
+                                    HeightRequest="560"
+                                    WidthRequest="320">
                                     <StackLayout>
                                         <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                            <Image Source="{Binding Tops, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="100" />
+                                            <Image
+                                                Aspect="AspectFill"
+                                                HeightRequest="100"
+                                                Source="{Binding Tops, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
 
                                         </Border>
                                         <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                            <Image Source="{Binding Pants, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="100" />
+                                            <Image
+                                                Aspect="AspectFill"
+                                                HeightRequest="100"
+                                                Source="{Binding Pants, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
 
                                         </Border>
                                         <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                            <Image Source="{Binding Shoes, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="100" />
+                                            <Image
+                                                Aspect="AspectFill"
+                                                HeightRequest="100"
+                                                Source="{Binding Shoes, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
 
                                         </Border>
                                         <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                            <Image Source="{Binding Jackets, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="100" />
+                                            <Image
+                                                Aspect="AspectFill"
+                                                HeightRequest="100"
+                                                Source="{Binding Jackets, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
 
                                         </Border>
                                         <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                            <Image Source="{Binding Accessories, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="100" />
+                                            <Image
+                                                Aspect="AspectFill"
+                                                HeightRequest="100"
+                                                Source="{Binding Accessories, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
 
                                         </Border>
-                                        <Border StrokeShape="RoundRectangle 15,15,15,15" HeightRequest="60">
-                                            <HorizontalStackLayout Spacing="70">
-                                                <Image Source="{Binding ProfilePhoto, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" >
+                                        <Border HeightRequest="60" StrokeShape="RoundRectangle 15,15,15,15">
+                                            <HorizontalStackLayout Spacing="0" HorizontalOptions="Start">
+                                                <Border
+                                                    Padding="0"
+                                                    BackgroundColor="#E2E2E2"
+                                                    HeightRequest="45"
+                                                    StrokeShape="RoundRectangle 20,20,20,20"
+                                                    WidthRequest="45" >
+                                                    <Image Source="{Binding ProfilePhoto, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="Fill"/>
+                                                </Border>
+                                                <Button
+                                                    BackgroundColor="Transparent"
+                                                    FontAttributes="Bold"
+                                                    FontSize="18"
+                                                    Text="{Binding UserName, StringFormat='@{0}'}"
+                                                    
+                                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:HomePageViewModel}}, Path=GoToHomeProfileCommand}" CommandParameter="{Binding .}"
+                                                    TextColor="Black" />
 
-                                                </Image>
-                                                <Label Text="{Binding UserName}">
-
-                                                </Label>
-                                                <Button Text="Like" >
-
-                                                </Button>
-                                                <Label Text="yo">
-
-                                                </Label>
                                             </HorizontalStackLayout>
 
 
@@ -114,6 +134,7 @@
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
+
                 </StackLayout>
             </VerticalStackLayout>
 
@@ -156,7 +177,6 @@
                     StrokeShape="RoundRectangle 20,20,20,20"
                     WidthRequest="35">
                     <ImageButton
-                        
                         HeightRequest="20"
                         Source="plussign.png"
                         WidthRequest="20" />
@@ -165,10 +185,8 @@
                 <ImageButton
                     HeightRequest="25"
                     Source="profilepic.png"
-                    WidthRequest="30"
-                    />
+                    WidthRequest="30" />
                 <ImageButton
-                    
                     HeightRequest="25"
                     Source="setting.png"
                     WidthRequest="30" />

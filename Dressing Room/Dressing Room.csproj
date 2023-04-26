@@ -144,6 +144,9 @@
 	  <MauiXaml Update="HomePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="HomeProfile.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="LogoutPopup.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
