@@ -3274,19 +3274,6 @@ C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net
 C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\trash4.png
 C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\trash4.png
 C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\trash4.png
-C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\mscorlib.dll
-C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Collections.Concurrent.dll
-C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Data.Common.dll
-C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Data.dll
-C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Diagnostics.StackTrace.dll
-C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Diagnostics.TraceSource.dll
-C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.dll
-C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Private.CoreLib.dll
-C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Private.Uri.dll
-C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Runtime.dll
-C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Runtime.Extensions.dll
-C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Runtime.Serialization.Formatters.dll
-C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Xml.dll
 C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\bin\Debug\net7.0-android\Dressing Room.runtimeconfig.json
 C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\bin\Debug\net7.0-android\Dressing Room.dll
 C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\bin\Debug\net7.0-android\Dressing Room.pdb
@@ -4401,3 +4388,16 @@ C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-an
 C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Runtime.Extensions.dll
 C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Runtime.Serialization.Formatters.dll
 C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Xml.dll
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\mscorlib.dll
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Collections.Concurrent.dll
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Data.Common.dll
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Data.dll
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Diagnostics.StackTrace.dll
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Diagnostics.TraceSource.dll
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.dll
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Private.CoreLib.dll
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Private.Uri.dll
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Runtime.dll
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Runtime.Extensions.dll
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Runtime.Serialization.Formatters.dll
+C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\android\assets\System.Xml.dll

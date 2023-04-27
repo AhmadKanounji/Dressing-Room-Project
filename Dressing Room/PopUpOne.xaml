@@ -26,7 +26,7 @@
             <Border StrokeShape="RoundRectangle 20,20,20,20"
                 WidthRequest="175" StrokeThickness="0"
                 >
-                <Button BackgroundColor="#01260A" Text="Generate Outfit">
+                <Button BackgroundColor="#01260A" Text="Generate Outfit" Clicked="GoToGenerateOutfit">
 
                 </Button>
 

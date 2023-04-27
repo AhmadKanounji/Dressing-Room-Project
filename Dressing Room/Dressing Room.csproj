@@ -31,10 +31,10 @@
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
-	  <CreatePackage>false</CreatePackage>
+		<CreatePackage>false</CreatePackage>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|AnyCPU'">
-	  <CreatePackage>false</CreatePackage>
+		<CreatePackage>false</CreatePackage>
 	</PropertyGroup>
 	<ItemGroup>
 		<!-- App Icon -->
@@ -65,126 +65,129 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Fonts\OPTIMA.TTF" />
-	  <None Remove="Resources\Fonts\OPTIMA_B.TTF" />
-	  <None Remove="Resources\Fonts\Quora.ttf" />
-	  <None Remove="Resources\Images\accessories.png" />
-	  <None Remove="Resources\Images\backbutton.png" />
-	  <None Remove="Resources\Images\hanger1.jpg" />
-	  <None Remove="Resources\Images\hangerquestion.svg" />
-	  <None Remove="Resources\Images\hats.svg" />
-	  <None Remove="Resources\Images\homepage.png" />
-	  <None Remove="Resources\Images\jacke.png" />
-	  <None Remove="Resources\Images\jackets3.svg" />
-	  <None Remove="Resources\Images\logo.png" />
-	  <None Remove="Resources\Images\logopic.png" />
-	  <None Remove="Resources\Images\outfits.jpg" />
-	  <None Remove="Resources\Images\pant.png" />
-	  <None Remove="Resources\Images\pants3.png" />
-	  <None Remove="Resources\Images\planttwo.png" />
-	  <None Remove="Resources\Images\settings.png" />
-	  <None Remove="Resources\Images\shoe.png" />
-	  <None Remove="Resources\Images\shoes3.svg" />
-	  <None Remove="Resources\Images\sunglasses.svg" />
-	  <None Remove="Resources\Images\sunglasses3.svg" />
-	  <None Remove="Resources\Images\top.png" />
-	  <None Remove="Models\" />
-	  <None Remove="Resources\Images\trash4.svg" />
-	  <None Remove="Resources\Images\tshirt.svg" />
-	  <None Remove="Resources\Images\tshirt3.svg" />
-	  <None Remove="Resources\Images\wardrobephoto.png" />
-	  <None Remove="ViewModels\" />
-	  <None Remove="Services\" />
-	  <None Remove="Resources\Images\accesoriespic.png" />
-	  <None Remove="Resources\Images\jacketspic.png" />
-	  <None Remove="Resources\Images\outfitspic.png" />
-	  <None Remove="Resources\Images\pantspic.png" />
-	  <None Remove="Resources\Images\shoespic.png" />
-	  <None Remove="Resources\Images\topspic.png" />
-	  <None Remove="Resources\Images\camera.png" />
-	  <None Remove="Resources\Images\library.png" />
-	  <None Remove="Resources\Images\profilepicicon.png" />
-	  <None Remove="Resources\Images\splashscreenpic.svg" />
-	  <None Remove="Resources\Images\trash.png" />
-	  <None Remove="Resources\Fonts\Roboto-Medium.ttf" />
-	  <None Remove="Resources\Fonts\NotoSansMyanmar-Medium.ttf" />
-	  <None Remove="Messages\" />
-	  <None Remove="Resources\Images\Group 24.svg" />
+		<None Remove="Resources\Fonts\OPTIMA.TTF" />
+		<None Remove="Resources\Fonts\OPTIMA_B.TTF" />
+		<None Remove="Resources\Fonts\Quora.ttf" />
+		<None Remove="Resources\Images\accessories.png" />
+		<None Remove="Resources\Images\backbutton.png" />
+		<None Remove="Resources\Images\hanger1.jpg" />
+		<None Remove="Resources\Images\hangerquestion.svg" />
+		<None Remove="Resources\Images\hats.svg" />
+		<None Remove="Resources\Images\homepage.png" />
+		<None Remove="Resources\Images\jacke.png" />
+		<None Remove="Resources\Images\jackets3.svg" />
+		<None Remove="Resources\Images\logo.png" />
+		<None Remove="Resources\Images\logopic.png" />
+		<None Remove="Resources\Images\outfits.jpg" />
+		<None Remove="Resources\Images\pant.png" />
+		<None Remove="Resources\Images\pants3.png" />
+		<None Remove="Resources\Images\planttwo.png" />
+		<None Remove="Resources\Images\settings.png" />
+		<None Remove="Resources\Images\shoe.png" />
+		<None Remove="Resources\Images\shoes3.svg" />
+		<None Remove="Resources\Images\sunglasses.svg" />
+		<None Remove="Resources\Images\sunglasses3.svg" />
+		<None Remove="Resources\Images\top.png" />
+		<None Remove="Models\" />
+		<None Remove="Resources\Images\trash4.svg" />
+		<None Remove="Resources\Images\tshirt.svg" />
+		<None Remove="Resources\Images\tshirt3.svg" />
+		<None Remove="Resources\Images\wardrobephoto.png" />
+		<None Remove="ViewModels\" />
+		<None Remove="Services\" />
+		<None Remove="Resources\Images\accesoriespic.png" />
+		<None Remove="Resources\Images\jacketspic.png" />
+		<None Remove="Resources\Images\outfitspic.png" />
+		<None Remove="Resources\Images\pantspic.png" />
+		<None Remove="Resources\Images\shoespic.png" />
+		<None Remove="Resources\Images\topspic.png" />
+		<None Remove="Resources\Images\camera.png" />
+		<None Remove="Resources\Images\library.png" />
+		<None Remove="Resources\Images\profilepicicon.png" />
+		<None Remove="Resources\Images\splashscreenpic.svg" />
+		<None Remove="Resources\Images\trash.png" />
+		<None Remove="Resources\Fonts\Roboto-Medium.ttf" />
+		<None Remove="Resources\Fonts\NotoSansMyanmar-Medium.ttf" />
+		<None Remove="Messages\" />
+		<None Remove="Resources\Images\Group 24.svg" />
 	</ItemGroup>
 	<ItemGroup>
-	  <BundleResource Include="Resources\Fonts\OPTIMA_B.TTF" />
-	  <BundleResource Include="Resources\Fonts\Quora.ttf" />
-	  <BundleResource Include="Resources\Images\logo.png" />
-	  <BundleResource Include="Resources\Images\logopic.png" />
-	  <BundleResource Include="Resources\Images\planttwo.png" />
-	  <BundleResource Include="Resources\Images\accesoriespic.png" />
-	  <BundleResource Include="Resources\Images\jacketspic.png" />
-	  <BundleResource Include="Resources\Images\outfitspic.png" />
-	  <BundleResource Include="Resources\Images\pantspic.png" />
-	  <BundleResource Include="Resources\Images\shoespic.png" />
-	  <BundleResource Include="Resources\Images\topspic.png" />
-	  <BundleResource Include="Resources\Images\camera.png" />
-	  <BundleResource Include="Resources\Images\library.png" />
-	  <BundleResource Include="Resources\Images\profilepicicon.png" />
-	  <BundleResource Include="Resources\Images\splashscreenpic.svg" />
-	  <BundleResource Include="Resources\Images\trash.png" />
-	  <BundleResource Include="Resources\Fonts\Roboto-Medium.ttf" />
-	  <BundleResource Include="Resources\Fonts\NotoSansMyanmar-Medium.ttf" />
+		<BundleResource Include="Resources\Fonts\OPTIMA_B.TTF" />
+		<BundleResource Include="Resources\Fonts\Quora.ttf" />
+		<BundleResource Include="Resources\Images\logo.png" />
+		<BundleResource Include="Resources\Images\logopic.png" />
+		<BundleResource Include="Resources\Images\planttwo.png" />
+		<BundleResource Include="Resources\Images\accesoriespic.png" />
+		<BundleResource Include="Resources\Images\jacketspic.png" />
+		<BundleResource Include="Resources\Images\outfitspic.png" />
+		<BundleResource Include="Resources\Images\pantspic.png" />
+		<BundleResource Include="Resources\Images\shoespic.png" />
+		<BundleResource Include="Resources\Images\topspic.png" />
+		<BundleResource Include="Resources\Images\camera.png" />
+		<BundleResource Include="Resources\Images\library.png" />
+		<BundleResource Include="Resources\Images\profilepicicon.png" />
+		<BundleResource Include="Resources\Images\splashscreenpic.svg" />
+		<BundleResource Include="Resources\Images\trash.png" />
+		<BundleResource Include="Resources\Fonts\Roboto-Medium.ttf" />
+		<BundleResource Include="Resources\Fonts\NotoSansMyanmar-Medium.ttf" />
 	</ItemGroup>
 	<ItemGroup>
-	  <MauiXaml Update="ChangePasswordPopup.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="CreateOutfit.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="DeleteAccountPopUp.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="HomePage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="HomeProfile.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="LogoutPopup.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="PopUpAdd.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="PopUpOne.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="PopUpTwo.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="SettingsPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Signup.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Wardrobe Extensions\AccessoriesPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Wardrobe Extensions\JacketsPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Wardrobe Extensions\OutfitsPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Wardrobe Extensions\PantsPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Wardrobe Extensions\ShoesPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Wardrobe Extensions\TopsPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="WardrobePage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
+		<MauiXaml Update="ChangePasswordPopup.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="CreateOutfit.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="DeleteAccountPopUp.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="GeneratePage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="HomePage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="HomeProfile.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="LogoutPopup.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="PopUpAdd.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="PopUpOne.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="PopUpTwo.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="SettingsPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Signup.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Wardrobe Extensions\AccessoriesPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Wardrobe Extensions\JacketsPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Wardrobe Extensions\OutfitsPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Wardrobe Extensions\PantsPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Wardrobe Extensions\ShoesPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Wardrobe Extensions\TopsPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="WardrobePage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
 	</ItemGroup>
 </Project>
