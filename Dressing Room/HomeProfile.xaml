@@ -83,7 +83,7 @@
                                 FontAttributes="Bold"
                                 FontFamily="NotoSansMyanmar"
                                 FontSize="20"
-                                Text="1.7M" />
+                                Text="{Binding Follow_count}" />
                             <Label FontSize="18" Text="Followers" />
                         </StackLayout>
 
@@ -104,7 +104,7 @@
                                 FontAttributes="Bold"
                                 FontFamily="NotoSansMyanmar"
                                 FontSize="20"
-                                Text="666" />
+                                Text="{Binding Following_count}" />
                             <Label FontSize="18" Text="Following" />
                         </StackLayout>
 
@@ -118,13 +118,15 @@
                         StrokeThickness="2"
                         WidthRequest="330">
                         <Button
+                            x:Name="Kano"
                             Margin="0,-3,0,0"
                             BackgroundColor="#01260A"
                             FontAttributes="Bold"
                             FontFamily="NotoSansMyanmar"
                             FontSize="17"
-                            Text="Follow"
-                            TextColor="#E2E2E2" />
+                            Text="{Binding Text}"
+                            TextColor="#E2E2E2"
+                            Command="{Binding FollowCommand}" />
                     </Border>
                     <BoxView
                         Margin="0,18,0,10"

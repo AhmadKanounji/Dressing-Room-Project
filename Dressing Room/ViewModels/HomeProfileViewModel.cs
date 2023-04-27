@@ -19,6 +19,16 @@ namespace Dressing_Room.ViewModels
         [ObservableProperty]
         private int num_outfits = 0;
 
+        [ObservableProperty]
+        private int follow_count = 0;
+        [ObservableProperty]
+        private int following_count = 0;
+
+        [ObservableProperty]
+        private string text;
+        [ObservableProperty]
+        private string color;
+
 
 
 
@@ -30,6 +40,7 @@ namespace Dressing_Room.ViewModels
         public OutfitsService _outfitsService;
         public SignUpService _signupService;
         public ClothingService _clothingService;
+        public FollowService _followService;
 
         public ObservableCollection<OutfitToDisplay> Outfits { get; }
 
@@ -40,6 +51,7 @@ namespace Dressing_Room.ViewModels
             _outfitsService = new OutfitsService();
             _signupService = new SignUpService();
             _clothingService = new ClothingService();
+            _followService = new FollowService();
             Outfits = new ObservableCollection<OutfitToDisplay>();
 
 
@@ -48,6 +60,67 @@ namespace Dressing_Room.ViewModels
         [ObservableProperty]
         public byte[] photoSource;
 
+
+        [RelayCommand]
+
+        public async Task Follow()
+        {
+
+            //check if the user follows the visited user:
+            var allFollows = await _followService.GetFollows();
+            foreach (FollowedTable follows in allFollows)
+            {
+                if (follows.Follower == Preferences.Get("user_name", "default_value") && follows.Followed == Preferences.Get("user_to_display", "default_value"))
+                {
+                    Text = "Follow";
+                    Color = "#01260A";
+                    
+                    await _followService.DeleteFollow(follows.Id);
+                    Follow_count = await GetFollowCount(Preferences.Get("user_to_display", "default_value"));
+
+
+                    return;
+                }
+            }
+
+            
+            // else if the user doesnt follow the visited user:
+            var toadd = new FollowedTable
+            {
+                Follower = Preferences.Get("user_name", "default_value"),
+                Followed = Preferences.Get("user_to_display", "Default_value")
+            };
+            await _followService.AddFollow(toadd);
+            Follow_count = await GetFollowCount(Preferences.Get("user_to_display", "default_value"));
+        }
+
+
+        public async Task<int> GetFollowCount(string username)
+        {
+            int count = 0;
+            var allFollows = await _followService.GetFollows();
+            foreach (FollowedTable follows in allFollows)
+            {
+                if (follows.Followed == username) count++;
+
+
+
+            }
+            return count;
+        }
+        public async Task<int> GetFollowingCount(string username)
+        {
+            int count = 0;
+            var allFollows = await _followService.GetFollows();
+            foreach (FollowedTable follows in allFollows)
+            {
+                if (follows.Follower == username) count++;
+
+
+
+            }
+            return count;
+        }
 
         public async void refresh()
         {
@@ -73,6 +146,26 @@ namespace Dressing_Room.ViewModels
             {
                 if (outfit.UserID == Preferences.Get("user_to_display", "default_value")) Num_outfits++;
             }
+        }
+
+        public async void RefreshFollowers()
+        {
+            Follow_count = await GetFollowCount(Preferences.Get("user_to_display", "default_value"));
+            Following_count = await GetFollowingCount(Preferences.Get("user_to_display", "default_value"));
+            var allFollows = await _followService.GetFollows();
+            foreach (FollowedTable follows in allFollows)
+            {
+                if (follows.Follower == Preferences.Get("user_name", "default_value") && follows.Followed == Preferences.Get("user_to_display", "default_value"))
+                {
+                    Text = "Unfollow";
+                    Color = "#E2E2E2";
+                    return;
+                }
+
+            }
+
+            Text = "Follow";
+            Color = "#01260A";
         }
         public async void Refresh()
         {

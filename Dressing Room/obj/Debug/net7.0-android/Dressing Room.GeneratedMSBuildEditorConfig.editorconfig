@@ -12,165 +12,165 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = Dressing_Room
-build_property.ProjectDir = C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\
+build_property.ProjectDir = C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/App.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/AppShell.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/ChangePasswordPopup.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/ChangePasswordPopup.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.ChangePasswordPopup.xaml
 build_metadata.AdditionalFiles.TargetPath = ChangePasswordPopup.xaml
 build_metadata.AdditionalFiles.RelativePath = ChangePasswordPopup.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/CreateOutfit.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/CreateOutfit.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.CreateOutfit.xaml
 build_metadata.AdditionalFiles.TargetPath = CreateOutfit.xaml
 build_metadata.AdditionalFiles.RelativePath = CreateOutfit.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/DeleteAccountPopUp.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/DeleteAccountPopUp.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.DeleteAccountPopUp.xaml
 build_metadata.AdditionalFiles.TargetPath = DeleteAccountPopUp.xaml
 build_metadata.AdditionalFiles.RelativePath = DeleteAccountPopUp.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/EditProfile.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/EditProfile.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.EditProfile.xaml
 build_metadata.AdditionalFiles.TargetPath = EditProfile.xaml
 build_metadata.AdditionalFiles.RelativePath = EditProfile.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/HomePage.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/HomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.HomePage.xaml
 build_metadata.AdditionalFiles.TargetPath = HomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = HomePage.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/HomeProfile.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/HomeProfile.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.HomeProfile.xaml
 build_metadata.AdditionalFiles.TargetPath = HomeProfile.xaml
 build_metadata.AdditionalFiles.RelativePath = HomeProfile.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/LogoutPopup.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/LogoutPopup.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.LogoutPopup.xaml
 build_metadata.AdditionalFiles.TargetPath = LogoutPopup.xaml
 build_metadata.AdditionalFiles.RelativePath = LogoutPopup.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/MainPage.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/PopUpAdd.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/PopUpAdd.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.PopUpAdd.xaml
 build_metadata.AdditionalFiles.TargetPath = PopUpAdd.xaml
 build_metadata.AdditionalFiles.RelativePath = PopUpAdd.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/PopupEditProfile.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/PopupEditProfile.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.PopupEditProfile.xaml
 build_metadata.AdditionalFiles.TargetPath = PopupEditProfile.xaml
 build_metadata.AdditionalFiles.RelativePath = PopupEditProfile.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/PopUpOne.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/PopUpOne.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.PopUpOne.xaml
 build_metadata.AdditionalFiles.TargetPath = PopUpOne.xaml
 build_metadata.AdditionalFiles.RelativePath = PopUpOne.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/PopUpTwo.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/PopUpTwo.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.PopUpTwo.xaml
 build_metadata.AdditionalFiles.TargetPath = PopUpTwo.xaml
 build_metadata.AdditionalFiles.RelativePath = PopUpTwo.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/ProfilePage.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/ProfilePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.ProfilePage.xaml
 build_metadata.AdditionalFiles.TargetPath = ProfilePage.xaml
 build_metadata.AdditionalFiles.RelativePath = ProfilePage.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/RemoveBugPopup.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/RemoveBugPopup.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.RemoveBugPopup.xaml
 build_metadata.AdditionalFiles.TargetPath = RemoveBugPopup.xaml
 build_metadata.AdditionalFiles.RelativePath = RemoveBugPopup.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/Resources/Styles/Colors.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/Resources/Styles/Styles.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/SettingsPage.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/SettingsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.SettingsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = SettingsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = SettingsPage.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/Signup.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/Signup.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Signup.xaml
 build_metadata.AdditionalFiles.TargetPath = Signup.xaml
 build_metadata.AdditionalFiles.RelativePath = Signup.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/AccessoriesPage.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/AccessoriesPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Wardrobe_Extensions.AccessoriesPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Wardrobe Extensions\AccessoriesPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Wardrobe Extensions\AccessoriesPage.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/JacketsPage.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/JacketsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Wardrobe_Extensions.JacketsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Wardrobe Extensions\JacketsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Wardrobe Extensions\JacketsPage.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/OutfitsPage.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/OutfitsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Wardrobe_Extensions.OutfitsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Wardrobe Extensions\OutfitsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Wardrobe Extensions\OutfitsPage.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/PantsPage.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/PantsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Wardrobe_Extensions.PantsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Wardrobe Extensions\PantsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Wardrobe Extensions\PantsPage.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/ShoesPage.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/ShoesPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Wardrobe_Extensions.ShoesPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Wardrobe Extensions\ShoesPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Wardrobe Extensions\ShoesPage.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/TopsPage.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/Wardrobe Extensions/TopsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.Wardrobe_Extensions.TopsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Wardrobe Extensions\TopsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Wardrobe Extensions\TopsPage.xaml
 
-[C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/WardrobePage.xaml]
+[C:/Users/karim/Downloads/Dressing-Room-Project/Dressing Room/WardrobePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Dressing_Room.WardrobePage.xaml
 build_metadata.AdditionalFiles.TargetPath = WardrobePage.xaml

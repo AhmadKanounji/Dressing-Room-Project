@@ -44,6 +44,7 @@ public partial class ProfilePage : ContentPage
             viewModel.refresh();
         }
         viewModel.RefreshOutfitsNumber();
+        viewModel.Refresh();
 
 
     }

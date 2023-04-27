@@ -20,6 +20,7 @@ public partial class HomeProfile
         viewModel.refresh(); // call ViewModel method to load data
         viewModel.RefreshOutfitsNumber();
         viewModel.Refresh();
+        viewModel.RefreshFollowers();
     }
 
 }

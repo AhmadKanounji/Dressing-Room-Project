@@ -94,8 +94,26 @@
         <member name="P:Dressing_Room.ViewModels.HomeProfileViewModel.Num_outfits">
             <inheritdoc cref="F:Dressing_Room.ViewModels.HomeProfileViewModel.num_outfits"/>
         </member>
+        <member name="P:Dressing_Room.ViewModels.HomeProfileViewModel.Follow_count">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.HomeProfileViewModel.follow_count"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.HomeProfileViewModel.Following_count">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.HomeProfileViewModel.following_count"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.HomeProfileViewModel.Text">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.HomeProfileViewModel.text"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.HomeProfileViewModel.Color">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.HomeProfileViewModel.color"/>
+        </member>
         <member name="P:Dressing_Room.ViewModels.HomeProfileViewModel.PhotoSource">
             <inheritdoc cref="F:Dressing_Room.ViewModels.HomeProfileViewModel.photoSource"/>
+        </member>
+        <member name="F:Dressing_Room.ViewModels.HomeProfileViewModel.followCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.HomeProfileViewModel.FollowCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.HomeProfileViewModel.FollowCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.HomeProfileViewModel.Follow"/>.</summary>
         </member>
         <member name="F:Dressing_Room.ViewModels.JacketsViewModel.getJacketsCommand">
             <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.JacketsViewModel.GetJacketsCommand"/>.</summary>
@@ -144,6 +162,12 @@
         </member>
         <member name="P:Dressing_Room.ViewModels.ProfileViewModel.Num_outfits">
             <inheritdoc cref="F:Dressing_Room.ViewModels.ProfileViewModel.num_outfits"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.ProfileViewModel.Follow_count">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.ProfileViewModel.follow_count"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.ProfileViewModel.Following_count">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.ProfileViewModel.following_count"/>
         </member>
         <member name="P:Dressing_Room.ViewModels.ProfileViewModel.PhotoSource">
             <inheritdoc cref="F:Dressing_Room.ViewModels.ProfileViewModel.photoSource"/>
