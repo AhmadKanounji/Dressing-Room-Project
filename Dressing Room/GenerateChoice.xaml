@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dressing_Room.GenerateChoice"
+             BackgroundColor="#E2E2E2"
+             Shell.NavBarIsVisible="False"
+             Title="GenerateChoice">
+
+    <StackLayout>
+        <ScrollView VerticalOptions="FillAndExpand">
+            <VerticalStackLayout Spacing="50" HorizontalOptions="Fill" VerticalOptions="FillAndExpand">
+                <VerticalStackLayout Spacing="25">
+
+                    <VerticalStackLayout>
+                        <Label
+                        BackgroundColor="#E2E2E2"
+                        FontFamily="Quora"
+                        FontSize="20"
+                        HeightRequest="53"
+                        HorizontalOptions="Fill"
+                        HorizontalTextAlignment="Center"
+                        Text="Dressing Room"
+                        TextColor="#01260A"
+                        VerticalOptions="Center"
+                        VerticalTextAlignment="Center" />
+
+                        <Label
+                        BackgroundColor="#01260A"
+                        FontFamily="OPTIMA"
+                        FontSize="15"
+                        HeightRequest="29"
+                        HorizontalOptions="Fill"
+                        HorizontalTextAlignment="Center"
+                        Text="Wardrobe"
+                        TextColor="#E2E2E2"
+                        VerticalOptions="Center"
+                        VerticalTextAlignment="Center" />
+                    </VerticalStackLayout>
+                    <Label Text="Would you rather generate an outfit based on?" TextColor="#01260A"  HorizontalOptions="Center">
+
+                    </Label>
+                    <HorizontalStackLayout HorizontalOptions="Center" Spacing="20">
+                        <VerticalStackLayout  >
+                            <Label Text="Color" HorizontalOptions="Center" FontSize="18">
+
+                            </Label>
+                            <Border StrokeShape="RoundRectangle 20,20,0,0" StrokeThickness="0" Stroke="transparent" HeightRequest="300"  WidthRequest="170">
+                                <ImageButton Source="coloroutfit2.jpg" Aspect="Fill" Clicked="ImageButton_Clicked">
+
+                                </ImageButton>
+                            </Border>
+
+                        </VerticalStackLayout>
+                        <VerticalStackLayout>
+                            <Label Text="Weather" HorizontalOptions="Center" FontSize="18">
+
+                            </Label>
+                            <Border StrokeShape="RoundRectangle 20,20,0,0" StrokeThickness="1" Stroke="transparent" HeightRequest="300" WidthRequest="170">
+                                <ImageButton Source="weatherimage.jpg" Aspect="Fill" Clicked="ImageButton_Clicked2">
+
+                                </ImageButton>
+                            </Border>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+
+                </VerticalStackLayout>
+
+            </VerticalStackLayout>
+
+        </ScrollView>
+        <Border
+            BackgroundColor="#01260A"
+            HeightRequest="53"
+            StrokeShape="RoundRectangle 30,30,0,0"
+            VerticalOptions="End"
+            StrokeThickness="-1">
+
+            <HorizontalStackLayout
+                HorizontalOptions="Center"
+                Spacing="50"
+                VerticalOptions="Center">
+                <ImageButton
+                    HeightRequest="25"
+                    Source="homepage2.png"
+                    WidthRequest="30" />
+                <VerticalStackLayout Spacing="2" VerticalOptions="Center">
+                    <ImageButton
+                        HeightRequest="25"
+                        Source="hanger.png"
+                        WidthRequest="30" />
+                    <Ellipse
+                        Fill="white"
+                        HeightRequest="8"
+                        WidthRequest="8" />
+                </VerticalStackLayout>
+
+                <Border
+                    Padding="0"
+                    BackgroundColor="#E2E2E2"
+                    HeightRequest="35"
+                    StrokeShape="RoundRectangle 20,20,20,20"
+                    WidthRequest="35">
+                    <ImageButton
+                        
+                        HeightRequest="20"
+                        Source="plussign.png"
+                        WidthRequest="20" />
+                </Border>
+
+                <ImageButton
+                    HeightRequest="25"
+                    Source="profilepic.png"
+                    WidthRequest="30"
+                    />
+                <ImageButton
+                    
+                    HeightRequest="25"
+                    Source="setting.png"
+                    WidthRequest="30" />
+            </HorizontalStackLayout>
+
+        </Border>
+    </StackLayout>
+
+</ContentPage>

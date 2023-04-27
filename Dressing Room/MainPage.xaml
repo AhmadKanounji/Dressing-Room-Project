@@ -11,7 +11,7 @@
              BackgroundImageSource="backgroundlogo.png"
              Title="Sign In">
 
-<VerticalStackLayout>
+    <VerticalStackLayout>
         <Grid>
             <Image
             Source="planttwo.png"
@@ -21,8 +21,8 @@
             Aspect="Fill"
             Opacity="0.7"/>
 
-        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="0" >
-                
+            <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="0" >
+
                 <Label  Text="Dressing"
                         FontFamily="Quora"
                         TextColor="#01260A"
@@ -37,8 +37,8 @@
                         FontSize="60"
                         Padding="0"
                 />
-            
-        </VerticalStackLayout>
+
+            </VerticalStackLayout>
         </Grid>
         <Label
             Margin="36,23,0,0"
@@ -59,7 +59,7 @@
                 
                 >
             <Entry Placeholder="Username" FontAttributes="Italic" Keyboard="Email" Text="{Binding Username}" Margin="10,0,0,0"></Entry>
-          
+
         </Border>
         <Border WidthRequest="350" 
                 HeightRequest="45"
@@ -69,9 +69,11 @@
                 StrokeShape="RoundRectangle 20"
                 
                 >
-            <Entry Placeholder="Password " FontAttributes="Italic" Keyboard="Email" Text="{Binding Password}" Margin="10,0,0,0"></Entry>
+            <Entry  FontAttributes="Italic"  Text="{Binding Password}" Margin="10,0,0,0" IsPassword="True" ></Entry>
+
 
         </Border>
+
 
         <Button Text="Enter My E-Closet"
                 Background="#01260A"
@@ -100,9 +102,9 @@
                 FontFamily="OPTIMA_B"
                 Command="{Binding GotosignupCommand}"
                 >
-                
+
             </Button>
         </HorizontalStackLayout>
-   
+
     </VerticalStackLayout>
 </ContentPage>

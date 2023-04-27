@@ -95,7 +95,7 @@
                 WidthRequest="350">
                 <Entry
                     FontAttributes="Italic"
-                    Keyboard="Email"
+                    IsPassword="True"
                     Placeholder="Password "
                     Text="{Binding Password}"
                     Margin="10,0,0,0"/>
@@ -110,7 +110,7 @@
                 WidthRequest="350">
                 <Entry
                     FontAttributes="Italic"
-                    Keyboard="Email"
+                    IsPassword="True"
                     Placeholder=" Confirm Password "
                     Text="{Binding Confirmpass}"
                     Margin="10,0,0,0"/>
@@ -129,7 +129,7 @@
                 Text="Create My E-Closet"
                 WidthRequest="360"
                 Command="{Binding GotowardrobeCommand}"/>
-            
+
 
             <HorizontalStackLayout Margin="0,10,0,0" HorizontalOptions="Center">
                 <Label
@@ -147,7 +147,7 @@
                     Command="{Binding GobacktosigninCommand}"/>
             </HorizontalStackLayout>
 
-           
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

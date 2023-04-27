@@ -5,6 +5,8 @@ obj\Debug\net7.0-android\resizetizer\r\drawable\accessories.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\backbutton.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\backgroundlogo.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\camera.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\coloroutfit.jpg
+obj\Debug\net7.0-android\resizetizer\r\drawable\coloroutfit2.jpg
 obj\Debug\net7.0-android\resizetizer\r\drawable\hanger.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\hanger1.jpg
 obj\Debug\net7.0-android\resizetizer\r\drawable\homepage.png
@@ -31,8 +33,10 @@ obj\Debug\net7.0-android\resizetizer\r\drawable\top.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\topspic.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\trash.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\wardrobephoto.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\weatherimage.jpg
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\.DS_Store
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\backgroundlogo.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\coloroutfit.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\hangerquestion.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\hats.png
@@ -45,8 +49,10 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\sunglasses3.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\trash4.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\tshirt.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\tshirt3.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\weather.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\.DS_Store
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\backgroundlogo.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\coloroutfit.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\dotnet_bot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\hangerquestion.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\hats.png
@@ -59,8 +65,10 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\sunglasses3.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\trash4.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\tshirt.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\tshirt3.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\weather.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\.DS_Store
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\backgroundlogo.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\coloroutfit.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\dotnet_bot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\hangerquestion.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\hats.png
@@ -73,8 +81,10 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\sunglasses3.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\trash4.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\tshirt.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\tshirt3.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\weather.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\.DS_Store
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\backgroundlogo.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\coloroutfit.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\dotnet_bot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\hangerquestion.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\hats.png
@@ -87,8 +97,10 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\sunglasses3.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\trash4.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\tshirt.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\tshirt3.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\weather.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\.DS_Store
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\backgroundlogo.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\coloroutfit.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\dotnet_bot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\hangerquestion.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\hats.png
@@ -101,6 +113,7 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\sunglasses3.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\trash4.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\tshirt.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\tshirt3.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\weather.png
 obj\Debug\net7.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
 obj\Debug\net7.0-android\resizetizer\r\mipmap-anydpi-v26\appicon_round.xml
 obj\Debug\net7.0-android\resizetizer\r\mipmap-hdpi\appicon.png

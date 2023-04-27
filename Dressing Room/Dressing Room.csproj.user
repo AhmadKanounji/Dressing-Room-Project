@@ -24,7 +24,13 @@
     <MauiXaml Update="DeleteAccountPopUp.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="GenerateChoice.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="GeneratePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="GenerateWeather.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="HomeProfile.xaml">

@@ -27,8 +27,8 @@ public partial class PopUpOne
 
     private async void GoToGenerateOutfit(object sender, EventArgs e)
     {
-        Routing.RegisterRoute(nameof(GeneratePage), typeof(GeneratePage));
-        await Shell.Current.GoToAsync(nameof(GeneratePage));
+        Routing.RegisterRoute(nameof(GenerateChoice), typeof(GenerateChoice));
+        await Shell.Current.GoToAsync(nameof(GenerateChoice));
         await MopupService.Instance.PopAllAsync();
 
     }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Dressing_Room.Models;
@@ -77,14 +78,38 @@ namespace Dressing_Room.ViewModels
                 return;
             }
             //Checking if the passwords match:
+            if (password.Length < 8)
+            {
+                await Shell.Current.DisplayAlert("Uh Oh", "Your Password needs to be longer than 8 characters", "Exit");
+                return;
+            }
+            bool hasLowerCase = password.Any(char.IsLower);
+            bool hasUpperCase = password.Any(char.IsUpper);
+            bool hasDigit = password.Any(char.IsDigit);
+            bool hasSymbol = password.Any(char.IsSymbol) || password.Any(char.IsPunctuation);
+
+            if (!(hasLowerCase && hasUpperCase && hasDigit && hasSymbol))
+            {
+                await Shell.Current.DisplayAlert("Uh Oh", "Your Password needs to include a lowercase and uppercase letter,a digit and a symbol or punctuation", "Exit");
+                return;
+            }
             if (password != confirmpass)
             {
                 await Shell.Current.DisplayAlert("Uh Oh", "Your Passwords do not match! Please rewrite.", "Exit");
                 return;
 
             }
+            string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
 
+            // Create a regular expression object and match against the email
+            Regex regex = new Regex(pattern);
+            Match match = regex.Match(email);
 
+            if (!match.Success)
+            {
+                await Shell.Current.DisplayAlert("Uh Oh", "Wrong Email format", "Exit");
+                return;
+            }
 
             var user = new User
             {

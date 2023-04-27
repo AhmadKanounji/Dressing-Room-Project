@@ -59,6 +59,7 @@
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="Mopups" Version="1.1.1" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.9.141-beta" />
 		<PackageReference Include="SQLiteNetExtensions.Async" Version="2.1.0" />
 		<PackageReference Include="Xamarin.Essentials" Version="1.7.5" />
@@ -70,6 +71,8 @@
 		<None Remove="Resources\Fonts\Quora.ttf" />
 		<None Remove="Resources\Images\accessories.png" />
 		<None Remove="Resources\Images\backbutton.png" />
+		<None Remove="Resources\Images\coloroutfit.jpg" />
+		<None Remove="Resources\Images\coloroutfit2.jpg" />
 		<None Remove="Resources\Images\hanger1.jpg" />
 		<None Remove="Resources\Images\hangerquestion.svg" />
 		<None Remove="Resources\Images\hats.svg" />
@@ -93,6 +96,7 @@
 		<None Remove="Resources\Images\tshirt.svg" />
 		<None Remove="Resources\Images\tshirt3.svg" />
 		<None Remove="Resources\Images\wardrobephoto.png" />
+		<None Remove="Resources\Images\weatherimage.jpg" />
 		<None Remove="ViewModels\" />
 		<None Remove="Services\" />
 		<None Remove="Resources\Images\accesoriespic.png" />
@@ -141,8 +145,14 @@
 		<MauiXaml Update="DeleteAccountPopUp.xaml">
 			<Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
+		<MauiXaml Update="GenerateChoice.xaml">
+		  <Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
 		<MauiXaml Update="GeneratePage.xaml">
 			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="GenerateWeather.xaml">
+		  <Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
 		<MauiXaml Update="HomePage.xaml">
 			<Generator>MSBuild:Compile</Generator>
