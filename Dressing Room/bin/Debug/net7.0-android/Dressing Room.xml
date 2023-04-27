@@ -124,6 +124,12 @@
         <member name="P:Dressing_Room.ViewModels.HomePageViewModel.Username">
             <inheritdoc cref="F:Dressing_Room.ViewModels.HomePageViewModel.username"/>
         </member>
+        <member name="P:Dressing_Room.ViewModels.HomePageViewModel.Outfitlist">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.HomePageViewModel.outfitlist"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.HomePageViewModel.Userlist">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.HomePageViewModel.userlist"/>
+        </member>
         <member name="P:Dressing_Room.ViewModels.HomeProfileViewModel.User_info">
             <inheritdoc cref="F:Dressing_Room.ViewModels.HomeProfileViewModel.user_info"/>
         </member>

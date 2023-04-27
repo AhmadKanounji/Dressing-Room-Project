@@ -52,7 +52,66 @@
                 </VerticalStackLayout>
                 <StackLayout>
 
-                    <CollectionView Margin="20,0,0,39" ItemsSource="{Binding Outfits}">
+                    <SearchBar
+                        x:Name="Kano"
+                        Placeholder="Search"
+                        TextChanged="Kano_TextChanged" />
+                    <CollectionView
+                        Margin="0"
+                        HorizontalOptions="Center"
+                        IsVisible="{Binding Userlist}"
+                        ItemsSource="{Binding Users}">
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout Orientation="Vertical" />
+                        </CollectionView.ItemsLayout>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate x:DataType="model:User">
+                                <VerticalStackLayout Spacing="10">
+                                    <HorizontalStackLayout>
+
+                                        <Border
+                                            BackgroundColor="#e2e2e2"
+                                            Stroke="#01260A"
+                                            StrokeThickness="2"
+                                            WidthRequest="395">
+                                            <HorizontalStackLayout>
+                                                <Border
+                                                    Margin="30,0,0,0"
+                                                    Padding="0"
+                                                    BackgroundColor="#E2E2E2"
+                                                    HeightRequest="35"
+                                                    StrokeShape="RoundRectangle 20,20,20,20"
+                                                    WidthRequest="35">
+                                                    <Image Aspect="Fill" Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
+                                                </Border>
+                                                <Button
+                                                    Margin="-90,0,0,0"
+                                                    BackgroundColor="Transparent"
+                                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:HomePageViewModel}}, Path=GoToHomeProfileCommand2}"
+                                                    CommandParameter="{Binding .}"
+                                                    Text="{Binding Username}"
+                                                    TextColor="#01260A"
+                                                    WidthRequest="200" />
+
+
+
+                                            </HorizontalStackLayout>
+
+                                        </Border>
+
+
+                                    </HorizontalStackLayout>
+                                </VerticalStackLayout>
+
+
+
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                    <CollectionView
+                        Margin="20,0,0,39"
+                        IsVisible="{Binding Outfitlist}"
+                        ItemsSource="{Binding Outfits}">
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout Orientation="Vertical" />
                         </CollectionView.ItemsLayout>
@@ -103,22 +162,22 @@
 
                                         </Border>
                                         <Border HeightRequest="60" StrokeShape="RoundRectangle 15,15,15,15">
-                                            <HorizontalStackLayout Spacing="0" HorizontalOptions="Start">
+                                            <HorizontalStackLayout HorizontalOptions="Start" Spacing="0">
                                                 <Border
                                                     Padding="0"
                                                     BackgroundColor="#E2E2E2"
                                                     HeightRequest="45"
                                                     StrokeShape="RoundRectangle 20,20,20,20"
-                                                    WidthRequest="45" >
-                                                    <Image Source="{Binding ProfilePhoto, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="Fill"/>
+                                                    WidthRequest="45">
+                                                    <Image Aspect="Fill" Source="{Binding ProfilePhoto, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
                                                 </Border>
                                                 <Button
                                                     BackgroundColor="Transparent"
+                                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:HomePageViewModel}}, Path=GoToHomeProfileCommand}"
+                                                    CommandParameter="{Binding .}"
                                                     FontAttributes="Bold"
                                                     FontSize="18"
                                                     Text="{Binding UserName, StringFormat='@{0}'}"
-                                                    
-                                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:HomePageViewModel}}, Path=GoToHomeProfileCommand}" CommandParameter="{Binding .}"
                                                     TextColor="Black" />
 
                                             </HorizontalStackLayout>
