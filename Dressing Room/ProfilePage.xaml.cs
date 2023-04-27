@@ -21,7 +21,52 @@ public partial class ProfilePage : ContentPage
 
     }
 
-    private void OnPlusSignClicked(System.Object sender, System.EventArgs e)
+    private async void OnImage1Clicked(object sender, EventArgs e)
+    {
+        Routing.RegisterRoute(nameof(OutfitsPage), typeof(OutfitsPage));
+        await MopupService.Instance.PushAsync(new RemoveBugPopup());
+        await Shell.Current.GoToAsync(nameof(OutfitsPage));
+    }
+
+    private async void OnImage2Clicked(object sender, EventArgs e)
+    {
+        Routing.RegisterRoute(nameof(TopsPage), typeof(TopsPage));
+        await MopupService.Instance.PushAsync(new RemoveBugPopup());
+        await Shell.Current.GoToAsync(nameof(TopsPage));
+    }
+
+    private async void OnImage3Clicked(object sender, EventArgs e)
+    {
+        Routing.RegisterRoute(nameof(PantsPage), typeof(PantsPage));
+        await MopupService.Instance.PushAsync(new RemoveBugPopup());
+        await Shell.Current.GoToAsync(nameof(PantsPage));
+    }
+
+    private async void OnImage4Clicked(object sender, EventArgs e)
+    {
+        Routing.RegisterRoute(nameof(ShoesPage), typeof(ShoesPage));
+        await MopupService.Instance.PushAsync(new RemoveBugPopup());
+        await Shell.Current.GoToAsync(nameof(ShoesPage));
+    }
+    private async void OnImage5Clicked(object sender, EventArgs e)
+    {
+        Routing.RegisterRoute(nameof(JacketsPage), typeof(JacketsPage));
+        await MopupService.Instance.PushAsync(new RemoveBugPopup());
+        await Shell.Current.GoToAsync(nameof(JacketsPage));
+    }
+
+    private async void OnImage6Clicked(object sender, EventArgs e)
+    {
+        Routing.RegisterRoute(nameof(AccessoriesPage), typeof(AccessoriesPage));
+        await MopupService.Instance.PushAsync(new RemoveBugPopup());
+        await Shell.Current.GoToAsync(nameof(AccessoriesPage));
+    }
+
+
+
+
+
+    private void OnImage7Clicked(object sender, EventArgs e)
     {
         var imageButton = (ImageButton)sender;
         imageButton.Rotation = 0;
@@ -30,9 +75,31 @@ public partial class ProfilePage : ContentPage
 
     }
 
-    async void OnHangerClicked(System.Object sender, System.EventArgs e)
+    async void GoToProfile(System.Object sender, System.EventArgs e)
     {
+        Routing.RegisterRoute(nameof(ProfilePage), typeof(ProfilePage));
+        await MopupService.Instance.PushAsync(new RemoveBugPopup());
+        await Shell.Current.GoToAsync(nameof(ProfilePage));
+    }
+
+    async void GoToSettings(System.Object sender, System.EventArgs e)
+    {
+        Routing.RegisterRoute(nameof(SettingsPage), typeof(SettingsPage));
+        await MopupService.Instance.PushAsync(new RemoveBugPopup());
+        await Shell.Current.GoToAsync(nameof(SettingsPage));
+    }
+    async void GoToHomePage(System.Object sender, System.EventArgs e)
+    {
+        Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
+        await MopupService.Instance.PushAsync(new RemoveBugPopup());
+        await Shell.Current.GoToAsync(nameof(HomePage));
+    }
+    private async void ImageButton_Clicked(object sender, EventArgs e)
+    {
+
+        await MopupService.Instance.PushAsync(new RemoveBugPopup());
         await Shell.Current.GoToAsync(nameof(WardrobePage));
+
     }
 
     protected override void OnAppearing()
@@ -48,4 +115,6 @@ public partial class ProfilePage : ContentPage
 
 
     }
+
+
 }

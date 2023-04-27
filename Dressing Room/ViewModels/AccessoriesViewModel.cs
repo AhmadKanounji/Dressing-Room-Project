@@ -1,7 +1,8 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
 using CommunityToolkit.Mvvm.Input;
-
+using CommunityToolkit.Mvvm.Messaging;
+using Dressing_Room.Messages;
 using Dressing_Room.Models;
 
 using Dressing_Room.Services;
@@ -29,7 +30,7 @@ namespace Dressing_Room.ViewModels
     {
 
         private ClothingService _clothingService;
-
+        private OutfitsService _outfitsService;
 
 
         public AccessoriesViewModel()
@@ -37,6 +38,7 @@ namespace Dressing_Room.ViewModels
         {
 
             _clothingService = new ClothingService();
+            _outfitsService = new OutfitsService();
 
 
 
@@ -59,7 +61,19 @@ namespace Dressing_Room.ViewModels
         public Command<Clothes> DeleteAccessoriesCommand => _deleteAccessoriesCommand ??= new Command<Clothes>(async (accessories) =>
         {
 
+            var outfits = await _outfitsService.GetOutfits();
+            foreach (Outfits o in outfits)
+            {
+                if (o.AccessoriesID == accessories.CID)
+                {
+                    await _outfitsService.DdeleteOutfits(o.Id);
+
+                }
+            }
+
             await _clothingService.DdeleteClothes(accessories.CID);
+            WeakReferenceMessenger.Default.Send(new RefreshOutfitMessage(null));
+
             refresh();
         });
 

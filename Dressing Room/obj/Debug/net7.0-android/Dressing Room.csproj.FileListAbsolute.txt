@@ -4414,3 +4414,16 @@ C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net
 C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable\coloroutfit.jpg
 C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable\weatherimage.jpg
 C:\Users\user\Documents\GitHub\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable\coloroutfit2.jpg
+C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\coloroutfit.png
+C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\weather.png
+C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\coloroutfit.png
+C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\weather.png
+C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\coloroutfit.png
+C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\weather.png
+C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\coloroutfit.png
+C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\weather.png
+C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\coloroutfit.png
+C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\weather.png
+C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable\coloroutfit.jpg
+C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable\coloroutfit2.jpg
+C:\Users\karim\Downloads\Dressing-Room-Project\Dressing Room\obj\Debug\net7.0-android\resizetizer\r\drawable\weatherimage.jpg
