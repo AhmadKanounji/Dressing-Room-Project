@@ -106,6 +106,12 @@
         <member name="P:Dressing_Room.ViewModels.HomeProfileViewModel.Color">
             <inheritdoc cref="F:Dressing_Room.ViewModels.HomeProfileViewModel.color"/>
         </member>
+        <member name="P:Dressing_Room.ViewModels.HomeProfileViewModel.Followbutton">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.HomeProfileViewModel.followbutton"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.HomeProfileViewModel.Unfollowbutton">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.HomeProfileViewModel.unfollowbutton"/>
+        </member>
         <member name="P:Dressing_Room.ViewModels.HomeProfileViewModel.PhotoSource">
             <inheritdoc cref="F:Dressing_Room.ViewModels.HomeProfileViewModel.photoSource"/>
         </member>

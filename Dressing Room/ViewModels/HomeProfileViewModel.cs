@@ -29,6 +29,11 @@ namespace Dressing_Room.ViewModels
         [ObservableProperty]
         private string color;
 
+        [ObservableProperty]
+        private bool followbutton;
+        [ObservableProperty]
+        private bool unfollowbutton;
+
 
 
 
@@ -73,8 +78,9 @@ namespace Dressing_Room.ViewModels
                 if (follows.Follower == Preferences.Get("user_name", "default_value") && follows.Followed == Preferences.Get("user_to_display", "default_value"))
                 {
                     Text = "Follow";
-                    Color = "#01260A";
-                    
+                    Followbutton = true;
+                    Unfollowbutton = false;
+
                     await _followService.DeleteFollow(follows.Id);
                     Follow_count = await GetFollowCount(Preferences.Get("user_to_display", "default_value"));
 
@@ -83,7 +89,9 @@ namespace Dressing_Room.ViewModels
                 }
             }
 
-            
+            Text = "Unfollow";
+            Unfollowbutton = true;
+            Followbutton = false;
             // else if the user doesnt follow the visited user:
             var toadd = new FollowedTable
             {
@@ -158,7 +166,8 @@ namespace Dressing_Room.ViewModels
                 if (follows.Follower == Preferences.Get("user_name", "default_value") && follows.Followed == Preferences.Get("user_to_display", "default_value"))
                 {
                     Text = "Unfollow";
-                    Color = "#E2E2E2";
+                    Followbutton = false;
+                    Unfollowbutton = true;
                     return;
                 }
 
@@ -166,6 +175,7 @@ namespace Dressing_Room.ViewModels
 
             Text = "Follow";
             Color = "#01260A";
+            Followbutton = true;
         }
         public async void Refresh()
         {

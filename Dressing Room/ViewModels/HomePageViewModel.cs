@@ -62,6 +62,8 @@ namespace Dressing_Room.ViewModels
             foreach (Outfits outfit in alloutfits)
             {
                 if (outfit.UserID != Preferences.Get("user_name", "default_value"))
+
+
                 {
                     //Create an OutfitToAdd and loop through all the clothes. If we find clothes ID matching to one of the outfits ID then we add to Outfit to display.
                     // Once we are done with all the clothes then we should have a complete outfit. So we exit the forloop and add the outfit to the Observable Collection,

@@ -105,10 +105,12 @@ namespace Dressing_Room.ViewModels
 
         public async void RefreshOutfitsNumber()
         {
+            int count = 0;
             var allOutfits = await _outfitsService.GetOutfits();
             foreach (Outfits outfit in allOutfits)
             {
-                if (outfit.UserID == User_info) Num_outfits++;
+                if (outfit.UserID == User_info) count++;
+                Num_outfits = count;
             }
         }
 
