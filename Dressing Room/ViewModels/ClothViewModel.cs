@@ -57,7 +57,7 @@ namespace Dressing_Room.ViewModels
             {
                 var stream = await result.OpenReadAsync();
 
-                // Convert the photo here and remove the background:
+                
                
                 Photo = ImageSource.FromStream(() => stream);
 
@@ -71,8 +71,26 @@ namespace Dressing_Room.ViewModels
 
            
         }
-
         [RelayCommand]
+
+        async void ChoosePhoto()
+        {
+            var result = await MediaPicker.PickPhotoAsync(new MediaPickerOptions
+
+            {
+                Title = "Please pick a photo"
+            });
+            tempphoto = result;
+            if (result != null)
+            {
+                var stream = await result.OpenReadAsync();
+                Photo = ImageSource.FromStream(() => stream);
+            }
+            IsHidden = false;
+        }
+    
+
+    [RelayCommand]
         async Task AddToCloset()
         {
 

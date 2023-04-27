@@ -81,31 +81,36 @@
                            Padding="0"
                            BackgroundColor="#E2E2E2"
                            >
-                                <StackLayout>
-                                    <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                        <Image Source="{Binding Tops, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="100" />
 
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+
+                                    <Border Grid.Row="0" Grid.Column="0" StrokeThickness="-1" WidthRequest="160" >
+                                        <Image Source="{Binding Tops, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" />
                                     </Border>
-                                    <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                        <Image Source="{Binding Pants, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="100" />
-
-                                    </Border>
-                                    <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                        <Image Source="{Binding Shoes, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="100" />
-
-                                    </Border>
-                                    <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                        <Image Source="{Binding Jackets, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="100" />
-
-                                    </Border>
-                                    <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                        <Image Source="{Binding Accessories, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="100" />
-
+                                    <Border Grid.Row="0" Grid.Column="1" StrokeThickness="-1" WidthRequest="160" HeightRequest="270" Margin="0,91,0,0" >
+                                        <Image Source="{Binding Pants, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="Fill" />
                                     </Border>
 
+                                    <Border Grid.Row="1" StrokeThickness="-1" WidthRequest="160">
+                                        <Image Source="{Binding Shoes, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill"  />
+                                    </Border>
 
-
-                                </StackLayout>
+                                    <Border Grid.Row="2" Grid.Column="0"  StrokeThickness="-1" WidthRequest="160" >
+                                        <Image Source="{Binding Jackets, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" />
+                                    </Border>
+                                    <Border Grid.Row="2" Grid.Column="1" StrokeThickness="-1"  WidthRequest="160" HeightRequest="270" Margin="0,0,0,92">
+                                        <Image Source="{Binding Accessories, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="Fill"  />
+                                    </Border>
+                                </Grid>
                             </Frame>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>

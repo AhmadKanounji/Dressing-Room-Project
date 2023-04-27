@@ -1,58 +1,32 @@
 ﻿<Properties StartupConfiguration="{C4066B4C-109C-462C-B3EC-6A2056B65A36}|Default">
-  <MonoDevelop.Ide.ItemProperties.Dressing_220Room PreferredExecutionTarget="Android.pixel_5_-_api_31" />
-  <MultiItemStartupConfigurations />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_31" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ProfilePage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Wardrobe Extensions/TopsPage.xaml">
     <Files>
-      <File FileName="PopUpAdd.xaml" />
-      <File FileName="TermsAndCondition.xaml" />
-      <File FileName="PopUpOne.xaml.cs" />
+      <File FileName="ProfilePage.xaml" />
+      <File FileName="CreateOutfit.xaml" />
+      <File FileName="WardrobePage.xaml" />
       <File FileName="PopUpTwo.xaml" />
-      <File FileName="PopUpTwo.xaml.cs" />
-      <File FileName="MauiProgram.cs" Line="69" Column="1" />
-      <File FileName="Signup.xaml.cs" />
-      <File FileName="WardrobePage.xaml.cs" Line="99" Column="2" />
-      <File FileName="WardrobePage.xaml" Line="105" Column="58" />
-      <File FileName="SettingsPage.xaml" />
-      <File FileName="CreateOutfit.xaml" Line="1" Column="1" />
-      <File FileName="App.xaml.cs" />
-      <File FileName="CreateOutfit.xaml.cs" />
-      <File FileName="ViewModels/CreateOutfitViewModel.cs" Line="328" Column="2" />
-      <File FileName="ViewModels/OufitViewModel.cs" Line="111" Column="2" />
-      <File FileName="ViewModels/MainPageViewModel.cs" Line="83" Column="1" />
-      <File FileName="ChangePasswordPopup.xaml" />
-      <File FileName="Models/FollowedTable.cs" Line="18" Column="2" />
-      <File FileName="ViewModels/ProfileViewModel.cs" Line="178" Column="2" />
-      <File FileName="ViewModels/HomeProfileViewModel.cs" Line="232" Column="1" />
-      <File FileName="ViewModels/HomePageViewModel.cs" Line="124" Column="2" />
-      <File FileName="Wardrobe Extensions/TopsPage.xaml.cs" />
-      <File FileName="HomeProfile.xaml" Line="187" Column="20" />
+      <File FileName="PopUpAdd.xaml.cs" />
+      <File FileName="PopUpAdd.xaml" Line="36" Column="48" />
+      <File FileName="PopupEditProfile.xaml" />
+      <File FileName="ViewModels/ClothViewModel.cs" Line="1" Column="1" />
+      <File FileName="App.xaml.cs" Line="7" Column="1" />
+      <File FileName="ViewModels/HomePageViewModel.cs" />
+      <File FileName="ViewModels/GenerateViewModel.cs" />
+      <File FileName="ViewModels/EditProfileViewModel.cs" Line="115" Column="2" />
+      <File FileName="ViewModels/HomeProfileViewModel.cs" />
+      <File FileName="ViewModels/PopupEditProfViewModel.cs" />
+      <File FileName="ViewModels/ProfileViewModel.cs" Line="172" Column="1" />
+      <File FileName="GeneratePage.xaml" Line="394" Column="15" />
+      <File FileName="GeneratePage.xaml.cs" Line="14" Column="2" />
+      <File FileName="HomePage.xaml" Line="256" Column="15" />
+      <File FileName="HomePage.xaml.cs" Line="45" Column="2" />
+      <File FileName="HomeProfile.xaml" Line="210" Column="20" />
       <File FileName="HomeProfile.xaml.cs" Line="26" Column="2" />
-      <File FileName="HomePage.xaml.cs" Line="12" Column="2" />
-      <File FileName="ProfilePage.xaml" Line="262" Column="15" />
-      <File FileName="ProfilePage.xaml.cs" Line="51" Column="2" />
-      <File FileName="Services/FollowService.cs" Line="59" Column="1" />
-      <File FileName="Models/OutfitToDisplay.cs" Line="24" Column="2" />
-      <File FileName="Models/Outfits.cs" Line="1" Column="1" />
-      <File FileName="Models/User.cs" Line="19" Column="1" />
-      <File FileName="Services/OutfitsService.cs" Line="69" Column="1" />
-      <File FileName="Services/SignUpService.cs" Line="86" Column="2" />
-      <File FileName="Services/ClothingService.cs" Line="73" Column="1" />
-      <File FileName="ViewModels/AccessoriesViewModel.cs" Line="190" Column="1" />
-      <File FileName="ViewModels/EditProfileViewModel.cs" Line="110" Column="2" />
-      <File FileName="ViewModels/JacketsViewModel.cs" Line="188" Column="2" />
-      <File FileName="ViewModels/PantsViewModel.cs" Line="190" Column="2" />
-      <File FileName="ViewModels/ShoesViewModel.cs" Line="160" Column="2" />
-      <File FileName="ViewModels/SignupViewModel.cs" Line="145" Column="1" />
-      <File FileName="ViewModels/TopsViewModel.cs" Line="106" Column="2" />
-      <File FileName="HomePage.xaml" Line="10" Column="46" />
-      <File FileName="ViewModels/PopupEditProfViewModel.cs" Line="64" Column="2" />
-      <File FileName="Messages/RefreshMessages.cs" Line="1" Column="1" />
-      <File FileName="Messages/RefreshOutfitMessage.cs" Line="1" Column="1" />
-      <File FileName="PopupEditProfile.xaml" Line="1" Column="1" />
-      <File FileName="PopupEditProfile.xaml.cs" Line="1" Column="1" />
-      <File FileName="Wardrobe Extensions/OutfitsPage.xaml" Line="1" Column="1" />
-      <File FileName="Wardrobe Extensions/OutfitsPage.xaml.cs" Line="21" Column="8" />
+      <File FileName="PopUpOne.xaml" Line="49" Column="20" />
+      <File FileName="PopUpOne.xaml.cs" Line="35" Column="2" />
+      <File FileName="Services/FollowService.cs" Line="78" Column="1" />
+      <File FileName="Services/ClothingService.cs" Line="81" Column="1" />
+      <File FileName="Wardrobe Extensions/TopsPage.xaml" Line="83" Column="50" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -66,6 +40,7 @@
               </Node>
               <Node name="Resources" expanded="True">
                 <Node name="Fonts" expanded="True" />
+                <Node name="Images" expanded="True" />
               </Node>
               <Node name="Services" expanded="True" />
               <Node name="ViewModels" expanded="True" />
@@ -85,9 +60,7 @@
               <Node name="PopupEditProfile.xaml" expanded="True" />
               <Node name="PopUpOne.xaml" expanded="True" />
               <Node name="PopUpTwo.xaml" expanded="True" />
-              <Node name="ProfilePage.xaml" expanded="True">
-                <Node name="ProfilePage.xaml.cs" selected="True" />
-              </Node>
+              <Node name="ProfilePage.xaml" expanded="True" />
               <Node name="RemoveBugPopup.xaml" expanded="True" />
               <Node name="SettingsPage.xaml" expanded="True" />
               <Node name="Signup.xaml" expanded="True" />
@@ -96,12 +69,18 @@
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_31" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.26" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Dressing_220Room PreferredExecutionTarget="Android.pixel_5_-_api_31" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.26" />
 </Properties>

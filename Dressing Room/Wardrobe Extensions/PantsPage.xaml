@@ -170,12 +170,10 @@
 
                                         </Border>
 
-                                        <Image
-                                            Margin="25,0,0,3"
-                                            HeightRequest="22"
-                                            Source="binpic.png"
-                                            WidthRequest="22" />
+                                        
+                                        <ImageButton Source="trashbin.png" HeightRequest="25" WidthRequest="25" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PantsViewModel}}, Path=DeletePantsCommand}" CommandParameter="{Binding .}" Margin="20,0,0,0" >
 
+                                        </ImageButton>
                                     </HorizontalStackLayout>
 
 

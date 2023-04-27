@@ -22,9 +22,8 @@ namespace Dressing_Room.ViewModels
         [RelayCommand]
         async void GoToEditProfile()
         {
-            
-            Routing.RegisterRoute(nameof(EditProfile), typeof(EditProfile));
             await MopupService.Instance.PushAsync(new RemoveBugPopup());
+            Routing.RegisterRoute(nameof(EditProfile), typeof(EditProfile));
             await Shell.Current.GoToAsync(nameof(EditProfile));
         }
 
@@ -111,17 +110,23 @@ namespace Dressing_Room.ViewModels
             foreach (Outfits outfit in allOutfits)
             {
                 if (outfit.UserID == User_info) count++;
+                Num_outfits = count;
             }
-            Num_outfits = count;
         }
 
         public async void Refresh()
         {
 
+
             var alloutfits = await _outfitsService.GetSpecificOutfits(Preferences.Get("user_name", "default_value"));
+
             Outfits.Clear();
+
             foreach (Outfits outfit in alloutfits)
             {
+
+
+
                 //Create an OutfitToAdd and loop through all the clothes. If we find clothes ID matching to one of the outfits ID then we add to Outfit to display.
                 // Once we are done with all the clothes then we should have a complete outfit. So we exit the forloop and add the outfit to the Observable Collection,
                 //Then, we repeat the process with the other outfits

@@ -31,6 +31,12 @@
         <member name="P:Dressing_Room.ViewModels.ClothViewModel.TakePhotoCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.ClothViewModel.TakePhoto"/>.</summary>
         </member>
+        <member name="F:Dressing_Room.ViewModels.ClothViewModel.choosePhotoCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.ClothViewModel.ChoosePhotoCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.ClothViewModel.ChoosePhotoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.ClothViewModel.ChoosePhoto"/>.</summary>
+        </member>
         <member name="F:Dressing_Room.ViewModels.ClothViewModel.addToClosetCommand">
             <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.ClothViewModel.AddToClosetCommand"/>.</summary>
         </member>
@@ -88,8 +94,50 @@
         <member name="P:Dressing_Room.ViewModels.EditProfileViewModel.ReceiveCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.EditProfileViewModel.Receive(Dressing_Room.Messages.RefreshMessage)"/>.</summary>
         </member>
+        <member name="P:Dressing_Room.ViewModels.GenerateViewModel.TopColorr">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.GenerateViewModel.topColorr"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.GenerateViewModel.PantColorr">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.GenerateViewModel.pantColorr"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.GenerateViewModel.JacketColorr">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.GenerateViewModel.jacketColorr"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.GenerateViewModel.AccessorieColorr">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.GenerateViewModel.accessorieColorr"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.GenerateViewModel.ShoeColorr">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.GenerateViewModel.shoeColorr"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.GenerateViewModel.Show">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.GenerateViewModel.show"/>
+        </member>
+        <member name="F:Dressing_Room.ViewModels.GenerateViewModel.noCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.GenerateViewModel.NoCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.GenerateViewModel.NoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.GenerateViewModel.No"/>.</summary>
+        </member>
+        <member name="F:Dressing_Room.ViewModels.GenerateViewModel._addOutfitCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.GenerateViewModel.addOutfitCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.GenerateViewModel.addOutfitCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.GenerateViewModel.addOutfit"/>.</summary>
+        </member>
+        <member name="F:Dressing_Room.ViewModels.GenerateViewModel._generateOutfitCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.GenerateViewModel.generateOutfitCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.GenerateViewModel.generateOutfitCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.GenerateViewModel.generateOutfit"/>.</summary>
+        </member>
         <member name="P:Dressing_Room.ViewModels.HomePageViewModel.Username">
             <inheritdoc cref="F:Dressing_Room.ViewModels.HomePageViewModel.username"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.HomePageViewModel.Outfitlist">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.HomePageViewModel.outfitlist"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.HomePageViewModel.Userlist">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.HomePageViewModel.userlist"/>
         </member>
         <member name="P:Dressing_Room.ViewModels.HomeProfileViewModel.User_info">
             <inheritdoc cref="F:Dressing_Room.ViewModels.HomeProfileViewModel.user_info"/>
@@ -108,6 +156,12 @@
         </member>
         <member name="P:Dressing_Room.ViewModels.HomeProfileViewModel.Color">
             <inheritdoc cref="F:Dressing_Room.ViewModels.HomeProfileViewModel.color"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.HomeProfileViewModel.Followbutton">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.HomeProfileViewModel.followbutton"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.HomeProfileViewModel.Unfollowbutton">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.HomeProfileViewModel.unfollowbutton"/>
         </member>
         <member name="P:Dressing_Room.ViewModels.HomeProfileViewModel.PhotoSource">
             <inheritdoc cref="F:Dressing_Room.ViewModels.HomeProfileViewModel.photoSource"/>

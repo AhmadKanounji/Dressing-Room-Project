@@ -113,6 +113,7 @@
 	  <None Remove="Resources\Images\upload.png" />
 	  <None Remove="Resources\Images\pencil.png" />
 	  <None Remove="Resources\Images\backgroundlogo.svg" />
+	  <None Remove="Resources\Images\trashbin.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Fonts\OPTIMA_B.TTF" />
@@ -137,6 +138,7 @@
 	  <BundleResource Include="Resources\Images\upload.png" />
 	  <BundleResource Include="Resources\Images\pencil.png" />
 	  <BundleResource Include="Resources\Images\backgroundlogo.svg" />
+	  <BundleResource Include="Resources\Images\trashbin.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiXaml Update="ChangePasswordPopup.xaml">

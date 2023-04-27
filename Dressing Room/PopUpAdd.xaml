@@ -33,7 +33,7 @@
                     <VerticalStackLayout Spacing="8">
 
                          <Image
-                            Aspect="Fill"
+                            Aspect="AspectFill"
                             Background="transparent"
                             Source="{Binding Photo}"
                         />
@@ -87,9 +87,10 @@
                                     FontSize="16"
                                     IsVisible="{Binding IsHidden}"
                                     Margin="0,30,0,0"
+                                    Command="{Binding ChoosePhotoCommand}"
                                     ></Button>
 
-
+                           
                         </StackLayout>
 
                         

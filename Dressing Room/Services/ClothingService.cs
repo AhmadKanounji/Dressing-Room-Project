@@ -50,6 +50,14 @@ namespace Dressing_Room.Services
             return result;
         }
 
+        public async Task<List<Clothes>> GetClothesByColor(string color, string type)
+        {
+            await Init();
+            var result = await db.Table<Clothes>().Where(c => c.Color == color && c.Categories == type).ToListAsync();
+            return result;
+        }
+
+
         public async Task DdeleteClothes(int id)
         {
             await Init();

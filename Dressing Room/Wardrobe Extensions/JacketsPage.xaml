@@ -149,6 +149,9 @@
 
                                         <Image Source="binpic.png" WidthRequest="22" HeightRequest="22" Margin="25,0,0,3"/>
 
+                                        <ImageButton Source="trashbin.png" HeightRequest="25" WidthRequest="25" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:JacketsViewModel}}, Path=DeleteJacketCommand}" CommandParameter="{Binding .}" Margin="20,0,0,0" >
+
+                                        </ImageButton>
                                     </HorizontalStackLayout>
 
 

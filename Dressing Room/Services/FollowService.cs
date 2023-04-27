@@ -53,6 +53,26 @@ namespace Dressing_Room.Services
 
         }
 
+        public async Task UpdateFollows(string username, string new_username)
+        {
+            await Init();
+            var allFollows = await db.Table<FollowedTable>().Where(u => u.Follower == username || u.Followed == username).ToListAsync();
+            foreach (FollowedTable f in allFollows)
+            {
+                if (f.Follower == username)
+                {
+                    f.Follower = new_username;
+                    await db.UpdateAsync(f);
+                }
+                if (f.Followed == username)
+                {
+                    f.Followed = new_username;
+                    await db.UpdateAsync(f);
+                }
+            }
 
+
+        }
     }
 }
+

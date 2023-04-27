@@ -58,8 +58,8 @@ namespace Dressing_Room.ViewModels
         {
            
             WeakReferenceMessenger.Default.Send(new RefreshMessage(null));
-            await Shell.Current.DisplayAlert("h", "lol", "Exit");
-            await MopupService.Instance.PopAllAsync();
+            MopupService.Instance.PopAllAsync();
+           
             
         }
 

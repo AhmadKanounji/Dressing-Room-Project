@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Maui.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.Messaging;
 using Dressing_Room.Messages;
 using Dressing_Room.Models;
@@ -27,11 +28,20 @@ namespace Dressing_Room.ViewModels
             WeakReferenceMessenger.Default.Register<RefreshOutfitMessage>(this);
             Outfits = new ObservableCollection<OutfitToDisplay>();
 
+
+            Users = new ObservableCollection<User>();
             Refresh();
+
+
         }
 
         [ObservableProperty]
         private string username;
+        [ObservableProperty]
+        private bool outfitlist = true;
+        [ObservableProperty]
+        private bool userlist = false;
+
 
         private Command<OutfitToDisplay> _gotohomeprofile;
         public Command<OutfitToDisplay> GoToHomeProfileCommand => _gotohomeprofile ??= new Command<OutfitToDisplay>(async (outfit) =>
@@ -43,9 +53,20 @@ namespace Dressing_Room.ViewModels
 
         });
 
+        private Command<User> _gotohomeprofile2;
+        public Command<User> GoToHomeProfileCommand2 => _gotohomeprofile2 ??= new Command<User>(async (user) =>
+        {
+
+            Preferences.Set("user_to_display", user.Username);
+
+            await MopupService.Instance.PushAsync(new HomeProfile());
+
+        });
 
 
-        public ObservableCollection<OutfitToDisplay> Outfits { get; }
+        public ObservableCollection<User> Users { get; set; }
+        public ObservableCollection<OutfitToDisplay> Outfits { get; set; }
+        public ObservableCollection<User> FilteredUsers { get; set; }
 
         public void Receive(RefreshOutfitMessage message)
         {
@@ -62,6 +83,8 @@ namespace Dressing_Room.ViewModels
             foreach (Outfits outfit in alloutfits)
             {
                 if (outfit.UserID != Preferences.Get("user_name", "default_value"))
+
+
                 {
                     //Create an OutfitToAdd and loop through all the clothes. If we find clothes ID matching to one of the outfits ID then we add to Outfit to display.
                     // Once we are done with all the clothes then we should have a complete outfit. So we exit the forloop and add the outfit to the Observable Collection,
@@ -112,7 +135,20 @@ namespace Dressing_Room.ViewModels
 
 
 
+        public async Task RefreshUsers(string searchTerm = "")
+        {
+            var allUsers = await _signupService.GetUser();
+            var filteredUsers = allUsers.Where(u => u.Username.StartsWith(searchTerm, StringComparison.InvariantCultureIgnoreCase));
+            Users.Clear();
+            foreach (User user in filteredUsers)
+            {
+                if (user.Username != Preferences.Get("user_name", "default_value"))
+                {
+                    Users.Add(user);
+                }
 
+            }
+        }
 
 
 
