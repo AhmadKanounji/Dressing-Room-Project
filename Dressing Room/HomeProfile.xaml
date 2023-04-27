@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mopups:PopupPage
+    x:Class="Dressing_Room.HomeProfile"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Dressing_Room"
+    xmlns:model="clr-namespace:Dressing_Room.Models"
+    xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:viewmodel="clr-namespace:Dressing_Room.ViewModels"
+    Title="HomeProfile"
+    x:DataType="viewmodel:HomeProfileViewModel"
+    BackgroundColor="#E2E2E2"
+    Shell.NavBarIsVisible="False">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <toolkit:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+
+    <StackLayout>
+        <Label
+            BackgroundColor="#01260A"
+            FontFamily="Roboto"
+            FontSize="20"
+            HeightRequest="55"
+            HorizontalOptions="FillAndExpand"
+            HorizontalTextAlignment="Center"
+            Text="{Binding User_info, StringFormat='@{0}'}"
+            TextColor="White"
+            VerticalOptions="Center"
+            VerticalTextAlignment="Center" />
+        <ScrollView VerticalOptions="FillAndExpand">
+            <StackLayout>
+                <StackLayout>
+                    <StackLayout>
+                        <Border
+                            Margin="0,20,0,0"
+                            BackgroundColor="#C4C4C4"
+                            HeightRequest="134"
+                            Stroke="#707070"
+                            StrokeShape="RoundRectangle 100,100,100,100"
+                            StrokeThickness="1.8"
+                            WidthRequest="134">
+                            <!--  add bindable image  -->
+                            <Image Aspect="Fill" Source="{Binding PhotoSource, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
+                        </Border>
+                    </StackLayout>
+                    <StackLayout
+                        Margin="-3,-6,0,0"
+                        Orientation="Horizontal"
+                        Spacing="27">
+
+                        <StackLayout
+                            Margin="50,50,0,0"
+                            Orientation="Vertical"
+                            Spacing="0">
+                            <!--  change this text later/ just to see how it looks  -->
+                            <Label
+                                Margin="11,0,0,0"
+                                CharacterSpacing="1"
+                                FontAttributes="Bold"
+                                FontFamily="NotoSansMyanmar"
+                                FontSize="20"
+                                Text="{Binding Num_outfits}" />
+                            <Label FontSize="18" Text="Outfits" />
+                        </StackLayout>
+                        <BoxView
+                            Margin="0,42,0,0"
+                            BackgroundColor="Black"
+                            HeightRequest="60"
+                            WidthRequest="0.5" />
+
+                        <StackLayout
+                            Margin="-2,50,0,0"
+                            Orientation="Vertical"
+                            Spacing="0">
+                            <!--  change this text later/ just to see how it looks  -->
+                            <Label
+                                Margin="14,0,0,0"
+                                CharacterSpacing="1"
+                                FontAttributes="Bold"
+                                FontFamily="NotoSansMyanmar"
+                                FontSize="20"
+                                Text="{Binding Follow_count}" />
+                            <Label FontSize="18" Text="Followers" />
+                        </StackLayout>
+
+                        <BoxView
+                            Margin="0,42,0,0"
+                            BackgroundColor="Black"
+                            HeightRequest="60"
+                            WidthRequest="0.5" />
+
+                        <StackLayout
+                            Margin="-8,50,0,0"
+                            Orientation="Vertical"
+                            Spacing="0">
+                            <!--  change this text later/ just to see how it looks  -->
+                            <Label
+                                Margin="19,0,0,0"
+                                CharacterSpacing="1"
+                                FontAttributes="Bold"
+                                FontFamily="NotoSansMyanmar"
+                                FontSize="20"
+                                Text="{Binding Following_count}" />
+                            <Label FontSize="18" Text="Following" />
+                        </StackLayout>
+
+                    </StackLayout>
+
+                    <Border
+                        Margin="0,20,0,0"
+                        HeightRequest="48"
+                        Stroke="#01260A"
+                        StrokeShape="RoundRectangle 20,20,20,20"
+                        StrokeThickness="2"
+                        WidthRequest="330">
+                        <Button
+                            x:Name="Kano"
+                            Margin="0,-3,0,0"
+                            BackgroundColor="#01260A"
+                            FontAttributes="Bold"
+                            FontFamily="NotoSansMyanmar"
+                            FontSize="17"
+                            Text="{Binding Text}"
+                            TextColor="#E2E2E2"
+                            Command="{Binding FollowCommand}" />
+                    </Border>
+                    <BoxView
+                        Margin="0,18,0,10"
+                        BackgroundColor="Black"
+                        HeightRequest="1" />
+                </StackLayout>
+
+                <CollectionView ItemsLayout="VerticalGrid, 2" ItemsSource="{Binding Outfits}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:OutfitToDisplay">
+                            <Grid>
+                                <Border
+                                    HeightRequest="250"
+                                    Stroke="#01260A"
+                                    StrokeShape="RoundRectangle 20,20,20,20"
+                                    BackgroundColor="RosyBrown"
+                                    StrokeThickness="-1"
+                                    WidthRequest="170">
+                                    <VerticalStackLayout >
+                                        <HorizontalStackLayout HorizontalOptions="Center" >
+                                            <Border HeightRequest="70" WidthRequest="85" StrokeShape="RoundRectangle 20,20,20,20" >
+                                                <Image Aspect="Fill" Source="{Binding Tops, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
+                                            </Border>
+                                            <Border HeightRequest="70" WidthRequest="85" StrokeShape="RoundRectangle 20,20,20,20">
+                                                <Image  Aspect="Fill" Source="{Binding Pants, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
+                                            </Border>
+                                        </HorizontalStackLayout>
+                                        <HorizontalStackLayout HorizontalOptions="Center">
+                                            <Border HeightRequest="70" WidthRequest="85" StrokeShape="RoundRectangle 20,20,20,20">
+                                                <Image  Aspect="Fill" Source="{Binding Jackets, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
+                                            </Border>
+                                            <Border HeightRequest="70" WidthRequest="85" StrokeShape="RoundRectangle 20,20,20,20">
+                                                <Image  Aspect="Fill" Source="{Binding Shoes, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
+                                            </Border>
+                                        </HorizontalStackLayout>
+                                        <Border HeightRequest="70" WidthRequest="70"  StrokeShape="RoundRectangle 20,20,20,20" >
+                                            <Image  Aspect="Fill" Source="{Binding Accessories, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
+                                        </Border>
+
+
+                                    </VerticalStackLayout>
+
+                                </Border>
+
+
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+            </StackLayout>
+        </ScrollView>
+
+
+
+
+    </StackLayout>
+</mopups:PopupPage>

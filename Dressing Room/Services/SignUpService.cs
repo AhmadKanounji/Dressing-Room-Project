@@ -72,7 +72,12 @@ namespace Dressing_Room.Services
         public async Task<List<User>> GetUser()
         {
             await Init();
-            var result = await db.Table<User>().ToListAsync(); // This gets all the user in the database
+            var result = await db.Table<User>().ToListAsync();
+            if (result.Count == 0)
+            {
+                await Shell.Current.DisplayAlert("test", "test", "hello");
+            }
+            // This gets all the user in the database
             return result;
         }
 

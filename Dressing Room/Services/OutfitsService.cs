@@ -44,14 +44,23 @@ namespace Dressing_Room.Services
             return result;
         }
 
+        public async Task DdeleteOutfits(int id)
+        {
+            await Init();
+            var outfit = await db.GetAsync<Outfits>(id);
+            if (outfit != null) { await db.DeleteAsync(outfit); }
 
-        public async Task UpdateOutfits(string username, string new_username)
+
+        }
+
+        public async Task UpdateOutfits(string username, string new_username, byte[] photo)
         {
             await Init();
             var outfit = await db.Table<Outfits>().Where(u => u.UserID == username).ToListAsync();
             foreach (Outfits c in outfit)
             {
                 c.UserID = new_username;
+                c.ProfilePhoto = photo;
                 await db.UpdateAsync(c);
             }
         }

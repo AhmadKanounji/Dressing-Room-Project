@@ -131,7 +131,7 @@
                     </Label>
                 <CheckBox Color="#E2E2E2" HeightRequest="5"></CheckBox>
                 <HorizontalStackLayout Spacing="20" HorizontalOptions="Center" VerticalOptions="End">
-                    <Border StrokeShape="RoundRectangle 20,20,20,20" HeightRequest="50" WidthRequest="100" StrokeThickness="4">
+                    <Border StrokeShape="RoundRectangle 20,20,20,20" HeightRequest="45" WidthRequest="100" StrokeThickness="4">
                         <Button Text="Decline"
                             BackgroundColor="#E2E2E2"
                             BorderColor="#01260A"
@@ -142,7 +142,7 @@
 
                         </Button>
                     </Border>
-                    <Border StrokeShape="RoundRectangle 20,20,20,20" HeightRequest="50" WidthRequest="100">
+                    <Border StrokeShape="RoundRectangle 20,20,20,20" HeightRequest="45" WidthRequest="100">
                         <Button Text="Accept"
                                 BackgroundColor="#01260A"
                                 FontSize="Default"

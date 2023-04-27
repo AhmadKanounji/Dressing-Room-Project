@@ -48,6 +48,8 @@
                                     BackgroundColor="Transparent"
                                     Clicked="OnImage2Clicked"
                                     FontSize="18"
+                                    FontFamily="NotoSansMyanmar"
+                                    FontAttributes="Bold"
                                     HorizontalOptions="Start"
                                     Text="Change Password"
                                     TextColor="#01260A" />
@@ -60,11 +62,13 @@
                                     Y1="0"
                                     Y2="0" />
                             </VerticalStackLayout>
-                            <VerticalStackLayout Spacing="20">
+                            <VerticalStackLayout Spacing="10">
                                 <Button
                                     Margin="40,0,0,0"
                                     BackgroundColor="Transparent"
                                     FontSize="18"
+                                    FontFamily="NotoSansMyanmar"
+                                    FontAttributes="Bold"
                                     HorizontalOptions="Start"
                                     Text="Terms and Conditions"
                                     Clicked="TermsAndConditionsClicked"
@@ -77,12 +81,15 @@
                                     X2="0"
                                     Y1="0"
                                     Y2="0" />
+                                
                             </VerticalStackLayout>
 
                             <Button
                                 Margin="40,0,0,0"
                                 BackgroundColor="Transparent"
                                 FontSize="18"
+                                FontFamily="NotoSansMyanmar"
+                                FontAttributes="Bold"
                                 HorizontalOptions="Start"
                                 Text="Privacy Policy"
                                 TextColor="#01260A" />
@@ -95,6 +102,7 @@
                         <Border StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="150">
                             <Button
                                 BackgroundColor="#01260A"
+                                FontFamily="NotoSansMyanmar"
                                 Clicked="OnImageClicked"
                                 Text="Log Out"
                                 TextColor="#FFFFFF"
@@ -104,7 +112,9 @@
                         <Button
                                 BackgroundColor="Transparent"
                                 Clicked="GoToDelete"
-                                Text="Delete"
+                                Text="Delete Account"
+                                FontFamily="NotoSansMyanmar"
+                                FontAttributes="Bold"
                                 TextColor="#01260A"
                                 WidthRequest="150" />
 

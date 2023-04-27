@@ -54,10 +54,13 @@ namespace Dressing_Room.ViewModels
         }
 
         [RelayCommand]
-        public void RemovePhoto()
+        public async void RemovePhoto()
         {
+           
             WeakReferenceMessenger.Default.Send(new RefreshMessage(null));
-            MopupService.Instance.PopAllAsync();
+            await Shell.Current.DisplayAlert("h", "lol", "Exit");
+            await MopupService.Instance.PopAllAsync();
+            
         }
 
     }

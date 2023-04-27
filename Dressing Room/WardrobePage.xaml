@@ -5,7 +5,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="My Wardrobe"
     BackgroundColor="#E2E2E2"
-    BackgroundImageSource="backgroundlogo.svg"
     NavigationPage.HasBackButton="False"
     Shell.BackgroundColor="#01260A"
     Shell.NavBarIsVisible="False">
@@ -301,7 +300,7 @@
                 <ImageButton
                     HeightRequest="25"
                     Source="homepage2.png"
-                    WidthRequest="30" />
+                    WidthRequest="30" Clicked="GoToHomePage"/>
                 <VerticalStackLayout Spacing="2" VerticalOptions="Center">
                     <ImageButton
                         HeightRequest="25"

@@ -43,8 +43,21 @@ namespace Dressing_Room.Services
             var result = await db.Table<Clothes>().Where(c => c.UserID == user_name).ToListAsync();
             return result;
         }
+        public async Task<List<Clothes>> GetSpecificClothesByID(int ID)
+        {
+            await Init();
+            var result = await db.Table<Clothes>().Where(c => c.CID == ID).ToListAsync();
+            return result;
+        }
+
+        public async Task DdeleteClothes(int id)
+        {
+            await Init();
+            var cloth = await db.GetAsync<Clothes>(id);
+            if (cloth != null) { await db.DeleteAsync(cloth); }
 
 
+        }
         public async Task UpdateClothes(string username, string new_username)
         {
             await Init();
@@ -57,4 +70,5 @@ namespace Dressing_Room.Services
         }
     }
 }
+
 

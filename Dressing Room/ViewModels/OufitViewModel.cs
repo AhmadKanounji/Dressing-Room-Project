@@ -1,4 +1,5 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Maui.Alerts;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Messaging;
 using Dressing_Room.Messages;
 using Dressing_Room.Models;
@@ -16,10 +17,12 @@ namespace Dressing_Room.ViewModels
     {
         private OutfitsService _outfitService;
         private ClothingService _clothingService;
+        private SignUpService _signUpService;
         public OufitViewModel()
         {
             _outfitService = new OutfitsService();
             _clothingService = new ClothingService();
+            _signUpService = new SignUpService();
             WeakReferenceMessenger.Default.Register<RefreshOutfitMessage>(this);
             Outfits = new ObservableCollection<OutfitToDisplay>();
             Refresh();
@@ -27,8 +30,18 @@ namespace Dressing_Room.ViewModels
 
 
 
+
+
         public ObservableCollection<OutfitToDisplay> Outfits { get; }
 
+        private Command<OutfitToDisplay> _deleteOutfitCommand;
+        public Command<OutfitToDisplay> DeleteOutfitCommand => _deleteOutfitCommand ??= new Command<OutfitToDisplay>(async (outfit) =>
+        {
+            await _outfitService.DdeleteOutfits(outfit.Id);
+            await Task.Delay(500);
+            Refresh();
+
+        });
         public void Receive(RefreshOutfitMessage message)
         {
             MainThread.BeginInvokeOnMainThread(() =>
@@ -83,6 +96,10 @@ namespace Dressing_Room.ViewModels
 
 
                     }
+
+                    toadd.Id = outfit.Id;
+                    toadd.Likes = outfit.Likes;
+                    toadd.UserName = outfit.UserID;
                     Outfits.Add(toadd);
 
                 }

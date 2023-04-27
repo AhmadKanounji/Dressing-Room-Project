@@ -89,5 +89,11 @@ public partial class WardrobePage : ContentPage
         await MopupService.Instance.PushAsync(new RemoveBugPopup());
         await Shell.Current.GoToAsync(nameof(SettingsPage));
     }
+    async void GoToHomePage(System.Object sender, System.EventArgs e)
+    {
+        Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
+        await MopupService.Instance.PushAsync(new RemoveBugPopup());
+        await Shell.Current.GoToAsync(nameof(HomePage));
+    }
 
 }

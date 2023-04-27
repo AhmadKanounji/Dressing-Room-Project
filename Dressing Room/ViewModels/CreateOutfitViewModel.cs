@@ -18,10 +18,12 @@ namespace Dressing_Room.ViewModels
     {
         private ClothingService _clothingService;
         private OutfitsService _outfitsService;
+        private SignUpService _signUpService;
         public CreateOutfitViewModel()
         {
             _clothingService = new ClothingService();
             _outfitsService = new OutfitsService();
+            _signUpService = new SignUpService();
             Tops = new ObservableCollection<Clothes>();
             Pants = new ObservableCollection<Clothes>();
             Shoes = new ObservableCollection<Clothes>();
@@ -59,10 +61,39 @@ namespace Dressing_Room.ViewModels
         [ObservableProperty]
         public Clothes selectedAccessories;
 
+        byte[] profile;
+
 
         [RelayCommand]
         public async Task CreateOutfitAsync()
         {
+            if (SelectedTop == null || SelectedPants == null | SelectedShoes == null || SelectedJacket == null || SelectedAccessories == null)
+            {
+                await Shell.Current.DisplayAlert("Oops", "Please select all clothing types", "Exit");
+                return;
+            }
+            await Shell.Current.DisplayAlert("hello", "hi", "hello");
+            var allUsers = await _signUpService.GetUser();
+
+            await Shell.Current.DisplayAlert("hello", "hi", "hello");
+            foreach (var user in allUsers)
+            {
+                if (user.Username == Preferences.Get("user_name", "default_value"))
+                {
+                    if (user.Source == null)
+                    {
+                        await Shell.Current.DisplayAlert("hello", "hi", "hello");
+                    }
+                    else
+                    {
+                        profile = user.Source;
+                        break;
+                    }
+
+
+                }
+            }
+            await Shell.Current.DisplayAlert("hi", "hi", "hi");
             // Call the GenerateOutfitAsync method passing in the selected clothes
             var outfit = new Outfits
             {
@@ -71,7 +102,10 @@ namespace Dressing_Room.ViewModels
                 ShoesID = SelectedShoes.CID,
                 JacketID = SelectedJacket.CID,
                 AccessoriesID = SelectedAccessories.CID,
-                UserID = Preferences.Get("user_name", "default_value")
+                UserID = Preferences.Get("user_name", "default_value"),
+                Likes = 0,
+                ProfilePhoto = profile
+
             };
             await _outfitsService.AddOutfits(outfit);
             WeakReferenceMessenger.Default.Send(new RefreshOutfitMessage(null));
