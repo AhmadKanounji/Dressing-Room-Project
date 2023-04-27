@@ -28,11 +28,13 @@ namespace Dressing_Room.ViewModels
         private SignUpService _signUpService;
         private ClothingService _clothingService;
         private OutfitsService _outfitService;
+        private FollowService _followService;
         public EditProfileViewModel()
         {
             _signUpService = new SignUpService();
             _clothingService = new ClothingService();
             _outfitService = new OutfitsService();
+            _followService = new FollowService();
             Refresh();
             WeakReferenceMessenger.Default.Register<RefreshMessage>(this);
         }
@@ -72,6 +74,9 @@ namespace Dressing_Room.ViewModels
                     await _clothingService.UpdateClothes(Preferences.Get("user_name", "default_value"), User_name);
                 }
             }
+
+            //update follow table
+            await _followService.UpdateFollows(Preferences.Get("user_name", "password"), User_name);
 
             //updating outfis:
             var allOutfits = await _outfitService.GetOutfits();

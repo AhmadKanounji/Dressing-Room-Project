@@ -83,7 +83,7 @@
                                 FontAttributes="Bold"
                                 FontFamily="NotoSansMyanmar"
                                 FontSize="20"
-                                Text="1.7M" />
+                                Text="{Binding Follow_count}" />
                             <Label FontSize="18" Text="Followers" />
                         </StackLayout>
 
@@ -104,13 +104,14 @@
                                 FontAttributes="Bold"
                                 FontFamily="NotoSansMyanmar"
                                 FontSize="20"
-                                Text="666" />
+                                Text="{Binding Following_count}" />
                             <Label FontSize="18" Text="Following" />
                         </StackLayout>
 
                     </StackLayout>
 
                     <Border
+                        IsVisible="{Binding Followbutton}"
                         Margin="0,20,0,0"
                         HeightRequest="48"
                         Stroke="#01260A"
@@ -118,14 +119,38 @@
                         StrokeThickness="2"
                         WidthRequest="330">
                         <Button
+                            IsVisible="{Binding Followbutton}"
                             Margin="0,-3,0,0"
                             BackgroundColor="#01260A"
                             FontAttributes="Bold"
                             FontFamily="NotoSansMyanmar"
                             FontSize="17"
                             Text="Follow"
-                            TextColor="#E2E2E2" />
+                            TextColor="#E2E2E2"
+                            Command="{Binding FollowCommand}" />
+
                     </Border>
+                    <Border
+                        IsVisible="{Binding Unfollowbutton}"
+                        Margin="0,20,0,0"
+                        HeightRequest="48"
+                        Stroke="#01260A"
+                        StrokeShape="RoundRectangle 20,20,20,20"
+                        StrokeThickness="2"
+                        WidthRequest="330">
+                        <Button
+                            IsVisible="{Binding Unfollowbutton}"
+                            Margin="0,-3,0,0"
+                            BackgroundColor="#E2E2E2"
+                            FontAttributes="Bold"
+                            FontFamily="NotoSansMyanmar"
+                            FontSize="17"
+                            Text="Unfollow"
+                            TextColor="#01260A"
+                            Command="{Binding FollowCommand}" />
+
+                    </Border>
+
                     <BoxView
                         Margin="0,18,0,10"
                         BackgroundColor="Black"
