@@ -2,10 +2,10 @@
     x:Class="Dressing_Room.ProfilePage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:model="clr-namespace:Dressing_Room.Models"
     xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
     xmlns:viewmodel="clr-namespace:Dressing_Room.ViewModels"
     Title="{Binding User_info}"
-    xmlns:model="clr-namespace:Dressing_Room.Models"
     x:DataType="viewmodel:ProfileViewModel"
     BackgroundColor="#E2E2E2"
     NavigationPage.HasBackButton="False"
@@ -203,27 +203,28 @@
 
 
 
+
         <Border
             BackgroundColor="#01260A"
             HeightRequest="53"
             StrokeShape="RoundRectangle 30,30,0,0"
-            StrokeThickness="-1"
-            VerticalOptions="End">
+            StrokeThickness="-1">
             <HorizontalStackLayout
                 HorizontalOptions="Center"
                 Spacing="50"
                 VerticalOptions="Center">
 
                 <ImageButton
-                    HeightRequest="25"
-                    Source="homepage2.png"
-                    WidthRequest="30" />
+                        HeightRequest="25"
+                        Source="homepage2.png"
+                        WidthRequest="30" Clicked="GoToHomePage"/>
+
 
                 <ImageButton
-                    Clicked="OnHangerClicked"
                     HeightRequest="25"
                     Source="hanger.png"
-                    WidthRequest="30" />
+                    WidthRequest="30" Clicked="ImageButton_Clicked"/>
+
 
 
                 <Border
@@ -233,30 +234,29 @@
                     StrokeShape="RoundRectangle 20,20,20,20"
                     WidthRequest="35">
                     <ImageButton
-                        Clicked="OnPlusSignClicked"
+                        Clicked="OnImage7Clicked"
                         HeightRequest="20"
                         Source="plussign.png"
                         WidthRequest="20" />
                 </Border>
-
                 <VerticalStackLayout Spacing="2" VerticalOptions="Center">
                     <ImageButton
-                        HeightRequest="25"
-                        Source="profilepic.png"
-                        WidthRequest="30" />
+                    
+                    HeightRequest="25"
+                    Source="profilepic.png"
+                    WidthRequest="30" />
                     <Ellipse
                         Fill="white"
                         HeightRequest="8"
                         WidthRequest="8" />
                 </VerticalStackLayout>
-
                 <ImageButton
+                    Clicked="GoToSettings"
                     HeightRequest="25"
                     Source="setting.png"
                     WidthRequest="30" />
             </HorizontalStackLayout>
 
         </Border>
-
     </StackLayout>
 </ContentPage>

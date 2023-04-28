@@ -46,15 +46,7 @@ namespace Dressing_Room.ViewModels
 
                 }
             }
-            var outfitdis = _OutfitViewModel.Outfits;
-            foreach (OutfitToDisplay o in outfitdis)
-            {
-                if (o.Tops == top.Source)
-                {
-                    _OutfitViewModel.Outfits.Remove(o);
-                    _OutfitViewModel.Refresh();
-                }
-            }
+
             await _clothingService.DdeleteClothes(top.CID);
             WeakReferenceMessenger.Default.Send(new RefreshOutfitMessage(null));
 

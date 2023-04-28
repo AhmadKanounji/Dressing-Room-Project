@@ -204,7 +204,6 @@
 
 
 
-
         <Border
             BackgroundColor="#01260A"
             HeightRequest="53"
@@ -214,20 +213,23 @@
                 HorizontalOptions="Center"
                 Spacing="50"
                 VerticalOptions="Center">
-                <ImageButton
+                <VerticalStackLayout Spacing="2" VerticalOptions="Center">
+                    <ImageButton
                     HeightRequest="25"
                     Source="homepage2.png"
                     WidthRequest="30" />
-                <VerticalStackLayout Spacing="2" VerticalOptions="Center">
-                    <ImageButton
-                        HeightRequest="25"
-                        Source="hanger.png"
-                        WidthRequest="30" />
                     <Ellipse
                         Fill="white"
                         HeightRequest="8"
                         WidthRequest="8" />
                 </VerticalStackLayout>
+                <ImageButton
+                        HeightRequest="25"
+                        Source="hanger.png"
+                        WidthRequest="30"
+                        Clicked="GotoWardrobePage"/>
+
+
 
                 <Border
                     Padding="0"
@@ -236,6 +238,7 @@
                     StrokeShape="RoundRectangle 20,20,20,20"
                     WidthRequest="35">
                     <ImageButton
+                        Clicked="OnImage7Clicked"
                         HeightRequest="20"
                         Source="plussign.png"
                         WidthRequest="20" />
@@ -244,8 +247,10 @@
                 <ImageButton
                     HeightRequest="25"
                     Source="profilepic.png"
-                    WidthRequest="30" />
+                    WidthRequest="30"
+                    Clicked="GoToProfile"/>
                 <ImageButton
+                    Clicked="GoToSettings"
                     HeightRequest="25"
                     Source="setting.png"
                     WidthRequest="30" />
