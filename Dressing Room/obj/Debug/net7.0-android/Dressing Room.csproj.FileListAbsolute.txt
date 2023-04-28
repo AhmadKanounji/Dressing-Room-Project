@@ -2168,6 +2168,12 @@ C:/Users/user/Documents/GitHub/Dressing-Room-Project/Dressing Room/obj/Debug/net
 /Users/serena/Desktop/Dressing-Room-Project/Dressing Room/obj/Debug/net7.0-android/resizetizer/r/drawable-xxhdpi/backgroundlogo.png
 /Users/serena/Desktop/Dressing-Room-Project/Dressing Room/obj/Debug/net7.0-android/resizetizer/r/drawable-xxxhdpi/backgroundlogo.png
 /Users/serena/Desktop/Dressing-Room-Project/Dressing Room/obj/Debug/net7.0-android/resizetizer/r/drawable/trashbin.png
+/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/obj/Debug/net7.0-android/resizetizer/r/drawable/coloroutfit.jpg
+/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/obj/Debug/net7.0-android/resizetizer/r/drawable/coloroutfit2.jpg
+/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/obj/Debug/net7.0-android/resizetizer/r/drawable/weatherimage.jpg
+/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/obj/Debug/net7.0-android/resizetizer/r/drawable/eye.png
+/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/obj/Debug/net7.0-android/resizetizer/r/.DS_Store
+/Users/serena/Desktop/Dressing-Room-Project/Dressing Room/obj/Debug/net7.0-android/resizetizer/r/drawable/hats.png
 /Users/serena/Desktop/Dressing-Room-Project/Dressing Room/obj/Debug/net7.0-android/android/assets/mscorlib.dll
 /Users/serena/Desktop/Dressing-Room-Project/Dressing Room/obj/Debug/net7.0-android/android/assets/System.Collections.Concurrent.dll
 /Users/serena/Desktop/Dressing-Room-Project/Dressing Room/obj/Debug/net7.0-android/android/assets/System.Data.Common.dll

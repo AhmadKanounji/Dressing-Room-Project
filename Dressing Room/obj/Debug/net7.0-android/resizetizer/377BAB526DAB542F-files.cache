@@ -12,6 +12,7 @@ obj/Debug/net7.0-android/resizetizer/r/drawable/pantspic.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/profilepicicon.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/planttwo.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/accesoriespic.png
+obj/Debug/net7.0-android/resizetizer/r/drawable/coloroutfit2.jpg
 obj/Debug/net7.0-android/resizetizer/r/drawable/profilepic.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/pant.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/library.png
@@ -24,12 +25,15 @@ obj/Debug/net7.0-android/resizetizer/r/drawable/logo.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/upload.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/jacke.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/jacketspic.png
+obj/Debug/net7.0-android/resizetizer/r/drawable/eye.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/hanger.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/shoespic.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/pencil.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/logopic.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/homepage2.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/accessories.png
+obj/Debug/net7.0-android/resizetizer/r/drawable/coloroutfit.jpg
+obj/Debug/net7.0-android/resizetizer/r/drawable/weatherimage.jpg
 obj/Debug/net7.0-android/resizetizer/r/drawable/topspic.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/trash.png
 obj/Debug/net7.0-android/resizetizer/r/drawable/pants3.png

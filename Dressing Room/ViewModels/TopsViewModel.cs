@@ -1,5 +1,8 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Maui.Behaviors;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using CommunityToolkit.Mvvm.Messaging;
+using Dressing_Room.Messages;
 using Dressing_Room.Models;
 using Dressing_Room.Services;
 using System;
@@ -14,11 +17,14 @@ namespace Dressing_Room.ViewModels
     public partial class TopsViewModel : ObservableObject
     {
         private ClothingService _clothingService;
+        private OutfitsService _outfitsService;
+        private OufitViewModel _OutfitViewModel;
 
         public TopsViewModel()
         {
             _clothingService = new ClothingService();
-
+            _outfitsService = new OutfitsService();
+            _OutfitViewModel = new OufitViewModel();
             Tops = new ObservableCollection<Clothes>();
 
             refresh();
@@ -31,8 +37,30 @@ namespace Dressing_Room.ViewModels
         private Command<Clothes> _deleteTopCommand;
         public Command<Clothes> DeleteTopCommand => _deleteTopCommand ??= new Command<Clothes>(async (top) =>
         {
+            var outfits = await _outfitsService.GetOutfits();
+            foreach (Outfits o in outfits)
+            {
+                if (o.TopID == top.CID)
+                {
+                    await _outfitsService.DdeleteOutfits(o.Id);
 
+                }
+            }
+            var outfitdis = _OutfitViewModel.Outfits;
+            foreach (OutfitToDisplay o in outfitdis)
+            {
+                if (o.Tops == top.Source)
+                {
+                    _OutfitViewModel.Outfits.Remove(o);
+                    _OutfitViewModel.Refresh();
+                }
+            }
             await _clothingService.DdeleteClothes(top.CID);
+            WeakReferenceMessenger.Default.Send(new RefreshOutfitMessage(null));
+
+
+
+
             refresh();
         });
 

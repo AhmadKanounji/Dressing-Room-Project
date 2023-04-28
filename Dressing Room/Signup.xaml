@@ -93,12 +93,18 @@
                 StrokeShape="RoundRectangle 20"
                 StrokeThickness="1"
                 WidthRequest="350">
-                <Entry
-                    FontAttributes="Italic"
-                    Keyboard="Email"
-                    Placeholder="Password "
-                    Text="{Binding Password}"
-                    Margin="10,0,0,0"/>
+                <HorizontalStackLayout>
+                    <Entry
+                        FontAttributes="Italic"
+                        Placeholder="Password "
+                        Text="{Binding Password}"
+                        Margin="10,0,0,0"
+                        IsPassword="{Binding Cansee}"
+                        />
+                    <ImageButton Source="eye.png" HeightRequest="25" WidthRequest="25" Margin="220,0,0,0" Command="{Binding SeePassCommand}" >
+
+                    </ImageButton>
+                </HorizontalStackLayout>
 
             </Border>
             <Border
@@ -107,14 +113,19 @@
                 Stroke="#01260A"
                 StrokeShape="RoundRectangle 20"
                 StrokeThickness="1"
-                WidthRequest="350">
+                WidthRequest="350"
+                >
+                <HorizontalStackLayout>
                 <Entry
                     FontAttributes="Italic"
-                    Keyboard="Email"
                     Placeholder=" Confirm Password "
                     Text="{Binding Confirmpass}"
-                    Margin="10,0,0,0"/>
+                    Margin="10,0,0,0"
+                    IsPassword="{Binding Canseeconfirm}"/>
+                <ImageButton Source="eye.png" HeightRequest="25" WidthRequest="25" Margin="160,0,0,0" Command="{Binding Canseeconfirm}">
 
+                </ImageButton>
+                </HorizontalStackLayout>
             </Border>
             <HorizontalStackLayout Spacing="20" Margin="0,10,0,0" HorizontalOptions="Center">
 
@@ -138,7 +149,7 @@
                     Text="Already have an account?" />
                 <Button
                     Padding="4"
-                    BackgroundColor="#E2E2E2"
+                    BackgroundColor="Transparent"
                     BorderColor="Black"
                     BorderWidth="0"
                     FontFamily="OPTIMA_B"

@@ -46,9 +46,16 @@
                            BackgroundColor="Transparent"
                            Margin="24,0,0,0"/>
                 </Border>
-                <Border BackgroundColor="#E2E2E2" WidthRequest="72" HeightRequest="21" Grid.Row="0" Grid.Column="0" Margin="5,-10,190,0" StrokeThickness="0">
+                <HorizontalStackLayout>
+                <Border BackgroundColor="#E2E2E2" WidthRequest="72" HeightRequest="21" Grid.Row="0" Grid.Column="0" Margin="66,-10,190,0" StrokeThickness="0">
                     <Label Text="Username" FontSize="15" TextColor="#8B8B8B" Margin="2,-2,0,0" FontFamily="Optima"/>
                 </Border>
+
+                <Image Source="pencil.png" HeightRequest="20" WidthRequest="20" Margin="-20,30,0,0">
+
+
+                </Image>
+                </HorizontalStackLayout>
             </Grid>
 
 
@@ -61,20 +68,26 @@
                            BackgroundColor="Transparent"
                            Margin="24,0,0,0"/>
                 </Border>
-                <Border BackgroundColor="#E2E2E2" WidthRequest="41" HeightRequest="21" Grid.Row="0" Grid.Column="0" Margin="-22,-10,190,0" StrokeThickness="0">
+                <HorizontalStackLayout>
+                <Border BackgroundColor="#E2E2E2" WidthRequest="41" HeightRequest="21" Grid.Row="0" Grid.Column="0" Margin="66,-10,190,0" StrokeThickness="0">
                     <Label Text="Email" FontSize="15" TextColor="#8B8B8B" Margin="2,-2,0,0" FontFamily="Optima"/>
                 </Border>
+               <Image Source="pencil.png" HeightRequest="20" WidthRequest="20" Margin="4,30,0,0">
+
+
+                </Image>
+                </HorizontalStackLayout>
             </Grid>
 
             <Grid>
                 <Border StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="303" BackgroundColor="Transparent" Stroke="#01260A" StrokeThickness="1" Margin="0,29,0,0" Grid.Row="0" Grid.Column="0">
                     <Entry FontSize="15"
-                           Keyboard="Email"
                            Text="{Binding User_password}"
                            TextColor="#01260A"
                            BackgroundColor="Transparent"
                            IsReadOnly="True"
-                           Margin="24,0,0,0"/>
+                           Margin="24,0,0,0"
+                           IsPassword="True"/>
                 </Border>
                 <Border BackgroundColor="#E2E2E2" WidthRequest="70" HeightRequest="21" Grid.Row="0" Grid.Column="0" Margin="2,-10,190,0" StrokeThickness="0">
                     <Label Text="Password" FontSize="15" TextColor="#8B8B8B" Margin="2,-2,0,0" FontFamily="Optima"/>

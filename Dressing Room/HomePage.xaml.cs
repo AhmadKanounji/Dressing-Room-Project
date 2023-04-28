@@ -8,6 +8,8 @@ namespace Dressing_Room;
 
 public partial class HomePage : ContentPage
 {
+
+
     private HomePageViewModel viewModel;
     public HomePage()
     {
@@ -33,6 +35,7 @@ public partial class HomePage : ContentPage
         {
             viewModel.Outfitlist = true;
             viewModel.Userlist = false;
+            
         }
         else
         {

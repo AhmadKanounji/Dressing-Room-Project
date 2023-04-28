@@ -7,8 +7,6 @@
              x:DataType="viewmodel:TopsViewModel"          
              Shell.NavBarIsVisible="False"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             BackgroundColor="#E2E2E2"
-             BackgroundImageSource="backgroundlogo.svg"
              >
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -41,6 +39,7 @@
 
 
 
+
         </ScrollView>
 
 
@@ -48,7 +47,7 @@
 
             <StackLayout>
 
-                <CollectionView ItemsSource="{Binding Tops}" Margin="20,0,0,39" >
+                <CollectionView ItemsSource="{Binding Tops}" Margin="20,0,0,39" x:Name="collectionView" >
                     <CollectionView.ItemsLayout>
                         <LinearItemsLayout Orientation="Horizontal" />
                     </CollectionView.ItemsLayout>
@@ -78,10 +77,10 @@
                                         <Border BackgroundColor="#E2E2E2" StrokeShape="RoundRectangle 20,20,20,20" WidthRequest="86" HeightRequest="27" Stroke="#01260A">
                                             <Label Text="{Binding Type}" HorizontalOptions="Center" VerticalOptions="Center"/>
                                         </Border>
-                                          <ImageButton Source="trashbin.png" HeightRequest="25" WidthRequest="25" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:TopsViewModel}}, Path=DeleteTopCommand}" CommandParameter="{Binding .}" Margin="20,0,0,0" >
+
+                                         <ImageButton Source="trashbin.png" HeightRequest="25" WidthRequest="25" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:TopsViewModel}}, Path=DeleteTopsCommand}" CommandParameter="{Binding .}" Margin="20,0,0,0" >
 
                                         </ImageButton>
-     
                                     </HorizontalStackLayout>
 
                                 </StackLayout>
@@ -117,7 +116,6 @@
                 <ImageButton Source="setting.png" HeightRequest="25" WidthRequest="30">
 
                 </ImageButton>
-
             </HorizontalStackLayout>
 
         </Border>

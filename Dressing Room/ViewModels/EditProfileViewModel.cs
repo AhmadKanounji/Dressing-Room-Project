@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.Messaging;
@@ -59,12 +60,27 @@ namespace Dressing_Room.ViewModels
         [RelayCommand]
         public async Task SaveChanges()
         {
+            
 
             if (User_email == "" || User_password == "")
             {
                 await Shell.Current.DisplayAlert("Error", "Invalid Entries. Please re-enter", "Exit");
                 return;
             }
+
+            //checking for strong email
+            string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+
+            // Create a regular expression object and match against the email
+            Regex regex = new Regex(pattern);
+            Match match = regex.Match(User_email);
+
+            if (!match.Success)
+            {
+                await Shell.Current.DisplayAlert("Uh Oh", "Wrong Email format", "Exit");
+                return;
+            }
+
             //Updating all clothes with that username
             var allClothes = await _clothingService.GetClothes();
             foreach (Clothes cloth in allClothes)

@@ -23,20 +23,21 @@
 
     <StackLayout>
 
-        <ScrollView VerticalOptions="FillAndExpand">
+        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
 
             <VerticalStackLayout Spacing="20">
                
                 <StackLayout>
-                    <Border BackgroundColor="White" WidthRequest="340" HeightRequest="50" StrokeShape="RoundRectangle 15,15,15,15" Margin="0,30,0,0">
+                    <Border BackgroundColor="White" WidthRequest="340" HeightRequest="50" StrokeShape="RoundRectangle 15,15,15,15"  Margin="0,30,0,0">
                     <SearchBar
                         x:Name="Kano"
                         Placeholder="Search"
                         TextChanged="Kano_TextChanged" />
                     </Border>
 
-                    <CollectionView
-                        Margin="0"
+                    <Border BackgroundColor="#e2e2e2" >
+                     <CollectionView
+                        Margin="0,0,0,0"
                         HorizontalOptions="Center"
                         IsVisible="{Binding Userlist}"
                         ItemsSource="{Binding Users}">
@@ -49,9 +50,8 @@
                                     <HorizontalStackLayout>
 
                                         <Border
-                                            BackgroundColor="#e2e2e2"
-                                            Stroke="#01260A"
-                                            StrokeThickness="2"
+                                            BackgroundColor="White"
+                                            StrokeThickness="-1"
                                             WidthRequest="395">
                                             <HorizontalStackLayout>
                                                 <Border
@@ -64,7 +64,7 @@
                                                     <Image Aspect="Fill" Source="{Binding Source, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
                                                 </Border>
                                                 <Button
-                                                    Margin="-90,0,0,0"
+                                                    Margin="-75,0,0,0"
                                                     BackgroundColor="Transparent"
                                                     Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:HomePageViewModel}}, Path=GoToHomeProfileCommand2}"
                                                     CommandParameter="{Binding .}"
@@ -87,103 +87,100 @@
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
-                    <CollectionView
-                        Margin="20,0,0,39"
-                        IsVisible="{Binding Outfitlist}"
-                        ItemsSource="{Binding Outfits}">
-                        <CollectionView.ItemsLayout>
-                            <LinearItemsLayout Orientation="Vertical" />
-                        </CollectionView.ItemsLayout>
-                        <CollectionView.ItemTemplate>
-                            <DataTemplate x:DataType="model:OutfitToDisplay">
-                                <Frame
-                                    Margin="12"
-                                    Padding="0"
-                                    BackgroundColor="#E2E2E2"
-                                    BorderColor="Black"
-                                    CornerRadius="10"
-                                    HeightRequest="560"
-                                    WidthRequest="320">
-                                    <StackLayout>
-                                        <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                            <Image
-                                                Aspect="AspectFill"
-                                                HeightRequest="100"
-                                                Source="{Binding Tops, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
+                    </Border>
+                     <CollectionView ItemsSource="{Binding Outfits}" Margin="20,0,0,39" >
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Vertical" />
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:OutfitToDisplay">
 
-                                        </Border>
-                                        <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                            <Image
-                                                Aspect="AspectFill"
-                                                HeightRequest="100"
-                                                Source="{Binding Pants, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
+                         <Border StrokeShape="RoundRectangle 20,20,20,20" HeightRequest="550" WidthRequest="330" Margin="-15,20,0,0">
+                           <Grid BackgroundColor="#e2e2e2" WidthRequest="330" HeightRequest="560" Margin="-5,-7,0,0">
+                            <Frame 
+                            
+                           HorizontalOptions="Center"
+                           HeightRequest="560"
+                           WidthRequest="330"
+                           Margin="10,15,0,0"
+                           BorderColor="Black"
+                           CornerRadius="0"
+                           Padding="0"
+                           BackgroundColor="#E2E2E2">
 
-                                        </Border>
-                                        <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                            <Image
-                                                Aspect="AspectFill"
-                                                HeightRequest="100"
-                                                Source="{Binding Shoes, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
+                                    
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*" />
+                                            <RowDefinition Height="*" />
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
 
+                                        <Border Grid.Row="0" Grid.Column="0" StrokeThickness="-1" WidthRequest="165">
+                                            <Image Source="{Binding Tops, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" />
                                         </Border>
-                                        <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                            <Image
-                                                Aspect="AspectFill"
-                                                HeightRequest="100"
-                                                Source="{Binding Jackets, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
+                                        <Border Grid.Row="0" Grid.Column="1" StrokeThickness="-1" WidthRequest="165" HeightRequest="280" Margin="0,93,0,0" >
+                                            <Image Source="{Binding Pants, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" />
+                                        </Border>
 
+                                        <Border Grid.Row="1" StrokeThickness="-1" WidthRequest="165">
+                                            <Image Source="{Binding Shoes, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill"  />
                                         </Border>
-                                        <Border StrokeShape="RoundRectangle 15,15,15,15" StrokeThickness="0">
-                                            <Image
-                                                Aspect="AspectFill"
-                                                HeightRequest="100"
-                                                Source="{Binding Accessories, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
 
+                                        <Border Grid.Row="2" Grid.Column="0"  StrokeThickness="-1" WidthRequest="165" >
+                                            <Image Source="{Binding Accessories, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" />
                                         </Border>
-                                        <Border HeightRequest="60" StrokeShape="RoundRectangle 15,15,15,15">
-                                            <HorizontalStackLayout HorizontalOptions="Start" Spacing="0">
-                                                <Border
+                                        <Border Grid.Row="2" Grid.Column="1" StrokeThickness="-1"  WidthRequest="165" HeightRequest="280" Margin="0,0,0,94">
+                                            <Image Source="{Binding Jackets, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill"  />
+                                        </Border>
+                                        
+                                    </Grid>
+
+                                </Frame>
+                                     <Border WidthRequest="330" HeightRequest="60" StrokeShape="RoundRectangle 15,15,0,0"  Margin="5,510,0,0" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" >
+                                         
+                                        <HorizontalStackLayout HorizontalOptions="Start" Spacing="0"  >
+                                            <Border
                                                     Padding="0"
                                                     BackgroundColor="#E2E2E2"
                                                     HeightRequest="45"
                                                     StrokeShape="RoundRectangle 20,20,20,20"
-                                                    WidthRequest="45">
-                                                    <Image Aspect="Fill" Source="{Binding ProfilePhoto, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
-                                                </Border>
-                                                <Button
+                                                    WidthRequest="45"
+                                                    Margin="14,-4,0,0">
+                                                <Image Aspect="Fill" Source="{Binding ProfilePhoto, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
+                                            </Border>
+                                            <Button
                                                     BackgroundColor="Transparent"
                                                     Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:HomePageViewModel}}, Path=GoToHomeProfileCommand}"
                                                     CommandParameter="{Binding .}"
                                                     FontAttributes="Bold"
                                                     FontSize="18"
+                                                    Margin="0,-4,0,0"
                                                     Text="{Binding UserName, StringFormat='@{0}'}"
                                                     TextColor="Black" />
 
-                                            </HorizontalStackLayout>
+                                        </HorizontalStackLayout>
 
+                                    </Border>
+                               </Grid>
+                           </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
 
-
-                                        </Border>
-
-
-
-                                    </StackLayout>
-                                </Frame>
-                            </DataTemplate>
-                        </CollectionView.ItemTemplate>
-                    </CollectionView>
 
                 </StackLayout>
             </VerticalStackLayout>
 
         </ScrollView>
 
-        <!--  This is where the collection view starts  -->
 
-
-
-
-
+        
+                  
         <Border
             BackgroundColor="#01260A"
             HeightRequest="53"

@@ -58,7 +58,7 @@
                             Spacing="0">
                             <!--  change this text later/ just to see how it looks  -->
                             <Label
-                                Margin="11,0,0,0"
+                                Margin="15,0,0,0"
                                 CharacterSpacing="1"
                                 FontAttributes="Bold"
                                 FontFamily="NotoSansMyanmar"
@@ -78,7 +78,7 @@
                             Spacing="0">
                             <!--  change this text later/ just to see how it looks  -->
                             <Label
-                                Margin="14,0,0,0"
+                                Margin="23,0,0,0"
                                 CharacterSpacing="1"
                                 FontAttributes="Bold"
                                 FontFamily="NotoSansMyanmar"
@@ -99,7 +99,7 @@
                             Spacing="0">
                             <!--  change this text later/ just to see how it looks  -->
                             <Label
-                                Margin="19,0,0,0"
+                                Margin="24,0,0,0"
                                 CharacterSpacing="1"
                                 FontAttributes="Bold"
                                 FontFamily="NotoSansMyanmar"
@@ -157,51 +157,64 @@
                         HeightRequest="1" />
                 </StackLayout>
 
-                <CollectionView ItemsLayout="VerticalGrid, 2" ItemsSource="{Binding Outfits}">
+               <StackLayout>
+                <CollectionView ItemsLayout="VerticalGrid, 2" ItemsSource="{Binding Outfits}" Margin="0,10,0,0">
                     <CollectionView.ItemTemplate>
                         <DataTemplate x:DataType="model:OutfitToDisplay">
-                            <Grid>
-                                <Border
-                                    HeightRequest="250"
-                                    Stroke="#01260A"
-                                    StrokeShape="RoundRectangle 20,20,20,20"
-                                    BackgroundColor="RosyBrown"
-                                    StrokeThickness="-1"
-                                    WidthRequest="170">
-                                    <VerticalStackLayout >
-                                        <HorizontalStackLayout HorizontalOptions="Center" >
-                                            <Border HeightRequest="70" WidthRequest="85" StrokeShape="RoundRectangle 20,20,20,20" >
-                                                <Image Aspect="Fill" Source="{Binding Tops, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
+
+                              <Frame
+                                   Padding="0"
+                                   HeightRequest="180"
+                                   Margin="20,0,20,300"
+                                   WidthRequest="170"
+                                   BorderColor="Black"
+                                   CornerRadius="8"
+                                   BackgroundColor="#E2E2E2"
+                
+                                   >
+
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*" />
+                                                <RowDefinition Height="*" />
+                                                <RowDefinition Height="*" />
+                                            </Grid.RowDefinitions>
+
+                                            <Border Grid.Row="0" Grid.Column="0" StrokeThickness="-1" WidthRequest="85" >
+                                                <Image Source="{Binding Tops, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" />
                                             </Border>
-                                            <Border HeightRequest="70" WidthRequest="85" StrokeShape="RoundRectangle 20,20,20,20">
-                                                <Image  Aspect="Fill" Source="{Binding Pants, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
+                                            <Border Grid.Row="0" Grid.Column="1" StrokeThickness="-1" WidthRequest="85" HeightRequest="90" Margin="0,30,0,0" >
+                                                <Image Source="{Binding Pants, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" />
                                             </Border>
-                                        </HorizontalStackLayout>
-                                        <HorizontalStackLayout HorizontalOptions="Center">
-                                            <Border HeightRequest="70" WidthRequest="85" StrokeShape="RoundRectangle 20,20,20,20">
-                                                <Image  Aspect="Fill" Source="{Binding Jackets, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
+
+                                            <Border Grid.Row="1" StrokeThickness="-1" WidthRequest="85">
+                                                <Image Source="{Binding Shoes, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill"  />
                                             </Border>
-                                            <Border HeightRequest="70" WidthRequest="85" StrokeShape="RoundRectangle 20,20,20,20">
-                                                <Image  Aspect="Fill" Source="{Binding Shoes, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
+
+                                            <Border Grid.Row="2" Grid.Column="0"  StrokeThickness="-1" WidthRequest="85" >
+                                                <Image Source="{Binding Accessories, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" />
                                             </Border>
-                                        </HorizontalStackLayout>
-                                        <Border HeightRequest="70" WidthRequest="70"  StrokeShape="RoundRectangle 20,20,20,20" >
-                                            <Image  Aspect="Fill" Source="{Binding Accessories, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
-                                        </Border>
-
-
-                                    </VerticalStackLayout>
-
-                                </Border>
-
-
-                            </Grid>
+                                            <Border Grid.Row="2" Grid.Column="1" StrokeThickness="-1"  WidthRequest="85" HeightRequest="90" Margin="0,0,0,30">
+                                                <Image Source="{Binding Jackets, Mode=OneWay, Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill"  />
+                                            </Border>
+                                        </Grid>
+                            
+                                    </Frame>
+                       
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
+
                 </CollectionView>
 
-            </StackLayout>
-        </ScrollView>
+       
+        
+                </StackLayout>
+         </StackLayout>
+   </ScrollView>
 
 
 

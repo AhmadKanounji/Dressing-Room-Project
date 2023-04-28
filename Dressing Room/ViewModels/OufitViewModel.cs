@@ -20,6 +20,7 @@ namespace Dressing_Room.ViewModels
         private SignUpService _signUpService;
         public OufitViewModel()
         {
+
             _outfitService = new OutfitsService();
             _clothingService = new ClothingService();
             _signUpService = new SignUpService();

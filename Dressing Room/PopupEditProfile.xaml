@@ -18,7 +18,7 @@
 
 
                 </Image>
-                <Button Text="Choose from library" Margin="5,10,0,0" BackgroundColor="White" TextColor="#01260A" FontSize="15">
+                <Button Text="Choose from library" Margin="5,10,0,0" BackgroundColor="White" TextColor="#01260A" FontSize="15" Command="{Binding ChooseCommand}">
 
 
                 </Button>

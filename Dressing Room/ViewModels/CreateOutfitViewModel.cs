@@ -72,28 +72,19 @@ namespace Dressing_Room.ViewModels
                 await Shell.Current.DisplayAlert("Oops", "Please select all clothing types", "Exit");
                 return;
             }
-            await Shell.Current.DisplayAlert("hello", "hi", "hello");
-            var allUsers = await _signUpService.GetUser();
 
-            await Shell.Current.DisplayAlert("hello", "hi", "hello");
+            var allUsers = await _signUpService.GetUser();
             foreach (var user in allUsers)
             {
                 if (user.Username == Preferences.Get("user_name", "default_value"))
                 {
-                    if (user.Source == null)
-                    {
-                        await Shell.Current.DisplayAlert("hello", "hi", "hello");
-                    }
-                    else
-                    {
-                        profile = user.Source;
-                        break;
-                    }
-
+                    
+                     profile = user.Source;
+                     break;
 
                 }
             }
-            await Shell.Current.DisplayAlert("hi", "hi", "hi");
+
             // Call the GenerateOutfitAsync method passing in the selected clothes
             var outfit = new Outfits
             {
@@ -112,7 +103,9 @@ namespace Dressing_Room.ViewModels
 
 
             // Do something with the created outfit, such as saving it to a database or displaying it on the UI
-            await Shell.Current.DisplayAlert("Uh Oh", "Outfit created succesfully.", "Exit");
+            await Shell.Current.DisplayAlert("Success!", "Outfit created succesfully.", "Exit");
+            await Shell.Current.GoToAsync(nameof(WardrobePage));
+
         }
 
 

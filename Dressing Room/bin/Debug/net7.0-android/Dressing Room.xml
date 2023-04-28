@@ -214,6 +214,12 @@
         <member name="P:Dressing_Room.ViewModels.PopupEditProfViewModel.RemovePhotoCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.PopupEditProfViewModel.RemovePhoto"/>.</summary>
         </member>
+        <member name="F:Dressing_Room.ViewModels.PopupEditProfViewModel.chooseCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.PopupEditProfViewModel.ChooseCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.PopupEditProfViewModel.ChooseCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.PopupEditProfViewModel.Choose"/>.</summary>
+        </member>
         <member name="P:Dressing_Room.ViewModels.ProfileViewModel.User_info">
             <inheritdoc cref="F:Dressing_Room.ViewModels.ProfileViewModel.user_info"/>
         </member>
@@ -271,6 +277,12 @@
         <member name="P:Dressing_Room.ViewModels.SignupViewModel.Female">
             <inheritdoc cref="F:Dressing_Room.ViewModels.SignupViewModel.female"/>
         </member>
+        <member name="P:Dressing_Room.ViewModels.SignupViewModel.Cansee">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.SignupViewModel.cansee"/>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.SignupViewModel.Canseeconfirm">
+            <inheritdoc cref="F:Dressing_Room.ViewModels.SignupViewModel.canseeconfirm"/>
+        </member>
         <member name="F:Dressing_Room.ViewModels.SignupViewModel.gotowardrobeCommand">
             <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.SignupViewModel.GotowardrobeCommand"/>.</summary>
         </member>
@@ -282,6 +294,18 @@
         </member>
         <member name="P:Dressing_Room.ViewModels.SignupViewModel.GobacktosigninCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.SignupViewModel.Gobacktosignin"/>.</summary>
+        </member>
+        <member name="F:Dressing_Room.ViewModels.SignupViewModel.seePassCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.SignupViewModel.SeePassCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.SignupViewModel.SeePassCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.SignupViewModel.SeePass"/>.</summary>
+        </member>
+        <member name="F:Dressing_Room.ViewModels.SignupViewModel.seeComfirmPassCommand">
+            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.SignupViewModel.SeeComfirmPassCommand"/>.</summary>
+        </member>
+        <member name="P:Dressing_Room.ViewModels.SignupViewModel.SeeComfirmPassCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.SignupViewModel.SeeComfirmPass"/>.</summary>
         </member>
         <member name="F:Dressing_Room.ViewModels.TopsViewModel.getTopsCommand">
             <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.TopsViewModel.GetTopsCommand"/>.</summary>

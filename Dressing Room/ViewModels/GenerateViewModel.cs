@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
-using Xamarin.Google.Crypto.Tink.Integration.Android;
+
 
 namespace Dressing_Room.ViewModels
 {
@@ -45,12 +45,12 @@ namespace Dressing_Room.ViewModels
         async Task No()
         {
             outfit.Clear();
-            Show = false;
+            show = false;
         }
         [RelayCommand]
         async Task addOutfit()
         {
-            Show = false;
+            show = false;
             outfit.Clear();
             await Shell.Current.DisplayAlert("Success!", "New Outfit Created!", "Exit");
             await _outfitsService.AddOutfits(savedOutfit);
@@ -66,11 +66,11 @@ namespace Dressing_Room.ViewModels
 
             outfit.Clear();
 
-            var tops = await _clothingService.GetClothesByColor(TopColorr, "Tops");
-            var pants = await _clothingService.GetClothesByColor(PantColorr, "Pants");
-            var jackets = await _clothingService.GetClothesByColor(JacketColorr, "Shoes");
-            var accessories = await _clothingService.GetClothesByColor(AccessorieColorr, "Jackets");
-            var shoes = await _clothingService.GetClothesByColor(ShoeColorr, "Accessories");
+            var tops = await _clothingService.GetClothesByColor(topColorr, "Tops");
+            var pants = await _clothingService.GetClothesByColor(pantColorr, "Pants");
+            var jackets = await _clothingService.GetClothesByColor(jacketColorr, "Shoes");
+            var accessories = await _clothingService.GetClothesByColor(accessorieColorr, "Jackets");
+            var shoes = await _clothingService.GetClothesByColor(shoeColorr, "Accessories");
 
 
 
@@ -106,7 +106,7 @@ namespace Dressing_Room.ViewModels
 
 
 
-            Show = true;
+            show = true;
         }
     }
 }

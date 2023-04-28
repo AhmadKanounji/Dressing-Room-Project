@@ -58,9 +58,39 @@ namespace Dressing_Room.ViewModels
         {
            
             WeakReferenceMessenger.Default.Send(new RefreshMessage(null));
-            MopupService.Instance.PopAllAsync();
+            await MopupService.Instance.PopAllAsync();
            
             
+        }
+
+        [RelayCommand]
+        public async Task Choose()
+        {
+            var result = await MediaPicker.PickPhotoAsync(new MediaPickerOptions
+
+            {
+                Title = "Please pick a photo"
+            });
+            tempphoto = result;
+            if (result != null)
+            {
+                var stream = await result.OpenReadAsync();
+                photo = ImageSource.FromStream(() => stream);
+            }
+            if (result == null) return;
+            var stream2 = await tempphoto.OpenReadAsync();
+            byte[] photoBytes;
+            using (var memoryStream = new MemoryStream())
+            {
+                await stream2.CopyToAsync(memoryStream);
+                photoBytes = memoryStream.ToArray();
+
+
+            }
+            WeakReferenceMessenger.Default.Send(new RefreshMessage(photoBytes));
+            await MopupService.Instance.PopAllAsync();
+
+
         }
 
     }
