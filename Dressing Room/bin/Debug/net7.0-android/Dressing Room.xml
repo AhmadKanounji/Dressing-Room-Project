@@ -121,32 +121,11 @@
         <member name="P:Dressing_Room.ViewModels.GenerateViewModel.generateOutfitCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.GenerateViewModel.generateOutfit"/>.</summary>
         </member>
-        <member name="P:Dressing_Room.ViewModels.GenerateWeatherViewModel.Temp">
-            <inheritdoc cref="F:Dressing_Room.ViewModels.GenerateWeatherViewModel.temp"/>
-        </member>
         <member name="P:Dressing_Room.ViewModels.GenerateWeatherViewModel.Show">
             <inheritdoc cref="F:Dressing_Room.ViewModels.GenerateWeatherViewModel.show"/>
         </member>
         <member name="P:Dressing_Room.ViewModels.GenerateWeatherViewModel.City">
             <inheritdoc cref="F:Dressing_Room.ViewModels.GenerateWeatherViewModel.city"/>
-        </member>
-        <member name="F:Dressing_Room.ViewModels.GenerateWeatherViewModel.noCommand">
-            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.GenerateWeatherViewModel.NoCommand"/>.</summary>
-        </member>
-        <member name="P:Dressing_Room.ViewModels.GenerateWeatherViewModel.NoCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.GenerateWeatherViewModel.No"/>.</summary>
-        </member>
-        <member name="F:Dressing_Room.ViewModels.GenerateWeatherViewModel._addOutfitCommand">
-            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.GenerateWeatherViewModel.addOutfitCommand"/>.</summary>
-        </member>
-        <member name="P:Dressing_Room.ViewModels.GenerateWeatherViewModel.addOutfitCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.GenerateWeatherViewModel.addOutfit"/>.</summary>
-        </member>
-        <member name="F:Dressing_Room.ViewModels.GenerateWeatherViewModel.generateOutfitCommand">
-            <summary>The backing field for <see cref="P:Dressing_Room.ViewModels.GenerateWeatherViewModel.GenerateOutfitCommand"/>.</summary>
-        </member>
-        <member name="P:Dressing_Room.ViewModels.GenerateWeatherViewModel.GenerateOutfitCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Dressing_Room.ViewModels.GenerateWeatherViewModel.GenerateOutfit"/>.</summary>
         </member>
         <member name="P:Dressing_Room.ViewModels.HomePageViewModel.Username">
             <inheritdoc cref="F:Dressing_Room.ViewModels.HomePageViewModel.username"/>

@@ -1,5 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using CommunityToolkit.Mvvm.Messaging;
+using Dressing_Room.Messages;
 using Dressing_Room.Models;
 using Dressing_Room.Services;
 using System;
@@ -13,22 +15,35 @@ namespace Dressing_Room.ViewModels
 {
     public partial class GenerateWeatherViewModel : ObservableObject
     {
-        private RestService _restService;
+
         private ClothingService _clothingService;
         private OutfitsService _outfitsService;
+        private readonly WeatherData _weatherdata;
 
-        public GenerateWeatherViewModel()
+        public GenerateWeatherViewModel(WeatherData weatherData)
         {
             _clothingService = new ClothingService();
             _outfitsService = new OutfitsService();
-            _restService = new RestService();
+            _weatherdata = weatherData;
             outfit = new ObservableCollection<OutfitToDisplay>();
         }
 
-        public WeatherData weatherdata;
 
-        [ObservableProperty]
-        private double temp;
+
+        private double _temperature;
+
+        public double Temperature
+        {
+            get => _temperature;
+            set
+            {
+                if (_temperature != value)
+                {
+                    _temperature = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
         [ObservableProperty]
         private bool show;
@@ -41,37 +56,31 @@ namespace Dressing_Room.ViewModels
         public Outfits savedOutfit = new Outfits();
 
 
-        [RelayCommand]
-        async Task No()
+        public async Task No()
         {
             outfit.Clear();
             Show = false;
         }
-        [RelayCommand]
-        async Task addOutfit()
+
+        public async Task addOutfit()
         {
             Show = false;
             outfit.Clear();
             await Shell.Current.DisplayAlert("Success!", "New Outfit Created!", "Exit");
             await _outfitsService.AddOutfits(savedOutfit);
-
-
+            WeakReferenceMessenger.Default.Send(new RefreshOutfitMessage(null));
         }
 
 
 
-        [RelayCommand]
-        async Task GenerateOutfit()
+
+        public async Task GenerateOutfit()
         {
+
             outfit.Clear();
-            await Shell.Current.DisplayAlert(City, weatherdata.Main.Temperature.ToString(), "hi");
-            if (!string.IsNullOrWhiteSpace(City))
-            {
-                weatherdata = await _restService.GetWeatherData(GenerateRequestURL(Constants.OpenWeatherMapEndpoint));
-                await Shell.Current.DisplayAlert(City, weatherdata.Main.Temperature.ToString(), "hi");
-            }
-            Temp = weatherdata.Main.Temperature;
-            Temp = (Temp - 30) / 2;
+            double temp = _weatherdata.Main.Temperature;
+
+            temp = (temp - 30) / 2;
             List<Clothes> selectedTop = new List<Clothes>();
             List<Clothes> selectedPants = new List<Clothes>();
             List<Clothes> selectedJackets = new List<Clothes>();
@@ -82,7 +91,8 @@ namespace Dressing_Room.ViewModels
 
 
             var clothes = await _clothingService.GetClothes();
-            if (Temp > 24)
+
+            if (temp > 24)
             {
                 foreach (Clothes top in clothes)
                 {
@@ -134,6 +144,7 @@ namespace Dressing_Room.ViewModels
                     }
                 }
             }
+
             var randomTop = selectedTop.ElementAtOrDefault(new Random().Next(0, selectedTop.Count));
             var randomPant = selectedPants.ElementAtOrDefault(new Random().Next(0, selectedPants.Count));
             var randomShoe = selectedShoes.ElementAtOrDefault(new Random().Next(0, selectedShoes.Count));
@@ -151,6 +162,7 @@ namespace Dressing_Room.ViewModels
                 UserName = Preferences.Get("user_name", "default_value")
             };
 
+
             outfit.Add(o);
             savedOutfit.TopID = randomTop.CID;
             savedOutfit.PantsID = randomPant.CID;
@@ -165,18 +177,15 @@ namespace Dressing_Room.ViewModels
 
 
 
+
             Show = true;
 
 
+
         }
-        string GenerateRequestURL(string endPoint)
-        {
-            string requestUri = endPoint;
-            requestUri += $"?q={"Beirut"}";
-            requestUri += "&units=imperial";
-            requestUri += $"&APPID={Constants.OpenWeatherMapAPIKey}";
-            return requestUri;
-        }
+
     }
 
+
 }
+

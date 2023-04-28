@@ -11,7 +11,11 @@
              BackgroundColor="#e2e2e2"
              Title="GenerateWeather">
 
-
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <toolkit:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <StackLayout>
         <ScrollView VerticalOptions="FillAndExpand">
             <VerticalStackLayout Spacing="50" HorizontalOptions="Fill" VerticalOptions="FillAndExpand">
@@ -54,22 +58,26 @@
                 StrokeShape="RoundRectangle 20"
                 
                 >
-                        <Entry Placeholder="Please enter your city " FontAttributes="Italic" Keyboard="Email" Text="{Binding City}"  Margin="10,0,0,0"></Entry>
+                        <Entry Placeholder="Please enter your city " FontAttributes="Italic" Keyboard="Email" x:Name="_cityEntry"  Margin="10,0,0,0"></Entry>
 
                     </Border>
 
-                    <Button Text="Generate!" BackgroundColor="#01260A"  Command="{Binding GenerateOutfitCommand}">
+                    <Button Text="Generate!" BackgroundColor="#01260A" Clicked="OnGetWeatherButtonClicked">
 
                     </Button>
-                    <Border HeightRequest="50">
 
+                    <Border HeightRequest="50">
+                        <Label Text="{Binding Temperature}">
+
+                        </Label>
                     </Border>
 
 
                 </VerticalStackLayout>
+
                 <CollectionView
             HeightRequest="250"
-            ItemsSource="{Binding  outfit}"
+            ItemsSource="{Binding outfit}"
             WidthRequest="250">
                     <CollectionView.ItemTemplate>
                         <DataTemplate x:DataType="model:OutfitToDisplay">
@@ -91,11 +99,11 @@
                 <VerticalStackLayout IsVisible="{Binding Show}" Spacing="15">
                     <Label HorizontalOptions="Center" Text="Would you like to add this outfit your closet?" />
                     <HorizontalStackLayout HorizontalOptions="Center" Spacing="20">
-                        <Button Command="{Binding addOutfitCommand}" Text="Yes" />
-                        <Button Command="{Binding NoCommand}" Text="No" />
+                        <Button Clicked="clicked2" Text="Yes" />
+                        <Button Clicked="clicked" Text="No" />
                     </HorizontalStackLayout>
-                </VerticalStackLayout>
 
+                </VerticalStackLayout>
 
             </VerticalStackLayout>
 
