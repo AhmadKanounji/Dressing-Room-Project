@@ -1,165 +1,123 @@
-﻿using System;
-using System.Text.RegularExpressions;
+﻿using CommunityToolkit.Maui.Behaviors;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using CommunityToolkit.Mvvm.Messaging;
+using Dressing_Room.Messages;
 using Dressing_Room.Models;
 using Dressing_Room.Services;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Dressing_Room.ViewModels
-
 {
-    public partial class SignupViewModel : ObservableObject
-
+    public partial class TopsViewModel : ObservableObject
     {
-        //Initializing the service
-        private SignUpService service;
-        public SignupViewModel(SignUpService s)
+        private ClothingService _clothingService;
+        private OutfitsService _outfitsService;
+        private OufitViewModel _OutfitViewModel;
+
+        public TopsViewModel()
         {
-            service = s;
+            _clothingService = new ClothingService();
+            _outfitsService = new OutfitsService();
+            _OutfitViewModel = new OufitViewModel();
+            Tops = new ObservableCollection<Clothes>();
 
-
+            refresh();
         }
 
-
-        [ObservableProperty]
-        private string name;
-
-        [ObservableProperty]
-        private string email;
-
-        [ObservableProperty]
-        private string password;
-
-        [ObservableProperty]
-        private string confirmpass;
-
-        [ObservableProperty]
-        private bool male;
-
-        [ObservableProperty]
-        private bool female;
+        public ObservableCollection<Clothes> Tops { get; }
 
 
 
-        [RelayCommand]
-        async Task Gotowardrobe()
+        private Command<Clothes> _deleteTopCommand;
+        public Command<Clothes> DeleteTopCommand => _deleteTopCommand ??= new Command<Clothes>(async (top) =>
         {
-            //Checking if any of the fields are empty
-            var fields = new List<string>();
-            fields.Add(email);
-            fields.Add(password);
-            fields.Add(confirmpass);
-            fields.Add(email);
-
-            foreach (string s in fields)
+            var outfits = await _outfitsService.GetOutfits();
+            foreach (Outfits o in outfits)
             {
-                if (s == null)
+                if (o.TopID == top.CID)
                 {
-                    await Shell.Current.DisplayAlert("Uh Oh", "Please enter all fields.", "Exit");
-                    return;
+                    await _outfitsService.DdeleteOutfits(o.Id);
+
                 }
             }
 
+            await _clothingService.DdeleteClothes(top.CID);
+            WeakReferenceMessenger.Default.Send(new RefreshOutfitMessage(null));
 
-            string gender = null;
-            //check if the gender is checked:
-            if (male == true)
-            {
-                gender = "Male";
-            }
 
-            else if (female == true)
-            {
-                gender = "Female";
-            }
-            else
-            {
-                await Shell.Current.DisplayAlert("Uh Oh", "Select a gender.", "Exit");
-                return;
-            }
-            //Checking if the passwords match:
-            if (password.Length < 8)
-            {
-                await Shell.Current.DisplayAlert("Uh Oh", "Your Password needs to be longer than 8 characters", "Exit");
-                return;
-            }
-            bool hasLowerCase = password.Any(char.IsLower);
-            bool hasUpperCase = password.Any(char.IsUpper);
-            bool hasDigit = password.Any(char.IsDigit);
-            bool hasSymbol = password.Any(char.IsSymbol) || password.Any(char.IsPunctuation);
 
-            if (!(hasLowerCase && hasUpperCase && hasDigit && hasSymbol))
+
+            refresh();
+        });
+
+
+
+        public async void refresh()
+        {
+            var Current_User = Preferences.Get("user_name", "default_value");
+            var allClothes = await _clothingService.GetSpecificClothes(Current_User);
+            Tops.Clear();
+            foreach (var clothes in allClothes)
             {
-                await Shell.Current.DisplayAlert("Uh Oh", "Your Password needs to include a lowercase and uppercase letter,a digit and a symbol or punctuation", "Exit");
-                return;
-            }
-            if (password != confirmpass)
-            {
-                await Shell.Current.DisplayAlert("Uh Oh", "Your Passwords do not match! Please rewrite.", "Exit");
-                return;
+                if (clothes.Categories == "Tops")
 
-            }
-            string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
-
-            // Create a regular expression object and match against the email
-            Regex regex = new Regex(pattern);
-            Match match = regex.Match(email);
-
-            if (!match.Success)
-            {
-                await Shell.Current.DisplayAlert("Uh Oh", "Wrong Email format", "Exit");
-                return;
-            }
-
-            var user = new User
-            {
-
-                Username = name,
-                Email = email,
-                Password = password,
-                Gender = gender
-
-            };
-            // now we have to check if there exists a user with the same username:
-            var allUsers = await service.GetUser();
-            foreach (User x in allUsers)
-            {
-                if (x.Username == name)
                 {
-                    await Shell.Current.DisplayAlert("Uh Oh", "Username already Exists! Please re-enter", "Exit");
-                    return;
-                }
-                if (x.Email == email)
-                {
-                    await Shell.Current.DisplayAlert("Uh Oh", "Email is already in use! Please re-enter", "Exit");
-                    return;
-                }
 
+
+                    Tops.Add(new Clothes
+                    {
+                        Categories = clothes.Categories,
+                        Color = clothes.Color,
+                        Source = clothes.Source,
+                        Type = clothes.Type,
+                        CID = clothes.CID,
+                        UserID = Current_User
+
+
+                    }); ;
+                }
             }
-
-            Preferences.Set("user_name", Name);
-            Preferences.Set("user_email", Email);
-            Preferences.Set("user_password", Password);
-
-            await service.AddUser(user);
-            await Shell.Current.DisplayAlert("Success!", "Welcome to your wardrobe", "Exit");
-
-            Routing.RegisterRoute(nameof(WardrobePage), typeof(WardrobePage));
-
-            await Shell.Current.GoToAsync(nameof(WardrobePage));
-
-            Routing.UnRegisterRoute(nameof(Signup));
         }
 
         [RelayCommand]
-        async Task Gobacktosignin()
+        async Task GetTops()
         {
-            await Shell.Current.GoToAsync("..");
+
+            var allClothes = await _clothingService.GetClothes();
+
+            Tops.Clear();
+            foreach (var clothes in allClothes)
+            {
+                if (clothes.Categories == "Tops")
+
+                {
+                    //CONVERTING BYTE BACK TO IMAGE SOURCE 
+                    //byte[] imageData = clothes.Source;
+                    //ImageSource imageSource;
+
+                    //using (MemoryStream ms = new MemoryStream(imageData))
+                    //{
+                    //    imageSource = ImageSource.FromStream(() => ms);
+                    //}
+
+                    Tops.Add(new Clothes
+                    {
+                        Categories = clothes.Categories,
+                        Color = clothes.Color,
+                        Source = clothes.Source,
+                        Type = clothes.Type,
+                        CID = clothes.CID
+
+                    }); ;
+                }
+            }
         }
-
-
-
-
 
 
 
