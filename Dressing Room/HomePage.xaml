@@ -198,7 +198,8 @@
                     <ImageButton
                         HeightRequest="25"
                         Source="hanger.png"
-                        WidthRequest="30" />
+                        WidthRequest="30"
+                         Clicked="GotoWardrobePage"/>
                     <Ellipse
                         Fill="white"
                         HeightRequest="8"
@@ -212,6 +213,7 @@
                     StrokeShape="RoundRectangle 20,20,20,20"
                     WidthRequest="35">
                     <ImageButton
+                                       Clicked="OnImage7Clicked"
                         HeightRequest="20"
                         Source="plussign.png"
                         WidthRequest="20" />
@@ -220,8 +222,10 @@
                 <ImageButton
                     HeightRequest="25"
                     Source="profilepic.png"
-                    WidthRequest="30" />
+                    WidthRequest="30"
+                    Clicked="GoToProfile"/>
                 <ImageButton
+                          Clicked="GoToSettings"
                     HeightRequest="25"
                     Source="setting.png"
                     WidthRequest="30" />

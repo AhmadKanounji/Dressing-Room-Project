@@ -78,7 +78,8 @@
                                             <Label Text="{Binding Type}" HorizontalOptions="Center" VerticalOptions="Center"/>
                                         </Border>
 
-                                         <ImageButton Source="trashbin.png" HeightRequest="25" WidthRequest="25" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:TopsViewModel}}, Path=DeleteTopsCommand}" CommandParameter="{Binding .}" Margin="20,0,0,0" >
+                                         <ImageButton Source="trashbin.png" HeightRequest="25" WidthRequest="25" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:TopsViewModel}},
+                                             Path=DeleteTopsCommand}" CommandParameter="{Binding .}" Margin="20,0,0,0" >
 
                                         </ImageButton>
                                     </HorizontalStackLayout>

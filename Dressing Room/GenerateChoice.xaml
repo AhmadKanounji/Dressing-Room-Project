@@ -56,7 +56,9 @@
 
                             </Label>
                             <Border StrokeShape="RoundRectangle 20,20,0,0" StrokeThickness="1" Stroke="transparent" HeightRequest="300" WidthRequest="170">
-                               
+                                <ImageButton Source="weatherimage.jpg" Aspect="Fill" Clicked="ImageButton_Clicked2">
+
+                                </ImageButton>
                             </Border>
                         </VerticalStackLayout>
                     </HorizontalStackLayout>

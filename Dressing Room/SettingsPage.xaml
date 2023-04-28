@@ -140,13 +140,16 @@
                 <ImageButton
                     HeightRequest="25"
                     Source="homepage2.png"
-                    WidthRequest="30" />
+                    WidthRequest="30"
+                    Clicked="GoToHomePage"
+                    />
 
                 <ImageButton
                     Clicked="GoToWardrobe"
                     HeightRequest="25"
                     Source="hanger.png"
-                    WidthRequest="30" />
+                    WidthRequest="30"
+                    />
 
 
 
@@ -158,6 +161,7 @@
                     WidthRequest="35">
                     <ImageButton
                         HeightRequest="20"
+                        Clicked="OnImage7Clicked"
                         Source="plussign.png"
                         WidthRequest="20" />
                 </Border>
@@ -165,7 +169,8 @@
                 <ImageButton
                     HeightRequest="25"
                     Source="profilepic.png"
-                    WidthRequest="30" />
+                    WidthRequest="30"
+                    Clicked="GoToProfile"/>
                 <VerticalStackLayout Spacing="2" VerticalOptions="Center">
                     <ImageButton
                         HeightRequest="25"

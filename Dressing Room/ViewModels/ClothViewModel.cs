@@ -72,7 +72,6 @@ namespace Dressing_Room.ViewModels
            
         }
         [RelayCommand]
-
         async void ChoosePhoto()
         {
             var result = await MediaPicker.PickPhotoAsync(new MediaPickerOptions

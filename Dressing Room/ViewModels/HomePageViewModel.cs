@@ -42,6 +42,7 @@ namespace Dressing_Room.ViewModels
         [ObservableProperty]
         private bool userlist = false;
 
+
         private Command<OutfitToDisplay> _gotohomeprofile;
         public Command<OutfitToDisplay> GoToHomeProfileCommand => _gotohomeprofile ??= new Command<OutfitToDisplay>(async (outfit) =>
         {
