@@ -8,6 +8,7 @@
     xmlns:viewmodel="clr-namespace:Dressing_Room.ViewModels"
     Title="GeneratePage"
     x:DataType="viewmodel:GenerateViewModel"
+    BackgroundColor="#e2e2e2"
     Shell.NavBarIsVisible="False">
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -42,319 +43,374 @@
 
         </VerticalStackLayout>
 
+        <VerticalStackLayout Spacing="30">
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="50">
+                <VerticalStackLayout>
+                    <Label Text="Top Color:" FontFamily="OPTIMA" >
 
-        <VerticalStackLayout>
-            <Border
+                    </Label>
+                    <Border
                 HeightRequest="60"
+                Stroke="#01260A"
+                    StrokeThickness="2"
                 StrokeShape="RoundRectangle 20,20,20,20"
-                WidthRequest="380">
+                WidthRequest="150">
 
-                <Picker
-                    Title="Top Color"
+                        <Picker
+                     BackgroundColor="#E2E2E2"
+                    
                     SelectedItem="{Binding TopColorr}"
                     TextColor="#01260A">
 
-                    <Picker.ItemsSource>
+                            <Picker.ItemsSource>
 
-                        <x:Array Type="{x:Type x:String}">
+                                <x:Array Type="{x:Type x:String}">
 
-                            <x:String>Red</x:String>
+                                    <x:String>Red</x:String>
 
-                            <x:String>White</x:String>
+                                    <x:String>White</x:String>
 
-                            <x:String>Blue</x:String>
+                                    <x:String>Blue</x:String>
 
-                            <x:String>Black</x:String>
+                                    <x:String>Black</x:String>
 
-                            <x:String>Green</x:String>
+                                    <x:String>Green</x:String>
 
-                            <x:String>Gray</x:String>
+                                    <x:String>Gray</x:String>
 
-                            <x:String>Brown</x:String>
+                                    <x:String>Brown</x:String>
 
-                            <x:String>Beige</x:String>
+                                    <x:String>Beige</x:String>
 
-                            <x:String>Pink</x:String>
+                                    <x:String>Pink</x:String>
 
-                            <x:String>Yellow</x:String>
+                                    <x:String>Yellow</x:String>
 
-                            <x:String>Purple</x:String>
+                                    <x:String>Purple</x:String>
 
-                            <x:String>Cream</x:String>
+                                    <x:String>Cream</x:String>
 
-                            <x:String>Turquoise</x:String>
+                                    <x:String>Turquoise</x:String>
 
-                            <x:String>Teal</x:String>
+                                    <x:String>Teal</x:String>
 
-                            <x:String>Lavender</x:String>
+                                    <x:String>Lavender</x:String>
 
-                            <x:String>Maroon</x:String>
+                                    <x:String>Maroon</x:String>
 
-                            <x:String>Olive</x:String>
+                                    <x:String>Olive</x:String>
 
-                            <x:String>Navy</x:String>
+                                    <x:String>Navy</x:String>
 
-                            <x:String>Magenta</x:String>
+                                    <x:String>Magenta</x:String>
 
-                            <x:String>Peach</x:String>
+                                    <x:String>Peach</x:String>
 
-                        </x:Array>
+                                </x:Array>
 
-                    </Picker.ItemsSource>
+                            </Picker.ItemsSource>
 
-                </Picker>
+                        </Picker>
 
-            </Border>
-            <Border
+                    </Border>
+                </VerticalStackLayout>
+                <VerticalStackLayout>
+                    <Label Text="Pant Color:" FontFamily="OPTIMA">
+
+                    </Label>
+                    <Border
                 HeightRequest="60"
+                Stroke="#01260A"
+                    StrokeThickness="2"
                 StrokeShape="RoundRectangle 20,20,20,20"
-                WidthRequest="380">
+                WidthRequest="150">
 
-                <Picker
-                    Title="Pant Color"
+                        <Picker
+                    Title=""
+                     BackgroundColor="#e2e2e2"
                     SelectedItem="{Binding PantColorr}"
                     TextColor="#01260A">
 
-                    <Picker.ItemsSource>
+                            <Picker.ItemsSource>
 
-                        <x:Array Type="{x:Type x:String}">
+                                <x:Array Type="{x:Type x:String}">
 
-                            <x:String>Red</x:String>
+                                    <x:String>Red</x:String>
 
-                            <x:String>White</x:String>
+                                    <x:String>White</x:String>
 
-                            <x:String>Blue</x:String>
+                                    <x:String>Blue</x:String>
 
-                            <x:String>Black</x:String>
+                                    <x:String>Black</x:String>
 
-                            <x:String>Green</x:String>
+                                    <x:String>Green</x:String>
 
-                            <x:String>Gray</x:String>
+                                    <x:String>Gray</x:String>
 
-                            <x:String>Brown</x:String>
+                                    <x:String>Brown</x:String>
 
-                            <x:String>Beige</x:String>
+                                    <x:String>Beige</x:String>
 
-                            <x:String>Pink</x:String>
+                                    <x:String>Pink</x:String>
 
-                            <x:String>Yellow</x:String>
+                                    <x:String>Yellow</x:String>
 
-                            <x:String>Purple</x:String>
+                                    <x:String>Purple</x:String>
 
-                            <x:String>Cream</x:String>
+                                    <x:String>Cream</x:String>
 
-                            <x:String>Turquoise</x:String>
+                                    <x:String>Turquoise</x:String>
 
-                            <x:String>Teal</x:String>
+                                    <x:String>Teal</x:String>
 
-                            <x:String>Lavender</x:String>
+                                    <x:String>Lavender</x:String>
 
-                            <x:String>Maroon</x:String>
+                                    <x:String>Maroon</x:String>
 
-                            <x:String>Olive</x:String>
+                                    <x:String>Olive</x:String>
 
-                            <x:String>Navy</x:String>
+                                    <x:String>Navy</x:String>
 
-                            <x:String>Magenta</x:String>
+                                    <x:String>Magenta</x:String>
 
-                            <x:String>Peach</x:String>
+                                    <x:String>Peach</x:String>
 
-                        </x:Array>
+                                </x:Array>
 
-                    </Picker.ItemsSource>
+                            </Picker.ItemsSource>
 
-                </Picker>
+                        </Picker>
 
-            </Border>
-            <Border
+                    </Border>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="50">
+                <VerticalStackLayout>
+                    <Label Text="Shoe Color:" FontFamily="OPTIMA">
+
+                    </Label>
+                    <Border
                 HeightRequest="60"
+                Stroke="#01260A"
+                    StrokeThickness="2"
                 StrokeShape="RoundRectangle 20,20,20,20"
-                WidthRequest="380">
+                WidthRequest="150">
 
-                <Picker
-                    Title="Shoe Color"
+                        <Picker
+                    
+                     BackgroundColor="#e2e2e2"
                     SelectedItem="{Binding ShoeColorr}"
                     TextColor="#01260A">
 
-                    <Picker.ItemsSource>
+                            <Picker.ItemsSource>
 
-                        <x:Array Type="{x:Type x:String}">
+                                <x:Array Type="{x:Type x:String}">
 
-                            <x:String>Red</x:String>
+                                    <x:String>Red</x:String>
 
-                            <x:String>White</x:String>
+                                    <x:String>White</x:String>
 
-                            <x:String>Blue</x:String>
+                                    <x:String>Blue</x:String>
 
-                            <x:String>Black</x:String>
+                                    <x:String>Black</x:String>
 
-                            <x:String>Green</x:String>
+                                    <x:String>Green</x:String>
 
-                            <x:String>Gray</x:String>
+                                    <x:String>Gray</x:String>
 
-                            <x:String>Brown</x:String>
+                                    <x:String>Brown</x:String>
 
-                            <x:String>Beige</x:String>
+                                    <x:String>Beige</x:String>
 
-                            <x:String>Pink</x:String>
+                                    <x:String>Pink</x:String>
 
-                            <x:String>Yellow</x:String>
+                                    <x:String>Yellow</x:String>
 
-                            <x:String>Purple</x:String>
+                                    <x:String>Purple</x:String>
 
-                            <x:String>Cream</x:String>
+                                    <x:String>Cream</x:String>
 
-                            <x:String>Turquoise</x:String>
+                                    <x:String>Turquoise</x:String>
 
-                            <x:String>Teal</x:String>
+                                    <x:String>Teal</x:String>
 
-                            <x:String>Lavender</x:String>
+                                    <x:String>Lavender</x:String>
 
-                            <x:String>Maroon</x:String>
+                                    <x:String>Maroon</x:String>
 
-                            <x:String>Olive</x:String>
+                                    <x:String>Olive</x:String>
 
-                            <x:String>Navy</x:String>
+                                    <x:String>Navy</x:String>
 
-                            <x:String>Magenta</x:String>
+                                    <x:String>Magenta</x:String>
 
-                            <x:String>Peach</x:String>
+                                    <x:String>Peach</x:String>
 
-                        </x:Array>
+                                </x:Array>
 
-                    </Picker.ItemsSource>
+                            </Picker.ItemsSource>
 
-                </Picker>
+                        </Picker>
 
-            </Border>
-            <Border
-                HeightRequest="60"
+                    </Border>
+                </VerticalStackLayout>
+                <VerticalStackLayout>
+                    <Label Text="Jacket Color:" FontFamily="OPTIMA">
+
+                    </Label>
+                    <Border
+               HeightRequest="60"
+                Stroke="#01260A"
+                    StrokeThickness="2"
                 StrokeShape="RoundRectangle 20,20,20,20"
-                WidthRequest="380">
+                WidthRequest="150">
 
-                <Picker
-                    Title="Jacket Color"
+                        <Picker
+                    BackgroundColor="#e2e2e2"
                     SelectedItem="{Binding JacketColorr}"
                     TextColor="#01260A">
 
-                    <Picker.ItemsSource>
+                            <Picker.ItemsSource>
 
-                        <x:Array Type="{x:Type x:String}">
+                                <x:Array Type="{x:Type x:String}">
 
-                            <x:String>Red</x:String>
+                                    <x:String>Red</x:String>
 
-                            <x:String>White</x:String>
+                                    <x:String>White</x:String>
 
-                            <x:String>Blue</x:String>
+                                    <x:String>Blue</x:String>
 
-                            <x:String>Black</x:String>
+                                    <x:String>Black</x:String>
 
-                            <x:String>Green</x:String>
+                                    <x:String>Green</x:String>
 
-                            <x:String>Gray</x:String>
+                                    <x:String>Gray</x:String>
 
-                            <x:String>Brown</x:String>
+                                    <x:String>Brown</x:String>
 
-                            <x:String>Beige</x:String>
+                                    <x:String>Beige</x:String>
 
-                            <x:String>Pink</x:String>
+                                    <x:String>Pink</x:String>
 
-                            <x:String>Yellow</x:String>
+                                    <x:String>Yellow</x:String>
 
-                            <x:String>Purple</x:String>
+                                    <x:String>Purple</x:String>
 
-                            <x:String>Cream</x:String>
+                                    <x:String>Cream</x:String>
 
-                            <x:String>Turquoise</x:String>
+                                    <x:String>Turquoise</x:String>
 
-                            <x:String>Teal</x:String>
+                                    <x:String>Teal</x:String>
 
-                            <x:String>Lavender</x:String>
+                                    <x:String>Lavender</x:String>
 
-                            <x:String>Maroon</x:String>
+                                    <x:String>Maroon</x:String>
 
-                            <x:String>Olive</x:String>
+                                    <x:String>Olive</x:String>
 
-                            <x:String>Navy</x:String>
+                                    <x:String>Navy</x:String>
 
-                            <x:String>Magenta</x:String>
+                                    <x:String>Magenta</x:String>
 
-                            <x:String>Peach</x:String>
+                                    <x:String>Peach</x:String>
 
-                        </x:Array>
+                                </x:Array>
 
-                    </Picker.ItemsSource>
+                            </Picker.ItemsSource>
 
-                </Picker>
+                        </Picker>
 
-            </Border>
-            <Border
+                    </Border>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+
+            <VerticalStackLayout>
+                <Label Text="Accessorie Color" FontFamily="OPTIMA" HorizontalOptions="Center">
+
+                </Label>
+                <Border
                 HeightRequest="60"
+                Stroke="#01260A"
+                StrokeThickness="2"
                 StrokeShape="RoundRectangle 20,20,20,20"
-                WidthRequest="380">
+                WidthRequest="180">
 
-                <Picker
-                    Title="Accessorie Color"
+                    <Picker
+                    
+                    BackgroundColor="#e2e2e2"
                     SelectedItem="{Binding AccessorieColorr}"
                     TextColor="#01260A">
 
-                    <Picker.ItemsSource>
+                        <Picker.ItemsSource>
 
-                        <x:Array Type="{x:Type x:String}">
+                            <x:Array Type="{x:Type x:String}">
 
-                            <x:String>Red</x:String>
+                                <x:String>Red</x:String>
 
-                            <x:String>White</x:String>
+                                <x:String>White</x:String>
 
-                            <x:String>Blue</x:String>
+                                <x:String>Blue</x:String>
 
-                            <x:String>Black</x:String>
+                                <x:String>Black</x:String>
 
-                            <x:String>Green</x:String>
+                                <x:String>Green</x:String>
 
-                            <x:String>Gray</x:String>
+                                <x:String>Gray</x:String>
 
-                            <x:String>Brown</x:String>
+                                <x:String>Brown</x:String>
 
-                            <x:String>Beige</x:String>
+                                <x:String>Beige</x:String>
 
-                            <x:String>Pink</x:String>
+                                <x:String>Pink</x:String>
 
-                            <x:String>Yellow</x:String>
+                                <x:String>Yellow</x:String>
 
-                            <x:String>Purple</x:String>
+                                <x:String>Purple</x:String>
 
-                            <x:String>Cream</x:String>
+                                <x:String>Cream</x:String>
 
-                            <x:String>Turquoise</x:String>
+                                <x:String>Turquoise</x:String>
 
-                            <x:String>Teal</x:String>
+                                <x:String>Teal</x:String>
 
-                            <x:String>Lavender</x:String>
+                                <x:String>Lavender</x:String>
 
-                            <x:String>Maroon</x:String>
+                                <x:String>Maroon</x:String>
 
-                            <x:String>Olive</x:String>
+                                <x:String>Olive</x:String>
 
-                            <x:String>Navy</x:String>
+                                <x:String>Navy</x:String>
 
-                            <x:String>Magenta</x:String>
+                                <x:String>Magenta</x:String>
 
-                            <x:String>Peach</x:String>
+                                <x:String>Peach</x:String>
 
-                        </x:Array>
+                            </x:Array>
 
-                    </Picker.ItemsSource>
+                        </Picker.ItemsSource>
 
-                </Picker>
+                    </Picker>
 
-            </Border>
+                </Border>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+
+
+
+        <VerticalStackLayout>
+
+
+
+
         </VerticalStackLayout>
 
         <Button
-            BackgroundColor="Green"
+            BackgroundColor="#01260A"
             Command="{Binding generateOutfitCommand}"
-            Text="Generate!" />
+            Text="Generate!" 
+            Margin="0,80,0,0"
+            WidthRequest="150"/>
 
 
         <CollectionView
@@ -381,8 +437,8 @@
         <VerticalStackLayout IsVisible="{Binding Show}" Spacing="15">
             <Label HorizontalOptions="Center" Text="Would you like to add this outfit your closet?" />
             <HorizontalStackLayout HorizontalOptions="Center" Spacing="20">
-                <Button Command="{Binding addOutfitCommand}" Text="Yes" />
-                <Button Command="{Binding NoCommand}" Text="No" />
+                <Button Command="{Binding addOutfitCommand}" Text="Yes" BackgroundColor="#01260A"/>
+                <Button Command="{Binding NoCommand}" Text="No" BackgroundColor="#01260A"/>
             </HorizontalStackLayout>
         </VerticalStackLayout>
 

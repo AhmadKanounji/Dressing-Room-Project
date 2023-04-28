@@ -31,7 +31,7 @@
                         HeightRequest="29"
                         HorizontalOptions="Fill"
                         HorizontalTextAlignment="Center"
-                        Text="Wardrobe"
+                        Text="Generate Outfit"
                         TextColor="#E2E2E2"
                         VerticalOptions="Center"
                         VerticalTextAlignment="Center" />

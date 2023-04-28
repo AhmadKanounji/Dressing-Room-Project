@@ -4,12 +4,12 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:viewmodel="clr-namespace:Dressing_Room.ViewModels"
-    x:DataType="viewmodel:SignupViewModel"
     Title="Sign Up"
-    Shell.NavBarIsVisible="False"
-    Shell.BackgroundColor="#01260A"
+    x:DataType="viewmodel:SignupViewModel"
+    BackgroundColor="#E2E2E2"
     BackgroundImageSource="backgroundlogo.png"
-    BackgroundColor="#E2E2E2">
+    Shell.BackgroundColor="#01260A"
+    Shell.NavBarIsVisible="False">
     <ScrollView>
         <VerticalStackLayout>
             <Grid>
@@ -64,11 +64,11 @@
                 StrokeThickness="1"
                 WidthRequest="350">
                 <Entry
+                    Margin="10,0,0,0"
                     FontAttributes="Italic"
                     Keyboard="Email"
                     Placeholder="Username"
-                    Text="{Binding Name}"
-                    Margin="10,0,0,0"/>
+                    Text="{Binding Name}" />
 
             </Border>
             <Border
@@ -79,11 +79,11 @@
                 StrokeThickness="1"
                 WidthRequest="350">
                 <Entry
+                    Margin="10,0,0,0"
                     FontAttributes="Italic"
                     Keyboard="Email"
                     Placeholder="Email"
-                    Text="{Binding Email}"
-                    Margin="10,0,0,0"/>
+                    Text="{Binding Email}" />
 
             </Border>
             <Border
@@ -94,11 +94,11 @@
                 StrokeThickness="1"
                 WidthRequest="350">
                 <Entry
+                    Margin="10,0,0,0"
                     FontAttributes="Italic"
                     IsPassword="True"
                     Placeholder="Password "
-                    Text="{Binding Password}"
-                    Margin="10,0,0,0"/>
+                    Text="{Binding Password}" />
 
             </Border>
             <Border
@@ -109,26 +109,29 @@
                 StrokeThickness="1"
                 WidthRequest="350">
                 <Entry
+                    Margin="10,0,0,0"
                     FontAttributes="Italic"
                     IsPassword="True"
                     Placeholder=" Confirm Password "
-                    Text="{Binding Confirmpass}"
-                    Margin="10,0,0,0"/>
+                    Text="{Binding Confirmpass}" />
 
             </Border>
-            <HorizontalStackLayout Spacing="20" Margin="0,10,0,0" HorizontalOptions="Center">
+            <HorizontalStackLayout
+                Margin="0,10,0,0"
+                HorizontalOptions="Center"
+                Spacing="20">
 
-                <RadioButton Content="Male" IsChecked="{Binding Male}"/>
-                <RadioButton Content="Female" IsChecked="{Binding Female}"/>
+                <RadioButton Content="Male" IsChecked="{Binding Male}" />
+                <RadioButton Content="Female" IsChecked="{Binding Female}" />
             </HorizontalStackLayout>
             <Button
                 Margin="0,10,0,0"
                 Background="#01260A"
+                Command="{Binding GotowardrobeCommand}"
                 CornerRadius="20"
                 HeightRequest="50"
                 Text="Create My E-Closet"
-                WidthRequest="360"
-                Command="{Binding GotowardrobeCommand}"/>
+                WidthRequest="360" />
 
 
             <HorizontalStackLayout Margin="0,10,0,0" HorizontalOptions="Center">
@@ -141,10 +144,10 @@
                     BackgroundColor="#E2E2E2"
                     BorderColor="Black"
                     BorderWidth="0"
+                    Command="{Binding GobacktosigninCommand}"
                     FontFamily="OPTIMA_B"
                     Text="Sign In!"
-                    TextColor="#01260A"
-                    Command="{Binding GobacktosigninCommand}"/>
+                    TextColor="#01260A" />
             </HorizontalStackLayout>
 
 
